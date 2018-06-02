@@ -1,0 +1,52 @@
+---
+ID: 1945
+post_title: Services
+author: admin
+post_excerpt: ""
+layout: page
+permalink: >
+  http://nextgenius.com.au/index.php/services/
+published: true
+post_date: 2017-11-13 13:20:00
+---
+[vc_row full_width="stretch_row" css=".vc_custom_1509969103066{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 90px !important;padding-bottom: 90px !important;background-image: url(http://188.166.211.99/wp-content/uploads/2017/10/picture6_currency.jpg?id=66) !important;}"][vc_column css=".vc_custom_1509623292032{padding-top: 0px !important;}"][heading_title_subtitle title="SERVICES" subtitle="Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur." title_color="dark_title" border_color="dark_border" subtitle_color="dark_subtitle"][vc_row_inner css=".vc_custom_1510579238314{margin-top: 50px !important;margin-bottom: 0px !important;padding-bottom: 0px !important;}"][vc_column_inner width="1/3" css=".vc_custom_1509970621627{padding-top: 0px !important;}"][vc_column_text css=".vc_custom_1510580784079{padding-top: 5px !important;}"]<img class="size-full wp-image-1968 alignleft" style="padding-top: 2px; margin-right: 35px;" src="http://188.166.211.99/wp-content/uploads/2017/11/one-1.png" alt="" width="34" height="122" />[/vc_column_text][vc_custom_heading text="Safe &amp; Secure" font_container="tag:h2|font_size:23px|text_align:left|color:%23252525|line_height:35px" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal" css=".vc_custom_1510579310415{margin-top: 0px !important;}"][vc_column_text css_animation="none"]
+<p style="text-align: left;"><span style="color: rgba(37, 37, 37, 0.7); font-size: 15px; line-height: 25px; font-weight: 400;">Sed ut perspiciatis unde omnis
+accusantium doloremque
+dolorem ipsum quia dolor sit.</span></p>
+[/vc_column_text][/vc_column_inner][vc_column_inner width="1/3" css=".vc_custom_1509970629692{padding-top: 0px !important;}"][vc_column_text css=".vc_custom_1509968160429{padding-top: 5px !important;}"]<img class="size-full wp-image-246 alignleft" style="padding-top: 8px; margin-right: 35px;" src="http://188.166.211.99/wp-content/uploads/2017/11/two.png" alt="" width="34" height="122" />[/vc_column_text][vc_custom_heading text="Mobile App" font_container="tag:h2|font_size:23px|text_align:left|color:%23252525|line_height:35px" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal" css=".vc_custom_1510579320871{margin-top: 0px !important;}"][vc_column_text css_animation="none"]
+<p style="text-align: left;"><span style="color: rgba(37, 37, 37, 0.7); font-size: 15px; line-height: 25px; font-weight: 400;">Sed ut perspiciatis unde omnis
+accusantium doloremque
+dolorem ipsum quia dolor sit.</span></p>
+[/vc_column_text][/vc_column_inner][vc_column_inner width="1/3" css=".vc_custom_1509970636076{padding-top: 0px !important;}"][vc_column_text css=".vc_custom_1509968557637{padding-top: 5px !important;}"]<img class="size-full wp-image-250 alignleft" style="padding-top: 8px; margin-right: 35px;" src="http://188.166.211.99/wp-content/uploads/2017/11/three.png" alt="" width="34" height="122" />[/vc_column_text][vc_custom_heading text="Online Wallet" font_container="tag:h2|font_size:23px|text_align:left|color:%23252525|line_height:35px" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal" css=".vc_custom_1510579331686{margin-top: 0px !important;}"][vc_column_text css_animation="none"]
+<p style="text-align: left;"><span style="color: rgba(37, 37, 37, 0.7); font-size: 15px; line-height: 25px; font-weight: 400;">Sed ut perspiciatis unde omnis
+accusantium doloremque
+dolorem ipsum quia dolor sit.</span></p>
+[/vc_column_text][/vc_column_inner][/vc_row_inner][vc_row_inner css=".vc_custom_1510579864233{margin-top: 10px !important;margin-bottom: 0px !important;padding-bottom: 0px !important;}"][vc_column_inner width="1/3" css=".vc_custom_1509970621627{padding-top: 0px !important;}"][vc_column_text css=".vc_custom_1510580607744{padding-top: 5px !important;}"]<img class="size-full wp-image-1956 alignleft" style="padding-top: 2px; margin-right: 35px;" src="http://188.166.211.99/wp-content/uploads/2017/11/four.png" alt="" width="34" height="122" />[/vc_column_text][vc_custom_heading text="24h Support" font_container="tag:h2|font_size:23px|text_align:left|color:%23252525|line_height:35px" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal" css=".vc_custom_1510579726084{margin-top: 0px !important;}"][vc_column_text css_animation="none"]
+<p style="text-align: left;"><span style="color: rgba(37, 37, 37, 0.7); font-size: 15px; line-height: 25px; font-weight: 400;">Sed ut perspiciatis unde omnis
+accusantium doloremque
+dolorem ipsum quia dolor sit.</span></p>
+[/vc_column_text][/vc_column_inner][vc_column_inner width="1/3" css=".vc_custom_1509970629692{padding-top: 0px !important;}"][vc_column_text css=".vc_custom_1510580628952{padding-top: 5px !important;}"]<img class="size-full wp-image-1957 alignleft" style="padding-top: 2px; margin-right: 35px;" src="http://188.166.211.99/wp-content/uploads/2017/11/five.png" alt="" width="34" height="122" />[/vc_column_text][vc_custom_heading text="Instant Exchange" font_container="tag:h2|font_size:23px|text_align:left|color:%23252525|line_height:35px" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal" css=".vc_custom_1510579784800{margin-top: 0px !important;}"][vc_column_text css_animation="none"]
+<p style="text-align: left;"><span style="color: rgba(37, 37, 37, 0.7); font-size: 15px; line-height: 25px; font-weight: 400;">Sed ut perspiciatis unde omnis
+accusantium doloremque
+dolorem ipsum quia dolor sit.</span></p>
+[/vc_column_text][/vc_column_inner][vc_column_inner width="1/3" css=".vc_custom_1509970636076{padding-top: 0px !important;}"][vc_column_text css=".vc_custom_1510580634544{padding-top: 5px !important;}"]<img class="size-full wp-image-1955 alignleft" style="padding-top: 2px; margin-right: 35px;" src="http://188.166.211.99/wp-content/uploads/2017/11/six.png" alt="" width="34" height="122" />[/vc_column_text][vc_custom_heading text="Send Coin" font_container="tag:h2|font_size:23px|text_align:left|color:%23252525|line_height:35px" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal" css=".vc_custom_1510579794663{margin-top: 0px !important;}"][vc_column_text css_animation="none"]
+<p style="text-align: left;"><span style="color: rgba(37, 37, 37, 0.7); font-size: 15px; line-height: 25px; font-weight: 400;">Sed ut perspiciatis unde omnis
+accusantium doloremque
+dolorem ipsum quia dolor sit.</span></p>
+[/vc_column_text][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row full_width="stretch_row" css=".vc_custom_1509623301946{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 90px !important;padding-bottom: 90px !important;background-image: url(http://188.166.211.99/wp-content/uploads/2017/10/picture7_currency.jpg?id=60) !important;}"][vc_column css=".vc_custom_1509623292032{padding-top: 0px !important;}"][heading_title_subtitle title="COIN CALCULATOR" subtitle="Minimum purchase is 50 Coins tokens. Get a bonus from 5% to 25%
+on every token purchase" title_color="dark_title" border_color="dark_border" subtitle_color="dark_subtitle"][vc_empty_space height="50px"][vc_row_inner css=".vc_custom_1509623317857{margin-bottom: 0px !important;padding-top: 0px !important;}"][vc_column_inner width="1/2"][vc_column_text css=".vc_custom_1509699679373{padding-top: 30px !important;}"]
+<p style="text-align: left; color: #666666;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+accusantium doloremque laudantium. Neque porro quisquam est, qui
+dolorem ipsum quia dolor sit amet luptatem.</p>
+[/vc_column_text][vc_column_text css=".vc_custom_1509699688509{padding-top: 30px !important;}"]
+<p style="text-align: left; color: #666666;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+accusantium doloremque laudantium. Neque porro quisquam est, qui
+dolorem ipsum quia dolor sit amet luptatem.</p>
+[/vc_column_text][vc_column_text el_class="exchange_calculator" css=".vc_custom_1509626766777{padding-top: 30px !important;}"]
+<p style="text-align: left;">[currencyprice currency1="btc" currency2="usd,eur" feature="calculator"]</p>
+[/vc_column_text][/vc_column_inner][vc_column_inner width="1/2"][vc_single_image image="61" img_size="full" alignment="center"][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row full_width="stretch_row" css=".vc_custom_1510580300201{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 90px !important;padding-bottom: 30px !important;}"][vc_column css=".vc_custom_1510234808641{padding-top: 0px !important;}"][heading_title_subtitle title="NEWS" subtitle="Minimum purchase is 50 Coins tokens. Get a bonus from 5% to 25%
+on every token purchase" title_color="dark_title" border_color="dark_border" subtitle_color="dark_subtitle"][vc_empty_space height="50px"][blogpost01 number="3" category="uncategorized" columns="vc_col-sm-4" animation="fadeIn"][/vc_column][/vc_row][vc_row full_width="stretch_row" css=".vc_custom_1509630337729{margin-bottom: 0px !important;padding-top: 50px !important;padding-bottom: 50px !important;background-color: #ffd600 !important;}"][vc_column width="1/2" css=".vc_custom_1509630229674{padding-top: 0px !important;}"][vc_custom_heading text="Subscribe to our Newsletter" font_container="tag:h2|font_size:30px|text_align:left|color:%23252525|line_height:35px" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal" css_animation="fadeIn" css=".vc_custom_1510672215129{margin-top: 0px !important;}"][vc_column_text css_animation="fadeIn"]
+<p style="text-align: left;"><span style="color: #666666; font-size: 16px; line-height: 25px; font-weight: 400;">Sign up for our weekly industry updates, insider perspectives and
+in-depth market analysis.</span></p>
+[/vc_column_text][/vc_column][vc_column width="1/2" css=".vc_custom_1510580321448{padding-top: 20px !important;}"][vc_column_text css_animation="fadeIn"][mc4wp_form id="335"][/vc_column_text][/vc_column][/vc_row]
