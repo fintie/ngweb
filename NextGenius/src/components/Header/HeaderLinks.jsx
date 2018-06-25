@@ -82,7 +82,6 @@ function HeaderLinks({ ...props }) {
           <Hidden mdUp implementation="css">
             <img src={blackLogo} alt="Tron" className={classes.tronLogo}/>Tron
           </Hidden>
-          <div className={classes.tronLogo}>test</div>
 
         </Button>
       </ListItem>
