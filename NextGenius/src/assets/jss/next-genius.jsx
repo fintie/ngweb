@@ -3,7 +3,7 @@
 // // // Variables - Styles that are used on more than one component
 // #############################
 
-const drawerWidth = 260;
+const drawerWidth = 220;
 
 const transition = {
   transition: "all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)"
@@ -64,7 +64,9 @@ const successColor = "#4caf50";
 const infoColor = "#00acc1";
 const roseColor = "#e91e63";
 const grayColor = "#999999";
+const grayColor2 = "#6c757d";
 const darkColor = "#4e4e4e";
+const darkColor2 = "#3C4858";
 const bgColor = "#F4F4F4";
 const lightColor2 = "#d8d8d8";
 const lightColor = "#FFFFFF";
@@ -189,7 +191,9 @@ export {
   infoColor,
   roseColor,
   grayColor,
+  grayColor2,
   darkColor,
+  darkColor2,
   bgColor,
   primaryBoxShadow,
   infoBoxShadow,

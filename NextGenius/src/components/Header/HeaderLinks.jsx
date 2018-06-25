@@ -2,6 +2,7 @@
 import React from "react";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
+import Hidden from "@material-ui/core/Hidden";
 
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -18,6 +19,8 @@ import Button from "components/CustomButtons/Button.jsx";
 // import IconButton from "components/CustomButtons/IconButton.jsx";
 
 import headerLinksStyle from "assets/jss/next-genius/components/headerLinksStyle.jsx";
+import blackLogo from "assets/img/tron/logo-black.png";
+import whiteLogo from "assets/img/tron/logo.png";
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;
@@ -65,6 +68,25 @@ function HeaderLinks({ ...props }) {
                 <Group className={classes.icons} /> Team
             </Button>
         </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Button
+            component={Link}
+            to="/tron"
+            color="transparent"
+            className={classes.navLink}
+        >
+          <Hidden smDown implementation="css">
+            <img src={whiteLogo} id="tronLogo" alt="Tron" className={classes.tronLogo}/>Tron
+          </Hidden>
+          <Hidden mdUp implementation="css">
+            <img src={blackLogo} alt="Tron" className={classes.tronLogo}/>Tron
+          </Hidden>
+          <div className={classes.tronLogo}>test</div>
+
+        </Button>
+      </ListItem>
+
         <ListItem className={classes.listItem}>
             <Button
                 component={Link}

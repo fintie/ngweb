@@ -1,4 +1,4 @@
-import { container, title, primaryColor } from "assets/jss/next-genius.jsx";
+import { container, title, primaryColor, lightColor2 } from "assets/jss/next-genius.jsx";
 
 const landingPageStyle = {
   container: {
@@ -20,7 +20,8 @@ const landingPageStyle = {
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
-    margin: "10px auto 0"
+    margin: "10px auto 0",
+    color: lightColor2
   },
   main: {
     background: "#FFFFFF",

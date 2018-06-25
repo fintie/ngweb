@@ -16,6 +16,8 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import headerStyle from "assets/jss/next-genius/components/headerStyle.jsx";
+import blackLogo from "assets/img/tron/logo-black.png";
+import whiteLogo from "assets/img/tron/logo.png";
 
 class Header extends React.Component {
   constructor(props) {
@@ -44,6 +46,7 @@ class Header extends React.Component {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
+      document.getElementById("tronLogo").src = blackLogo;
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -51,6 +54,7 @@ class Header extends React.Component {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
+      document.getElementById("tronLogo").src = whiteLogo;
     }
   }
   componentWillUnmount() {

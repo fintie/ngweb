@@ -5,6 +5,7 @@
 import { defaultFont } from "assets/jss/next-genius.jsx";
 
 import tooltip from "assets/jss/next-genius/tooltipsStyle.jsx";
+import image from "assets/img/tron/logo.png";
 
 const headerLinksStyle = theme => ({
   list: {
@@ -119,6 +120,10 @@ const headerLinksStyle = theme => ({
   ...tooltip,
   marginRight5: {
     marginRight: "5px"
+  },
+  tronLogo:{
+    height: "18px",
+    paddingRight:"5px"
   }
 });
 

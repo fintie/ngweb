@@ -9,7 +9,7 @@ const teamStyle = {
   title: {
     ...title,
     marginBottom: "1rem",
-    marginTop: "30px",
+    marginTop: "40px",
     minHeight: "32px",
     textDecoration: "none"
   },
@@ -65,7 +65,6 @@ const teamStyle = {
       position: "relative",
       marginTop: "50px",
       minHeight: "32px",
-      color: "#3C4858",
       textDecoration: "none"
   },
   subtitle: {

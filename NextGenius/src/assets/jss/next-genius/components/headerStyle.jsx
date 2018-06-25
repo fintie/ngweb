@@ -47,7 +47,10 @@ const headerStyle = {
     alignItems: "center",
     justifyContent: "space-between",
     display: "flex",
-    flexWrap: "nowrap"
+    flexWrap: "nowrap",
+    "@media (min-width: 768px)": {
+      maxWidth: "90%!important"
+    },
   },
   flex: {
     flex: 1

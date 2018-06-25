@@ -2,13 +2,13 @@ import { container, title, grayColor } from "assets/jss/next-genius.jsx";
 
 const productStyle = {
   section: {
-    padding: "70px 0",
+    paddingBottom: "70px",
     textAlign: "center"
   },
   title: {
     ...title,
     marginBottom: "1rem",
-    marginTop: "0",
+    marginTop: "50px",
     minHeight: "32px",
     textDecoration: "none"
   },

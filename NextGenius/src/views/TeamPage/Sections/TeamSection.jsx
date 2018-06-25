@@ -29,6 +29,7 @@ class TeamSection extends React.Component {
     );
     return (
         <div className={classes.section}>
+          <Fade bottom>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={10}>
               <h2 className={classes.titleBlack}>We are nerd rockstars</h2>
@@ -39,6 +40,7 @@ class TeamSection extends React.Component {
               </h4>
             </GridItem>
           </GridContainer>
+          </Fade>
           <GridContainer>
             {
               teamList.map((member, idx) =>
