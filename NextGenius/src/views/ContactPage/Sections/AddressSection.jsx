@@ -179,10 +179,16 @@ class AddressSection extends React.Component {
                     <GridItem xs={8} className={classes.contactDetail}>
                       <h4 className={classes.title}>Give us a ring</h4>
                       <p className={classes.description}>
+                        <strong>Australia</strong><br/>
                         Nick Qi <br/>
-                        +61 042056 8956<br/>
+                        +61 433440419<br/>
                         Mon - Fri, 9:00 - 17:00<br/>
-                        info@nextgenius.com.au
+                        info@nextgenius.com.au<br/>
+                        <br/>
+                        <strong>Greater China</strong><br/>
+                        Jianfeng Zhou<br/>
+                        +86 18803601433<br/>
+                        Mon - Fri, 9:00 - 17:00
                       </p>
                     </GridItem>
                   </GridContainer>

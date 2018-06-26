@@ -90,7 +90,7 @@ class MapSection extends React.Component {
                   component='p'
               >
                 Level 2, 63 Dixon St, Haymarket NSW, Australia <br/>
-                +610256891538
+                +61 433440419
               </Typography>
             </Paper>
           </InfoWindow>

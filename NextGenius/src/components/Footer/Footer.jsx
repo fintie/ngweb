@@ -248,23 +248,6 @@ class Footer extends React.Component {
                           </IconButton>
                         </Tooltip>
                       </ListItem>
-                      {/*<ListItem className={classes.inlineBlock}>*/}
-                      {/*<Tooltip*/}
-                      {/*id="instagram-tooltip"*/}
-                      {/*title="Follow us on instagram"*/}
-                      {/*placement={window.innerWidth > 959 ? "top" : "left"}*/}
-                      {/*classes={{ tooltip: classes.tooltip }}*/}
-                      {/*>*/}
-                      {/*<IconButton*/}
-                      {/*color="transparent"*/}
-                      {/*href="https://www.instagram.com/"*/}
-                      {/*target="_blank"*/}
-                      {/*className={classes.navLink + " " + classes.socialIconsButton}*/}
-                      {/*>*/}
-                      {/*<i className={classes.socialIcons + " fab fa-instagram"} />*/}
-                      {/*</IconButton>*/}
-                      {/*</Tooltip>*/}
-                      {/*</ListItem>*/}
                       <ListItem className={classes.inlineBlock}>
                         <Tooltip
                             id="medium-tooltip"

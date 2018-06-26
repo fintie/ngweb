@@ -64,6 +64,13 @@ const footerStyle = {
     display: "inline-block",
     padding: "0px",
     width: "auto"
+
+  },
+  socialIconsButton:{
+    "&:hover, &:focus":{
+      backgroundColor: "transparent",
+      color: "inherit"
+    }
   },
   facebook: {
     color: "#3b5998"

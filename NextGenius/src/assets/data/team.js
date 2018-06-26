@@ -164,7 +164,7 @@ export const TEAM_LIST = [
   {
     name: 'Shawn He',
     title: 'Full Stack Developer',
-    avatar: 'default.jpg',
+    avatar: 'shawn.jpg',
     description:
       'Fullstack Developer with 5 Years IT Experience in Chinese Bank System.& Antique Entrepreneur & Blockchain Enthusiast & Co Funder of Chinese Art and Antique Exchange.',
     linkedIn: '',
