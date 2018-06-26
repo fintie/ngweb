@@ -31,7 +31,7 @@ class ApplySection extends React.Component {
     message: null
   };
 
-  onclick = async () => {
+  handleOnclick = async () => {
     const {handleSubmit} = this.props;
     await handleSubmit('submitBtn', {name: 'Test', email: 'test@gmail.com', message: 'Test'});
     // Send message to server
@@ -57,19 +57,31 @@ class ApplySection extends React.Component {
         <div className={classes.section}>
             <GridContainer justify="center" className={classes.container}>
               <GridItem xs={12} sm={12} md={12}>
-                <h2 className={classNames(classes.title, classes.formTitle)}>Fill in your detail</h2>
+                <h2 className={classNames(classes.title, classes.formTitle)}>Fill in the form</h2>
                 <h4 className={classes.description}>
                   Please fill in the following fields. We'll get in touch with you as soon as possible.
+                  <div className={classes.note}>(<span className={classes.mandatory}>*</span> indicates required field)</div>
                 </h4>
                 <form>
                   <GridContainer>
                     <GridItem xs={12} sm={12} md={6}>
                       <CustomInput
                           labelText="Tron Wallet Address"
+                          mandatory={true}
                           id="tronAddress"
                           formControlProps={{
                             fullWidth: true
                           }}
+                      />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={6}>
+                      <CustomInput
+                        labelText="Email address"
+                        mandatory={true}
+                        id="email"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
                       />
                     </GridItem>
                     <GridItem xs={12} sm={12} md={6}>
@@ -99,15 +111,7 @@ class ApplySection extends React.Component {
                           }}
                       />
                     </GridItem>
-                    <GridItem xs={12} sm={12} md={6}>
-                      <CustomInput
-                          labelText="Email address"
-                          id="email"
-                          formControlProps={{
-                            fullWidth: true
-                          }}
-                      />
-                    </GridItem>
+
                     <GridItem xs={12} sm={12} md={6}>
                       <CustomInput
                           labelText="Country"
@@ -152,10 +156,10 @@ class ApplySection extends React.Component {
                       </div>
                     </GridItem>
                     <GridItem>
-                    <GridContainer justify="center" className={classes.sendBtnGrid}>
+                    <GridContainer justify="center" className={classes.submitBtnGrid}>
                       <GridItem className={classes.textCenter}
                       >
-                        <Button round id='submitBtn' color="primary" onClick={this.onclick} disabled={fetch.submitBtn}>{fetch.submitBtn? 'Please wait...' : 'Submit'} </Button>
+                        <Button round id='submitBtn' color="primary" onClick={this.handleOnclick} disabled={fetch.submitBtn}>{fetch.submitBtn? 'Please wait...' : 'Submit'} </Button>
                       </GridItem>
                     </GridContainer>
                     </GridItem>

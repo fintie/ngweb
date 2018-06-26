@@ -130,3 +130,7 @@ form {
 .contactPage header{
   background-color: #0000006e;
 }
+
+.react-swipeable-view-container > div{
+  overflow: hidden!important;
+}

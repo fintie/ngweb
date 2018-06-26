@@ -95,6 +95,10 @@ const customInputStyle = {
       color: "#FFFFFF",
       opacity: "1"
     }
+  },
+  mandatory:{
+    color: dangerColor,
+    paddingLeft: "2px"
   }
 };
 

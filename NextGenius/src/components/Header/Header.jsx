@@ -17,7 +17,7 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import headerStyle from "assets/jss/next-genius/components/headerStyle.jsx";
 import blackLogo from "assets/img/tron/logo-black.png";
-import whiteLogo from "assets/img/tron/logo.png";
+import whiteLogo from "assets/img/tron/logo.svg";
 
 class Header extends React.Component {
   constructor(props) {

@@ -13,6 +13,7 @@ function CustomInput({ ...props }) {
     classes,
     formControlProps,
     labelText,
+    mandatory,
     id,
     labelProps,
     inputProps,
@@ -56,7 +57,7 @@ function CustomInput({ ...props }) {
           htmlFor={id}
           {...labelProps}
         >
-          {labelText}
+          {labelText}{mandatory? <span className={classes.mandatory}>*</span> : null}
         </InputLabel>
       ) : null}
       <Input
@@ -86,6 +87,7 @@ CustomInput.propTypes = {
   inputProps: PropTypes.object,
   formControlProps: PropTypes.object,
   inputRootCustomClasses: PropTypes.string,
+  mandatory: PropTypes.bool,
   error: PropTypes.bool,
   success: PropTypes.bool,
   white: PropTypes.bool

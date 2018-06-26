@@ -60,12 +60,14 @@ class AddressSection extends React.Component {
                 <h2 className={classNames(classes.title, classes.formTitle)}>Send us a message</h2>
                 <h4 className={classes.description}>
                   You can contact us with anything related to our services. We'll get in touch with you as soon as possible.
+                  <div className={classes.note}>(<span className={classes.mandatory}>*</span> indicates required field)</div>
                 </h4>
                 <form>
                   <GridContainer>
                     <GridItem xs={12} sm={12} md={12}>
                       <CustomInput
                           labelText="Your Name"
+                          mandatory={true}
                           id="name"
                           formControlProps={{
                             fullWidth: true
@@ -75,6 +77,7 @@ class AddressSection extends React.Component {
                     <GridItem xs={12} sm={12} md={12}>
                       <CustomInput
                           labelText="Email address"
+                          mandatory={true}
                           id="email"
                           formControlProps={{
                             fullWidth: true

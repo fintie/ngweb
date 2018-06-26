@@ -45,7 +45,7 @@ const campaignStyle = {
     color: grayColor,
   },
   note:{
-    fontSize: ".75rem",
+    // fontSize: ".75rem",
     color: grayColor,
     textAlign: "left"
   },

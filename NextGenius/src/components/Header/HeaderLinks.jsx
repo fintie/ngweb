@@ -20,7 +20,7 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import headerLinksStyle from "assets/jss/next-genius/components/headerLinksStyle.jsx";
 import blackLogo from "assets/img/tron/logo-black.png";
-import whiteLogo from "assets/img/tron/logo.png";
+import whiteLogo from "assets/img/tron/logo.svg";
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;

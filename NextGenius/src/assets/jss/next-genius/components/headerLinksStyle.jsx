@@ -5,7 +5,6 @@
 import { defaultFont } from "assets/jss/next-genius.jsx";
 
 import tooltip from "assets/jss/next-genius/tooltipsStyle.jsx";
-import image from "assets/img/tron/logo.png";
 
 const headerLinksStyle = theme => ({
   list: {

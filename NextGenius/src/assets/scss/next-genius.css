@@ -121,6 +121,9 @@ form {
 .contactPage header {
   background-color: #0000006e; }
 
+.react-swipeable-view-container > div {
+  overflow: hidden !important; }
+
 /*! nouislider - 10.0.0 - 2016-12-10 16:00:32 */
 /* Functional styling;
  * These styles are required for noUiSlider to function.

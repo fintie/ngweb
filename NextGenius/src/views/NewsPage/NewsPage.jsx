@@ -59,18 +59,19 @@ class NewsPage extends React.Component {
                   <NavPills
                       alignCenter
                       color="primary"
+                      classes={classes.navPills}
                       tabs={[{
                         tabButton: "All",
                         tabContent: (
                             <AllSection/>
                         )
                       },
-                        {
-                          tabButton: "News",
-                          tabContent: (
-                              <AllSection/>
-                          )
-                        },
+                        // {
+                        //   tabButton: "News",
+                        //   tabContent: (
+                        //       <AllSection/>
+                        //   )
+                        // },
                         {
                           tabButton: "Meetup",
                           tabContent: (

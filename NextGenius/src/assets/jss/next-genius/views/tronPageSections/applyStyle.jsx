@@ -1,4 +1,4 @@
-import { cardTitle, title, primaryColor, grayColor, bgColor } from "assets/jss/next-genius.jsx";
+import { cardTitle, title, primaryColor, grayColor, bgColor, dangerColor } from "assets/jss/next-genius.jsx";
 import imagesStyle from "assets/jss/next-genius/imagesStyles.jsx";
 
 const applyStyle = {
@@ -52,6 +52,9 @@ const applyStyle = {
       margin: "10px auto 0"
   },
   container: {
+    "@media (max-width: 576px)": {
+      padding: "0 20px"
+    }
   },
   contactType:{
     marginTop: "28px",
@@ -99,18 +102,23 @@ const applyStyle = {
   label: {
     cursor: "pointer",
     paddingLeft: "0",
-    color: "rgba(0, 0, 0, 0.26)",
+    color: grayColor,
     fontSize: "14px",
     lineHeight: "1.428571429",
     fontWeight: "400",
     display: "inline-flex",
     transition: "0.3s ease all",
+    textAlign: "left",
     "@media (max-width: 576px)": {
       fontSize: "12px"
     },
   },
+  note: {
+    color: grayColor,
+    textAlign:"left"
+  },
   labelHorizontal: {
-    color: "rgba(0, 0, 0, 0.26)",
+    color: grayColor,
     cursor: "pointer",
     display: "inline-flex",
     lineHeight: "1.428571429",
@@ -153,6 +161,16 @@ const applyStyle = {
       }
     }
   },
+  mandatory:{
+    color: dangerColor
+  },
+  submitBtnGrid: {
+    padding: "20px 0"
+  },
+  note:{
+    fontSize: ".8rem"
+  }
+
 };
 
 export default applyStyle;
