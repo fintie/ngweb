@@ -14,14 +14,11 @@ import Check from "@material-ui/icons/Check";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Card from "components/Card/Card.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 import NewSnackbarContent from "components/Snackbar/NewSnackbarContent.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import { Phone, PinDrop, BusinessCenter} from "@material-ui/icons";
 
 import applyStyle from "assets/jss/next-genius/views/tronPageSections/applyStyle.jsx";
-// import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 
 class ApplySection extends React.Component {
 
@@ -31,7 +28,8 @@ class ApplySection extends React.Component {
     message: null
   };
 
-  handleOnclick = async () => {
+  handleOnclick = async (e) => {
+    if(e)e.preventDefault();
     const {handleSubmit} = this.props;
     await handleSubmit('submitBtn', {name: 'Test', email: 'test@gmail.com', message: 'Test'});
     // Send message to server
@@ -48,11 +46,6 @@ class ApplySection extends React.Component {
 
   render() {
     const { classes, fetch } = this.props;
-    const imageClasses = classNames(
-      classes.imgRaised,
-      classes.imgRoundedCircle,
-      classes.imgFluid
-    );
     return (
         <div className={classes.section}>
             <GridContainer justify="center" className={classes.container}>
@@ -60,7 +53,7 @@ class ApplySection extends React.Component {
                 <h2 className={classNames(classes.title, classes.formTitle)}>Fill in the form</h2>
                 <h4 className={classes.description}>
                   Please fill in the following fields. We'll get in touch with you as soon as possible.
-                  <div className={classes.note}>(<span className={classes.mandatory}>*</span> indicates required field)</div>
+                  <div className={classes.note}><span className={classes.mandatory}>*</span> indicates required field</div>
                 </h4>
                 <form>
                   <GridContainer>
@@ -159,7 +152,7 @@ class ApplySection extends React.Component {
                     <GridContainer justify="center" className={classes.submitBtnGrid}>
                       <GridItem className={classes.textCenter}
                       >
-                        <Button round id='submitBtn' color="primary" onClick={this.handleOnclick} disabled={fetch.submitBtn}>{fetch.submitBtn? 'Please wait...' : 'Submit'} </Button>
+                        <Button round id='submitBtn' className={classes.submitButton} color="primary" onClick={this.handleOnclick} disabled={fetch.submitBtn}>{fetch.submitBtn? 'Please wait...' : 'Submit'} </Button>
                       </GridItem>
                     </GridContainer>
                     </GridItem>

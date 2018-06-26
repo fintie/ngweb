@@ -240,7 +240,7 @@ class Footer extends React.Component {
                         >
                           <IconButton
                               color="primary"
-                              href="https://www.facebook.com/nextgeniusofficial/"
+                              href="https://m.facebook.com/groups/619311661561522"
                               target="_blank"
                               className={classes.navLink + " " + classes.socialIconsButton}
                           >

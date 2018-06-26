@@ -168,7 +168,14 @@ const applyStyle = {
     padding: "20px 0"
   },
   note:{
-    fontSize: ".8rem"
+    fontSize: ".8rem",
+    textAlign: "right"
+  },
+  submitButton:{
+    width:"300px",
+    "@media (max-width: 576px)": {
+      width:"200px",
+    }
   }
 
 };

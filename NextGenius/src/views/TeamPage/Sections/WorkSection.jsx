@@ -15,15 +15,7 @@ import workStyle from "assets/jss/next-genius/views/teamPageSections/workStyle.j
 class WorkSection extends React.Component {
   state = {
     open: false,
-    variant: null,
-    message: null
-  };
-
-  sendMessage = async () => {
-    const {jobInquiry} = this.props;
-    await jobInquiry('jobInquiryBtn', {name: 'Test', email: 'test@gmail.com', message: 'Test'});
-    // Send message to server
-    this.setState({open: true, variant: "success", message: "Thanks for contacting us, we will contact you shortly"});
+    variant: null
   };
 
   handleClose = (event, reason) => {
@@ -50,47 +42,15 @@ class WorkSection extends React.Component {
                   hours.
                 </h4>
                 <form>
-                  <GridContainer>
-                    {/*<GridItem xs={12} sm={12} md={6}>*/}
-                      {/*<CustomInput*/}
-                          {/*labelText="Your Name"*/}
-                          {/*id="name"*/}
-                          {/*formControlProps={{*/}
-                            {/*fullWidth: true*/}
-                          {/*}}*/}
-                      {/*/>*/}
-                    {/*</GridItem>*/}
-                    {/*<GridItem xs={12} sm={12} md={6}>*/}
-                      {/*<CustomInput*/}
-                          {/*labelText="Your Email"*/}
-                          {/*id="email"*/}
-                          {/*formControlProps={{*/}
-                            {/*fullWidth: true*/}
-                          {/*}}*/}
-                      {/*/>*/}
-                    {/*</GridItem>*/}
-                    {/*<CustomInput*/}
-                        {/*labelText="Your Message"*/}
-                        {/*id="message"*/}
-                        {/*formControlProps={{*/}
-                          {/*fullWidth: true,*/}
-                          {/*className: classes.textArea*/}
-                        {/*}}*/}
-                        {/*inputProps={{*/}
-                          {/*multiline: true,*/}
-                          {/*rows: 3*/}
-                        {/*}}*/}
-                    {/*/>*/}
-                    <GridContainer justify="center" className={classes.sendBtnGrid}>
-                      <GridItem
-                          xs={12}
-                          sm={12}
-                          md={4}
-                          className={classes.textCenter}
-                      >
-                        <Button round color="primary" className={classes.sendBtn} component={Link} to='/contact'>{'Let\'s Talk'} </Button>
-                      </GridItem>
-                    </GridContainer>
+                  <GridContainer justify="center" className={classes.sendBtnGrid}>
+                    <GridItem
+                        xs={12}
+                        sm={12}
+                        md={4}
+                        className={classes.textCenter}
+                    >
+                      <Button round color="primary" className={classes.sendBtn} component={Link} to='/contact'>{'Let\'s Talk'} </Button>
+                    </GridItem>
                   </GridContainer>
                 </form>
               </GridItem>

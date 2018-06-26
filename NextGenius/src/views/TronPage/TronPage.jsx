@@ -18,19 +18,13 @@ import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import CampaignSection from "./Sections/CampaignSection.jsx";
 import ApplySection from "./Sections/ApplySection.jsx";
-import Card from "components/Card/Card.jsx";
 import tronStyle from "assets/jss/next-genius/views/tronPage.jsx";
 
 import {handleSubmit} from 'actions/voteAction';
 
 class TronPage extends React.Component {
   render() {
-    const { classes, contactUs, fetch, ...rest } = this.props;
-    // const imageClasses = classNames(
-    //     classes.imgRaised,
-    //     // classes.imgRoundedCircle,
-    //     classes.imgFluid
-    // );
+    const { classes, handleSubmit, fetch, ...rest } = this.props;
     return (
         <div>
           <Header

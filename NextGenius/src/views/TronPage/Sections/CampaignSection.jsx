@@ -41,11 +41,32 @@ class CampaignSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <Fade bottom>
                 <div className={classes.note} xs={12} sm={12} md={6}>
-                  <ul><strong>All you need to do:</strong>
-                    <li>Vote for over 100,000 TRX. </li>
-                    <li>Keep your votes locked from June 26th, to July 31st.</li>
-                    <li>Register your wallet address and email below.</li>
-                  </ul>
+                  <ol><strong>All you need to do:</strong>
+                    <li>Vote for over 100,000 TRX</li>
+                    <li>Keep your votes locked from June 26th, to July 31st</li>
+                    <li>Register your wallet address and email below</li>
+                  </ol>
+                </div>
+              </Fade>
+            </GridItem>
+          </GridContainer>
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={10}>
+              <Fade bottom>
+                <h2 className={classes.title}>我们的奖励计划</h2>
+                <h5 className={classes.description}>
+                  为了表示感谢，回馈社区，我们决定在成功入选超级节点后将扣除运营成本之后的100%盈利返还给投票者。
+                </h5>
+              </Fade>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={6}>
+              <Fade bottom>
+                <div className={classes.note} xs={12} sm={12} md={6}>
+                  <ol><strong>您只需要做到以下几点：</strong>
+                    <li>对我们投票超过10万TRX</li>
+                    <li>将该投票在6月26日到7月31日之间锁定</li>
+                    <li>在以下表格中注册您的钱包地址和邮件地址</li>
+                  </ol>
                 </div>
               </Fade>
             </GridItem>

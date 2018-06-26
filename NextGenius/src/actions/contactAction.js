@@ -2,8 +2,7 @@ import {TEAM_LIST} from '../assets/data/team';
 import {
   FETCH_REQUEST,
   FETCH_SUCCESS,
-  FETCH_FAILURE,
-  GET_TEAM_DATA
+  FETCH_FAILURE
 } from '../actionTypes/index';
 import {postData} from '../utils/api';
 

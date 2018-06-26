@@ -161,7 +161,17 @@ const addressStyle = {
     color: dangerColor
   },
   note:{
-    fontSize: ".8rem"
+    fontSize: ".8rem",
+    textAlign: "right"
+  },
+  submitBtnGrid: {
+    padding: "20px 0"
+  },
+  submitButton:{
+    width:"300px",
+    "@media (max-width: 576px)": {
+      width:"200px",
+    }
   }
 };
 

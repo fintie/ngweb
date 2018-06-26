@@ -30,7 +30,6 @@ class TeamPage extends React.Component {
 
   static propTypes = {
     team: PropTypes.object.isRequired,
-    jobInquiry: PropTypes.func.isRequired,
     getTeamList: PropTypes.func.isRequired
   };
 
@@ -73,7 +72,7 @@ class TeamPage extends React.Component {
             <div className={classes.container}>
               <TeamSection teamList={team.teamList}/>
               <OfficeSection/>
-              <WorkSection fetch={fetch} jobInquiry={jobInquiry}/>
+              <WorkSection/>
             </div>
           </div>
           <Footer/>
@@ -83,13 +82,11 @@ class TeamPage extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  team: state.team,
-  fetch: state.fetch,
+  team: state.team
 });
 
 const mapDispatchToProps = dispatch => ({
-  getTeamList: bindActionCreators(getTeamList, dispatch),
-  jobInquiry: bindActionCreators(jobInquiry, dispatch)
+  getTeamList: bindActionCreators(getTeamList, dispatch)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(withStyles(teamStyle)(TeamPage));

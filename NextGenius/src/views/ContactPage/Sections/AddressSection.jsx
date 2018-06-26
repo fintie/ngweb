@@ -60,7 +60,7 @@ class AddressSection extends React.Component {
                 <h2 className={classNames(classes.title, classes.formTitle)}>Send us a message</h2>
                 <h4 className={classes.description}>
                   You can contact us with anything related to our services. We'll get in touch with you as soon as possible.
-                  <div className={classes.note}>(<span className={classes.mandatory}>*</span> indicates required field)</div>
+                  <div className={classes.note}><span className={classes.mandatory}>*</span> indicates required field</div>
                 </h4>
                 <form>
                   <GridContainer>
@@ -147,10 +147,10 @@ class AddressSection extends React.Component {
                       </div>
                     </GridItem>
                     <GridItem>
-                    <GridContainer justify="center" className={classes.sendBtnGrid}>
+                    <GridContainer justify="center" className={classes.submitBtnGrid}>
                       <GridItem className={classes.textCenter}
                       >
-                        <Button round id='contactUsBtn' color="primary" onClick={this.contactUs} disabled={fetch.contactUsBtn}>{fetch.contactUsBtn? 'Please wait...' : 'Contact Us'} </Button>
+                        <Button round id='contactUsBtn' className={classes.submitButton} color="primary" onClick={this.contactUs} disabled={fetch.contactUsBtn}>{fetch.contactUsBtn? 'Please wait...' : 'Contact Us'} </Button>
                       </GridItem>
                     </GridContainer>
                     </GridItem>
