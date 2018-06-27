@@ -110,12 +110,11 @@ const applyStyle = {
     transition: "0.3s ease all",
     textAlign: "left",
     "@media (max-width: 576px)": {
-      fontSize: "12px"
+      fontSize: "10px"
     },
-  },
-  note: {
-    color: grayColor,
-    textAlign:"left"
+    "&.error":{
+      color: dangerColor
+    }
   },
   labelHorizontal: {
     color: grayColor,
@@ -168,6 +167,8 @@ const applyStyle = {
     padding: "20px 0"
   },
   note:{
+    color: grayColor,
+    textAlign:"left",
     fontSize: ".8rem",
     textAlign: "right"
   },

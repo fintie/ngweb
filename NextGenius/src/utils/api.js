@@ -1,4 +1,4 @@
-const API_BASE_URL = '~/v1';
+const API_BASE_URL = 'https://epipghygg9.execute-api.ap-southeast-2.amazonaws.com/prod';
 
 export const postData = (path, data, options) => {
 
@@ -14,7 +14,7 @@ export const postData = (path, data, options) => {
       options
   );
 
-  return fetchData(path, options);
+  return fetchData(path, opts);
 };
 
 export const fetchData = async (path, options) => {

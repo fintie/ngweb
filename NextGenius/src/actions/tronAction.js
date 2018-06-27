@@ -16,8 +16,7 @@ export const handleSubmit = (btnId, data) => {
     });
 
     try {
-      // await postData('/contactUs', data);
-      await resolveAfterSeconds(3);
+      await postData('/tron', data);
       dispatch({
         type: FETCH_SUCCESS,
         payload: {id: btnId}
@@ -26,19 +25,10 @@ export const handleSubmit = (btnId, data) => {
     } catch (err) {
       dispatch({
         type: FETCH_FAILURE,
-        payload: {id: btnId}
+        payload: {id: btnId, error: err}
       });
     }
 
   };
 
-};
-
-
-const resolveAfterSeconds = (seconds) => {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve();
-    }, seconds * 1000);
-  });
 };

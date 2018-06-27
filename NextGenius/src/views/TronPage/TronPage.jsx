@@ -20,7 +20,7 @@ import CampaignSection from "./Sections/CampaignSection.jsx";
 import ApplySection from "./Sections/ApplySection.jsx";
 import tronStyle from "assets/jss/next-genius/views/tronPage.jsx";
 
-import {handleSubmit} from 'actions/voteAction';
+import {handleSubmit} from 'actions/tronAction';
 
 class TronPage extends React.Component {
   render() {

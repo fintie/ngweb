@@ -21,21 +21,68 @@ import Button from "components/CustomButtons/Button.jsx";
 import { Phone, PinDrop, BusinessCenter} from "@material-ui/icons";
 
 import addressStyle from "assets/jss/next-genius/views/contactPageSections/addressStyle.jsx";
-// import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
+// import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";Content.jsx";
+import {isAlphaNumeric, validateEmail} from "utils/index";
+
 
 class AddressSection extends React.Component {
 
   state = {
     open: false,
     variant: null,
-    message: null
+    message: null,
+    name_error: false,
+    name_success: false,
+    email_error: false,
+    email_success: false,
+    checkTerms_error: false
   };
 
   contactUs = async () => {
+    this.handleOnblur('name');
+    this.handleOnblur('email');
+
+    if(this.state.name_error || this.state.email_error || this.state.checkTerms_error){
+      return false;
+    }
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
     const {contactUs} = this.props;
-    await contactUs('contactUsBtn', {name: 'Test', email: 'test@gmail.com', message: 'Test'});
+    const ret = await contactUs('contactUsBtn', {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message
+    });
+
     // Send message to server
     this.setState({ open: true, variant: "success", message: "Thanks for contacting us, we will contact you shortly" });
+  };
+
+  handleOnblur = (name) => {
+    const value = document.getElementById(name).value;
+
+    let isValid = (name === 'name') ? isAlphaNumeric(value) :  true;
+    isValid = (name === 'email') ? validateEmail(value) : isValid;
+
+    let errorName = name + '_error';
+    let successName = name + '_success';
+
+    if(!value || !isValid){
+      this.setState({
+        [errorName]: true,
+        [successName]: false
+      });
+    } else if(value){
+      this.setState({
+        [errorName]: false,
+        [successName]: true
+      });
+    }
   };
 
   handleClose = (event, reason) => {
@@ -69,6 +116,8 @@ class AddressSection extends React.Component {
                           labelText="Your Name"
                           mandatory={true}
                           id="name"
+                          error={this.state.name_error}
+                          success={this.state.name_success}
                           formControlProps={{
                             fullWidth: true
                           }}
@@ -76,9 +125,11 @@ class AddressSection extends React.Component {
                     </GridItem>
                     <GridItem xs={12} sm={12} md={12}>
                       <CustomInput
-                          labelText="Email address"
+                          labelText="Email Address"
                           mandatory={true}
                           id="email"
+                          error={this.state.email_error}
+                          success={this.state.email_success}
                           formControlProps={{
                             fullWidth: true
                           }}
@@ -126,26 +177,26 @@ class AddressSection extends React.Component {
                         }}
                     />
                     </GridItem>
-                    <GridItem>
-                      <div
-                          className={
-                            classes.checkboxAndRadio
-                          }
-                      >
-                      <FormControlLabel
-                          control={
-                            <Checkbox id="checkTerms"
-                                tabIndex={-1}
-                                // onClick={() => this.handleToggle(21)}
-                                checkedIcon={<Check className={classes.checkedIcon} />}
-                                icon={<Check className={classes.uncheckedIcon} />}
-                                classes={{ checked: classes.checked }}
-                            />
-                          }
-                          label={(<label htmlFor="checkTerms" className={classes.label}>I have read and agreed on the Terms & Conditions.</label>)}
-                      />
-                      </div>
-                    </GridItem>
+                    {/*<GridItem>*/}
+                      {/*<div*/}
+                          {/*className={*/}
+                            {/*classes.checkboxAndRadio*/}
+                          {/*}*/}
+                      {/*>*/}
+                      {/*<FormControlLabel*/}
+                          {/*control={*/}
+                            {/*<Checkbox id="checkTerms"*/}
+                                {/*tabIndex={-1}*/}
+                                {/*// onClick={() => this.handleToggle(21)}*/}
+                                {/*checkedIcon={<Check className={classes.checkedIcon} />}*/}
+                                {/*icon={<Check className={classes.uncheckedIcon} />}*/}
+                                {/*classes={{ checked: classes.checked }}*/}
+                            {/*/>*/}
+                          {/*}*/}
+                          {/*label={(<label htmlFor="checkTerms" className={classes.label}>I have read and agreed on the Terms & Conditions.</label>)}*/}
+                      {/*/>*/}
+                      {/*</div>*/}
+                    {/*</GridItem>*/}
                     <GridItem>
                     <GridContainer justify="center" className={classes.submitBtnGrid}>
                       <GridItem className={classes.textCenter}
