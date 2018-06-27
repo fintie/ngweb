@@ -39,9 +39,9 @@ class ApplySection extends React.Component {
   handleOnclick = async (e) => {
     if(e)e.preventDefault();
 
-    this.handleOnblur('tronAddress');
-    this.handleOnblur('email');
-    this.handleOnblur('amount');
+    let isValid1 = this.handleOnblur('tronAddress');
+    let isValid2 = this.handleOnblur('email');
+    let isValid3 = this.handleOnblur('amount');
 
     // if(document.getElementById('checkTerms').checked){
     //   this.setState({
@@ -53,7 +53,7 @@ class ApplySection extends React.Component {
     //   });
     // }
 
-    if(this.state.tronAddress_error || this.state.email_error || this.state.amount_error || this.state.checkTerms_error){
+    if(!isValid1 || !isValid2 || !isValid3){
       return false;
     }
 
@@ -95,12 +95,14 @@ class ApplySection extends React.Component {
         [errorName]: true,
         [successName]: false
       });
+      return false;
     } else if(value){
       this.setState({
         [errorName]: false,
         [successName]: true
       });
     }
+    return true;
   };
 
   handleClose = (event, reason) => {

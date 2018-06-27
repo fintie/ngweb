@@ -39,10 +39,10 @@ class AddressSection extends React.Component {
   };
 
   contactUs = async () => {
-    this.handleOnblur('name');
-    this.handleOnblur('email');
+    let isValid1 =  this.handleOnblur('name');
+    let isValid2= this.handleOnblur('email');
 
-    if(this.state.name_error || this.state.email_error || this.state.checkTerms_error){
+    if(!isValid1 || !isValid2){
       return false;
     }
 
@@ -66,8 +66,7 @@ class AddressSection extends React.Component {
   handleOnblur = (name) => {
     const value = document.getElementById(name).value;
 
-    let isValid = (name === 'name') ? isAlphaNumeric(value) :  true;
-    isValid = (name === 'email') ? validateEmail(value) : isValid;
+    let isValid = (name === 'email') ? validateEmail(value) : true;
 
     let errorName = name + '_error';
     let successName = name + '_success';
@@ -77,12 +76,14 @@ class AddressSection extends React.Component {
         [errorName]: true,
         [successName]: false
       });
+      return false;
     } else if(value){
       this.setState({
         [errorName]: false,
         [successName]: true
       });
     }
+    return true;
   };
 
   handleClose = (event, reason) => {
@@ -116,6 +117,7 @@ class AddressSection extends React.Component {
                           labelText="Your Name"
                           mandatory={true}
                           id="name"
+                          inputProps={{ onBlur: () => this.handleOnblur('name')}}
                           error={this.state.name_error}
                           success={this.state.name_success}
                           formControlProps={{
@@ -128,6 +130,7 @@ class AddressSection extends React.Component {
                           labelText="Email Address"
                           mandatory={true}
                           id="email"
+                          inputProps={{ onBlur: () => this.handleOnblur('email')}}
                           error={this.state.email_error}
                           success={this.state.email_success}
                           formControlProps={{
