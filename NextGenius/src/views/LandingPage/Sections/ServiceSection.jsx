@@ -1,7 +1,6 @@
 import React from "react";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Fade from 'react-reveal/Fade';
 
 // @material-ui/icons
 import { Power, VerifiedUser, AddToQueue } from "@material-ui/icons";
@@ -22,7 +21,6 @@ class ServiceSection extends React.Component {
         <div className={classes.section}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={10}>
-              <Fade bottom>
                 <h2 className={classes.title}>Who We Are</h2>
                 <h5 className={classes.description}>
                   We are the largest community of Blockchain enthusiasts, enablers, and entrepreneurs in the Southern Hemisphere.
@@ -30,12 +28,10 @@ class ServiceSection extends React.Component {
                   we believe in lifelong learning through helping each other,
                   helping communities to develop and businesses to succeed.
                 </h5>
-              </Fade>
             </GridItem>
           </GridContainer>
           <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
-              <Fade bottom>
                 <InfoArea
                     title="Connect"
                     description="We connect different dots to form a network of blockchain ecosystem where chemical reactions happen between interesting people.
@@ -45,10 +41,8 @@ class ServiceSection extends React.Component {
                     iconColor="info"
                     vertical
                 />
-              </Fade>
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
-              <Fade bottom>
                 <InfoArea
                     title="Empower"
                     description="If you already have a product, a project whitepaper, or a sound idea,
@@ -59,10 +53,8 @@ class ServiceSection extends React.Component {
                     iconColor="success"
                     vertical
                 />
-              </Fade>
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
-              <Fade bottom>
                 <InfoArea
                     title="Create"
                     description="If you are an industry expert with deep expertise, experiences, and network, we would like to talk to you.
@@ -73,7 +65,6 @@ class ServiceSection extends React.Component {
                     iconColor="warning"
                     vertical
                 />
-              </Fade>
             </GridItem>
           </GridContainer>
         </div>

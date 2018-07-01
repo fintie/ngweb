@@ -4,8 +4,6 @@
 
 import { defaultFont } from "assets/jss/next-genius.jsx";
 
-import tooltip from "assets/jss/next-genius/tooltipsStyle.jsx";
-
 const headerLinksStyle = theme => ({
   list: {
     ...defaultFont,
@@ -116,7 +114,6 @@ const headerLinksStyle = theme => ({
       textDecoration: "none"
     }
   },
-  ...tooltip,
   marginRight5: {
     marginRight: "5px"
   },

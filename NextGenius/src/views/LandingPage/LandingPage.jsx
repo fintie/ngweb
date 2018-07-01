@@ -3,7 +3,6 @@ import React from "react";
 import classNames from "classnames";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Bounce from 'react-reveal/Bounce';
 // @material-ui/icons
 import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
 
@@ -45,17 +44,13 @@ class LandingPage extends React.Component {
             <div className={classes.container}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
-                  <Bounce left>
                     <h1 className={classes.title}>Technology Raises Our Next Genius</h1>
-                  </Bounce>
-                  <Bounce right>
                     <h5>
                       Technology enables brilliant young minds to shine through multiplier effects.
                       At Next Genius, we enable you to build something different.
                       We change people’s perspective of what their potentials really are,
                       what problems they can really solve, and what lifestyle they can really create for the local and global community.
                     </h5>
-                  </Bounce>
                   <br/>
                   <VideoSection/>
                 </GridItem>

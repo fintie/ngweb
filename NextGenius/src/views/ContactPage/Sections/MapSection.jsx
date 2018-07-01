@@ -18,7 +18,6 @@ import { typography } from '@material-ui/core/styles';
 
 import mapStyle from "assets/jss/next-genius/views/contactPageSections/mapStyle.jsx";
 
-const MAP_API_KEY = "AIzaSyAu4hEU32US5Twuv4nn4mxxsVE4D6afls8"; // fake
 class MapSection extends React.Component {
   state = {
     showingInfoWindow: false,
@@ -69,12 +68,6 @@ class MapSection extends React.Component {
             streetViewControl={true}
             fullscreenControl={false}
         >
-          <Marker
-              onClick={this.onMarkerClick}
-              title={'Next Genius Pty Ltd - Level 2, 63 Dixon St, Haymarket NSW, Australia'}
-              position={{lat: -33.878875, lng: 151.203893}}
-              name={'Next Genius Pty Ltd.'}
-          />
           <InfoWindow
               marker={this.state.activeMarker}
               visible={this.state.showingInfoWindow}
@@ -99,8 +92,6 @@ class MapSection extends React.Component {
   }
 }
 
-const gMapApi =  GoogleApiWrapper({
-  apiKey: (MAP_API_KEY)
-})(MapSection);
+const gMapApi =  GoogleApiWrapper({})(MapSection);
 
 export default withStyles(mapStyle)(gMapApi);

@@ -3,7 +3,6 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import classNames from "classnames";
 
-import Fade from 'react-reveal/Fade';
 // @material-ui/icons
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -28,63 +27,51 @@ class OfficeSection extends React.Component {
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
         <div className={classes.section}>
-          <Fade bottom>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8}>
-                <h2 className={classes.title}>Our community is our second home</h2>
-                <h5 className={classes.description}>
-                  Here are some pictures from our office.
-                  We host blockchain meetup regularly.
-                </h5>
-              </GridItem>
-            </GridContainer>
-          </Fade>
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={8}>
+              <h2 className={classes.title}>Our community is our second home</h2>
+              <h5 className={classes.description}>
+                Here are some pictures from our office.
+                We host blockchain meetup regularly.
+              </h5>
+            </GridItem>
+          </GridContainer>
 
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={4}>
-              <Fade bottom>
-                <img
-                    alt="..."
-                    src={office1}
-                    className={navImageClasses}
-                />
-              </Fade>
+              <img
+                  alt="..."
+                  src={office1}
+                  className={navImageClasses}
+              />
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
-              <Fade bottom>
-                <img
-                    alt="..."
-                    src={meetup3}
-                    className={navImageClasses}
-                />
-              </Fade>
+              <img
+                  alt="..."
+                  src={meetup3}
+                  className={navImageClasses}
+              />
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
-              <Fade bottom>
-                <img
-                    alt="..."
-                    src={meetup4}
-                    className={navImageClasses}
-                />
-              </Fade>
+              <img
+                  alt="..."
+                  src={meetup4}
+                  className={navImageClasses}
+              />
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
-              <Fade bottom>
-                <img
-                    alt="..."
-                    src={meetup1}
-                    className={navImageClasses}
-                />
-              </Fade>
+              <img
+                  alt="..."
+                  src={meetup1}
+                  className={navImageClasses}
+              />
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
-              <Fade bottom>
-                <img
-                    alt="..."
-                    src={meetup2}
-                    className={navImageClasses}
-                />
-              </Fade>
+              <img
+                  alt="..."
+                  src={meetup2}
+                  className={navImageClasses}
+              />
             </GridItem>
           </GridContainer>
         </div>

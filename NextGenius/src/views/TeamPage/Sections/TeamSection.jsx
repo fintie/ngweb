@@ -1,6 +1,5 @@
 import React from "react";
 
-import Fade from 'react-reveal/Fade';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 
@@ -29,7 +28,6 @@ class TeamSection extends React.Component {
     );
     return (
         <div className={classes.section}>
-          <Fade bottom>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={10}>
               <h2 className={classes.titleBlack}>We are nerd rockstars</h2>
@@ -40,13 +38,11 @@ class TeamSection extends React.Component {
               </h4>
             </GridItem>
           </GridContainer>
-          </Fade>
           <GridContainer>
             {
               teamList.map((member, idx) =>
 
                   <GridItem xs={12} sm={6} md={3} xl={2} key={idx.toString()}>
-                    <Fade bottom>
                       <Card plain>
                         <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                           <img src={require("assets/img/avatar/" + member.avatar)} alt={member.name}
@@ -86,7 +82,6 @@ class TeamSection extends React.Component {
                         </CardBody>
 
                       </Card>
-                    </Fade>
                   </GridItem>
               )
             }

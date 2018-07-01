@@ -1,7 +1,6 @@
 import React from "react";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Fade from 'react-reveal/Fade';
 // @material-ui/icons
 import AccountBalance from "@material-ui/icons/AccountBalance";
 import ImportantDevices from "@material-ui/icons/ImportantDevices";
@@ -25,7 +24,6 @@ class ProductSection extends React.Component {
         <div className={classes.section}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={12}>
-              <Fade bottom>
                 <h2 className={classes.title}>Let's talk service</h2>
                 <h5 className={classes.description}>
                   Our business principles are rooted in our personal faith and beliefs.
@@ -34,12 +32,10 @@ class ProductSection extends React.Component {
                   We are called to use our gifts and talents to serve others.
                   It is through this service that we are truly blessed each and every day.
                 </h5>
-              </Fade>
             </GridItem>
           </GridContainer>
           <GridContainer className={classes.cardContainer}>
             <GridItem xs={12} sm={6} md={4} xl={3}>
-              <Fade bottom>
                 <Card>
                   <CardHeader color="primary">
                     <div className={classes.socialLine}>
@@ -66,11 +62,9 @@ class ProductSection extends React.Component {
                     {/*</Button>*/}
                   {/*</CardFooter>*/}
                 </Card>
-              </Fade>
             </GridItem>
 
             <GridItem xs={12} sm={6} md={4} xl={3}>
-              <Fade bottom>
                 <Card>
                   <CardHeader color="success">
                     <div className={classes.socialLine}>
@@ -94,48 +88,10 @@ class ProductSection extends React.Component {
                       </ul>
                     </div>
                   </CardBody>
-                  {/*<CardFooter className={classes.cardFooter}>*/}
-                    {/*<Button simple color="primary" size="lg">*/}
-                      {/*Read more...*/}
-                    {/*</Button>*/}
-                  {/*</CardFooter>*/}
                 </Card>
-              </Fade>
             </GridItem>
 
-
-            {/*<GridItem xs={12} sm={6} md={4} xl={3}>*/}
-              {/*<Fade bottom>*/}
-                {/*<Card>*/}
-                  {/*<CardHeader color="info">*/}
-                    {/*<div className={classes.socialLine}>*/}
-                      {/*<AccountBalance className={classes.iconVertical}/>*/}
-                    {/*</div>*/}
-                    {/*<h4 className={classes.cardTitle}>For Entrepreneurs</h4>*/}
-                  {/*</CardHeader>*/}
-                  {/*<CardBody>*/}
-                    {/*<div>*/}
-                      {/*<ul className={classes.descriptionItems}>*/}
-                        {/*<li>Team Forming Up</li>*/}
-                        {/*<li>Entrepreneur Consulting</li>*/}
-                        {/*<li>Marketing Research</li>*/}
-                        {/*<li>Product Model Validation</li>*/}
-                        {/*<li>Funding Connection</li>*/}
-                        {/*<li>Networking</li>*/}
-                      {/*</ul>*/}
-                    {/*</div>*/}
-                  {/*</CardBody>*/}
-                  {/*/!*<CardFooter className={classes.cardFooter}>*!/*/}
-                    {/*/!*<Button simple color="primary" size="lg">*!/*/}
-                      {/*/!*Read more...*!/*/}
-                    {/*/!*</Button>*!/*/}
-                  {/*/!*</CardFooter>*!/*/}
-                {/*</Card>*/}
-              {/*</Fade>*/}
-            {/*</GridItem>*/}
-
             <GridItem xs={12} sm={6} md={4} xl={3}>
-              <Fade bottom>
                 <Card>
                   <CardHeader color="danger">
                     <div className={classes.socialLine}>
@@ -152,17 +108,10 @@ class ProductSection extends React.Component {
                       </ul>
                     </div>
                   </CardBody>
-                  {/*<CardFooter className={classes.cardFooter}>*/}
-                    {/*<Button simple color="primary" size="lg">*/}
-                      {/*Read more...*/}
-                    {/*</Button>*/}
-                  {/*</CardFooter>*/}
                 </Card>
-              </Fade>
             </GridItem>
 
             <GridItem xs={12} sm={6} md={4} xl={3}>
-              <Fade bottom>
                 <Card>
                   <CardHeader color="warning">
                     <div className={classes.socialLine}>
@@ -185,7 +134,6 @@ class ProductSection extends React.Component {
                     {/*</Button>*/}
                   {/*</CardFooter>*/}
                 </Card>
-              </Fade>
             </GridItem>
 
           </GridContainer>

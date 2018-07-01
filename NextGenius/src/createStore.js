@@ -1,7 +1,6 @@
 import { applyMiddleware, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import { routerMiddleware } from 'react-router-redux';
-import { createLogger } from 'redux-logger';
 import createBrowserHistory from 'history/createBrowserHistory';
 import rootReducer from './rootReducer';
 
@@ -21,7 +20,6 @@ const middleware = [thunk, routerMiddleware(history)];
 let composeEnhancers = compose;
 
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-  middleware.push(createLogger());
   const composeWithDevToolsExtension = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
   if (typeof composeWithDevToolsExtension === 'function') {
     composeEnhancers = composeWithDevToolsExtension;

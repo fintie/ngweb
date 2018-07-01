@@ -1,7 +1,6 @@
 import React from "react";
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import Fade from 'react-reveal/Fade';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 import Parallax from "components/Parallax/Parallax.jsx";

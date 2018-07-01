@@ -2,7 +2,6 @@ import React from "react";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 import { Link } from "react-router-dom";
-import Fade from 'react-reveal/Fade';
 // @material-ui/icons
 
 // core components
@@ -30,7 +29,6 @@ class WorkSection extends React.Component {
     const {classes, fetch} = this.props;
     return (
         <div className={classes.section}>
-          <Fade bottom>
             <GridContainer justify="center">
               <GridItem cs={12} sm={12} md={8}>
                 <h2 className={classes.title}>Want to work with us</h2>
@@ -55,7 +53,6 @@ class WorkSection extends React.Component {
                 </form>
               </GridItem>
             </GridContainer>
-          </Fade>
         </div>
     );
   }

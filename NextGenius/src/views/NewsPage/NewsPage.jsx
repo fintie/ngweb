@@ -13,7 +13,6 @@ import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import AllSection from "./Sections/AllSection.jsx";
 
@@ -54,46 +53,7 @@ class NewsPage extends React.Component {
           <div className={classNames(classes.main, classes.mainRaised)}>
             <div className={classes.container}>
               {/*<div className={classes.section}>*/}
-              <GridContainer justify="center" className={classes.section}>
-                <GridItem className={classes.navWrapper}>
-                  <NavPills
-                      alignCenter
-                      color="primary"
-                      classes={classes.navPills}
-                      tabs={[{
-                        tabButton: "All",
-                        tabContent: (
-                            <AllSection/>
-                        )
-                      },
-                        // {
-                        //   tabButton: "News",
-                        //   tabContent: (
-                        //       <AllSection/>
-                        //   )
-                        // },
-                        {
-                          tabButton: "Meetup",
-                          tabContent: (
-                              <AllSection/>
-                          )
-                        },
-                        // {
-                        //   tabButton: "Blog",
-                        //   tabContent: (
-                        //       <AllSection/>
-                        //   )
-                        // },
-                        // {
-                        //   tabButton: "Others",
-                        //   tabContent: (
-                        //       <AllSection/>
-                        //   )
-                        // },
-                      ]}
-                  />
-                </GridItem>
-              </GridContainer>
+                  <AllSection/>
             </div>
             {/*</div>*/}
           </div>

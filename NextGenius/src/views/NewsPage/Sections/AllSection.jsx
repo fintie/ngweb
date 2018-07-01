@@ -3,7 +3,6 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import classNames from "classnames";
 
-import Fade from 'react-reveal/Fade';
 // @material-ui/icons
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -28,7 +27,6 @@ class AllSection extends React.Component {
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
         <div className={classes.section}>
-          <Fade bottom>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={10}>
                 <h5 className={classes.description}>
@@ -38,54 +36,43 @@ class AllSection extends React.Component {
                 </h5>
               </GridItem>
             </GridContainer>
-          </Fade>
 
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
-              <Fade bottom>
                 <img
                     alt="..."
                     src={meetup0621}
                     className={navImageClasses}
                 />
-              </Fade>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
-              <Fade bottom>
                 <img
                     alt="..."
                     src={meetup0615}
                     className={navImageClasses}
                 />
-              </Fade>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
-              <Fade bottom>
                 <img
                     alt="..."
                     src={meetup0516}
                     className={navImageClasses}
                 />
-              </Fade>
             </GridItem>
 
             <GridItem xs={12} sm={12} md={6}>
-              <Fade bottom>
                 <img
                     alt="..."
                     src={meetup0503}
                     className={navImageClasses}
                 />
-              </Fade>
             </GridItem>
             <GridItem xs={12} sm={12} md={12}>
-              <Fade bottom>
                 <img
                     alt="..."
                     src={meetup}
                     className={navImageClasses}
                 />
-              </Fade>
             </GridItem>
           </GridContainer>
         </div>

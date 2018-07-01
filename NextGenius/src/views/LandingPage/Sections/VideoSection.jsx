@@ -1,6 +1,5 @@
 import React from "react";
 import ModalVideo from 'react-modal-video';
-import Roll from 'react-reveal/Roll';
 
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -35,12 +34,10 @@ class VideoSection extends React.Component {
         <React.Fragment>
           <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={VIDEO_ID}
                       onClose={() => this.setState({isOpen: false})}/>
-          <Roll bottom>
-            <Button color="danger" size="lg" rel="noopener noreferrer" className={classes.playVideo}
-                    onClick={this.openModal}>
-              <i className="fas fa-play"/> &nbsp;Watch video
-            </Button>
-          </Roll>
+          <Button color="danger" size="lg" rel="noopener noreferrer" className={classes.playVideo}
+                  onClick={this.openModal}>
+            <i className="fas fa-play"/> &nbsp;Watch video
+          </Button>
         </React.Fragment>
     )
   }
