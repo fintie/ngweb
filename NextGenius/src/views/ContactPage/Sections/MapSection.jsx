@@ -68,6 +68,12 @@ class MapSection extends React.Component {
             streetViewControl={true}
             fullscreenControl={false}
         >
+          <Marker
+              onClick={this.onMarkerClick}
+              title={'Next Genius Pty Ltd - Level 2, 63 Dixon St, Haymarket NSW, Australia'}
+              position={{lat: -33.878875, lng: 151.203893}}
+              name={'Next Genius Pty Ltd.'}
+          />
           <InfoWindow
               marker={this.state.activeMarker}
               visible={this.state.showingInfoWindow}
@@ -92,6 +98,8 @@ class MapSection extends React.Component {
   }
 }
 
-const gMapApi =  GoogleApiWrapper({})(MapSection);
+const gMapApi =  GoogleApiWrapper({
+  apiKey: (process.env.REACT_APP_MAP_API_KEY)
+})(MapSection);
 
 export default withStyles(mapStyle)(gMapApi);
