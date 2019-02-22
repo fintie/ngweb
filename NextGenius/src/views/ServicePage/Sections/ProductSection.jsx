@@ -41,7 +41,7 @@ class ProductSection extends React.Component {
                     <div className={classes.socialLine}>
                       <SupervisorAccount className={classes.iconVertical}/>
                     </div>
-                    <h4 className={classes.cardTitle}>For Blockchain Community</h4>
+                    <h4 className={classes.cardTitle}>For Community</h4>
                   </CardHeader>
                   <CardBody>
                     <div>
@@ -52,7 +52,7 @@ class ProductSection extends React.Component {
                         <li>Legal & Regulatory Updates</li>
                         <li>Meetup, Event, Networking, Resource Bridging</li>
                         <li>Legal & Policy Analysis</li>
-                        <li>Project Airdrop</li>
+                        <li>Technology Consulting</li>
                       </ul>
                     </div>
                   </CardBody>
@@ -70,20 +70,17 @@ class ProductSection extends React.Component {
                     <div className={classes.socialLine}>
                       <EventNote className={classes.iconVertical}/>
                     </div>
-                    <h4 className={classes.cardTitle}>For Blockchain Projects</h4>
+                    <h4 className={classes.cardTitle}>For Startup Projects</h4>
                   </CardHeader>
                   <CardBody>
                     <div>
                       <ul className={classes.descriptionItems}>
                         <li>Talent Sourcing</li>
                         <li>Market Analysis</li>
-                        <li>Business Strategy</li>
-                        <li>Token Economics Design</li>
-                        <li>Project Development & Coding</li>
+                        <li>POC Design & Implementation</li>
+                        <li>Project Development & Delivery</li>
                         <li>MVP and Prototype</li>
-                        <li>Smart Contract Auditing</li>
-                        <li>ICO Advisory</li>
-                        <li>Investor Communication</li>
+                        <li>System Architect Consulting</li>
                         <li>Community & Consumer engagement</li>
                       </ul>
                     </div>
@@ -102,9 +99,13 @@ class ProductSection extends React.Component {
                   <CardBody>
                     <div>
                       <ul className={classes.descriptionItems}>
-                        <li>Project Introduction</li>
+                        <li>Practical Projects</li>
+                        <li>Business Strategy</li>
+                        <li>Localization Policy Advisory</li>
+                        <li>Branding & Marketing</li>
                         <li>Interactive Learning & Training</li>
                         <li>Professional Coaching & Development</li>
+                        <li>Asian Market Landing Pad</li>
                       </ul>
                     </div>
                   </CardBody>
@@ -122,7 +123,7 @@ class ProductSection extends React.Component {
                   <CardBody>
                     <div>
                       <ul className={classes.descriptionItems}>
-                        <li>Blockchain Project Auditing and Due Diligence</li>
+                        <li>Project Auditing and Due Diligence</li>
                         <li>Exclusive Project Investment Opportunities</li>
                         <li>Investor Community Networking</li>
                       </ul>

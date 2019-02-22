@@ -30,9 +30,9 @@ class AllSection extends React.Component {
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={10}>
                 <h5 className={classes.description}>
-                  This Next Genius meetup for professionals to discuss Blockchain and other digital emergent technologies.
+                  <a target="_blank" href="https://www.meetup.com/next-genius/">Next Genius Meetup</a> for professionals to discuss Emerging Technologies.
                   Whether you're new, or have an existing interest,
-                  Blockchain professionals will put you in touch with others in the field.
+                  our professional team members will put you in touch with others in the field.
                 </h5>
               </GridItem>
             </GridContainer>

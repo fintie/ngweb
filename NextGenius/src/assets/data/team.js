@@ -62,7 +62,7 @@ export const TEAM_LIST = [
     avatar: 'jonathan.jpg',
     description:
       'Full Stack Developer worked cross China, Japan and Australia, ' +
-      'currently focus on Blockchain and Data Visualisation at Commonwealth Bank.',
+      'currently focus on Artificial Intellegence, Blockchain and Data Visualisation at Commonwealth Bank.',
     linkedIn: 'https://www.linkedin.com/in/jonathanjava/',
     twitter: '',
     facebook: '',
@@ -73,7 +73,7 @@ export const TEAM_LIST = [
     title: 'Company Secretary',
     avatar: 'meilin.jpg',
     description:
-      '2 year experience in Consulting, finance & business analytics student in USYD, blockchain enthusiast.',
+      '2 year experience in Consulting, finance & business analytics student in USYD, big data & blockchain enthusiast.',
     linkedIn: 'https://www.linkedin.com/in/meilin-chen-47ba8a118/',
     twitter: '',
     facebook: '',
@@ -155,7 +155,7 @@ export const TEAM_LIST = [
     avatar: 'serena.jpg',
     description:
       '11 years IT industry experience in B2B Sales, Marketing and Project Management across a wide range of AP commercial and government accounts in IBM and Fujitsu. ' +
-      'Current focus around blockchain project related Marketing/Media/PR Communications with China and Middle Eastern countries.',
+      'Current focus around fintech & blockchain project related Marketing/Media/PR Communications with China and Middle Eastern countries.',
     linkedIn: 'https://www.linkedin.com/in/serena-yan-7b8a2637/',
     twitter: '',
     facebook: '',
@@ -166,7 +166,7 @@ export const TEAM_LIST = [
     title: 'Full Stack Developer',
     avatar: 'shawn.jpg',
     description:
-      'Fullstack Developer with 5 Years IT Experience in Chinese Bank System.& Antique Entrepreneur & Blockchain Enthusiast & Co Funder of Chinese Art and Antique Exchange.',
+      'Fullstack Developer with 5 Years IT Experience in Chinese Bank System.& Antique Entrepreneur & Co Funder of Chinese Art and Antique Exchange.',
     linkedIn: '',
     twitter: '',
     facebook: '',

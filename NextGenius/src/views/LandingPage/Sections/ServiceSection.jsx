@@ -23,8 +23,8 @@ class ServiceSection extends React.Component {
             <GridItem xs={12} sm={12} md={10}>
                 <h2 className={classes.title}>Who We Are</h2>
                 <h5 className={classes.description}>
-                  We are the largest community of Blockchain enthusiasts, enablers, and entrepreneurs in the Southern Hemisphere.
-                  As passionate believers and practitioners of decentralized Blockchain values,
+                  We are a Community of Emerging Technologies Enthusiasts, Professionals, and Entrepreneurs basing in Sydney, Australia.<br></br>
+                  As passionate believers and practitioners of Technological Innovation,
                   we believe in lifelong learning through helping each other,
                   helping communities to develop and businesses to succeed.
                 </h5>
@@ -34,9 +34,9 @@ class ServiceSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
                 <InfoArea
                     title="Connect"
-                    description="We connect different dots to form a network of blockchain ecosystem where chemical reactions happen between interesting people.
+                    description="We connect different dots to form a network of emerging technologies ecosystem where chemical reactions happen between interesting people.
                     Come to Next Genius with ideas and questions and participate in open and intriguing discussions,
-                    and find out how blockchain may change your daily life."
+                    and find out how technology may change your daily life."
                     icon={Power}
                     iconColor="info"
                     vertical
@@ -58,7 +58,7 @@ class ServiceSection extends React.Component {
                 <InfoArea
                     title="Create"
                     description="If you are an industry expert with deep expertise, experiences, and network, we would like to talk to you.
-                    We will proactively seek those who can bring blockchain into their own industries,
+                    We will proactively seek those who can bring technology into their own industries,
                     and build a pipeline of projects that will eventually reform the business landscape.
                     Come to Next Genius for your next career turning point."
                     icon={AddToQueue}

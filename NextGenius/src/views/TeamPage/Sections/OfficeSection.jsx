@@ -31,8 +31,7 @@ class OfficeSection extends React.Component {
             <GridItem xs={12} sm={12} md={8}>
               <h2 className={classes.title}>Our community is our second home</h2>
               <h5 className={classes.description}>
-                Here are some pictures from our office.
-                We host blockchain meetup regularly.
+                We are hosting tech meetups regularly.
               </h5>
             </GridItem>
           </GridContainer>
