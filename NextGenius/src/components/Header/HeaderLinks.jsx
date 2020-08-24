@@ -58,7 +58,7 @@ function HeaderLinks({ ...props }) {
             </Button>
         </ListItem>
 
-        <ListItem className={classes.listItem}>
+        {/* <ListItem className={classes.listItem}>
             <Button
                 component={Link}
                 to="/team"
@@ -67,7 +67,7 @@ function HeaderLinks({ ...props }) {
             >
                 <Group className={classes.icons} /> Team
             </Button>
-        </ListItem>
+        </ListItem> */}
 
       <ListItem className={classes.listItem}>
         <Button
