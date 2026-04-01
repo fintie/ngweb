@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import ServicePage from "views/ServicePage/ServicePage.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import NewsPage from "views/NewsPage/NewsPage.jsx";
@@ -16,9 +16,9 @@ const paths = [
   { path: "/", name: "LandingPage", component: LandingPage }
 ];
 
-const routes = (history) => {
+const routes = () => {
   return (
-      <Router history={history}>
+      <Router>
         <Switch>
           {paths.map((prop, key) => {
             return <Route path={prop.path} key={key} component={prop.component}/>;

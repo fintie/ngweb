@@ -2,7 +2,7 @@
   "name": "next-genius",
   "version": "1.0.0",
   "private": true,
-  "homepage": " http://nextgenius.com.au.s3-website-ap-southeast-2.amazonaws.com",
+  "homepage": "https://fintie.github.io/ngweb",
   "dependencies": {
     "@material-ui/core": "^1.1.0",
     "@material-ui/icons": "^1.1.0",
