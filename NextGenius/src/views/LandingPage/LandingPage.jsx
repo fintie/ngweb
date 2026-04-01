@@ -11,7 +11,6 @@ import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
@@ -20,7 +19,6 @@ import landingPageStyle from "assets/jss/next-genius/views/landingPage.jsx";
 // Sections for this page
 import ServiceSection from "./Sections/ServiceSection.jsx";
 // import FeedbackSection from "./Sections/FeedbackSection.jsx";
-import VideoSection from "./Sections/VideoSection.jsx";
 
 const dashboardRoutes = [];
 
@@ -51,8 +49,6 @@ class LandingPage extends React.Component {
                       We change people’s perspective of what their potentials really are,
                       what problems they can really solve, and what lifestyle they can really create for the local and global community.
                     </h5>
-                  <br/>
-                  <VideoSection/>
                 </GridItem>
               </GridContainer>
             </div>
