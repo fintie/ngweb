@@ -1,9 +1,8 @@
 {
   "main.css": "static/css/main.e4564d0c.css",
   "main.css.map": "static/css/main.e4564d0c.css.map",
-  "main.js": "static/js/main.2f12d1d1.js",
-  "main.js.map": "static/js/main.2f12d1d1.js.map",
-  "static/media/bg.jpeg": "static/media/bg.56ce6a67.jpeg",
+  "main.js": "static/js/main.ad429f3c.js",
+  "main.js.map": "static/js/main.ad429f3c.js.map",
   "static/media/home.jpg": "static/media/home.e9a826db.jpg",
   "static/media/logo-black.png": "static/media/logo-black.f3af984c.png",
   "static/media/logo.png": "static/media/logo.20473f63.png",
@@ -14,6 +13,5 @@
   "static/media/meetup0615.jpg": "static/media/meetup0615.ec3bdd17.jpg",
   "static/media/meetup0621.jpg": "static/media/meetup0621.9610c4d6.jpg",
   "static/media/news.jpg": "static/media/news.1916629f.jpg",
-  "static/media/product.jpg": "static/media/product.24265521.jpg",
-  "static/media/srelection.jpg": "static/media/srelection.721b85ee.jpg"
+  "static/media/product.jpg": "static/media/product.24265521.jpg"
 }
