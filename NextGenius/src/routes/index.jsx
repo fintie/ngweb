@@ -10,7 +10,6 @@ const paths = [
   { path: "/service", name: "ServicePage", component: ServicePage },
   { path: "/news", name: "NewsPage", component: NewsPage },
   // { path: "/team", name: "TeamPage", component: TeamPage },
-  // { path: "/tron", name: "TronPage", component: TronPage },
   { path: "/contact", name: "ContactPage", component: ContactPage },
   { path: "/", name: "LandingPage", component: LandingPage }
 ];

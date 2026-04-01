@@ -26,8 +26,8 @@ export const TEAM_LIST = [
     title: 'Senior Advisor',
     avatar: 'ben.jpg',
     description:
-      '5 years experience of technology consultanting, 3+ years of Blockchain research experiences, ' +
-      'Phd at UNSW, focusing on Blockchain, IoT, Data Analytics.',
+      '5 years experience of technology consulting, 3+ years of AI research experience, ' +
+      'PhD at UNSW, focusing on AI systems, IoT, and data analytics.',
     linkedIn: 'https://www.linkedin.com/in/bin-liu-2a5a47105/',
     twitter: '',
     facebook: '',
@@ -61,8 +61,8 @@ export const TEAM_LIST = [
     title: 'Architect & Co Founder',
     avatar: 'jonathan.jpg',
     description:
-      'Full Stack Developer worked cross China, Japan and Australia, ' +
-      'currently focus on Artificial Intellegence, Blockchain and Data Visualisation at Commonwealth Bank.',
+      'Full Stack Developer worked across China, Japan and Australia, ' +
+      'currently focused on AI systems and data visualisation at Commonwealth Bank.',
     linkedIn: 'https://www.linkedin.com/in/jonathanjava/',
     twitter: '',
     facebook: '',
@@ -73,7 +73,7 @@ export const TEAM_LIST = [
     title: 'Company Secretary',
     avatar: 'meilin.jpg',
     description:
-      '2 year experience in Consulting, finance & business analytics student in USYD, big data & blockchain enthusiast.',
+      '2 year experience in Consulting, finance & business analytics student in USYD, big data & AI enthusiast.',
     linkedIn: 'https://www.linkedin.com/in/meilin-chen-47ba8a118/',
     twitter: '',
     facebook: '',
@@ -130,7 +130,7 @@ export const TEAM_LIST = [
     avatar: 'kaicheng.jpg',
     description:
       'Effective communicator with ability to manage a broad range of stakeholders in both start-up and enterprise environments with a clear understanding of key business drivers and risks. ' +
-      'Expert of blockchain-based payment system in FinTech company, worked as a solution-oriented engineer and leader with successful experience of supporting large finance clients in IBM.',
+      'Expert in AI-driven payment systems in FinTech, worked as a solution-oriented engineer and leader with successful experience of supporting large finance clients in IBM.',
     linkedIn: 'https://www.linkedin.com/in/kaicheng-song-303118',
     twitter: '',
     facebook: '',
@@ -155,7 +155,7 @@ export const TEAM_LIST = [
     avatar: 'serena.jpg',
     description:
       '11 years IT industry experience in B2B Sales, Marketing and Project Management across a wide range of AP commercial and government accounts in IBM and Fujitsu. ' +
-      'Current focus around fintech & blockchain project related Marketing/Media/PR Communications with China and Middle Eastern countries.',
+      'Current focus around fintech & AI projects related Marketing/Media/PR Communications with China and Middle Eastern countries.',
     linkedIn: 'https://www.linkedin.com/in/serena-yan-7b8a2637/',
     twitter: '',
     facebook: '',

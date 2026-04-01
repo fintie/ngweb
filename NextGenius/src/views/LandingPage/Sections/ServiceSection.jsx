@@ -23,10 +23,8 @@ class ServiceSection extends React.Component {
             <GridItem xs={12} sm={12} md={10}>
                 <h2 className={classes.title}>Who We Are</h2>
                 <h5 className={classes.description}>
-                  We are a Community of Emerging Technologies Enthusiasts, Professionals, and Entrepreneurs basing in Sydney, Australia.<br></br>
-                  As passionate believers and practitioners of Technological Innovation,
-                  we believe in lifelong learning through helping each other,
-                  helping communities to develop and businesses to succeed.
+                  We build AI Agents, MCP integrations, AI Skills, and OpenClaw‑powered automation for teams in Australia and beyond.<br></br>
+                  We believe in practical innovation that ships fast, scales responsibly, and delivers measurable outcomes for people and businesses.
                 </h5>
             </GridItem>
           </GridContainer>
@@ -34,9 +32,7 @@ class ServiceSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
                 <InfoArea
                     title="Connect"
-                    description="We connect different dots to form a network of emerging technologies ecosystem where chemical reactions happen between interesting people.
-                    Come to Next Genius with ideas and questions and participate in open and intriguing discussions,
-                    and find out how technology may change your daily life."
+                    description="We connect teams, tools, and data into a cohesive AI ecosystem. Bring your ideas and workflows, and we’ll map the right agents and skills to make them real."
                     icon={Power}
                     iconColor="info"
                     vertical
@@ -45,10 +41,7 @@ class ServiceSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
                 <InfoArea
                     title="Empower"
-                    description="If you already have a product, a project whitepaper, or a sound idea,
-                    come to Next Genius to get connected to those who can help you build your dream into reality.
-                    We have a full stack of developers, architects, designers, advisors, token economists, lawyers, financial and tax experts, and more importantly,
-                    the consumer/investor community that can make your project a verifiable success.  ."
+                    description="If you already have a product or a solid concept, we help you ship AI‑powered features quickly. Our team brings AI engineering, product architecture, design, and compliance experience to turn ideas into production systems."
                     icon={VerifiedUser}
                     iconColor="success"
                     vertical
@@ -57,10 +50,7 @@ class ServiceSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
                 <InfoArea
                     title="Create"
-                    description="If you are an industry expert with deep expertise, experiences, and network, we would like to talk to you.
-                    We will proactively seek those who can bring technology into their own industries,
-                    and build a pipeline of projects that will eventually reform the business landscape.
-                    Come to Next Genius for your next career turning point."
+                    description="If you’re a domain expert, we partner to create AI skills and agent workflows tailored to your industry. Together we build repeatable solutions that transform operations and customer experience."
                     icon={AddToQueue}
                     iconColor="warning"
                     vertical

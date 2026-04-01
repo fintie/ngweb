@@ -12,25 +12,19 @@ import meetup0621 from "assets/img/news/meetup0621.jpg";
 import meetup0615 from "assets/img/news/meetup0615.jpg";
 import meetup0516 from "assets/img/news/meetup0516.jpg";
 import meetup0503 from "assets/img/news/meetup0503.jpg";
-import meetup from "assets/img/news/meetup.jpg";
 
 import blogStyle from "assets/jss/next-genius/views/newsPageSections/blogStyle.jsx";
 
 class AllSection extends React.Component {
   render() {
-    const {classes, ...rest} = this.props;
-    const imageClasses = classNames(
-        classes.imgRaised,
-        classes.imgRoundedCircle,
-        classes.imgFluid
-    );
+    const {classes} = this.props;
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
         <div className={classes.section}>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={10}>
                 <h5 className={classes.description}>
-                  <a target="_blank" href="https://www.meetup.com/nextgenius/">Next Genius Meetup</a> for Sydney local entrepreneurs and professionals to discuss Emerging Technologies.
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.meetup.com/nextgenius/">Next Genius Meetup</a> for Sydney local entrepreneurs and professionals to discuss AI Agents, MCP, AI Skills, and OpenClaw.
                 </h5>
               </GridItem>
             </GridContainer>
@@ -62,13 +56,6 @@ class AllSection extends React.Component {
                 <img
                     alt="..."
                     src={meetup0503}
-                    className={navImageClasses}
-                />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={12}>
-                <img
-                    alt="..."
-                    src={meetup}
                     className={navImageClasses}
                 />
             </GridItem>
