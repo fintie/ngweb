@@ -30,9 +30,7 @@ class AllSection extends React.Component {
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={10}>
                 <h5 className={classes.description}>
-                  <a target="_blank" href="https://www.meetup.com/next-genius/">Next Genius Meetup</a> for professionals to discuss Emerging Technologies.
-                  Whether you're new, or have an existing interest,
-                  our professional team members will put you in touch with others in the field.
+                  <a target="_blank" href="https://www.meetup.com/nextgenius/">Next Genius Meetup</a> for Sydney local entrepreneurs and professionals to discuss Emerging Technologies.
                 </h5>
               </GridItem>
             </GridContainer>
