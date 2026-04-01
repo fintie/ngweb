@@ -26,6 +26,8 @@ jobs:
 
       - name: Build
         working-directory: NextGenius
+        env:
+          CI: "false"
         run: npm run build
 
       - name: Deploy to gh-pages
