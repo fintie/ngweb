@@ -18,13 +18,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 16
           cache: "npm"
-          cache-dependency-path: NextGenius/package-lock.json
 
       - name: Install dependencies
         working-directory: NextGenius
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build
         working-directory: NextGenius
