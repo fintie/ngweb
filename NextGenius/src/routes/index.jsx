@@ -4,7 +4,6 @@ import ServicePage from "views/ServicePage/ServicePage.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import NewsPage from "views/NewsPage/NewsPage.jsx";
 // import TeamPage from "views/TeamPage/TeamPage.jsx";
-import TronPage from "views/TronPage/TronPage.jsx";
 import ContactPage from "views/ContactPage/ContactPage.jsx";
 
 const paths = [
