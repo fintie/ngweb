@@ -5,7 +5,6 @@
 import {
   grayColor,
   lightColor,
-  bgColor,
   roseColor,
   primaryColor,
   infoColor,

@@ -2,7 +2,7 @@
 // // // Footer styles
 // #############################
 
-import { container, primaryColor, grayColor } from "assets/jss/next-genius.jsx";
+import { container, primaryColor } from "assets/jss/next-genius.jsx";
 
 const footerStyle = {
   block: {
