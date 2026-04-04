@@ -31,11 +31,14 @@ const footerStyle = {
     fontSize: "0.9rem"
   },
   footer: {
-    padding: "0.9375rem 0",
+    padding: "1.5rem 0",
     textAlign: "center",
     display: "flex",
     zIndex: "2",
-    position: "relative"
+    position: "relative",
+    marginTop: "48px",
+    borderTop: "1px solid #e7ecf3",
+    background: "#f8fafc"
   },
   a: {
     color: primaryColor,

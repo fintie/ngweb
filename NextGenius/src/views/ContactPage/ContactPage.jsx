@@ -87,7 +87,7 @@ class ContactPage extends React.Component {
                       {discussionPoints.map(item => <li key={item}>{item}</li>)}
                     </ul>
                     <div style={{ marginTop: 24, display: "flex", gap: 12, flexWrap: "wrap" }}>
-                      <Button color="primary" href="mailto:hello@nextgenius.com.au">
+                      <Button color="primary" href="mailto:info@nextgenius.com.au">
                         Email NextGenius
                       </Button>
                       <Button color="transparent" component={Link} to="/use-cases">
@@ -103,7 +103,7 @@ class ContactPage extends React.Component {
                       <Email style={{ marginRight: 12, color: "#01acc8" }} />
                       <div>
                         <div style={{ fontWeight: 700 }}>Email</div>
-                        <div style={{ color: "#516076" }}>hello@nextgenius.com.au</div>
+                        <div style={{ color: "#516076" }}>info@nextgenius.com.au</div>
                       </div>
                     </div>
                     <div style={{ display: "flex", marginBottom: 18 }}>
@@ -159,7 +159,7 @@ class ContactPage extends React.Component {
                     </p>
                   </GridItem>
                   <GridItem xs={12} sm={12} md={4} style={{ textAlign: "right" }}>
-                    <Button color="primary" size="lg" href="mailto:hello@nextgenius.com.au?subject=Discovery%20Call%20Enquiry">
+                    <Button color="primary" size="lg" href="mailto:info@nextgenius.com.au?subject=Discovery%20Call%20Enquiry">
                       Request a Conversation
                     </Button>
                   </GridItem>

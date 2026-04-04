@@ -20,9 +20,9 @@ const headerStyle = {
   appBar: {
     display: "flex",
     border: "0",
-    borderRadius: "3px",
-    padding: "0.625rem 0",
-    marginBottom: "20px",
+    borderRadius: "0",
+    padding: "0.35rem 0",
+    marginBottom: "0",
     color: "#555",
     width: "100%",
     backgroundColor: "#fff",
@@ -32,7 +32,9 @@ const headerStyle = {
     alignItems: "center",
     flexFlow: "row nowrap",
     justifyContent: "flex-start",
-    position: "relative"
+    position: "sticky",
+    top: "0",
+    left: "0"
   },
   absolute: {
     position: "absolute"
@@ -42,7 +44,7 @@ const headerStyle = {
   },
   container: {
     ...container,
-    minHeight: "50px",
+    minHeight: "62px",
     flex: "1",
     alignItems: "center",
     justifyContent: "space-between",
@@ -66,6 +68,16 @@ const headerStyle = {
     "&:hover,&:focus": {
       color: "inherit",
       background: "transparent"
+    },
+    "& img": {
+      display: "block",
+      height: "52px",
+      width: "auto"
+    },
+    "@media (max-width: 600px)": {
+      "& img": {
+        height: "44px"
+      }
     }
   },
   brandName:{
@@ -113,10 +125,11 @@ const headerStyle = {
       "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(233, 30, 99, 0.46)"
   },
   transparent: {
-    backgroundColor: "transparent",
-    boxShadow: "none",
-    paddingTop: "25px",
-    color: "#FFFFFF"
+    backgroundColor: "#fff !important",
+    boxShadow:
+      "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)",
+    paddingTop: "0",
+    color: "#555"
   },
   dark: {
     color: "#FFFFFF",
@@ -126,8 +139,8 @@ const headerStyle = {
   },
   white: {
     border: "0",
-    padding: "0.625rem 0",
-    marginBottom: "20px",
+    padding: "0.35rem 0",
+    marginBottom: "0",
     color: "#555",
     backgroundColor: "#fff !important",
     boxShadow:

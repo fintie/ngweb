@@ -16,8 +16,6 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import headerStyle from "assets/jss/next-genius/components/headerStyle.jsx";
-import blackLogo from "assets/img/tron/logo-black.png";
-import whiteLogo from "assets/img/tron/logo.svg";
 
 class Header extends React.Component {
   constructor(props) {
@@ -26,46 +24,15 @@ class Header extends React.Component {
       mobileOpen: false
     };
     this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
-    this.headerColorChange = this.headerColorChange.bind(this);
   }
   handleDrawerToggle() {
     this.setState({ mobileOpen: !this.state.mobileOpen });
   }
-  componentDidMount() {
-    if (this.props.changeColorOnScroll) {
-      window.addEventListener("scroll", this.headerColorChange);
-    }
-  }
-  headerColorChange() {
-    const { classes, color, changeColorOnScroll } = this.props;
-    const windowsScrollTop = window.pageYOffset;
-    if (windowsScrollTop > changeColorOnScroll.height) {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[changeColorOnScroll.color]);
-      document.getElementById("tronLogo").src = blackLogo;
-    } else {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[changeColorOnScroll.color]);
-      document.getElementById("tronLogo").src = whiteLogo;
-    }
-  }
-  componentWillUnmount() {
-    if (this.props.changeColorOnScroll) {
-      window.removeEventListener("scroll", this.headerColorChange);
-    }
-  }
+  componentDidMount() {}
+  componentWillUnmount() {}
   render() {
     const {
       classes,
-      color,
       rightLinks,
       leftLinks,
       fixed,
@@ -73,7 +40,7 @@ class Header extends React.Component {
     } = this.props;
     const appBarClasses = classNames({
       [classes.appBar]: true,
-      [classes[color]]: color,
+      [classes.white]: true,
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
