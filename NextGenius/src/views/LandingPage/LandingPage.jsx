@@ -66,6 +66,13 @@ const process = [
   }
 ];
 
+const useCases = [
+  "Internal knowledge assistants for team policies, SOPs, and business documents",
+  "Admin automation for repetitive tasks, follow-ups, and routine coordination",
+  "Proposal and quote support using your existing templates and service patterns",
+  "Customer support assistants for repeat enquiries and more consistent responses"
+];
+
 class LandingPage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
@@ -191,6 +198,36 @@ class LandingPage extends React.Component {
                         <div style={{ color: "#516076", lineHeight: 1.8 }}>{step.text}</div>
                       </div>
                     ))}
+                  </div>
+                </GridItem>
+              </GridContainer>
+            </div>
+
+            <div style={{ padding: "0 0 40px" }}>
+              <GridContainer spacing={24}>
+                <GridItem xs={12} sm={12} md={7}>
+                  <div style={{ background: "#fff", border: "1px solid #e7ecf3", borderRadius: 12, padding: 30, height: "100%" }}>
+                    <h3 style={{ marginTop: 0 }}>Popular SME scenarios</h3>
+                    <p style={{ color: "#516076", lineHeight: 1.8 }}>
+                      Many projects begin with a use case the business already feels every week. Start with one scenario, prove the value, then build from there.
+                    </p>
+                    <ul style={{ paddingLeft: 18, lineHeight: 1.9, marginBottom: 24, color: "#516076" }}>
+                      {useCases.map(item => <li key={item}>{item}</li>)}
+                    </ul>
+                    <Button color="primary" component={Link} to="/use-cases">
+                      See Use Cases
+                    </Button>
+                  </div>
+                </GridItem>
+                <GridItem xs={12} sm={12} md={5}>
+                  <div style={{ background: "#f7f9fc", borderRadius: 12, padding: 30, height: "100%" }}>
+                    <h3 style={{ marginTop: 0 }}>Best suited for</h3>
+                    <p style={{ color: "#516076", lineHeight: 1.8 }}>
+                      Australian SMEs that want practical gains in service, operations, admin, and knowledge management without overcomplicating the rollout.
+                    </p>
+                    <p style={{ color: "#516076", lineHeight: 1.8, marginBottom: 0 }}>
+                      That might mean a pilot assistant, a connected workflow, a custom internal portal, or a clearer AI roadmap before investing further.
+                    </p>
                   </div>
                 </GridItem>
               </GridContainer>

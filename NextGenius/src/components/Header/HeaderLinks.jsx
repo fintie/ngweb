@@ -6,6 +6,7 @@ import ListItem from "@material-ui/core/ListItem";
 import BusinessCenter from "@material-ui/icons/BusinessCenter";
 import Home from "@material-ui/icons/Home";
 import ContactPhone from "@material-ui/icons/ContactPhone";
+import AssignmentTurnedIn from "@material-ui/icons/AssignmentTurnedIn";
 import Button from "components/CustomButtons/Button.jsx";
 import headerLinksStyle from "assets/jss/next-genius/components/headerLinksStyle.jsx";
 
@@ -15,6 +16,7 @@ function HeaderLinks(props) {
   const navItems = [
     { to: "/", label: "Home", icon: Home },
     { to: "/service", label: "Services", icon: BusinessCenter },
+    { to: "/use-cases", label: "Use Cases", icon: AssignmentTurnedIn },
     { to: "/contact", label: "Contact", icon: ContactPhone }
   ];
 

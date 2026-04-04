@@ -41,6 +41,11 @@ function Footer(props) {
                   </Button>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
+                  <Button component={Link} to="/use-cases" color="transparent" simple>
+                    Use Cases
+                  </Button>
+                </ListItem>
+                <ListItem className={classes.inlineBlock}>
                   <Button component={Link} to="/contact" color="transparent" simple>
                     Contact
                   </Button>

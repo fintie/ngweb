@@ -1,71 +1,92 @@
-@import url(~react-modal-video/css/modal-video.min.css);
+@import '~react-modal-video/css/modal-video.min.css';
 html * {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
 
 body {
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  color: inherit; }
+  color: inherit;
+}
 
 h1, h2, h3 {
   margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 h4, h5, h6 {
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 h1 {
   font-size: 3.3125rem;
-  line-height: 1.15em; }
-  @media (max-width: 576px) {
-    h1 {
-      font-size: 2.75rem;
-      line-height: 1.1em; } }
+  line-height: 1.15em;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.75rem;
+    line-height: 1.1em;
+  }
+}
 
 h2 {
   font-size: 2.25rem;
-  line-height: 1.5em; }
-  @media (max-width: 576px) {
-    h2 {
-      font-size: 1.75rem;
-      line-height: 1.25em; } }
+  line-height: 1.5em;
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.25em;
+  }
+}
 
 h3 {
   font-size: 1.5625rem;
-  line-height: 1.4em; }
-  @media (max-width: 576px) {
-    h3 {
-      font-size: 1.3rem;
-      line-height: 1.25em; } }
+  line-height: 1.4em;
+}
+@media (max-width: 576px) {
+  h3 {
+    font-size: 1.3rem;
+    line-height: 1.25em;
+  }
+}
 
 h4 {
   font-size: 1.125rem;
-  line-height: 1.5em; }
-  @media (max-width: 576px) {
-    h4 {
-      font-size: 1rem;
-      line-height: 1.25em; } }
+  line-height: 1.5em;
+}
+@media (max-width: 576px) {
+  h4 {
+    font-size: 1rem;
+    line-height: 1.25em;
+  }
+}
 
 h5 {
   font-size: 1.0625rem;
-  line-height: 1.55em; }
+  line-height: 1.55em;
+}
 
 h6 {
   font-size: 0.75rem;
   text-transform: uppercase;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 p {
   font-size: 14px;
-  margin: 0 0 10px; }
+  margin: 0 0 10px;
+}
 
 html {
   font-family: sans-serif;
@@ -73,53 +94,68 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent;
+}
 
 body {
   background-color: #E5E5E5;
   color: #3C4858;
   margin: 0;
   font-size: 1rem;
-  text-align: left; }
+  text-align: left;
+}
 
 legend {
-  border-bottom: 0; }
+  border-bottom: 0;
+}
 
 * {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
-  box-sizing: border-box; }
-  *:focus {
-    outline: 0; }
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 0;
+}
 
 a {
   color: #9c27b0;
   text-decoration: none;
-  background-color: transparent; }
-  a:hover, a:focus {
-    color: #89229b;
-    text-decoration: none; }
+  background-color: transparent;
+}
+a:hover, a:focus {
+  color: rgb(137.4976744186, 34.3744186047, 155.1255813953);
+  text-decoration: none;
+}
 
 label {
   font-size: 14px;
   line-height: 1.42857;
   color: #AAAAAA;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 small {
   font-size: 75%;
   color: #777;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none;
+}
 
 form {
-  margin-bottom: 1.125rem; }
+  margin-bottom: 1.125rem;
+}
 
 .contactPage header {
-  background-color: #0000006e; }
+  background-color: rgba(0, 0, 0, 0.431372549);
+}
 
 .react-swipeable-view-container > div {
-  overflow: hidden !important; }
+  overflow: hidden !important;
+}
+
+/*# sourceMappingURL=next-genius.css.map */

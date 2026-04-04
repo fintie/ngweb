@@ -76,6 +76,33 @@ const fitList = [
   "You need a partner who can advise, build, and connect systems rather than hand off a slide deck"
 ];
 
+const deliveryPackages = [
+  {
+    title: "Strategy and scoping",
+    text: "A short engagement to define the right first move, useful for businesses that want clarity before building.",
+    items: ["Discovery workshops", "Current-process review", "Priority use cases", "Recommended roadmap"]
+  },
+  {
+    title: "Pilot and prove value",
+    text: "A focused build for one practical use case so the team can test value quickly before broader rollout.",
+    items: ["Pilot assistant or automation", "Small-scale integration", "User testing", "Measured next-step recommendations"]
+  },
+  {
+    title: "Design, build, and rollout",
+    text: "A broader delivery model for businesses that already know the direction and need help getting it into production.",
+    items: ["Solution design", "Implementation", "Change support", "Ongoing optimisation"]
+  }
+];
+
+const scenarios = [
+  "Internal knowledge assistant for staff who need faster access to policies, SOPs, and answers",
+  "Admin automation for repetitive tasks, handovers, and follow-up work",
+  "Proposal and quote support using your templates, scope patterns, and approval rules",
+  "Customer support assistant for repeat questions and better service consistency",
+  "Team productivity assistant for summaries, document retrieval, and daily follow-through",
+  "Operations workflow assistant connecting sales, delivery, admin, and support"
+];
+
 class ServicePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
@@ -145,13 +172,47 @@ class ServicePage extends React.Component {
               </GridContainer>
             </div>
 
-            <div style={{ padding: "5px 0 80px" }}>
+            <div style={{ padding: "0 0 45px" }}>
+              <GridContainer spacing={24}>
+                <GridItem xs={12} sm={12} md={7}>
+                  <div style={{ background: "#fff", border: "1px solid #e7ecf3", borderRadius: 12, padding: 30, height: "100%" }}>
+                    <h2 style={{ marginTop: 0 }}>Typical SME use cases</h2>
+                    <p style={{ color: "#516076", lineHeight: 1.8 }}>
+                      We usually start with a business situation the team already recognises, then design the right mix of AI, automation, integration, and custom tooling around it.
+                    </p>
+                    <ul style={{ paddingLeft: 18, marginBottom: 20, color: "#516076", lineHeight: 1.9 }}>
+                      {scenarios.map(item => <li key={item}>{item}</li>)}
+                    </ul>
+                    <Button color="primary" component={Link} to="/use-cases">
+                      Explore Use Cases
+                    </Button>
+                  </div>
+                </GridItem>
+                <GridItem xs={12} sm={12} md={5}>
+                  <div style={{ background: "#f7f9fc", borderRadius: 12, padding: 30, height: "100%" }}>
+                    <h2 style={{ marginTop: 0 }}>How engagements usually start</h2>
+                    {deliveryPackages.map(item => (
+                      <div key={item.title} style={{ marginBottom: 22 }}>
+                        <div style={{ fontWeight: 700, marginBottom: 6 }}>{item.title}</div>
+                        <div style={{ color: "#516076", lineHeight: 1.8, marginBottom: 8 }}>{item.text}</div>
+                        <div style={{ color: "#516076", lineHeight: 1.8 }}>{item.items.join(" • ")}</div>
+                      </div>
+                    ))}
+                  </div>
+                </GridItem>
+              </GridContainer>
+            </div>
+
+            <div style={{ padding: "0 0 45px" }}>
               <div style={{ background: "linear-gradient(135deg, #0d1f36 0%, #144f8f 100%)", borderRadius: 14, padding: "36px 32px", color: "#fff" }}>
                 <GridContainer alignItems="center">
                   <GridItem xs={12} sm={12} md={8}>
-                    <h2 style={{ marginTop: 0, color: "#fff" }}>Not sure which service you need yet?</h2>
+                    <h2 style={{ marginTop: 0, color: "#fff" }}>What working together looks like</h2>
+                    <p style={{ margin: "0 0 14px", lineHeight: 1.8, opacity: 0.92 }}>
+                      Start with discovery, choose a sensible first project, build something useful, and keep improving once the team is using it. No inflated transformation language. Just practical progress.
+                    </p>
                     <p style={{ margin: 0, lineHeight: 1.8, opacity: 0.92 }}>
-                      That is normal. We can start with a discovery call, map the problem, and recommend the right first project based on effort, value, and readiness.
+                      We can support a one-off project, a pilot, or a broader delivery program depending on where the business is up to.
                     </p>
                   </GridItem>
                   <GridItem xs={12} sm={12} md={4} style={{ textAlign: "right" }}>
