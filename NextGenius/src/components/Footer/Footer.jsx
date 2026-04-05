@@ -1,4 +1,7 @@
 import React from "react";
+import Group from "@material-ui/icons/Group";
+import Language from "@material-ui/icons/Language";
+import Public from "@material-ui/icons/Public";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
@@ -55,11 +58,22 @@ function Footer(props) {
           </GridItem>
           <GridItem xs={12} sm={12} md={3}>
             <div className={classes.right}>
+              <div style={{ display: "flex", justifyContent: "flex-end", gap: 8, marginBottom: 10, flexWrap: "wrap" }}>
+                <Button color="transparent" simple href="https://www.linkedin.com/company/nextgen14" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <Public />
+                </Button>
+                <Button color="transparent" simple href="https://meetup.com/nextgenius" target="_blank" rel="noopener noreferrer" aria-label="Meetup">
+                  <Group />
+                </Button>
+                <Button color="transparent" simple href="https://x.com/nextgeniusau" target="_blank" rel="noopener noreferrer" aria-label="X">
+                  <Language />
+                </Button>
+              </div>
               <p style={{ margin: 0, textAlign: "right" }}>
                 © {new Date().getFullYear()} Next Genius Pty Ltd
               </p>
               <p style={{ margin: "8px 0 0", textAlign: "right", opacity: 0.8 }}>
-                Built for better operations, better service, and smarter growth.
+                15 Broadway, Ultimo NSW 2007, Australia
               </p>
             </div>
           </GridItem>

@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Email from "@material-ui/icons/Email";
-import Phone from "@material-ui/icons/Phone";
+
 import Schedule from "@material-ui/icons/Schedule";
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -107,10 +107,10 @@ class ContactPage extends React.Component {
                       </div>
                     </div>
                     <div style={{ display: "flex", marginBottom: 18 }}>
-                      <Phone style={{ marginRight: 12, color: "#01acc8" }} />
+                      <Schedule style={{ marginRight: 12, color: "#01acc8" }} />
                       <div>
-                        <div style={{ fontWeight: 700 }}>Phone</div>
-                        <div style={{ color: "#516076" }}>Available on request during discovery booking</div>
+                        <div style={{ fontWeight: 700 }}>Address</div>
+                        <div style={{ color: "#516076" }}>15 Broadway, Ultimo NSW 2007, Australia</div>
                       </div>
                     </div>
                     <div style={{ display: "flex", marginBottom: 0 }}>

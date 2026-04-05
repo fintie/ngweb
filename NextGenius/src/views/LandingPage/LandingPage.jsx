@@ -6,7 +6,7 @@ import Timeline from "@material-ui/icons/Timeline";
 import SettingsEthernet from "@material-ui/icons/SettingsEthernet";
 import Build from "@material-ui/icons/Build";
 import Memory from "@material-ui/icons/Memory";
-import PhoneInTalk from "@material-ui/icons/PhoneInTalk";
+import PlayCircleOutline from "@material-ui/icons/PlayCircleOutline";
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -237,14 +237,14 @@ class LandingPage extends React.Component {
               <div style={{ background: "#10233f", color: "#fff", borderRadius: 14, padding: "36px 32px" }}>
                 <GridContainer alignItems="center">
                   <GridItem xs={12} sm={12} md={8}>
-                    <h2 style={{ marginTop: 0, marginBottom: 10, color: "#fff" }}>Need a clearer AI and digital roadmap for your business?</h2>
+                    <h2 style={{ marginTop: 0, marginBottom: 10, color: "#fff" }}>See a short NextGenius video overview</h2>
                     <p style={{ margin: 0, lineHeight: 1.8, opacity: 0.9, fontSize: 16 }}>
-                      Start with a practical conversation about where your team is losing time, where systems are disconnected, and where AI could produce a real return.
+                      Watch a short introduction, then get in touch if you want to explore where AI, workflow automation, or connected tools could help your business.
                     </p>
                   </GridItem>
                   <GridItem xs={12} sm={12} md={4} style={{ textAlign: "right" }}>
-                    <Button color="primary" size="lg" component={Link} to="/contact">
-                      <PhoneInTalk style={{ marginRight: 8 }} /> Talk to NextGenius
+                    <Button color="primary" size="lg" href="https://www.youtube.com/watch?v=rEmBnBJWogU" target="_blank" rel="noopener noreferrer">
+                      <PlayCircleOutline style={{ marginRight: 8 }} /> Watch short video
                     </Button>
                   </GridItem>
                 </GridContainer>
