@@ -61,8 +61,8 @@ class ContactPage extends React.Component {
             <div className={classes.section}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={10}>
-                  <h2 className={classes.title}>Let’s talk about what is slowing the business down.</h2>
-                  <h4 className={classes.subtitle}>
+                  <h2 className={classes.title} style={{ color: "#fff", textShadow: "0 8px 24px rgba(0,0,0,0.28)" }}>Let’s talk about what is slowing the business down.</h2>
+                  <h4 className={classes.subtitle} style={{ color: "#fff", textShadow: "0 6px 18px rgba(0,0,0,0.24)" }}>
                     If you need a practical view on AI, automation, system integration, or a custom internal platform, we can start with a focused discovery conversation.
                   </h4>
                 </GridItem>
@@ -72,7 +72,7 @@ class ContactPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <div style={{ padding: "54px 0 36px" }}>
+            <div style={{ padding: "34px 0 24px" }}>
               <GridContainer spacing={24}>
                 <GridItem xs={12} sm={12} md={7}>
                   <div style={{ paddingRight: 20 }}>

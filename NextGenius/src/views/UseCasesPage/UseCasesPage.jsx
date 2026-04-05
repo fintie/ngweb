@@ -121,14 +121,14 @@ class UseCasesPage extends React.Component {
 
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <div style={{ padding: "48px 0 12px" }}>
+            <div style={{ padding: "24px 0 0" }}>
               <GridContainer spacing={24} alignItems="stretch">
                 <GridItem xs={12} sm={12} md={7}>
-                  <div style={{ paddingRight: 8 }}>
-                    <div style={{ letterSpacing: 1.2, fontSize: 12, fontWeight: 700, textTransform: "uppercase", color: "#0b4b8c", marginBottom: 8 }}>
+                  <div style={{ paddingRight: 8, marginTop: 0 }}>
+                    <div style={{ letterSpacing: 1.2, fontSize: 12, fontWeight: 700, textTransform: "uppercase", color: "#0b4b8c", marginBottom: 4 }}>
                       Where we usually start
                     </div>
-                    <h2 style={{ marginTop: 0, marginBottom: 14 }}>Most good projects begin with one frustrating, repeatable problem.</h2>
+                    <h2 style={{ marginTop: 0, marginBottom: 10 }}>Most good projects begin with one frustrating, repeatable problem.</h2>
                     <p style={{ fontSize: 17, lineHeight: 1.7, color: "#516076", marginBottom: 0 }}>
                       If your team is repeating answers, re-entering data, or rebuilding common documents every week, there is usually a sensible pilot worth testing.
                     </p>
@@ -145,7 +145,7 @@ class UseCasesPage extends React.Component {
               </GridContainer>
             </div>
 
-            <div style={{ padding: "18px 0 34px" }}>
+            <div style={{ padding: "10px 0 34px" }}>
               <GridContainer spacing={24}>
                 {visualExamples.map((item, index) => (
                   <GridItem xs={12} sm={6} md={4} key={item.title}>
