@@ -121,7 +121,7 @@ class UseCasesPage extends React.Component {
 
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <div style={{ padding: "24px 0 0" }}>
+            <div style={{ padding: "12px 0 0" }}>
               <GridContainer spacing={24} alignItems="stretch">
                 <GridItem xs={12} sm={12} md={7}>
                   <div style={{ paddingRight: 8, marginTop: 0 }}>
@@ -145,7 +145,7 @@ class UseCasesPage extends React.Component {
               </GridContainer>
             </div>
 
-            <div style={{ padding: "10px 0 34px" }}>
+            <div style={{ padding: "0 0 34px" }}>
               <GridContainer spacing={24}>
                 {visualExamples.map((item, index) => (
                   <GridItem xs={12} sm={6} md={4} key={item.title}>
