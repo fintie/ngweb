@@ -135,12 +135,13 @@ class ServicePage extends React.Component {
           {...rest}
         />
         <Parallax small filter image={require("assets/img/product.jpg")}>
-          <div className={classes.container}>
+          <div style={{ position: "absolute", inset: 0, background: "rgba(6, 18, 34, 0.58)" }} />
+          <div className={classes.container} style={{ position: "relative", zIndex: 2 }}>
             <div className={classes.section}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={10}>
-                  <h2 className={classes.title}>Services built around business outcomes, not technical jargon.</h2>
-                  <h4 className={classes.subtitle} style={{ maxWidth: 820 }}>
+                  <h2 className={classes.title} style={{ color: "#fff", textShadow: "0 2px 10px rgba(0,0,0,0.28)" }}>Services built around business outcomes, not technical jargon.</h2>
+                  <h4 className={classes.subtitle} style={{ maxWidth: 820, color: "rgba(255,255,255,0.92)", textShadow: "0 2px 10px rgba(0,0,0,0.24)" }}>
                     NextGenius helps SMEs turn AI, automation, integrations, and software improvements into practical changes the team can use.
                   </h4>
                 </GridItem>
@@ -220,13 +221,13 @@ class ServicePage extends React.Component {
                   </div>
                 </GridItem>
                 <GridItem xs={12} sm={12} md={5}>
-                  <div style={{ background: "#f7f9fc", borderRadius: 12, padding: 30, height: "100%" }}>
-                    <h2 style={{ marginTop: 0 }}>How engagements usually start</h2>
+                  <div style={{ background: "#f4f7fb", borderRadius: 12, padding: 30, height: "100%", border: "1px solid #e3e9f2" }}>
+                    <h2 style={{ marginTop: 0, color: "#122033" }}>How engagements usually start</h2>
                     {deliveryPackages.map(item => (
                       <div key={item.title} style={{ marginBottom: 22 }}>
-                        <div style={{ fontWeight: 700, marginBottom: 6 }}>{item.title}</div>
-                        <div style={{ color: "#516076", lineHeight: 1.8, marginBottom: 8 }}>{item.text}</div>
-                        <div style={{ color: "#516076", lineHeight: 1.8 }}>{item.items.join(" • ")}</div>
+                        <div style={{ fontWeight: 700, marginBottom: 6, color: "#122033" }}>{item.title}</div>
+                        <div style={{ color: "#44556c", lineHeight: 1.8, marginBottom: 8 }}>{item.text}</div>
+                        <div style={{ color: "#44556c", lineHeight: 1.8 }}>{item.items.join(" • ")}</div>
                       </div>
                     ))}
                   </div>

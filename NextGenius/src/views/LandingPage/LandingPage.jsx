@@ -89,17 +89,18 @@ class LandingPage extends React.Component {
           {...rest}
         />
         <Parallax filter image={require("assets/img/home.jpg")}>
-          <div className={classes.container}>
+          <div style={{ position: "absolute", inset: 0, background: "rgba(7, 18, 34, 0.52)" }} />
+          <div className={classes.container} style={{ position: "relative", zIndex: 2 }}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={8}>
                 <div style={{ padding: "180px 0 110px" }}>
-                  <div style={{ letterSpacing: 1.5, fontSize: 13, fontWeight: 600, textTransform: "uppercase", opacity: 0.9 }}>
+                  <div style={{ letterSpacing: 1.5, fontSize: 13, fontWeight: 600, textTransform: "uppercase", opacity: 0.95, color: "#fff", textShadow: "0 2px 10px rgba(0,0,0,0.25)" }}>
                     AI Consulting & Digital Solutions for SMEs
                   </div>
-                  <h1 className={classes.title} style={{ marginBottom: 12 }}>
+                  <h1 className={classes.title} style={{ marginBottom: 12, color: "#fff", textShadow: "0 2px 12px rgba(0,0,0,0.28)" }}>
                     Practical AI and software solutions for growing Australian businesses.
                   </h1>
-                  <h4 className={classes.subtitle} style={{ maxWidth: 760, margin: 0 }}>
+                  <h4 className={classes.subtitle} style={{ maxWidth: 760, margin: 0, color: "rgba(255,255,255,0.92)", textShadow: "0 2px 10px rgba(0,0,0,0.24)" }}>
                     NextGenius helps small and medium businesses improve operations, reduce repetitive work, connect systems, and roll out AI in a way that makes sense for the team.
                   </h4>
                   <div style={{ marginTop: 30, display: "flex", gap: 12, flexWrap: "wrap" }}>
@@ -110,7 +111,7 @@ class LandingPage extends React.Component {
                       Explore Services
                     </Button>
                   </div>
-                  <div style={{ marginTop: 28, display: "flex", gap: 24, flexWrap: "wrap", fontSize: 15 }}>
+                  <div style={{ marginTop: 28, display: "flex", gap: 24, flexWrap: "wrap", fontSize: 15, color: "rgba(255,255,255,0.92)", textShadow: "0 2px 10px rgba(0,0,0,0.24)" }}>
                     <span>AI strategy</span>
                     <span>Workflow automation</span>
                     <span>Knowledge assistants</span>
