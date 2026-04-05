@@ -72,7 +72,7 @@ class ContactPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <div style={{ padding: "0" }}>
+            <div style={{ padding: "0", marginTop: 0 }}>
               <GridContainer spacing={24}>
                 <GridItem xs={12} sm={12} md={7}>
                   <div style={{ paddingRight: 20 }}>

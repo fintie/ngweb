@@ -128,7 +128,7 @@ class UseCasesPage extends React.Component {
                     <div style={{ letterSpacing: 1.2, fontSize: 12, fontWeight: 700, textTransform: "uppercase", color: "#0b4b8c", marginBottom: 4 }}>
                       Where we usually start
                     </div>
-                    <h2 style={{ marginTop: 0, marginBottom: 10 }}>Most good projects begin with one frustrating, repeatable problem.</h2>
+                    <h2 style={{ marginTop: 0, marginBottom: 10, color: "#111827" }}>Most good projects begin with one frustrating, repeatable problem.</h2>
                     <p style={{ fontSize: 17, lineHeight: 1.7, color: "#516076", marginBottom: 0 }}>
                       If your team is repeating answers, re-entering data, or rebuilding common documents every week, there is usually a sensible pilot worth testing.
                     </p>
@@ -145,7 +145,7 @@ class UseCasesPage extends React.Component {
               </GridContainer>
             </div>
 
-            <div style={{ padding: "0 0 34px" }}>
+            <div style={{ padding: "0" }}>
               <GridContainer spacing={24}>
                 {visualExamples.map((item, index) => (
                   <GridItem xs={12} sm={6} md={4} key={item.title}>

@@ -3,7 +3,12 @@ import { container, title, grayColor } from "assets/jss/next-genius.jsx";
 import imagesStyle from "assets/jss/next-genius/imagesStyles.jsx";
 
 const contactPageStyle = {
-  container,
+  container: {
+    ...container,
+    position: "relative",
+    zIndex: "2",
+    color: "#FFFFFF"
+  },
   profile: {
     textAlign: "center",
     "& img": {
@@ -29,12 +34,12 @@ const contactPageStyle = {
     zIndex: "3"
   },
   mainRaised: {
-    margin: "120px 30px 0px",
+    margin: "-20px 30px 0px",
     borderRadius: "5px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
     "@media (max-width: 576px)": {
-      margin: "120px 15px 0px",
+      margin: "-20px 15px 0px",
     },
   },
   title: {
