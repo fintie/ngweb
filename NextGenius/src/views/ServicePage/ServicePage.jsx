@@ -10,6 +10,7 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import { Link } from "react-router-dom";
 import servicePageStyle from "assets/jss/next-genius/views/servicePage.jsx";
+import serviceCollage from "assets/img/services/service-collage.jpg";
 
 const serviceGroups = [
   {
@@ -158,16 +159,29 @@ class ServicePage extends React.Component {
 
             <div style={{ padding: "10px 0 45px" }}>
               <GridContainer spacing={24}>
-                {serviceGroups.map(group => (
-                  <GridItem xs={12} sm={6} md={6} key={group.title}>
-                    <div style={{ height: "100%", border: "1px solid #e7ecf3", borderRadius: 12, padding: 28, background: "#fff", boxShadow: "0 8px 24px rgba(28,49,88,0.04)" }}>
-                      <h3 style={{ marginTop: 0 }}>{group.title}</h3>
-                      <p style={{ color: "#516076", lineHeight: 1.8 }}>{group.summary}</p>
-                      <ul style={{ paddingLeft: 18, marginBottom: 0, color: "#516076", lineHeight: 1.9 }}>
-                        {group.bullets.map(item => <li key={item}>{item}</li>)}
-                      </ul>
-                    </div>
-                  </GridItem>
+                {serviceGroups.map((group, index) => (
+                  <React.Fragment key={group.title}>
+                    <GridItem xs={12} sm={6} md={6}>
+                      <div style={{ height: "100%", border: "1px solid #e7ecf3", borderRadius: 12, padding: 28, background: "#fff", boxShadow: "0 8px 24px rgba(28,49,88,0.04)" }}>
+                        <h3 style={{ marginTop: 0 }}>{group.title}</h3>
+                        <p style={{ color: "#516076", lineHeight: 1.8 }}>{group.summary}</p>
+                        <ul style={{ paddingLeft: 18, marginBottom: 0, color: "#516076", lineHeight: 1.9 }}>
+                          {group.bullets.map(item => <li key={item}>{item}</li>)}
+                        </ul>
+                      </div>
+                    </GridItem>
+                    {(index === 1 || index === 4) ? (
+                      <GridItem xs={12} sm={6} md={6}>
+                        <div style={{ height: "100%", borderRadius: 12, overflow: "hidden", boxShadow: "0 12px 28px rgba(28,49,88,0.08)", background: "#f7f9fc" }}>
+                          <img
+                            src={serviceCollage}
+                            alt="NextGenius service examples"
+                            style={{ width: "100%", height: "100%", minHeight: 280, objectFit: "cover", display: "block" }}
+                          />
+                        </div>
+                      </GridItem>
+                    ) : null}
+                  </React.Fragment>
                 ))}
               </GridContainer>
             </div>

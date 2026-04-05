@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import servicePageStyle from "assets/jss/next-genius/views/servicePage.jsx";
 import caseScreenshot from "assets/img/use-cases/case-screenshot.jpg";
 import processFlow from "assets/img/use-cases/process-flow.jpg";
+import videoCollage from "assets/img/use-cases/video-collage.jpg";
 
 const signals = [
   "Repeating the same answers across email, phone, and chat",
@@ -69,11 +70,12 @@ const visualExamples = [
     imageAlt: "NextGenius process flow"
   },
   {
-    title: "Short product video",
-    label: "Video demo",
-    caption: "A short walkthrough gives buyers a quick feel for the kind of AI-assisted workflow and product interaction NextGenius can deliver.",
-    type: "video",
-    href: "https://www.youtube.com/watch?v=rEmBnBJWogU"
+    title: "Video examples",
+    label: "Visual showcase",
+    caption: "This gallery-style screenshot gives a stronger visual sense of the kinds of demos, walkthroughs, and immersive experiences that can be presented.",
+    type: "image",
+    image: videoCollage,
+    imageAlt: "NextGenius video examples collage"
   }
 ];
 
@@ -150,32 +152,17 @@ class UseCasesPage extends React.Component {
                     <div style={{ height: "100%", border: "1px solid #e7ecf3", borderRadius: 14, overflow: "hidden", background: "#fff" }}>
                       <div style={{ minHeight: 220, padding: 20, background: index === 0 ? "linear-gradient(135deg, #0b4b8c 0%, #01acc8 100%)" : index === 1 ? "linear-gradient(135deg, #10233f 0%, #365f9c 100%)" : "linear-gradient(135deg, #1f2937 0%, #4f46e5 100%)", color: "#fff", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                         <div style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", opacity: 0.85 }}>{item.label}</div>
-                        {item.type === "video" ? (
-                          <div style={{ border: "1px solid rgba(255,255,255,0.28)", borderRadius: 12, background: "rgba(255,255,255,0.1)", padding: 20 }}>
-                            <div style={{ fontSize: 42, lineHeight: 1, marginBottom: 12 }}>▶</div>
-                            <div style={{ fontWeight: 700, fontSize: 18, marginBottom: 8 }}>Video walkthrough</div>
-                            <div style={{ opacity: 0.88, lineHeight: 1.7 }}>Watch the short product video in this use case section.</div>
-                          </div>
-                        ) : (
-                          <div style={{ border: "1px solid rgba(255,255,255,0.28)", borderRadius: 12, background: "rgba(255,255,255,0.1)", padding: 10, backdropFilter: "blur(2px)" }}>
-                            <img
-                              src={item.image}
-                              alt={item.imageAlt}
-                              style={{ width: "100%", height: 150, objectFit: "cover", borderRadius: 10, display: "block", background: "rgba(255,255,255,0.12)" }}
-                            />
-                          </div>
-                        )}
+                        <div style={{ border: "1px solid rgba(255,255,255,0.28)", borderRadius: 12, background: "rgba(255,255,255,0.1)", padding: 10, backdropFilter: "blur(2px)" }}>
+                          <img
+                            src={item.image}
+                            alt={item.imageAlt}
+                            style={{ width: "100%", height: index === 0 ? 250 : 150, objectFit: index === 0 ? "contain" : "cover", borderRadius: 10, display: "block", background: "rgba(255,255,255,0.12)" }}
+                          />
+                        </div>
                       </div>
                       <div style={{ padding: 22 }}>
                         <h3 style={{ marginTop: 0, marginBottom: 8 }}>{item.title}</h3>
                         <p style={{ margin: 0, color: "#516076", lineHeight: 1.7 }}>{item.caption}</p>
-                        {item.href ? (
-                          <div style={{ marginTop: 16 }}>
-                            <Button color="primary" href={item.href} target="_blank" rel="noopener noreferrer">
-                              Watch demo
-                            </Button>
-                          </div>
-                        ) : null}
                       </div>
                     </div>
                   </GridItem>

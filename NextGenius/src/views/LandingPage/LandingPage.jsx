@@ -92,7 +92,7 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={8}>
-                <div style={{ padding: "140px 0 110px" }}>
+                <div style={{ padding: "180px 0 110px" }}>
                   <div style={{ letterSpacing: 1.5, fontSize: 13, fontWeight: 600, textTransform: "uppercase", opacity: 0.9 }}>
                     AI Consulting & Digital Solutions for SMEs
                   </div>
