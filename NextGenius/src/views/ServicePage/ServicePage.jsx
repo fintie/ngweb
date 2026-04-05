@@ -167,9 +167,6 @@ class ServicePage extends React.Component {
                 <GridItem xs={12} sm={12} md={8}>
                   <div style={{ padding: "8px 0" }}>
                     <h2 style={{ marginTop: 0 }}>What we can help with</h2>
-                    <p style={{ fontSize: 17, lineHeight: 1.8, color: "#516076" }}>
-                      Some businesses come to us with a clear brief. Others simply know their systems are clunky, their team is overloaded, or they need a better plan for AI. Both are fine. We can start with strategy, or move straight into delivery where the need is already obvious.
-                    </p>
                   </div>
                 </GridItem>
               </GridContainer>

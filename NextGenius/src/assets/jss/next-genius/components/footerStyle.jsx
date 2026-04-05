@@ -23,7 +23,10 @@ const footerStyle = {
   right: {
     padding: "15px 0",
     margin: "0",
-    float: "right!important"
+    float: "right!important",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-end"
   },
   center: {
     padding: "15px 0",
@@ -69,7 +72,24 @@ const footerStyle = {
     width: "auto"
 
   },
+  socialRow: {
+    display: "flex",
+    flexWrap: "nowrap",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    gap: "8px",
+    marginBottom: "10px",
+    whiteSpace: "nowrap"
+  },
+  rightText: {
+    textAlign: "right"
+  },
   socialIconsButton:{
+    minWidth: "40px",
+    width: "40px",
+    height: "40px",
+    padding: "8px",
+    margin: "0",
     "&:hover, &:focus":{
       backgroundColor: "transparent",
       color: "inherit"

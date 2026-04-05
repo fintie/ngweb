@@ -1,7 +1,5 @@
 import React from "react";
 import Group from "@material-ui/icons/Group";
-import Language from "@material-ui/icons/Language";
-import Public from "@material-ui/icons/Public";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
@@ -10,6 +8,18 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import footerStyle from "assets/jss/next-genius/components/footerStyle.jsx";
+
+const LinkedInIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.14 3 3.25 3.89 3.25 5s.89 2 2 2 2-.89 2-2-.89-2-2-2ZM20.75 13.01c0-3.03-.65-5.36-4.19-5.36-1.7 0-2.84.93-3.31 1.82h-.05V8.5H9.94V20h3.38v-5.69c0-1.5.28-2.95 2.14-2.95 1.83 0 1.86 1.71 1.86 3.04V20h3.43v-6.99Z" />
+  </svg>
+);
+
+const XIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M18.244 2H21l-6.02 6.878L22 22h-5.53l-4.33-5.985L6.9 22H4.14l6.44-7.36L2 2h5.67l3.91 5.46L18.244 2Zm-.97 18h1.53L6.85 3.89H5.21L17.274 20Z" />
+  </svg>
+);
 
 function Footer(props) {
   const { classes, whiteFont } = props;
@@ -58,21 +68,21 @@ function Footer(props) {
           </GridItem>
           <GridItem xs={12} sm={12} md={3}>
             <div className={classes.right}>
-              <div style={{ display: "flex", justifyContent: "flex-end", gap: 8, marginBottom: 10, flexWrap: "wrap" }}>
-                <Button color="transparent" simple href="https://www.linkedin.com/company/nextgen14" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <Public />
+              <div className={classes.socialRow}>
+                <Button className={classes.socialIconsButton} color="transparent" simple href="https://www.linkedin.com/company/nextgen14" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <LinkedInIcon />
                 </Button>
-                <Button color="transparent" simple href="https://meetup.com/nextgenius" target="_blank" rel="noopener noreferrer" aria-label="Meetup">
+                <Button className={classes.socialIconsButton} color="transparent" simple href="https://meetup.com/nextgenius" target="_blank" rel="noopener noreferrer" aria-label="Meetup">
                   <Group />
                 </Button>
-                <Button color="transparent" simple href="https://x.com/nextgeniusau" target="_blank" rel="noopener noreferrer" aria-label="X">
-                  <Language />
+                <Button className={classes.socialIconsButton} color="transparent" simple href="https://x.com/nextgeniusau" target="_blank" rel="noopener noreferrer" aria-label="X">
+                  <XIcon />
                 </Button>
               </div>
-              <p style={{ margin: 0, textAlign: "right" }}>
+              <p className={classes.rightText} style={{ margin: 0 }}>
                 © {new Date().getFullYear()} Next Genius Pty Ltd
               </p>
-              <p style={{ margin: "8px 0 0", textAlign: "right", opacity: 0.8 }}>
+              <p className={classes.rightText} style={{ margin: "8px 0 0", opacity: 0.8 }}>
                 15 Broadway, Ultimo NSW 2007, Australia
               </p>
             </div>
