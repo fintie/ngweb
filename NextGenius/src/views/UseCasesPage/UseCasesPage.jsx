@@ -10,6 +10,8 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import { Link } from "react-router-dom";
 import servicePageStyle from "assets/jss/next-genius/views/servicePage.jsx";
+import caseScreenshot from "assets/img/use-cases/case-screenshot.jpg";
+import processFlow from "assets/img/use-cases/process-flow.jpg";
 
 const signals = [
   "Repeating the same answers across email, phone, and chat",
@@ -51,19 +53,27 @@ const scenarios = [
 
 const visualExamples = [
   {
-    title: "Knowledge assistant mockup",
-    label: "Screenshot placeholder",
-    caption: "Search company SOPs, service notes, and onboarding docs in one simple assistant."
+    title: "Case screenshot",
+    label: "Screenshot / UI preview",
+    caption: "A real interface example helps show the quality and style of the product experience clients can expect.",
+    type: "image",
+    image: caseScreenshot,
+    imageAlt: "NextGenius case screenshot"
   },
   {
-    title: "Workflow dashboard mockup",
-    label: "Process view",
-    caption: "See approvals, handovers, and next actions across connected business systems."
+    title: "Process flow",
+    label: "Process / flow preview",
+    caption: "A visual systems flow makes it easier to explain how users, channels, AI, and backend services connect.",
+    type: "flow",
+    image: processFlow,
+    imageAlt: "NextGenius process flow"
   },
   {
-    title: "Demo walkthrough placeholder",
-    label: "Short video preview",
-    caption: "A practical pilot can be shown as a short guided walkthrough before wider rollout."
+    title: "Short product video",
+    label: "Video demo",
+    caption: "A short walkthrough gives buyers a quick feel for the kind of AI-assisted workflow and product interaction NextGenius can deliver.",
+    type: "video",
+    href: "https://www.youtube.com/watch?v=rEmBnBJWogU"
   }
 ];
 
@@ -138,18 +148,34 @@ class UseCasesPage extends React.Component {
                 {visualExamples.map((item, index) => (
                   <GridItem xs={12} sm={6} md={4} key={item.title}>
                     <div style={{ height: "100%", border: "1px solid #e7ecf3", borderRadius: 14, overflow: "hidden", background: "#fff" }}>
-                      <div style={{ minHeight: 180, padding: 20, background: index === 0 ? "linear-gradient(135deg, #0b4b8c 0%, #01acc8 100%)" : index === 1 ? "linear-gradient(135deg, #10233f 0%, #365f9c 100%)" : "linear-gradient(135deg, #1f2937 0%, #4f46e5 100%)", color: "#fff", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                      <div style={{ minHeight: 220, padding: 20, background: index === 0 ? "linear-gradient(135deg, #0b4b8c 0%, #01acc8 100%)" : index === 1 ? "linear-gradient(135deg, #10233f 0%, #365f9c 100%)" : "linear-gradient(135deg, #1f2937 0%, #4f46e5 100%)", color: "#fff", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                         <div style={{ fontSize: 12, fontWeight: 700, textTransform: "uppercase", opacity: 0.85 }}>{item.label}</div>
-                        <div style={{ border: "1px solid rgba(255,255,255,0.28)", borderRadius: 12, background: "rgba(255,255,255,0.1)", padding: 16, backdropFilter: "blur(2px)" }}>
-                          <div style={{ height: 10, width: "48%", borderRadius: 999, background: "rgba(255,255,255,0.75)", marginBottom: 12 }} />
-                          <div style={{ height: 8, width: "100%", borderRadius: 999, background: "rgba(255,255,255,0.35)", marginBottom: 8 }} />
-                          <div style={{ height: 8, width: "82%", borderRadius: 999, background: "rgba(255,255,255,0.35)", marginBottom: 8 }} />
-                          <div style={{ height: 56, borderRadius: 10, background: "rgba(255,255,255,0.18)" }} />
-                        </div>
+                        {item.type === "video" ? (
+                          <div style={{ border: "1px solid rgba(255,255,255,0.28)", borderRadius: 12, background: "rgba(255,255,255,0.1)", padding: 20 }}>
+                            <div style={{ fontSize: 42, lineHeight: 1, marginBottom: 12 }}>▶</div>
+                            <div style={{ fontWeight: 700, fontSize: 18, marginBottom: 8 }}>Video walkthrough</div>
+                            <div style={{ opacity: 0.88, lineHeight: 1.7 }}>Watch the short product video in this use case section.</div>
+                          </div>
+                        ) : (
+                          <div style={{ border: "1px solid rgba(255,255,255,0.28)", borderRadius: 12, background: "rgba(255,255,255,0.1)", padding: 10, backdropFilter: "blur(2px)" }}>
+                            <img
+                              src={item.image}
+                              alt={item.imageAlt}
+                              style={{ width: "100%", height: 150, objectFit: "cover", borderRadius: 10, display: "block", background: "rgba(255,255,255,0.12)" }}
+                            />
+                          </div>
+                        )}
                       </div>
                       <div style={{ padding: 22 }}>
                         <h3 style={{ marginTop: 0, marginBottom: 8 }}>{item.title}</h3>
                         <p style={{ margin: 0, color: "#516076", lineHeight: 1.7 }}>{item.caption}</p>
+                        {item.href ? (
+                          <div style={{ marginTop: 16 }}>
+                            <Button color="primary" href={item.href} target="_blank" rel="noopener noreferrer">
+                              Watch demo
+                            </Button>
+                          </div>
+                        ) : null}
                       </div>
                     </div>
                   </GridItem>

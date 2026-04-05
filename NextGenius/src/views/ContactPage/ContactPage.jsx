@@ -72,7 +72,7 @@ class ContactPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <div style={{ padding: "70px 0 40px" }}>
+            <div style={{ padding: "90px 0 40px" }}>
               <GridContainer spacing={24}>
                 <GridItem xs={12} sm={12} md={7}>
                   <div style={{ paddingRight: 20 }}>
@@ -158,7 +158,7 @@ class ContactPage extends React.Component {
                       If it helps, send a short note about the use case you are considering — for example internal knowledge search, admin automation, proposal support, or a customer support assistant.
                     </p>
                   </GridItem>
-                  <GridItem xs={12} sm={12} md={4} style={{ textAlign: "right" }}>
+                  <GridItem xs={12} sm={12} md={4} style={{ textAlign: "right", marginTop: 16 }}>
                     <Button color="primary" size="lg" href="mailto:info@nextgenius.com.au?subject=Discovery%20Call%20Enquiry">
                       Request a Conversation
                     </Button>

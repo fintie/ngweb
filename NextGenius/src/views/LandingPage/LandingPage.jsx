@@ -6,7 +6,6 @@ import Timeline from "@material-ui/icons/Timeline";
 import SettingsEthernet from "@material-ui/icons/SettingsEthernet";
 import Build from "@material-ui/icons/Build";
 import Memory from "@material-ui/icons/Memory";
-import PlayCircleOutline from "@material-ui/icons/PlayCircleOutline";
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -93,7 +92,7 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={8}>
-                <div style={{ padding: "90px 0 110px" }}>
+                <div style={{ padding: "140px 0 110px" }}>
                   <div style={{ letterSpacing: 1.5, fontSize: 13, fontWeight: 600, textTransform: "uppercase", opacity: 0.9 }}>
                     AI Consulting & Digital Solutions for SMEs
                   </div>
@@ -233,23 +232,6 @@ class LandingPage extends React.Component {
               </GridContainer>
             </div>
 
-            <div style={{ padding: "25px 0 80px" }}>
-              <div style={{ background: "#10233f", color: "#fff", borderRadius: 14, padding: "36px 32px" }}>
-                <GridContainer alignItems="center">
-                  <GridItem xs={12} sm={12} md={8}>
-                    <h2 style={{ marginTop: 0, marginBottom: 10, color: "#fff" }}>See a short NextGenius video overview</h2>
-                    <p style={{ margin: 0, lineHeight: 1.8, opacity: 0.9, fontSize: 16 }}>
-                      Watch a short introduction, then get in touch if you want to explore where AI, workflow automation, or connected tools could help your business.
-                    </p>
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4} style={{ textAlign: "right" }}>
-                    <Button color="primary" size="lg" href="https://www.youtube.com/watch?v=rEmBnBJWogU" target="_blank" rel="noopener noreferrer">
-                      <PlayCircleOutline style={{ marginRight: 8 }} /> Watch short video
-                    </Button>
-                  </GridItem>
-                </GridContainer>
-              </div>
-            </div>
           </div>
         </div>
         <Footer />
