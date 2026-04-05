@@ -72,18 +72,18 @@ class ContactPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <div style={{ padding: "90px 0 40px" }}>
+            <div style={{ padding: "54px 0 36px" }}>
               <GridContainer spacing={24}>
                 <GridItem xs={12} sm={12} md={7}>
                   <div style={{ paddingRight: 20 }}>
-                    <h2 style={{ marginTop: 0 }}>Start with a discovery call</h2>
-                    <p style={{ fontSize: 17, lineHeight: 1.8, color: "#516076" }}>
+                    <h2 style={{ marginTop: 0, color: "#1f2d3d" }}>Start with a discovery call</h2>
+                    <p style={{ fontSize: 17, lineHeight: 1.8, color: "#2f3d4f" }}>
                       We work best with business owners and leadership teams who want a practical partner — someone who can understand the operational issue, recommend the right approach, and help deliver it properly.
                     </p>
-                    <p style={{ fontSize: 17, lineHeight: 1.8, color: "#516076" }}>
+                    <p style={{ fontSize: 17, lineHeight: 1.8, color: "#2f3d4f" }}>
                       A first conversation can cover:
                     </p>
-                    <ul style={{ paddingLeft: 18, lineHeight: 2, color: "#516076", fontSize: 16 }}>
+                    <ul style={{ paddingLeft: 18, lineHeight: 2, color: "#1f2d3d", fontSize: 16 }}>
                       {discussionPoints.map(item => <li key={item}>{item}</li>)}
                     </ul>
                     <div style={{ marginTop: 24, display: "flex", gap: 12, flexWrap: "wrap" }}>
@@ -98,26 +98,26 @@ class ContactPage extends React.Component {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={5}>
                   <div style={{ background: "#f7f9fc", borderRadius: 12, padding: 28, boxShadow: "0 10px 30px rgba(28,49,88,0.08)" }}>
-                    <h3 style={{ marginTop: 0 }}>Contact details</h3>
+                    <h3 style={{ marginTop: 0, color: "#1f2d3d" }}>Contact details</h3>
                     <div style={{ display: "flex", marginBottom: 18 }}>
                       <Email style={{ marginRight: 12, color: "#01acc8" }} />
                       <div>
                         <div style={{ fontWeight: 700 }}>Email</div>
-                        <div style={{ color: "#516076" }}>info@nextgenius.com.au</div>
+                        <div style={{ color: "#2f3d4f" }}>info@nextgenius.com.au</div>
                       </div>
                     </div>
                     <div style={{ display: "flex", marginBottom: 18 }}>
                       <Schedule style={{ marginRight: 12, color: "#01acc8" }} />
                       <div>
                         <div style={{ fontWeight: 700 }}>Address</div>
-                        <div style={{ color: "#516076" }}>15 Broadway, Ultimo NSW 2007, Australia</div>
+                        <div style={{ color: "#2f3d4f" }}>15 Broadway, Ultimo NSW 2007, Australia</div>
                       </div>
                     </div>
                     <div style={{ display: "flex", marginBottom: 0 }}>
                       <Schedule style={{ marginRight: 12, color: "#01acc8" }} />
                       <div>
                         <div style={{ fontWeight: 700 }}>Typical first step</div>
-                        <div style={{ color: "#516076" }}>30–45 minute discussion about priorities, systems, and next steps</div>
+                        <div style={{ color: "#2f3d4f" }}>30–45 minute discussion about priorities, systems, and next steps</div>
                       </div>
                     </div>
                   </div>
@@ -129,19 +129,19 @@ class ContactPage extends React.Component {
               <GridContainer spacing={24}>
                 <GridItem xs={12} sm={12} md={5}>
                   <div style={{ background: "#fff", border: "1px solid #e7ecf3", borderRadius: 12, padding: 28, height: "100%" }}>
-                    <h3 style={{ marginTop: 0 }}>Good fit if</h3>
-                    <ul style={{ paddingLeft: 18, lineHeight: 1.9, marginBottom: 0, color: "#516076" }}>
+                    <h3 style={{ marginTop: 0, color: "#111827" }}>Good fit if</h3>
+                    <ul style={{ paddingLeft: 18, lineHeight: 1.9, marginBottom: 0, color: "#111827" }}>
                       {goodFitPoints.map(item => <li key={item}>{item}</li>)}
                     </ul>
                   </div>
                 </GridItem>
                 <GridItem xs={12} sm={12} md={7}>
                   <div style={{ background: "#f7f9fc", borderRadius: 12, padding: 28, height: "100%" }}>
-                    <h3 style={{ marginTop: 0 }}>Ways we can engage</h3>
+                    <h3 style={{ marginTop: 0, color: "#1f2d3d" }}>Ways we can engage</h3>
                     {engagementOptions.map(item => (
                       <div key={item.title} style={{ marginBottom: 18 }}>
                         <div style={{ fontWeight: 700, marginBottom: 6 }}>{item.title}</div>
-                        <div style={{ color: "#516076", lineHeight: 1.8 }}>{item.text}</div>
+                        <div style={{ color: "#2f3d4f", lineHeight: 1.8 }}>{item.text}</div>
                       </div>
                     ))}
                   </div>

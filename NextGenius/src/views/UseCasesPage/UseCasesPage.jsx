@@ -121,11 +121,11 @@ class UseCasesPage extends React.Component {
 
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <div style={{ padding: "72px 0 24px" }}>
+            <div style={{ padding: "48px 0 12px" }}>
               <GridContainer spacing={24} alignItems="stretch">
                 <GridItem xs={12} sm={12} md={7}>
                   <div style={{ paddingRight: 8 }}>
-                    <div style={{ letterSpacing: 1.2, fontSize: 12, fontWeight: 700, textTransform: "uppercase", color: "#0b4b8c", marginBottom: 12 }}>
+                    <div style={{ letterSpacing: 1.2, fontSize: 12, fontWeight: 700, textTransform: "uppercase", color: "#0b4b8c", marginBottom: 8 }}>
                       Where we usually start
                     </div>
                     <h2 style={{ marginTop: 0, marginBottom: 14 }}>Most good projects begin with one frustrating, repeatable problem.</h2>
@@ -136,8 +136,8 @@ class UseCasesPage extends React.Component {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={5}>
                   <div style={{ background: "#f7f9fc", borderRadius: 14, padding: 28, height: "100%", border: "1px solid #e7ecf3" }}>
-                    <h3 style={{ marginTop: 0, marginBottom: 12 }}>Good fit signals</h3>
-                    <ul style={{ margin: 0, paddingLeft: 18, color: "#516076", lineHeight: 1.8 }}>
+                    <h3 style={{ marginTop: 0, marginBottom: 12, color: "#111827" }}>Good fit signals</h3>
+                    <ul style={{ margin: 0, paddingLeft: 18, color: "#111827", lineHeight: 1.8 }}>
                       {signals.map(item => <li key={item}>{item}</li>)}
                     </ul>
                   </div>
@@ -175,8 +175,8 @@ class UseCasesPage extends React.Component {
                 {scenarios.map(item => (
                   <GridItem xs={12} sm={6} md={6} key={item.title}>
                     <div style={{ height: "100%", border: "1px solid #e7ecf3", borderRadius: 14, padding: 26, background: "#fff" }}>
-                      <div style={{ display: "inline-block", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, color: item.accent, background: "#f4f8fc", borderRadius: 999, padding: "7px 12px", marginBottom: 14 }}>
-                        Use case
+                      <div style={{ display: "inline-block", fontSize: 12, fontWeight: 700, letterSpacing: 0.3, color: item.accent, background: "#f4f8fc", borderRadius: 999, padding: "7px 12px", marginBottom: 14 }}>
+                        {item.title}
                       </div>
                       <h3 style={{ marginTop: 0, marginBottom: 8 }}>{item.title}</h3>
                       <p style={{ color: "#2e3b4e", fontWeight: 600, marginTop: 0, marginBottom: 14 }}>{item.summary}</p>
