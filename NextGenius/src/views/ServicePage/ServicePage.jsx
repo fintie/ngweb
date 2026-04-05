@@ -86,14 +86,6 @@ const serviceImages = [
   }
 ];
 
-const fitList = [
-  "You know there is too much manual work but are not sure what to automate first",
-  "Your team loses time searching for information across emails, folders, chats, and systems",
-  "You want to use AI safely and practically without adding confusion or risk",
-  "Your current software stack does not match the way the business actually operates",
-  "You need a partner who can advise, build, and connect systems rather than hand off a slide deck"
-];
-
 const deliveryPackages = [
   {
     title: "Strategy and scoping",
@@ -151,28 +143,7 @@ class ServicePage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <div style={{ padding: "70px 0 25px" }}>
-              <GridContainer spacing={24}>
-                <GridItem xs={12} sm={12} md={4}>
-                  <div style={{ background: "#f7f9fc", borderRadius: 12, padding: 28, height: "100%" }}>
-                    <h3 style={{ marginTop: 0 }}>Where we add value</h3>
-                    <p style={{ color: "#516076", lineHeight: 1.8 }}>
-                      We sit between business strategy and technical delivery. That means you get advice, design, implementation, and practical rollout support in one place.
-                    </p>
-                    <ul style={{ paddingLeft: 18, lineHeight: 1.9, marginBottom: 0, color: "#516076" }}>
-                      {fitList.map(item => <li key={item}>{item}</li>)}
-                    </ul>
-                  </div>
-                </GridItem>
-                <GridItem xs={12} sm={12} md={8}>
-                  <div style={{ padding: "8px 0" }}>
-                    <h2 style={{ marginTop: 0 }}>What we can help with</h2>
-                  </div>
-                </GridItem>
-              </GridContainer>
-            </div>
-
-            <div style={{ padding: "10px 0 45px" }}>
+            <div style={{ padding: "70px 0 45px" }}>
               <GridContainer spacing={24}>
                 {serviceGroups.map((group, index) => (
                   <React.Fragment key={group.title}>
