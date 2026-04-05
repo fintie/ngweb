@@ -76,8 +76,7 @@ class ContactPage extends React.Component {
               <GridContainer spacing={24}>
                 <GridItem xs={12} sm={12} md={7}>
                   <div style={{ paddingRight: 20 }}>
-                    <h2 style={{ marginTop: 0, color: "#1f2d3d" }}>Start with a discovery call</h2>
-                    <p style={{ fontSize: 17, lineHeight: 1.8, color: "#2f3d4f" }}>
+                    <p style={{ fontSize: 17, lineHeight: 1.8, color: "#2f3d4f", marginTop: 0 }}>
                       We work best with business owners and leadership teams who want a practical partner — someone who can understand the operational issue, recommend the right approach, and help deliver it properly.
                     </p>
                     <p style={{ fontSize: 17, lineHeight: 1.8, color: "#2f3d4f" }}>

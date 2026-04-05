@@ -149,8 +149,8 @@ class ServicePage extends React.Component {
                   <React.Fragment key={group.title}>
                     <GridItem xs={12} sm={6} md={6}>
                       <div style={{ height: "100%", border: "1px solid #e7ecf3", borderRadius: 12, padding: 28, background: "#fff", boxShadow: "0 8px 24px rgba(28,49,88,0.04)" }}>
-                        <h3 style={{ marginTop: 0 }}>{group.title}</h3>
-                        <p style={{ color: "#516076", lineHeight: 1.8 }}>{group.summary}</p>
+                        <h3 style={{ marginTop: 0, marginBottom: 10, color: "#111827" }}>{group.title}</h3>
+                        <p style={{ color: "#516076", lineHeight: 1.8, marginTop: 0 }}>{group.summary}</p>
                         <ul style={{ paddingLeft: 18, marginBottom: 0, color: "#516076", lineHeight: 1.9 }}>
                           {group.bullets.map(item => <li key={item}>{item}</li>)}
                         </ul>
@@ -176,8 +176,8 @@ class ServicePage extends React.Component {
               <GridContainer spacing={24}>
                 <GridItem xs={12} sm={12} md={7}>
                   <div style={{ background: "#fff", border: "1px solid #e7ecf3", borderRadius: 12, padding: 30, height: "100%" }}>
-                    <h2 style={{ marginTop: 0 }}>Typical SME use cases</h2>
-                    <p style={{ color: "#516076", lineHeight: 1.8 }}>
+                    <h2 style={{ marginTop: 0, marginBottom: 10, color: "#111827" }}>Typical SME use cases</h2>
+                    <p style={{ color: "#516076", lineHeight: 1.8, marginTop: 0 }}>
                       We usually start with a business situation the team already recognises, then design the right mix of AI, automation, integration, and custom tooling around it.
                     </p>
                     <ul style={{ paddingLeft: 18, marginBottom: 20, color: "#516076", lineHeight: 1.9 }}>
@@ -190,7 +190,7 @@ class ServicePage extends React.Component {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={5}>
                   <div style={{ background: "#f4f7fb", borderRadius: 12, padding: 30, height: "100%", border: "1px solid #e3e9f2" }}>
-                    <h2 style={{ marginTop: 0, color: "#122033" }}>How engagements usually start</h2>
+                    <h2 style={{ marginTop: 0, marginBottom: 10, color: "#111827" }}>How engagements usually start</h2>
                     {deliveryPackages.map(item => (
                       <div key={item.title} style={{ marginBottom: 22 }}>
                         <div style={{ fontWeight: 700, marginBottom: 6, color: "#122033" }}>{item.title}</div>
