@@ -93,12 +93,12 @@ class LandingPage extends React.Component {
           <div className={classes.container} style={{ position: "relative", zIndex: 2 }}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={8}>
-                <div style={{ padding: "180px 0 110px" }}>
+                <div style={{ padding: "205px 0 110px" }}>
                   <div style={{ letterSpacing: 1.5, fontSize: 13, fontWeight: 600, textTransform: "uppercase", opacity: 0.95, color: "#fff", textShadow: "0 2px 10px rgba(0,0,0,0.25)" }}>
                     AI Consulting & Digital Solutions for SMEs
                   </div>
-                  <h1 className={classes.title} style={{ marginBottom: 12, color: "#fff", textShadow: "0 2px 12px rgba(0,0,0,0.28)" }}>
-                    Practical AI and software solutions for growing Australian businesses.
+                  <h1 className={classes.title} style={{ marginBottom: 12, color: "#fff", textShadow: "0 2px 12px rgba(0,0,0,0.28)", maxWidth: 720 }}>
+                    Smarter systems. Less busywork.
                   </h1>
                   <h4 className={classes.subtitle} style={{ maxWidth: 760, margin: 0, color: "rgba(255,255,255,0.92)", textShadow: "0 2px 10px rgba(0,0,0,0.24)" }}>
                     NextGenius helps small and medium businesses improve operations, reduce repetitive work, connect systems, and roll out AI in a way that makes sense for the team.
