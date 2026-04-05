@@ -10,7 +10,9 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import { Link } from "react-router-dom";
 import servicePageStyle from "assets/jss/next-genius/views/servicePage.jsx";
-import serviceCollage from "assets/img/services/service-collage.jpg";
+import serviceImage1 from "assets/img/services/service-1.jpg";
+import serviceImage2 from "assets/img/services/service-2.jpg";
+import serviceImage3 from "assets/img/services/service-3.jpg";
 
 const serviceGroups = [
   {
@@ -66,6 +68,21 @@ const serviceGroups = [
       "Refinement based on user feedback and business results",
       "Ongoing advisory support as your needs evolve"
     ]
+  }
+];
+
+const serviceImages = [
+  {
+    src: serviceImage1,
+    alt: "Creative AI art experience"
+  },
+  {
+    src: serviceImage2,
+    alt: "Immersive digital environment"
+  },
+  {
+    src: serviceImage3,
+    alt: "AI-powered creative workspace"
   }
 ];
 
@@ -170,13 +187,13 @@ class ServicePage extends React.Component {
                         </ul>
                       </div>
                     </GridItem>
-                    {(index === 1 || index === 4) ? (
+                    {[1, 3, 5].includes(index) ? (
                       <GridItem xs={12} sm={6} md={6}>
-                        <div style={{ height: "100%", borderRadius: 12, overflow: "hidden", boxShadow: "0 12px 28px rgba(28,49,88,0.08)", background: "#f7f9fc" }}>
+                        <div style={{ height: "100%", borderRadius: 12, overflow: "hidden", boxShadow: "0 12px 28px rgba(28,49,88,0.08)", background: "#f7f9fc", position: "relative" }}>
                           <img
-                            src={serviceCollage}
-                            alt="NextGenius service examples"
-                            style={{ width: "100%", height: "100%", minHeight: 280, objectFit: "cover", display: "block" }}
+                            src={serviceImages[Math.floor(index / 2)].src}
+                            alt={serviceImages[Math.floor(index / 2)].alt}
+                            style={{ width: "100%", height: "100%", minHeight: 320, objectFit: "cover", display: "block" }}
                           />
                         </div>
                       </GridItem>
