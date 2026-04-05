@@ -1,12 +1,14 @@
 {
   "main.css": "static/css/main.e4564d0c.css",
   "main.css.map": "static/css/main.e4564d0c.css.map",
-  "main.js": "static/js/main.4b2f1b78.js",
-  "main.js.map": "static/js/main.4b2f1b78.js.map",
+  "main.js": "static/js/main.0efbbc38.js",
+  "main.js.map": "static/js/main.0efbbc38.js.map",
   "static/media/case-screenshot.jpg": "static/media/case-screenshot.8561921a.jpg",
   "static/media/city.jpg": "static/media/city.ad2ae6bd.jpg",
   "static/media/home.jpg": "static/media/home.e9a826db.jpg",
   "static/media/logo.png": "static/media/logo.20473f63.png",
   "static/media/process-flow.jpg": "static/media/process-flow.f43d373a.jpg",
-  "static/media/product.jpg": "static/media/product.24265521.jpg"
+  "static/media/product.jpg": "static/media/product.24265521.jpg",
+  "static/media/service-collage.jpg": "static/media/service-collage.a89c4626.jpg",
+  "static/media/video-collage.jpg": "static/media/video-collage.a89c4626.jpg"
 }
