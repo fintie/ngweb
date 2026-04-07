@@ -1,16 +1,8 @@
 {
   "main.css": "static/css/main.e4564d0c.css",
   "main.css.map": "static/css/main.e4564d0c.css.map",
-  "main.js": "static/js/main.b3cf31cc.js",
-  "main.js.map": "static/js/main.b3cf31cc.js.map",
-  "static/media/IMAGE 2026-04-07 212307.jpg": "static/media/IMAGE 2026-04-07 212307.f1385d0f.jpg",
-  "static/media/IMAGE 2026-04-07 212336.jpg": "static/media/IMAGE 2026-04-07 212336.0ab39ac8.jpg",
-  "static/media/IMAGE 2026-04-07 212356.jpg": "static/media/IMAGE 2026-04-07 212356.fce0a0e9.jpg",
-  "static/media/IMAGE 2026-04-07 212405.jpg": "static/media/IMAGE 2026-04-07 212405.32f25105.jpg",
-  "static/media/IMAGE 2026-04-07 212436.jpg": "static/media/IMAGE 2026-04-07 212436.2a2d801c.jpg",
-  "static/media/IMAGE 2026-04-07 212447.jpg": "static/media/IMAGE 2026-04-07 212447.3f62f8f0.jpg",
-  "static/media/IMAGE 2026-04-07 212456.jpg": "static/media/IMAGE 2026-04-07 212456.90c42cc9.jpg",
-  "static/media/IMAGE 2026-04-07 212538.jpg": "static/media/IMAGE 2026-04-07 212538.5b74995c.jpg",
+  "main.js": "static/js/main.224c47f1.js",
+  "main.js.map": "static/js/main.224c47f1.js.map",
   "static/media/case-screenshot.jpg": "static/media/case-screenshot.8561921a.jpg",
   "static/media/city.jpg": "static/media/city.ad2ae6bd.jpg",
   "static/media/home.jpg": "static/media/home.e9a826db.jpg",
@@ -20,5 +12,13 @@
   "static/media/service-1.jpg": "static/media/service-1.47f5aec9.jpg",
   "static/media/service-2.jpg": "static/media/service-2.68ee6e44.jpg",
   "static/media/service-3.jpg": "static/media/service-3.e0e5fc3c.jpg",
-  "static/media/video-collage.jpg": "static/media/video-collage.a89c4626.jpg"
+  "static/media/video-collage.jpg": "static/media/video-collage.a89c4626.jpg",
+  "static/media/workshop-01.jpg": "static/media/workshop-01.f1385d0f.jpg",
+  "static/media/workshop-02.jpg": "static/media/workshop-02.0ab39ac8.jpg",
+  "static/media/workshop-03.jpg": "static/media/workshop-03.fce0a0e9.jpg",
+  "static/media/workshop-04.jpg": "static/media/workshop-04.32f25105.jpg",
+  "static/media/workshop-05.jpg": "static/media/workshop-05.2a2d801c.jpg",
+  "static/media/workshop-06.jpg": "static/media/workshop-06.3f62f8f0.jpg",
+  "static/media/workshop-07.jpg": "static/media/workshop-07.90c42cc9.jpg",
+  "static/media/workshop-08.jpg": "static/media/workshop-08.5b74995c.jpg"
 }
