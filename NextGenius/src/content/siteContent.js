@@ -66,10 +66,9 @@ export const upcomingEvents = [
     dateLabel: "Interactive creative learning experience",
     audience: "Learners exploring AI, design, and systems thinking",
     description:
-      "Teach creative systems thinking through a game-like 3D studio. AI Creative Studio helps learners build worlds, tackle design challenges, and improve through an integrated challenge, tutor, and critic loop
-Try our 3D Studio APP.",
-    ctaLabel: "Open studio",
-    ctaTo: "https://https://studio.nextgenius.com.au"
+      "Teach creative systems thinking through a game-like 3D studio. AI Creative Studio helps learners build worlds, tackle design challenges, and improve through an integrated challenge, tutor, and critic loop.",
+    ctaLabel: "Try our 3D Studio APP",
+    ctaTo: "https://studio.nextgenius.com.au"
   }
 ];
 
