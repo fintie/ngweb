@@ -5,6 +5,7 @@ import {formats,buildPlan,campaignLink,planEnquiry} from './plan';
 const initial={expertise:'',customer:'',problem:'',format:'review',hours:'5–10'};
 export default function OpcPage({location}){
  const params=new URLSearchParams(location.search),[lang,setLang]=useState(params.get('lang')==='zh'?'zh':'en'),[data,setData]=useState(initial),[plan,setPlan]=useState(null),[draft,setDraft]=useState(''),[status,setStatus]=useState(''); const result=useRef(null),form=useRef(null); const zh=lang==='zh',source=['xiaohongshu','twitter','linkedin'].includes(params.get('source'))?params.get('source'):'website';
+ React.useEffect(()=>{setLang(new URLSearchParams(location.search).get('lang')==='zh'?'zh':'en');setStatus('');},[location.search]);
  const t=(en,cn)=>zh?cn:en;
  const update=e=>{setData({...data,[e.target.name]:e.target.value});};
  const start=()=>{form.current.scrollIntoView({block:'start',behavior:'smooth'});form.current.querySelector('input').focus({preventScroll:true});};
