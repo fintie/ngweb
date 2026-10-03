@@ -1,6 +1,7 @@
+import pageAsset0 from "assets/img/product.jpg";
 import React from "react";
 import classNames from "classnames";
-import withStyles from "@material-ui/core/styles/withStyles";
+import { withStyles } from "@material-ui/core";
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -97,7 +98,7 @@ class WorkshopPage extends React.Component {
           changeColorOnScroll={{ height: 100, color: "white" }}
           {...rest}
         />
-        <Parallax small filter image={require("assets/img/product.jpg")}>
+        <Parallax small filter image={pageAsset0}>
           <div style={{ position: "absolute", inset: 0, background: "rgba(6, 18, 34, 0.58)" }} />
           <div className={classes.container} style={{ position: "relative", zIndex: 2 }}>
             <div className={classes.section}>

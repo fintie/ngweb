@@ -1,6 +1,8 @@
+import pageAsset0 from "assets/img/city.jpg";
+import pageAsset1 from "assets/img/city.jpg";
 import React from "react";
 import classNames from "classnames";
-import withStyles from "@material-ui/core/styles/withStyles";
+import { withStyles } from "@material-ui/core";
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -33,7 +35,7 @@ class BlogPostPage extends React.Component {
             }}
             {...rest}
           />
-          <Parallax small filter image={require("assets/img/city.jpg")}>
+          <Parallax small filter image={pageAsset0}>
             <div className={classes.container}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={8} className={classes.mlAuto + " " + classes.mrAuto}>
@@ -78,7 +80,7 @@ class BlogPostPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax small filter image={require("assets/img/city.jpg")}>
+        <Parallax small filter image={pageAsset1}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={10} className={classes.mlAuto + " " + classes.mrAuto}>

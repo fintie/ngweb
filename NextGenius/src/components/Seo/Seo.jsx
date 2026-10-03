@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import { siteConfig } from "content/siteContent";
 
 function Seo({ title, description, path, keywords, image, schema }) {
-  const canonical = `${siteConfig.siteUrl}${path || ""}`;
-  const imageUrl = image || `${siteConfig.siteUrl}/favicon.ico`;
+  const canonical = `${siteConfig.siteUrl}/#${path || "/"}`;
+  const imageUrl = image || `${siteConfig.siteUrl}/static/media/workshop-01.f1385d0f.jpg`;
 
   return (
     <Helmet>
