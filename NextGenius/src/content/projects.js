@@ -1,0 +1,8 @@
+import socialImage from 'assets/img/use-cases/case-screenshot.jpg';
+import learningImage from 'assets/img/use-cases/process-flow.jpg';
+import studioImage from 'assets/img/use-cases/video-collage.jpg';
+export const projects=[
+ {title:'LunchUp',category:'Social platform',image:socialImage,url:'https://lunchup.com.au/',audience:'People looking to make social connections.',problem:'Help people move from discovering a connection to arranging a shared experience.',delivery:'A social web application with a product interface you can explore.',validation:'Explore the app to assess its fit. No customer growth or commercial results are claimed here.',cta:'Explore LunchUp'},
+ {title:'STEM Learning App',category:'Education platform',image:learningImage,url:'https://stem.nextgenius.com.au/',audience:'Learners and educators exploring digital STEM learning.',problem:'Make learning activities and supporting systems easier to access.',delivery:'A learning application and an example of the system flow behind connected digital experiences.',validation:'Use the app to explore its learning experience. Learning outcomes require separate evaluation.',cta:'Explore the learning app'},
+ {title:'AI Creative Studio',category:'Interactive learning demo',image:studioImage,url:'https://studio.nextgenius.com.au/',audience:'Learners exploring design, AI and systems thinking.',problem:'Help learners practise creative problem-solving through an interactive experience.',delivery:'A game-like 3D studio with design challenges and a challenge, tutor and critic loop.',validation:'Try a design challenge to explore the experience. This is a product demonstration, not a measured client case study.',cta:'Try AI Creative Studio'}
+];

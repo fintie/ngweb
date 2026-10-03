@@ -52,7 +52,7 @@ export function buildEventSchema(events) {
       url: siteConfig.siteUrl
     },
     description: event.description,
-    url: `${siteConfig.siteUrl}${event.ctaTo}`
+    url: (/^https?:/.test(event.ctaTo) ? event.ctaTo : `${siteConfig.siteUrl}/#${event.ctaTo}`)
   }));
 }
 
@@ -72,6 +72,6 @@ export function buildArticleSchema(post) {
       name: siteConfig.siteName,
       url: siteConfig.siteUrl
     },
-    mainEntityOfPage: `${siteConfig.siteUrl}/blog/${post.slug}`
+    mainEntityOfPage: `${siteConfig.siteUrl}/#/blog/${post.slug}`
   };
 }
