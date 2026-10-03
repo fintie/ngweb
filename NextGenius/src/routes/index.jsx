@@ -12,9 +12,12 @@ import EventsPage from "views/EventsPage/EventsPage.jsx";
 import GeoLandingPage from "views/GeoPage/GeoLandingPage.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 
+import CommunityPage from "views/CommunityPage/CommunityPage.jsx";
+
 const routes = () => (
   <Router>
     <Switch>
+      <Route exact path="/community" component={CommunityPage} />
       <Route exact path="/service" component={ServicePage} />
       <Route exact path="/use-cases" component={UseCasesPage} />
       <Route exact path="/contact" component={ContactPage} />

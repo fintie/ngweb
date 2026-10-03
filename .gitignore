@@ -1,1 +1,4 @@
-NextGenius/
+NextGenius/node_modules/
+NextGenius/dist/
+NextGenius/build/
+.qwen/

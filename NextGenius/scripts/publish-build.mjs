@@ -1,0 +1,10 @@
+import {cpSync,readFileSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const project=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const repository=path.dirname(project);
+const html=readFileSync(path.join(project,'dist/index.html'),'utf8');
+if(!html.includes('type="module"'))throw new Error('Build first: npm run build');
+cpSync(path.join(project,'dist/assets'),path.join(repository,'assets'),{recursive:true});
+cpSync(path.join(project,'dist/index.html'),path.join(repository,'index.html'));
+console.log('Copied production index and versioned assets to the repository root.');
