@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { siteConfig } from "content/siteContent";
 
 function Seo({ title, description, path, keywords, image, schema }) {
-  const canonical = `${siteConfig.siteUrl}/#${path || "/"}`;
+  const canonical = path === "/opc" ? `${siteConfig.siteUrl}/opc/` : `${siteConfig.siteUrl}/#${path || "/"}`;
   const imageUrl = image || `${siteConfig.siteUrl}/static/media/workshop-01.f1385d0f.jpg`;
 
   return (

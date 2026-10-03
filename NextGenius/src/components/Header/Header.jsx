@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import logo from 'assets/img/logo.png';
-const links=[['/service','Solutions'],['/use-cases','Projects'],['/community','Community'],['/about','About']];
+const links=[['/service','Solutions'],['/use-cases','Projects'],['/opc','Start an OPC'],['/community','Community'],['/about','About']];
 class Header extends React.Component {
   state={open:false};
   componentDidMount(){window.scrollTo({top:0,left:0,behavior:"instant"});}
