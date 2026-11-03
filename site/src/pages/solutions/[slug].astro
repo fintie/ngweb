@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Btn from '../../components/Btn.astro';
+import Cols from '../../components/Cols.astro';
+import Rows from '../../components/Rows.astro';
+import { solutionPages } from '../../data/solutionPages.js';
+export function getStaticPaths() { return solutionPages.map(page => ({ params: { slug: page.slug }, props: { page } })); }
+const { page } = Astro.props;
+const scopeLabels = {
+  'ai-automation-sydney': ['Workflow map', 'Integration design', 'Testing and rollout', 'Handover and maintenance'],
+  'customer-service-assistants': ['Questions and sources', 'Website and system connections', 'Handover and access rules', 'Testing and content updates'],
+  'bookings-lead-follow-up': ['Booking process', 'Calendar connections', 'Messages and preferences', 'Conflict and failure tests'],
+  'knowledge-assistants': ['Source review', 'Information connections', 'Answer testing', 'Team handover'],
+  'software-digital-products': ['Requirements and design', 'Development and integration', 'User testing and launch', 'Handover and maintenance'],
+  'ai-strategy-governance': ['Current use and priorities', 'Opportunity assessment', 'Ownership and roadmap', 'Leadership support'],
+  'openai-integration': ['Use case and measures', 'Information and access', 'Prototype testing', 'Rollout and running costs'],
+};
+const jsonld = { '@context': 'https://schema.org', '@type': 'Service', name: page.title, description: page.description, url: new URL('/solutions/' + page.slug + '/', Astro.site).href, provider: { '@type': 'Organization', name: 'NextGenius', url: Astro.site.href }, areaServed: { '@type': 'Country', name: 'Australia' } };
+const related = solutionPages.filter(p => p.slug !== page.slug).map(p => ({ title: p.title, text: p.description, href: '/solutions/' + p.slug + '/', cta: 'Explore this service' }));
+---
+<Base title={page.seoTitle ?? page.title + ' | NextGenius'} description={page.description} crumb={page.title} jsonld={jsonld}>
+  <PageHero eyebrow="Business services" title={page.title} lead={page.lead}>
+    <div class="btns"><Btn href="/contact/" label="Discuss your workflow" /><a class="tlink" href="/solutions/">All services</a></div>
+  </PageHero>
+  <section class="sec wrap"><div class="section-heading"><h2>{page.heading}</h2><p>{page.intro}</p></div><Cols items={page.examples.map(([title, text]) => ({ title, text }))} /></section>
+  <section class="sec white"><div class="wrap"><p class="eyebrow">Delivery and handover</p><h2>What the project covers.</h2><Cols items={page.scope.map((text, i) => ({ title: scopeLabels[page.slug]?.[i] ?? 'Deliverable ' + (i + 1), text }))} numbered /><p class="note"><a class="tlink" href="/getting-started/">How we plan delivery and prepare an estimate</a></p></div></section>
+  <section class="sec wrap"><p class="eyebrow">Common questions</p><h2>Before you start.</h2><Rows items={page.faqs.map(([title, text]) => ({ title, text }))} /></section>
+  <section class="sec wrap"><p class="eyebrow">Keep exploring</p><h2>Related services.</h2><Cols items={related} /><div class="btns"><Btn href="/solutions/software-digital-products/" label="Software & digital products" variant="o" /><a class="tlink" href="/blog/nextgenius-openai-select-partner/">Our OpenAI Select partnership</a></div></section>
+</Base>

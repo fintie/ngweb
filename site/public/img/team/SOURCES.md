@@ -1,0 +1,1 @@
+Portraits: https://ailearnersclub.com/about (downloaded 2026-11-02). Biographies adapted from that page. All NextGenius leadership titles, including Lukas Huber as Chief AI Consultant, supplied by the user.

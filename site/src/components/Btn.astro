@@ -1,0 +1,5 @@
+---
+const { href, label, variant = '', cls = '', blank = false } = Astro.props;
+const ext = /^https?:/.test(href);
+---
+<a class:list={['btn', variant, cls]} href={href} target={blank || ext ? '_blank' : undefined} rel={blank || ext ? 'noopener' : undefined}><span class="tx">{label}</span></a>

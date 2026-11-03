@@ -1,0 +1,19 @@
+---
+// POST works without JavaScript; enhancement preserves input on delivery failure.
+import { INTERESTS } from '../data/site.js';
+const { subject = 'Website enquiry', question, picked } = Astro.props;
+const interests = picked && !INTERESTS.includes(picked) ? [...INTERESTS, picked] : INTERESTS;
+---
+<form class="form" data-enquiry action="/api/enquiries" method="post">
+  <input type="hidden" name="subject" value={subject}>
+  <div class="form-trap" aria-hidden="true"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+  <label>Your name<input name="name" required maxlength="120" autocomplete="name"></label>
+  <label>Email<input name="email" type="email" required maxlength="254" autocomplete="email"></label>
+  <label>Company or project (optional)<input name="company" maxlength="200" autocomplete="organization"></label>
+  <label>I’m interested in<select name="interest" required><option value="" disabled hidden selected={!picked}></option>{interests.map((x) => <option value={x} selected={x === picked}>{x}</option>)}</select></label>
+  <label>{question}<textarea name="message" required maxlength="5000"></textarea></label>
+  <p class="small">We use these details to respond to your enquiry. Please leave out confidential documents and sensitive information. <a class="tlink" href="/privacy/">How we handle enquiries</a></p>
+  <div class="form-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></div>
+  <button class="btn b" type="submit"><span class="tx">Send enquiry</span></button>
+  <p class="small">Prefer email? <a class="tlink" href="mailto:info@nextgenius.com.au">info@nextgenius.com.au</a></p>
+</form>

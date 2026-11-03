@@ -1,0 +1,21 @@
+{
+  "name": "nextgenius",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@fontsource-variable/instrument-sans": "5.3.0",
+    "@fontsource-variable/onest": "5.3.1",
+    "@fontsource-variable/schibsted-grotesk": "5.3.0",
+    "force-graph": "1.52.0",
+    "graphology": "0.26.0",
+    "graphology-communities-louvain": "2.0.2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "nextgenius-test",
+  "main": "worker/index.mjs",
+  "account_id": "b1e0bbaa4f9ce8caf075919e6bb3684d",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "vars": { "ENQUIRIES_ENABLED": "false" },
+  "ratelimits": [{ "name": "ENQUIRY_RATE_LIMIT", "namespace_id": "880501", "simple": { "limit": 10, "period": 60 } }],
+  "assets": {
+    "directory": "./site/dist",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "force-trailing-slash"
+  }
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "id": "coca-cola",
+    "name": "Coca-Cola",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2025/02/coca-cola-logo-01.png",
+    "project": "https://www.cmindx.com.au/portfolio/coca-cola-my-sg/"
+  },
+  {
+    "id": "zambrero",
+    "name": "Zambrero",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2025/07/zo-logo-w.png",
+    "project": "https://www.cmindx.com.au/portfolio/zambrero-au/"
+  },
+  {
+    "id": "icbc",
+    "name": "ICBC",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2022/12/LOGO-22copy-1.png",
+    "project": "https://www.cmindx.com.au/portfolio/icbc/"
+  },
+  {
+    "id": "starlight",
+    "name": "Starlight Children’s Foundation",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2021/07/Starlight-Supporter-Logo-Horizontal-For-Digital-CMYK-MONO-copy.png",
+    "project": "https://www.cmindx.com.au/portfolio/starlight/"
+  },
+  {
+    "id": "85-degrees",
+    "name": "85°C",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2020/12/white.png",
+    "project": "https://www.cmindx.com.au/portfolio/85c/"
+  },
+  {
+    "id": "chefin",
+    "name": "CHEFIN",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2025/02/chefin-logo-w.png",
+    "project": "https://www.cmindx.com.au/portfolio/chefin/"
+  },
+  {
+    "id": "sushi-densha",
+    "name": "Sushi Densha",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2024/12/logo-w.png",
+    "project": "https://www.cmindx.com.au/portfolio/sushi-densha/"
+  },
+  {
+    "id": "luma",
+    "name": "Luma Research",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2021/09/logo.png",
+    "project": "https://www.cmindx.com.au/portfolio/lumas-insights-from-30-years-of-ad-testing/"
+  },
+  {
+    "id": "mgi",
+    "name": "MGI Entertainment",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2023/08/mgi-logo-2023-white.png",
+    "project": "https://www.cmindx.com.au/portfolio/mgi-brand-guidelines/"
+  },
+  {
+    "id": "lotte-phantaci",
+    "name": "LOTTE × PHANTACi",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2024/03/logo-2.png",
+    "project": "https://www.cmindx.com.au/portfolio/lotte-x-phantaci/"
+  },
+  {
+    "id": "yasaka",
+    "name": "Yasaka Ramen",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2025/04/Screenshot-2025-04-22-at-5.41.13-pm_attr1_subject.png",
+    "project": "https://www.cmindx.com.au/portfolio/yasaka-ramen/"
+  },
+  {
+    "id": "mackas",
+    "name": "Mackas Beef",
+    "source": "https://www.cmindx.com.au/wp-content/uploads/2022/12/mackas.png",
+    "project": "https://www.cmindx.com.au/portfolio/mackas-beef/"
+  },
+  {
+    "id": "alipay",
+    "name": "Alipay",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Alipay_Wordmark_Logo.png",
+    "project": "User-confirmed portfolio on 2026-11-02",
+    "assetPage": "https://commons.wikimedia.org/wiki/File:Alipay_Wordmark_Logo.png"
+  }
+]

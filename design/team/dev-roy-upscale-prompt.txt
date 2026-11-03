@@ -1,0 +1,4 @@
+Mode: built-in image editing, followed by a 2048 x 2048 Lanczos export.
+Source: user-provided portrait, 800 x 800.
+
+Use case: identity-preserve. Edit target: the supplied square portrait photograph. Upscale and faithfully restore this exact photograph at 2048 x 2048 or highest available square resolution. Increase resolution and fine detail only. Preserve the man's exact identity, facial proportions, asymmetry, eyes, expression, skin tone, hairstyle, head position, suit, white shirt, tie, square framing, background bokeh and original lighting and colors. Keep the same composition and crop. Retain natural skin texture; recover subtle hair and fabric detail without harsh sharpening. Do not beautify, reshape, retouch facial features, change age, smooth skin, change expression, add objects, replace background or stylize. The result must look like a higher resolution version of the same image, not a new portrait.

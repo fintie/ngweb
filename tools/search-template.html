@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NextGenius Knowledge Base</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#14202e;--mute:#5d6b7c;--line:#dde2e8;--acc:#10253b;--hi:#ffe27a;--chip:#eaeef3;--gold:#e0a800}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1620;--card:#162331;--ink:#e8edf3;--mute:#93a3b5;--line:#25384b;--acc:#8fb8e8;--hi:#6b5a10;--chip:#1f3144}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,Segoe UI,sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 16px}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-size:18px;margin:0 0 10px;color:var(--acc)}h1 small{font-weight:400;color:var(--mute);margin-left:8px}
+#q{width:100%;padding:12px 14px;font-size:16px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+#q:focus{outline:2px solid var(--acc)}
+.tabs{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.tab,.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:5px 11px;border-radius:999px;cursor:pointer;font-size:13px}
+.tab[aria-pressed=true],.chip[aria-pressed=true]{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+main{display:grid;grid-template-columns:230px 1fr;gap:20px;padding:16px}
+aside h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:14px 0 6px}
+aside .chips{display:flex;flex-wrap:wrap;gap:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+.card h2{font-size:16px;margin:0 0 2px}.crumb{font-size:12px;color:var(--mute);margin-bottom:6px}
+.card pre{white-space:pre-wrap;font:inherit;margin:6px 0 0}
+mark{background:var(--hi);color:inherit;border-radius:3px;padding:0 1px}
+.tag{display:inline-block;font-size:11px;background:var(--chip);border-radius:6px;padding:1px 7px;margin:6px 4px 0 0;color:var(--mute)}
+.warn{color:#b35a00}.meta{font-size:12px;color:var(--mute)}a{color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}.grid .card{padding:8px}.grid img{width:100%;height:140px;object-fit:contain;background:var(--chip);border-radius:8px}
+.tree ul{list-style:none;margin:0;padding-left:18px}.tree>ul{padding-left:0}.tree li{margin:3px 0}.tree .n{color:var(--mute);font-size:12px}
+main.wide{grid-template-columns:1fr}main.wide aside{display:none}
+#out{min-width:0}.gwrap{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:14px}.gwrap>*{min-width:0}#gv canvas{display:block}#gv{height:68vh;min-height:420px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+#gp{max-height:68vh;overflow:auto;margin:0}#gp h2{margin-bottom:4px}#gp .nb{margin:2px 4px 2px 0;cursor:pointer}
+#gl{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}#gl .chip i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.snip{border-left:3px solid var(--line);padding-left:8px;margin:8px 0;font-size:13px;color:var(--mute)}
+@media(max-width:900px){main{grid-template-columns:minmax(0,1fr)}aside{order:2}.gwrap{grid-template-columns:minmax(0,1fr)}#gp{max-height:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>NextGenius Knowledge Base <small id="stats"></small></h1>
+<input id="q" type="search" placeholder="Search all text, FAQs, plans, images… (e.g. RAG, pricing, workshop, OPC)" autofocus>
+<div class="tabs" id="views"></div>
+</div></header>
+<main class="wrap">
+<aside><h3>Content type</h3><div class="chips" id="types"></div><h3>Section of site</h3><div class="chips" id="cats"></div><h3>Topic tag</h3><div class="chips" id="tags"></div></aside>
+<section id="out"></section>
+</main>
+<script src="vendor/force-graph.min.js"></script>
+<script id="kbdata" type="application/json">/*KB_JSON*/</script>
+<script>
+const KB = JSON.parse(document.getElementById('kbdata').textContent);
+const TYPE_LABEL = {page:'Page text',blog:'Blog (visible)','code-only':'In code, not visible',faq:'FAQ',opc:'OPC planner',product:'Product sites',meta:'SEO meta',image:'Images'};
+const state = {q:'',view:'search',types:new Set(),cats:new Set(),tags:new Set()};
+const $ = s => document.querySelector(s);
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tok = s => s.toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu,' ').trim().split(' ').filter(Boolean);
+KB.chunks.forEach(c => { c._h = tok(c.heading+' '+c.page); c._b = tok(c.text); c._t = c.tags.map(t=>t.toLowerCase()); });
+const df = {}; KB.chunks.forEach(c => new Set([...c._h,...c._b]).forEach(t => df[t]=(df[t]||0)+1));
+const idf = t => Math.log(1+KB.chunks.length/(1+(df[t]||0)));
+function score(c, terms){
+  let s = 0;
+  for (const t of terms){
+    const m = (arr, w) => { let n = 0; for (const x of arr) if (x===t) n+=1; else if (t.length>2 && x.startsWith(t)) n+=.5; return n*w; };
+    const hit = m(c._h,4) + m(c._b,1) + (c._t.includes(t)?3:0);
+    if (!hit) return 0; // AND semantics: every term must match
+    s += hit*idf(t);
+  }
+  return s;
+}
+const mk = (txt, terms) => { let h = esc(txt); for (const t of terms) h = h.replace(new RegExp('(\\b'+t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\w*)','gi'),'<mark>$1</mark>'); return h; };
+function chips(id, items, set, label){
+  $(id).innerHTML = items.map(([k,n]) => `<button class="chip" aria-pressed="${set.has(k)}" data-k="${esc(k)}">${esc(label?label(k):k)} · ${n}</button>`).join('');
+  $(id).onclick = e => { const k = e.target.dataset?.k; if(!k) return; set.has(k)?set.delete(k):set.add(k); render(); };
+}
+const count = f => Object.entries(KB.chunks.flatMap(f).reduce((a,k)=>(a[k]=(a[k]||0)+1,a),{})).sort((a,b)=>b[1]-a[1]);
+function filtered(){ return KB.chunks.filter(c => (!state.types.size||state.types.has(c.type)) && (!state.cats.size||state.cats.has(c.category)) && (!state.tags.size||c.tags.some(t=>state.tags.has(t)))); }
+function viewSearch(){
+  const terms = tok(state.q); let rows = filtered();
+  if (terms.length) rows = rows.map(c=>[c,score(c,terms)]).filter(r=>r[1]>0).sort((a,b)=>b[1]-a[1]).map(r=>r[0]);
+  $('#out').innerHTML = `<p class="meta">${rows.length} result${rows.length===1?'':'s'}${terms.length?'':' (showing all – type to search)'}</p>` + rows.slice(0,80).map(c => {
+    const body = c.text.length>900 ? c.text.slice(0,900)+' …' : c.text;
+    return `<article class="card"><div class="crumb">${esc(TYPE_LABEL[c.type]||c.type)} · ${esc(c.category)} · <a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.route||c.url)}</a>${c.note?` · <span class="warn">${esc(c.note)}</span>`:''}</div>
+    <h2>${mk(c.heading,terms)}</h2>${c.image?`<img src="${esc(c.image)}" alt="" style="max-width:260px;border-radius:8px;margin:6px 0">`:''}<pre>${mk(body,terms)}</pre>${c.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</article>`;
+  }).join('');
+}
+function viewOutline(){
+  const by = {}; KB.pages.forEach(p => (by[p.category]??=[]).push(p));
+  $('#out').innerHTML = `<div class="card tree"><ul>${Object.entries(by).map(([cat,ps]) => `<li><b>${esc(cat)}</b><ul>${ps.map(p=>`<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.route)}</a> – ${esc(p.title)} <span class="n">${p.sections} sections · ${p.images} images · meta ${p.metas.description?'✓':'✗ none'}</span></li>`).join('')}</ul></li>`).join('')}</ul></div>`;
+}
+function viewImages(){
+  $('#out').innerHTML = `<div class="grid">${KB.images.map(i=>`<div class="card"><img src="images/${esc(i.file)}" alt="${esc(i.alts[0]||'')}" loading="lazy"><div class="meta"><b>${esc(i.file)}</b><br>${esc(i.desc)}<br>Alt: ${esc(i.alts.join('; ')||'–')}<br>Used: ${esc(i.pages.join(', ')||'–')}</div></div>`).join('')}</div>`;
+}
+const PAL=['#4e79a7','#f28e2b','#59a14f','#e15759','#b07aa1','#76b7b2','#edc948','#9c755f','#ff9da7','#86bc86','#bab0ac','#d37295'];
+const colOf = c => c<0?'#8a97a6':PAL[c%PAL.length];
+let fg=null;
+function viewGraph(){
+  const G=KB.graph; if(!G){$('#out').innerHTML='<p class="meta">No graph data.</p>';return;}
+  $('#out').innerHTML='<div class="gwrap"><div id="gv"></div><div id="gp" class="card"><p class="meta">Click a dot to see what it is, what it connects to and the original text. Type in the search box to light up matching dots.</p></div></div><div id="gl"></div>';
+  const nodes=G.nodes.map(n=>({...n})), links=G.links.map(l=>({...l}));
+  const byId=Object.fromEntries(nodes.map(n=>[n.id,n]));
+  const terms=tok(state.q); let sel=null, focus=null;
+  const hit=n=>terms.length&&terms.every(t=>tok(n.name+' '+n.description).some(x=>x.startsWith(t)));
+  const nbr=id=>links.filter(l=>(l.source.id??l.source)===id||(l.target.id??l.target)===id).map(l=>byId[(l.source.id??l.source)===id?(l.target.id??l.target):(l.source.id??l.source)]);
+  const ink=getComputedStyle(document.body).color;
+  const dim=n=>(focus!==null&&n.community!==focus)||(sel&&sel.id!==n.id&&!nbr(sel.id).includes(n))||(terms.length&&!hit(n));
+  const el=$('#gv');
+  fg=ForceGraph()(el).width(el.clientWidth).height(el.clientHeight).graphData({nodes,links}).nodeId('id')
+    .nodeLabel(n=>`${n.name} · ${n.type}`).nodeRelSize(4).nodeVal(n=>1+n.degree*.8)
+    .linkColor(l=>'rgba(130,145,160,'+(sel||focus!==null||terms.length?'.12':'.35')+')').linkWidth(l=>.4+l.strength/6)
+    .nodeCanvasObject((n,ctx,k)=>{
+      const r=Math.sqrt(1+n.degree*.8)*4, d=dim(n);
+      ctx.globalAlpha=d?.15:1; ctx.beginPath(); ctx.arc(n.x,n.y,r,0,7); ctx.fillStyle=colOf(n.community); ctx.fill();
+      if(sel&&sel.id===n.id){ctx.lineWidth=2/k;ctx.strokeStyle=ink;ctx.stroke();}
+      if(!d&&(n.degree>=(k<1.3?10:k<2?6:k<3?3:0)||(sel&&(sel.id===n.id||nbr(sel.id).includes(n)))||hit(n))){ctx.font=`${Math.max(10/k,3)}px system-ui`;ctx.fillStyle=ink;ctx.textAlign='center';ctx.fillText(n.name,n.x,n.y+r+Math.max(10/k,3));}
+      ctx.globalAlpha=1;})
+    .nodePointerAreaPaint((n,c,ctx)=>{ctx.fillStyle=c;ctx.beginPath();ctx.arc(n.x,n.y,Math.sqrt(1+n.degree*.8)*4+2,0,7);ctx.fill();})
+    .onNodeClick(n=>{sel=n;panel(n);fg.linkColor(fg.linkColor());})
+    .onBackgroundClick(()=>{sel=null;focus=null;$('#gp').innerHTML='<p class="meta">Click a dot.</p>';fg.linkColor(fg.linkColor());});
+  fg.d3Force('charge').strength(-140); fg.d3Force('link').distance(38);
+  const fit=()=>{if(fg&&el.isConnected)fg.width(el.clientWidth).height(el.clientHeight);};
+  requestAnimationFrame(fit); window.addEventListener('resize',fit);
+  let fitted=false; fg.onEngineStop(()=>{if(!fitted){fitted=true;fg.zoomToFit(500,30);}});
+  function panel(n){
+    const com=G.communities.find(c=>c.id===n.community), rep=(G.reports||{})[n.community];
+    const ch=n.chunks.map(id=>KB.chunks.find(c=>c.id===id)).filter(Boolean).slice(0,6);
+    const rl=links.filter(l=>(l.source.id??l.source)===n.id||(l.target.id??l.target)===n.id);
+    $('#gp').innerHTML=`<h2>${esc(n.name)}</h2><div class="meta"><span style="color:${colOf(n.community)}">●</span> ${esc(n.type)} · group ${n.community<0?'other':n.community+1} · ${n.degree} links · in ${n.chunks.length} text part${n.chunks.length===1?'':'s'}</div>
+    <p>${esc(n.description||'')}</p>${rep?`<div class="snip"><b>Group summary:</b> ${esc(rep.title||'')} – ${esc(rep.summary||'')}</div>`:''}
+    <h3 class="meta">Connected to</h3>${rl.map(l=>{const o=byId[(l.source.id??l.source)===n.id?(l.target.id??l.target):(l.source.id??l.source)];return `<button class="chip nb" data-id="${esc(o.id)}" title="${esc(l.description)}">${esc(o.name)}</button>`}).join('')}
+    <h3 class="meta">Original text</h3>${ch.map(c=>`<div class="snip"><b>${esc(c.heading)}</b><br>${esc(c.text.slice(0,260))}${c.text.length>260?' …':''}<br><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.route)}</a></div>`).join('')}`;
+    $('#gp').querySelectorAll('.nb').forEach(b=>b.onclick=()=>{const o=byId[b.dataset.id];sel=o;panel(o);fg.centerAt(o.x,o.y,600);fg.zoom(3,600);});
+  }
+  $('#gl').innerHTML=G.communities.map(c=>`<button class="chip" data-c="${c.id}" aria-pressed="false" title="${esc(c.top.join(', '))}"><i style="background:${colOf(c.id)}"></i>${esc((G.reports||{})[c.id]?.title||c.top[0])} · ${c.size}</button>`).join('');
+  $('#gl').onclick=e=>{const b=e.target.closest('[data-c]');if(!b)return;const c=+b.dataset.c;focus=focus===c?null:c;sel=null;
+    document.querySelectorAll('#gl .chip').forEach(x=>x.setAttribute('aria-pressed',focus!==null&&+x.dataset.c===focus));
+    const rep=(G.reports||{})[c];$('#gp').innerHTML=focus===null?'<p class="meta">Click a dot.</p>':`<h2>${esc(rep?.title||'Group '+(c+1))}</h2><p>${esc(rep?.summary||'')}</p>${(rep?.findings||[]).map(f=>`<div class="snip">${esc(f)}</div>`).join('')}<div class="meta">Main items: ${esc(G.communities[c].top.join(', '))}</div>`;fg.linkColor(fg.linkColor());};
+  if(terms.length){setTimeout(()=>{const h=nodes.filter(hit);if(h.length===1){fg.centerAt(h[0].x,h[0].y,500);fg.zoom(3,500);}},900);}
+}
+function render(){
+  document.querySelector('main').className='wrap'+(state.view==='search'?'':' wide');
+  document.querySelectorAll('#views .tab').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===state.view));
+  const pool = KB.chunks;
+  chips('#types',count(c=>[c.type]),state.types,k=>TYPE_LABEL[k]||k);
+  chips('#cats',count(c=>[c.category]),state.cats);
+  chips('#tags',count(c=>c.tags),state.tags);
+  ({search:viewSearch,outline:viewOutline,images:viewImages,graph:viewGraph})[state.view]();
+}
+$('#views').innerHTML = [['search','Search'],['graph','Graph'],['outline','Site outline'],['images','Images']].map(([v,l])=>`<button class="tab" data-v="${v}">${l}</button>`).join('');
+$('#views').onclick = e => { if(e.target.dataset.v){state.view=e.target.dataset.v;render();} };
+$('#q').oninput = e => { state.q = e.target.value; if(state.view!=='search'&&state.view!=='graph')state.view='search'; render(); };
+$('#stats').textContent = `${KB.chunks.length} chunks · ${KB.pages.length} pages · ${KB.images.length} images · built ${KB.built}`;
+render();
+</script>
+</body>
+</html>

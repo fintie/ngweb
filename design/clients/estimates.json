@@ -1,0 +1,101 @@
+{
+  "reviewedOn": "2026-11-02",
+  "currency": "AUD",
+  "purpose": "Internal, approximate company/group equity-value proxies used only to order portfolio logos. Private estimates are scenario judgements, not published valuations or audited net worth. They are not displayed on the website.",
+  "fxAssumption": {"usdToAud": 1.4222, "usdToCny": 6.6574, "usdToHkd": 7.8449, "krwPerAud": 938, "date": "2026-10-30", "note": "Rounded indicative FX; different markets close at different times."},
+  "companies": [
+    {
+      "id": "icbc", "centralValueAud": 628274264547, "lowValueAud": 625000000000, "highValueAud": 632000000000,
+      "status": "calculated_public_market_equity", "confidence": "medium-high", "scope": "Industrial and Commercial Bank of China, ordinary A and H shares together",
+      "method": "A shares times A closing price plus H shares times H closing price, each converted to AUD. Do not multiply all shares by the H-share price.",
+      "inputs": {"aShares":269612212539,"aPriceCny":8.75,"hShares":86794044550,"hPriceHkd":7.90,"priceDate":"2026-10-30","shareCountDate":"2025-12-31"},
+      "assumptions": "Uses the confirmed 2025 annual-report share split and assumes no subsequent material ordinary-share change; approximate FX and closing dates. This measures market equity, not accounting net assets.",
+      "sources": ["https://v.icbc.com.cn/userfiles/Resources/ICBCLTD/download/2026/2025AnnualReport.pdf", "https://stockanalysis.com/quote/sha/601398/history/", "https://stockanalysis.com/quote/hkg/1398/history/", "https://www.exchangerates.org.uk/USD-CNY-EXCHANGE-RATE-HISTORY.html", "https://www.exchangerates.org.uk/USD-HKD-exchange-rate-history.html"]
+    },
+    {
+      "id": "coca-cola", "centralValueAud": 575597010319, "lowValueAud": 573000000000, "highValueAud": 578000000000,
+      "status": "calculated_public_market_equity", "confidence": "high", "scope": "The Coca-Cola Company",
+      "method": "4,301,902,335 ordinary shares times US$94.08 closing price, converted to AUD.",
+      "inputs": {"shares":4301902335,"shareCountDate":"2026-10-26","priceUsd":94.08,"priceDate":"2026-10-30"},
+      "assumptions": "No material share-count movement between the filing date and price date. Accounting equity is a different measure and is not substituted for market value.",
+      "sources": ["https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-067844/ko-20261002.htm", "https://stockanalysis.com/stocks/ko/history/"]
+    },
+    {
+      "id": "alipay", "centralValueAud": 150000000000, "lowValueAud": 100000000000, "highValueAud": 220000000000,
+      "status": "private_parent_group_scenario", "confidence": "low", "scope": "Ant Group, the group operating Alipay; not standalone Alipay",
+      "method": "Broad judgement range anchored to Ant's 2023 repurchase-implied US$78.54bn equity value, with substantial uncertainty for elapsed time and group changes. Central A$150bn is an ordering assumption, not a new observed transaction.",
+      "assumptions": "The full parent is a scale proxy for the brand. A standalone Alipay value cannot be separated from public information. The parent value must never be described as an Alipay appraisal.",
+      "sources": ["https://www1.hkexnews.hk/listedco/listconews/sehk/2023/0810/2023081000990.pdf", "https://www.antgroup.com/en/business-development"]
+    },
+    {
+      "id": "lotte-phantaci", "centralValueAud": 11000000000, "lowValueAud": 8000000000, "highValueAud": 15000000000,
+      "status": "private_parent_asset_backed_scenario", "confidence": "low-medium", "scope": "Hotel Lotte, the business behind the LOTTE Duty Free mark; not the collaboration or PHANTACi",
+      "method": "Hotel Lotte's consolidated controlling equity at 2024-12-31 was KRW10,393,144,365,218, about A$11.08bn at indicative KRW938/AUD. Apply a broad roughly 0.7–1.35x net-asset scenario for the ordering range.",
+      "assumptions": "Book equity is an anchor, not a market valuation. Property revaluation, debt, later disposals and operating performance can alter sale value. The joint logo remains unchanged; no combined collaboration value is asserted.",
+      "sources": ["https://www.lottehotel.com/cms/asset/2025/03/31/25069/52%EA%B8%B0%20%EA%B2%B0%EC%82%B0%EA%B3%B5%EA%B3%A0%20%EC%9E%AC%EB%AC%B4%EC%83%81%ED%83%9C%ED%91%9C.pdf", "https://www.jcr.co.jp/download/f037d8c8c77f372f58fc0cf3020780ccc99482f446027849f8/25i0109_f.pdf", "https://www.cmindx.com.au/portfolio/lotte-x-phantaci/"]
+    },
+    {
+      "id": "zambrero", "centralValueAud": 900000000, "lowValueAud": 650000000, "highValueAud": 1200000000,
+      "status": "private_historical_transaction_growth_scenario", "confidence": "low-medium", "scope": "Zambrero restaurant/franchise business",
+      "method": "A$700m reported 2023 transaction valuation is the historical anchor. The footprint increased from about 245 restaurants at investment to a reported 365 in 2026. A constant-value-per-store scenario gives about A$1.04bn; a roughly 15% haircut yields the rounded A$900m ordering value.",
+      "assumptions": "Store count is not profit and the same-store economic assumption may be wrong. The interval allows weaker/stronger unit economics, financing and expansion costs. A$250m funding is not the company's valuation.",
+      "sources": ["https://www.preqin.com/data/profile/asset/zambrero-pty-ltd/532281", "https://www.occstrategy.com/en/occ-advises-metric-capital-partners-on-acquisition-of-mexican-restaurant-chain/", "https://www.restaurantbusiness.com.au/inside-zambreros-next-chapter-500-restaurants-global-expansion-and-a-new-leadership-bench/"]
+    },
+    {
+      "id": "85-degrees", "centralValueAud": 660000000, "lowValueAud": 630000000, "highValueAud": 700000000,
+      "status": "public_parent_market_value_proxy", "confidence": "medium-high", "scope": "Gourmet Master, listed parent behind the 85°C brand",
+      "method": "Recent public parent market cap around US$462m, approximately A$657m at the indicative FX assumption; rounded to A$660m.",
+      "assumptions": "Parent-company market value, not standalone Australian 85°C franchise value. Snapshot sources have slightly different price dates.",
+      "sources": ["https://www.marketscreener.com/quote/stock/GOURMET-MASTER-CO-LTD-7862990/", "https://stockanalysis.com/quote/tpe/2723/market-cap/", "https://www.nasaaefd.org/Franchise/Actions/DownloadFile.ashx?DocId=134722&isRegistered=true"]
+    },
+    {
+      "id": "mackas", "centralValueAud": 50720320, "lowValueAud": 20000000, "highValueAud": 80000000,
+      "status": "private_asset_backed_scenario", "confidence": "low", "scope": "Aggregate Mackenzie family farming operation supporting Mackas Beef, not only the brand/trading entity",
+      "method": "Central scenario: 6,400ha times A$9,884/ha, plus 4,000 cattle times assumed A$1,800 and assumed A$2m equipment, then deduct assumed debt/other claims of 30%: A$50.72m.",
+      "assumptions": "The reported operated area may include leased or separately owned property. Current land holdings, ownership, livestock prices, group structure and debt are unverified. Range varies land at A$7k–13k/ha, livestock/plant and assumed debt at 20–60%. This is conditional asset backing, not a property appraisal or a verified brand-company net worth.",
+      "sources": ["https://www.evokeag.com/the-story-telling-power-of-agritech-how-data-is-helping-mackas-australian-black-angus-beef-tell-a-story-thats-worth-hearing/", "https://www.bendigobank.com.au/siteassets/business/industries/agribusiness/agriculture-insights/_reports/2026-farmland-values-report.pdf", "https://www.mla.com.au/news-and-events/industry-news/climate-resilience-grounded-in-pasture-diversity/"]
+    },
+    {
+      "id": "starlight", "centralValueAud": 16345043, "lowValueAud": 16345043, "highValueAud": 16345043,
+      "status": "reported_charity_net_assets", "confidence": "high_for_reported_date", "scope": "Starlight Children's Foundation Australia",
+      "method": "Reported assets A$21,959,796 minus liabilities A$5,614,753 = A$16,345,043 net assets at 2025-12-31. Annual report printed page 29, PDF page 31, checked visually.",
+      "assumptions": "A charity's reported net assets are used solely as a size proxy; they are not a commercial market value, sale price or money available for distribution. No extrapolation to a current 2026 balance sheet.",
+      "sources": ["https://downloads.ctfassets.net/5c0byp1iji8d/4Ws17wCkDm7KSLBI6K1Lzi/62a5a9207cddc78f352409f97d0fe6c3/Starlight_2025_Annual_Review_Report.pdf", "https://www.starlight.org.au/about-us/who-we-are/our-performance/"]
+    },
+    {
+      "id": "mgi", "centralValueAud": 6000000, "lowValueAud": 2700000, "highValueAud": 13125000,
+      "status": "private_earnings_scenario", "confidence": "very_low", "scope": "MGI Entertainment at mgientertainment.com; not Media and Games Invest or Miss Grand International",
+      "method": "Company profile describes 30 specialists. Assume net fee revenue A$200k–350k per specialist, 15–25% normalised EBITDA and 3–5x EBITDA. Central: 30 times A$250k times 20% times 4 = A$6m.",
+      "assumptions": "Fee revenue, profit margin and debt/cash are unreported. Talent/media pass-through billings are excluded. Treat enterprise value as an equity proxy only under the explicit neutral net-debt assumption; debt could materially change it.",
+      "sources": ["https://www.linkedin.com/company/mgi-entertainment", "https://www.mgientertainment.com/what-we-do/", "https://www.feinternational.com/blog/agency-valuation-multiples-in-2026-marketing-creative-and-dev-shop-benchmarks"]
+    },
+    {
+      "id": "luma", "centralValueAud": 3000000, "lowValueAud": 990000, "highValueAud": 10000000,
+      "status": "private_earnings_scenario", "confidence": "very_low", "scope": "Luma Research, Australian advertising research business; not Luma AI",
+      "method": "Public profile lists 11–50 staff and approximately 11 linked members; choose an assumed 10–25 FTE scenario, A$220k–320k net revenue per FTE, 15–25% EBITDA margin, and 3–5x EBITDA. Central: 15 times A$250k times 20% times 4 = A$3m.",
+      "assumptions": "LinkedIn members are not an audited headcount. FTE, fee revenue, EBITDA, debt and cash are assumptions, not reported company results. No separate value assigned to software/IP beyond the selected multiple. Neutral net-debt assumption.",
+      "sources": ["https://www.linkedin.com/company/luma-research", "https://www.lumaresearch.com/who-we-are", "https://www.feinternational.com/blog/agency-valuation-multiples-in-2026-marketing-creative-and-dev-shop-benchmarks"]
+    },
+    {
+      "id": "chefin", "centralValueAud": 2400000, "lowValueAud": 600000, "highValueAud": 6000000,
+      "status": "private_marketplace_revenue_scenario", "confidence": "very_low", "scope": "CHEFIN private-chef platform business",
+      "method": "The investor page mentions A$6m in marketplace activity without a clear period. Assume annual GMV A$2m–6m, a 15–25% take rate, and 2–4x net platform revenue. Central: A$4m GMV times 20% take rate times 3 = A$2.4m.",
+      "assumptions": "The quoted marketplace amount is not necessarily annual and is not net revenue, profit or valuation. GMV period, take rate, growth, cash and debt are unverified. The revenue multiple is a chosen small-platform scenario, not a disclosed funding valuation. Neutral net-debt assumption.",
+      "sources": ["https://chefin.com.au/corporate/investors/"]
+    },
+    {
+      "id": "sushi-densha", "centralValueAud": 750000, "lowValueAud": 200000, "highValueAud": 1500000,
+      "status": "private_single_venue_earnings_scenario", "confidence": "very_low", "scope": "Sushi Densha's Rouse Hill venue, not unrelated similarly named restaurants",
+      "method": "Confirmed shopping-centre sushi-train venue. Assume A$2.5m annual turnover, 12% normalised owner earnings and 2.5x earnings = A$750k. Wide range covers lower/higher trade, margins and lease quality.",
+      "assumptions": "Turnover, profit, lease, equipment ownership, debt and other venues are unverified. No freehold property assumed. Earnings multiples are small-venue scenarios, not a venue appraisal. Neutral net-debt assumption.",
+      "sources": ["https://www.rhtc.com.au/stores-services/sushi-densha", "https://strategictransactions.com.au/wp-content/uploads/2025/03/Food-and-Beverage-Market-Update-2023.pdf", "https://www.businessforsale.com.au/business-advice/the-ultimate-guide-to-buying-a-restaurant-business"]
+    },
+    {
+      "id": "yasaka", "centralValueAud": 450000, "lowValueAud": 0, "highValueAud": 900000,
+      "status": "private_conditional_venue_scenario", "confidence": "very_low", "scope": "One operating Yasaka Ramen venue/brand scenario; no consolidated multi-venue value assumed",
+      "method": "Assume A$1.8m annual turnover, 10% normalised owner earnings and 2.5x earnings = A$450k. Zero lower bound reflects unverified present trading/lease continuity; no closure is asserted.",
+      "assumptions": "ABN record confirms the business name under Glory Sydney Pty Ltd but does not establish trading status or ownership of every historical venue. Revenue, profit, debt, venue count and current lease are unverified. No freehold property and neutral net debt assumed.",
+      "sources": ["https://abr.business.gov.au/ABN/View?id=86164677650", "https://www.cmindx.com.au/portfolio/yasaka-ramen/", "https://strategictransactions.com.au/wp-content/uploads/2025/03/Food-and-Beverage-Market-Update-2023.pdf"]
+    }
+  ]
+}

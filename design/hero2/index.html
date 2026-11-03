@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NextGenius – design template v2</title>
+<meta name="description" content="Design template v2: motion, video and a live knowledge graph. Copy from the NextGenius knowledge base.">
+<link rel="preload" href="fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Schibsted Grotesk";src:url(fonts/schibsted-grotesk-latin-wght-normal.woff2) format("woff2");font-weight:400 900;font-display:swap}
+:root{--ink:#050c18;--ink2:#0b1628;--blue:#3366ff;--paper:#fff;--mist:#eef0f4;--gold:#f2b705;
+  --txt:rgba(255,255,255,.76);--hd:rgba(255,255,255,.15);--hl:rgba(5,12,24,.14);
+  --gut:clamp(16px,3vw,44px);--maxw:1560px;--e:cubic-bezier(.65,0,.35,1);--e2:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.5 "Schibsted Grotesk",system-ui,sans-serif;background:var(--ink);color:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img,video{display:block;max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.07;mix-blend-mode:overlay;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* loader */
+.loader{position:fixed;inset:0;z-index:100;background:var(--ink);display:grid;place-items:center;transition:opacity .7s var(--e) .5s,visibility 0s 1.3s}
+.loader img{height:54px;animation:pulse 1.2s ease-in-out infinite}
+body.ready .loader{opacity:0;visibility:hidden}
+@keyframes pulse{50%{opacity:.4}}
+
+/* custom cursor */
+.cursor{position:fixed;left:0;top:0;z-index:95;pointer-events:none;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#fff;mix-blend-mode:difference;display:grid;place-items:center;transition:width .35s var(--e2),height .35s var(--e2),margin .35s var(--e2),background .2s;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:transparent;font-weight:600}
+.cursor.big{width:92px;height:92px;margin:-46px 0 0 -46px;background:#fff;mix-blend-mode:normal;color:var(--ink)}
+.cursor.hide{opacity:0}
+@media (pointer:coarse){.cursor{display:none}}
+
+/* floating glass header */
+header{position:fixed;top:14px;left:0;right:0;z-index:50;pointer-events:none}
+.bar{pointer-events:auto;max-width:1180px;margin:0 auto;height:58px;padding:0 8px 0 22px;display:flex;align-items:center;justify-content:space-between;border-radius:999px;background:rgba(14,24,42,.5);backdrop-filter:blur(20px) saturate(1.3);-webkit-backdrop-filter:blur(20px) saturate(1.3);border:1px solid rgba(255,255,255,.14);box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.bar img{height:32px;width:auto}
+nav{display:flex;gap:clamp(14px,2.2vw,32px);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+nav a{opacity:.75;transition:opacity .2s}nav a:hover{opacity:1}
+.pill{display:inline-flex;align-items:center;background:#fff;color:var(--ink);border-radius:999px;padding:4px 4px 4px 20px;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.pill i{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;margin-left:14px;font-style:normal;transition:transform .45s var(--e),background .2s}
+.pill:hover i{transform:rotate(-45deg);background:var(--blue)}
+.pill.blue{background:var(--blue);color:#fff}.pill.blue i{background:#fff;color:var(--blue)}
+.pill.lg{font-size:13px;padding:5px 5px 5px 24px}.pill.lg i{width:42px;height:42px}
+.link{font-size:13px;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:3px;opacity:.85}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;overflow:hidden;isolation:isolate;background:radial-gradient(120% 90% at 78% 30%,#0f2347 0%,var(--ink) 60%)}
+#bg{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(5,12,24,.78) 0%,rgba(5,12,24,.25) 55%,transparent 80%),linear-gradient(0deg,var(--ink) 0%,transparent 28%)}
+.hero-in{flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding-top:120px;padding-bottom:clamp(20px,4vh,40px);position:relative}
+h1{font-weight:500;text-transform:uppercase;letter-spacing:-.04em;line-height:.88;font-size:clamp(46px,9.4vw,176px)}
+h1 .ln{display:block;overflow:hidden;padding-bottom:.07em}
+h1 .ln span{display:block;transform:translateY(108%)}
+body.ready h1 .ln span{animation:rise 1.2s var(--e) forwards}
+body.ready h1 .ln:nth-child(2) span{animation-delay:.14s}
+h1 em{font-style:normal;background:linear-gradient(90deg,#6f93ff,#3366ff 60%,#9a7bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+@keyframes rise{to{transform:none}}
+.hero-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--gut);align-items:end;margin-top:clamp(20px,4vh,40px)}
+.hero-row p{max-width:520px;color:var(--txt);font-size:clamp(16px,1.3vw,20px)}
+.cta-row{display:flex;gap:26px;align-items:center;flex-wrap:wrap;margin-top:24px}
+.hint-g{font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.55;text-align:right;line-height:1.7}
+/* cycling tile (top right) */
+.cycle{position:absolute;right:var(--gut);top:104px;width:clamp(170px,17vw,290px);aspect-ratio:1.5;border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.cycle .s{position:absolute;inset:0;opacity:0;transform:scale(1.06);transition:opacity .6s var(--e),transform 1.1s var(--e);display:grid;place-items:center}
+.cycle .s.on{opacity:1;transform:none}
+.cycle video{width:100%;height:100%;object-fit:cover;object-position:top}
+.cycle .word{color:var(--ink);text-align:left;font-weight:500;line-height:1.05;font-size:clamp(16px,1.6vw,26px);padding:0 16%;width:100%}
+.cycle .word span{display:block}
+.cycle .logo{background:#fff}.cycle .logo img{height:44%;}
+.cycle .tag{position:absolute;left:8px;bottom:8px;background:rgba(5,12,24,.7);color:#fff;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border-radius:99px;backdrop-filter:blur(6px)}
+/* marquee */
+.marq{border-top:1px solid var(--hd);border-bottom:1px solid var(--hd);overflow:hidden;white-space:nowrap;background:var(--ink)}
+.marq div{display:inline-block;padding:18px 0;animation:mq 38s linear infinite;font-size:clamp(28px,4.2vw,64px);font-weight:500;text-transform:uppercase;letter-spacing:-.02em}
+.marq span{margin:0 28px;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.55)}
+.marq b{font-weight:500;color:#fff;margin:0 28px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--hd);margin-top:clamp(18px,3vh,32px)}
+.facts div{padding:16px 16px 18px 18px;font-size:14px;color:var(--txt);border-left:1px solid var(--hd)}
+.facts div:first-child{border-left:0;padding-left:0}.facts b{display:block;color:#fff;font-weight:600;font-size:15px}
+
+/* sections */
+.sec{padding:clamp(80px,12vw,180px) 0;position:relative}
+.light{background:#fff;color:var(--ink)}
+h2{font-weight:400;letter-spacing:-.025em;line-height:1.02;font-size:clamp(34px,4.6vw,76px)}
+h2.up{text-transform:uppercase;font-weight:500;letter-spacing:-.04em;font-size:clamp(40px,7.4vw,136px);line-height:.9}
+.rv{opacity:0;transform:translateY(30px);transition:opacity 1s var(--e2),transform 1s var(--e2)}.rv.in{opacity:1;transform:none}
+
+/* statement: words light up on scroll */
+.stmt{font-size:clamp(28px,4.9vw,84px);line-height:1.06;letter-spacing:-.03em;font-weight:500;max-width:1320px}
+.stmt .w{opacity:.14;transition:opacity .25s}
+.stmt .w.lit{opacity:1}
+.chip{display:inline-flex;vertical-align:middle;align-items:center;justify-content:center;height:.95em;padding:0 .32em;margin:0 .1em;border-radius:.2em;background:var(--ink);transform:translateY(-.06em)}
+.chip img{height:.62em;width:auto}
+.chip.blue{background:var(--blue);color:#fff;font-size:.42em;letter-spacing:.06em;padding:0 .9em;border-radius:99px}
+.two{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--gut);margin-top:clamp(50px,7vw,110px);border-top:1px solid var(--hl);padding-top:28px}
+.two p{max-width:560px;font-size:clamp(16px,1.3vw,20px);opacity:.75}
+
+/* video inside the letters */
+.mask{position:relative;isolation:isolate;overflow:hidden;background:#000;margin:0 calc(var(--gut) * -1)}
+.mask .art{position:absolute;inset:-6%;z-index:-1;background:url(assets/cover-1.jpg) center/cover;animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.15) translate(-4%,-2%)}to{transform:scale(1.3) translate(4%,3%)}}
+.mask .t{background:#fff;color:#000;mix-blend-mode:screen;font-weight:700;text-transform:uppercase;letter-spacing:-.05em;line-height:.8;font-size:clamp(30px,10.2vw,170px);padding:.08em var(--gut) .12em;text-align:left;white-space:nowrap}
+.mask-cap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--gut);margin-top:26px}
+.mask-cap p{font-size:clamp(16px,1.3vw,20px);opacity:.75;max-width:520px}
+
+/* services rows */
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--gut)}
+.lead{font-size:clamp(17px,1.4vw,21px);max-width:520px;opacity:.75;margin-top:22px}
+.rows{border-top:1px solid var(--hl)}.row{border-bottom:1px solid var(--hl);position:relative}
+.row button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:12px;width:100%;padding:26px 0;cursor:none}
+.row button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.row .n{font-size:13px;letter-spacing:.1em;opacity:.5}
+.row .t{font-size:clamp(22px,2.7vw,40px);letter-spacing:-.02em;transition:transform .5s var(--e),color .2s}
+.row .x{width:34px;height:34px;border:1px solid var(--hl);border-radius:50%;display:grid;place-items:center;transition:transform .45s var(--e),background .2s,color .2s}
+.row:hover .t{transform:translateX(12px);color:var(--blue)}
+.row.open .x{transform:rotate(45deg);background:var(--blue);color:#fff;border-color:var(--blue)}
+.body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s var(--e)}.row.open .body{grid-template-rows:1fr}.body>div{overflow:hidden}
+.body-in{padding:0 0 30px 60px;display:grid;grid-template-columns:1fr 1fr;gap:var(--gut)}
+.body p{font-size:18px;opacity:.8}.body ul{list-style:none;padding:0;display:grid;gap:10px}
+.body li{padding-left:18px;position:relative;font-size:15px;opacity:.75}.body li::before{content:"";position:absolute;left:0;top:.65em;width:8px;height:1px;background:var(--blue)}
+
+/* projects: generated art + our own app videos */
+.tiles{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:var(--gut);margin-top:clamp(36px,5vw,72px);align-items:start}
+.tile{display:block;position:relative}
+.shot{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/5;background:linear-gradient(160deg,#3b0f4a,#ff5a3c 70%,#ffbf47)}
+.tile:nth-child(2) .shot{margin-top:clamp(0px,6vw,90px)}
+.shot>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--e),filter .5s}
+.tile:hover .shot>img{transform:scale(1.07)}
+.dev{position:absolute;left:11%;right:11%;top:22%;aspect-ratio:16/10;border-radius:8px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.18);transform:translateY(24px) scale(.94);opacity:.0;transition:transform .9s var(--e),opacity .6s var(--e)}
+.tile.on .dev,.tile:hover .dev{transform:none;opacity:1}
+.dev video{width:100%;height:100%;object-fit:cover;object-position:top}
+.vlab{position:absolute;left:14px;bottom:16px;writing-mode:vertical-rl;transform:rotate(180deg);font-size:clamp(26px,3.2vw,52px);font-weight:600;letter-spacing:-.02em;text-transform:uppercase;line-height:1;text-shadow:0 2px 20px rgba(0,0,0,.4)}
+.meta{display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-top:14px}
+.meta b{font-size:clamp(20px,2vw,30px);font-weight:500;letter-spacing:-.01em}
+.meta small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.6}
+.tile p{margin-top:8px;color:var(--txt);font-size:15px;max-width:420px}
+.note{margin-top:34px;font-size:13px;opacity:.55;max-width:720px}
+
+/* delivery path */
+.blue{background:var(--blue);color:#fff}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.35);margin-top:clamp(40px,6vw,90px)}
+.step{padding:22px;border-left:1px solid rgba(255,255,255,.35);min-height:380px;display:flex;flex-direction:column}
+.step:first-child{border-left:0;padding-left:0}
+.step .no{font-size:clamp(34px,4vw,60px);font-weight:300}
+.step svg{margin:auto;width:min(150px,60%);height:auto;stroke:#fff;fill:none;stroke-width:1.4}
+.step svg circle{fill:var(--blue);transition:r .6s var(--e2)}.step:hover svg circle{r:7}
+.step h3{font-weight:500;font-size:22px;margin-bottom:6px}.step p{opacity:.85;font-size:16px;max-width:260px}
+
+/* footer */
+footer{background:var(--ink);padding:clamp(60px,8vw,120px) 0 28px;overflow:hidden}
+.fgrid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:var(--gut);align-items:end}
+.cta-card{background:var(--ink2);border:1px solid var(--hd);padding:28px;border-radius:4px}
+.cta-card h3{font-weight:400;font-size:clamp(22px,2.2vw,32px);line-height:1.15;letter-spacing:-.01em}
+.cta-card p{margin:12px 0 22px;color:var(--txt);font-size:15px}
+.word{font-weight:600;letter-spacing:-.055em;line-height:.8;text-transform:uppercase;font-size:clamp(30px,14.4vw,230px);margin:clamp(50px,7vw,110px) 0 0;white-space:nowrap;user-select:none;background:linear-gradient(180deg,#fff 35%,rgba(255,255,255,.08) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fmeta{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:26px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.6;border-top:1px solid var(--hd);padding-top:18px}
+
+body.map [data-unit]{outline:1px dashed var(--gold);outline-offset:-1px}
+.badge{position:absolute;top:84px;left:6px;z-index:60;background:var(--gold);color:#000;font:600 11px/1 ui-monospace,monospace;padding:4px 6px;border-radius:3px;pointer-events:none}.row .badge{top:6px}
+.hint{position:fixed;right:14px;bottom:14px;z-index:92;font-size:11px;background:rgba(5,12,24,.8);color:#fff;border:1px solid var(--hd);padding:6px 10px;border-radius:999px;letter-spacing:.08em;cursor:pointer}
+
+@media (max-width:980px){nav{display:none}.cycle{display:none}.hero-row{grid-template-columns:1fr}.hint-g{text-align:left}
+  .facts{grid-template-columns:1fr 1fr}.facts div:nth-child(3){border-left:0;padding-left:0}
+  .split,.fgrid,.two,.mask-cap{grid-template-columns:1fr}.tiles{grid-template-columns:1fr}.tile:nth-child(2) .shot{margin-top:0}
+  .steps{grid-template-columns:1fr 1fr}.step:nth-child(3){border-left:0;padding-left:0}.step{min-height:300px}.body-in{grid-template-columns:1fr;padding-left:0}.row button{cursor:pointer}}
+@media (max-width:560px){.hint{display:none}.facts,.steps{grid-template-columns:1fr}.facts div,.step{border-left:0;padding-left:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}h1 .ln span{transform:none}.rv{opacity:1;transform:none}.stmt .w{opacity:1}.loader{display:none}}
+</style>
+</head>
+<body>
+<div class="loader"><img src="assets/logo.png" alt=""></div>
+<div class="cursor" id="cur"></div>
+
+<header><div class="bar">
+  <a href="#top"><img src="assets/logo.png" alt="NextGenius"></a>
+  <nav aria-label="Main"><a href="#services">Solutions</a><a href="#projects">Projects</a><a href="#">Start an OPC</a><a href="#">Community</a><a href="#">About</a></nav>
+  <a class="pill" href="#contact">Request a call<i>→</i></a>
+</div></header>
+
+<main id="top">
+<section class="hero" data-unit="u001">
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="cycle" id="cycle" aria-hidden="true">
+    <div class="s logo on"><img src="assets/logo.png" alt=""></div>
+    <div class="s"><video muted loop playsinline preload="auto" data-v="video/lunchup.mp4"></video><span class="tag">LunchUp</span></div>
+    <div class="s" style="background:#fff"><div class="word"><span>Assistants</span><span>Automation</span><span>Integrations</span><span>Software</span></div></div>
+    <div class="s"><video muted loop playsinline preload="auto" data-v="video/stem.mp4"></video><span class="tag">STEM Learning App</span></div>
+    <div class="s"><video muted loop playsinline preload="auto" data-v="video/studio.mp4"></video><span class="tag">AI Creative Studio</span></div>
+  </div>
+  <div class="wrap hero-in">
+    <p class="eyebrow" style="margin-bottom:22px">AI consulting · Automation · Software</p>
+    <h1 aria-label="Smarter systems. Less busywork."><span class="ln"><span>Smarter systems.</span></span><span class="ln"><span>Less <em>busywork.</em></span></span></h1>
+    <div class="hero-row">
+      <div><p>We help Australian businesses automate admin, connect their systems, and turn company knowledge into useful AI assistants.</p>
+        <div class="cta-row"><a class="pill lg" href="#contact" data-cursor="">Discuss your business<i>→</i></a><a class="link" href="#projects">Explore our projects</a></div></div>
+      <div class="hint-g">Behind this text: our own knowledge,<br><span id="gcount">connected</span> · move your mouse</div>
+    </div>
+    <div class="facts">
+      <div><b>Sydney-based</b>AI consulting and software</div><div><b>Start small</b>One useful workflow first</div>
+      <div><b>30–45 minutes</b>Discovery call, no commitment</div><div><b>Free service plan</b>5 questions, no signup</div>
+    </div>
+  </div>
+</section>
+
+<div class="marq" aria-hidden="true"><div>
+  <b>AI consulting</b><span>Automation</span><b>Knowledge assistants</b><span>Integrations</span><b>Custom software</b><span>Workshops</span><b>Sydney</b><span>One-person companies</span>
+  <b>AI consulting</b><span>Automation</span><b>Knowledge assistants</b><span>Integrations</span><b>Custom software</b><span>Workshops</span><b>Sydney</b><span>One-person companies</span>
+</div></div>
+
+<section class="sec light" data-unit="u058">
+  <div class="wrap">
+    <p class="eyebrow rv" style="opacity:.5">About NextGenius</p>
+    <p class="stmt" id="stmt" style="margin-top:22px">NextGenius combines AI consulting and digital product development with a <span class="chip blue">SYDNEY</span> community for learning, building and collaboration.</p>
+    <div class="two rv"><p class="eyebrow" style="opacity:.5">Two connected parts</p>
+      <p>For Australian businesses, we help turn operational problems into scoped AI, automation and software projects. For founders, engineers and operators, our community creates opportunities to exchange implementation experience, attend workshops and explore collaborations.</p></div>
+  </div>
+</section>
+
+<section class="sec light" style="padding-top:0">
+  <div class="wrap">
+    <div class="mask rv"><div class="art" aria-hidden="true"></div><div class="t" aria-label="One workflow">One workflow</div></div>
+    <div class="mask-cap"><p class="eyebrow" style="opacity:.5">Start with the work that slows you down</p>
+      <p>Choose a focused problem. Test the improvement with your team. Expand when the value is clear.</p></div>
+  </div>
+</section>
+
+<section id="projects" class="sec" style="background:var(--ink)">
+  <div class="wrap">
+    <p class="eyebrow rv">Explore what we build</p>
+    <h2 class="up rv" style="margin-top:18px">See the work.<br>Try the experience.</h2>
+    <div class="tiles">
+      <a class="tile rv" href="https://lunchup.com.au/" target="_blank" rel="noopener" data-cursor="View"><div class="shot"><img src="assets/cover-1.jpg" alt="" loading="lazy" onerror="this.remove()"><div class="dev"><video muted loop playsinline preload="auto" data-v="video/lunchup.mp4"></video></div><span class="vlab">LunchUp</span></div>
+        <div class="meta"><b>LunchUp</b><small>Social platform</small></div><p>A social web application with a product interface you can explore.</p></a>
+      <a class="tile rv" href="https://stem.nextgenius.com.au/" target="_blank" rel="noopener" data-cursor="View"><div class="shot" style="background:linear-gradient(160deg,#04202b,#0aa37f 70%,#c6f14d)"><img src="assets/cover-3.jpg" alt="" loading="lazy" onerror="this.remove()"><div class="dev"><video muted loop playsinline preload="auto" data-v="video/stem.mp4"></video></div><span class="vlab">STEM</span></div>
+        <div class="meta"><b>STEM Learning App</b><small>Education platform</small></div><p>A learning application and an example of the system flow behind connected digital experiences.</p></a>
+      <a class="tile rv" href="https://studio.nextgenius.com.au/" target="_blank" rel="noopener" data-cursor="View"><div class="shot"><img src="assets/cover-2.jpg" alt="" loading="lazy" onerror="this.remove()"><div class="dev"><video muted loop playsinline preload="auto" data-v="video/studio.mp4"></video></div><span class="vlab">Creative Studio</span></div>
+        <div class="meta"><b>AI Creative Studio</b><small>Interactive learning demo</small></div><p>A game-like 3D studio with design challenges and a challenge, tutor and critic loop.</p></a>
+    </div>
+    <p class="note">These examples show product experiences and implementation approaches. They are not presented as independently measured client outcomes.</p>
+  </div>
+</section>
+
+<section id="services" class="sec light">
+  <div class="wrap split">
+    <div class="rv"><p class="eyebrow" style="opacity:.5">Built around your business</p>
+      <h2 style="margin-top:18px">Services built around business outcomes, not technical jargon.</h2>
+      <p class="lead">NextGenius helps SMEs turn AI, automation, integrations, and software improvements into practical changes the team can use.</p>
+      <p style="margin-top:34px"><a class="pill blue lg" href="#contact">Speak with NextGenius<i>→</i></a></p></div>
+    <div class="rows rv">
+      <div class="row open" data-unit="u020" data-cursor="Open"><button aria-expanded="true"><span class="n">01</span><span class="t">AI consulting and planning</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Work out where AI fits in your business, what should be prioritised first, and what results are realistic.</p><ul><li>AI opportunity reviews for operations, sales, service, and admin teams</li><li>Practical roadmap planning with business priorities, costs, and next steps</li><li>Advice on where to use existing platforms versus custom solutions</li></ul></div></div></div></div>
+      <div class="row" data-unit="u021" data-cursor="Open"><button aria-expanded="false"><span class="n">02</span><span class="t">Knowledge systems and AI search</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Make your internal know-how easier to access so staff spend less time chasing answers and repeating work.</p><ul><li>RAG knowledge assistants trained on your policies, SOPs, templates, and documents</li><li>Internal help desks for staff questions, onboarding support, and faster decision-making</li><li>Customer-facing knowledge experiences where appropriate</li></ul></div></div></div></div>
+      <div class="row" data-unit="u022" data-cursor="Open"><button aria-expanded="false"><span class="n">03</span><span class="t">Connected tools and workflow automation</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Connect business systems and remove manual handovers that slow down teams and create avoidable errors.</p><ul><li>MCP-style connected tool setups for assistants and workflows across multiple systems</li><li>Automation of repetitive tasks, follow-ups, notifications, and status updates</li><li>Smarter movement of information between CRM, operations, finance, and support tools</li></ul></div></div></div></div>
+      <div class="row" data-unit="u023" data-cursor="Open"><button aria-expanded="false"><span class="n">04</span><span class="t">OpenClaw assistant setup</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Set up a personal or business assistant that helps with information access, routine tasks, and operational follow-through.</p><ul><li>Tailored assistant configuration for founders, managers, or teams</li><li>Business assistant workflows linked to documents, systems, and daily processes</li><li>Support for secure rollout, testing, and team adoption</li></ul></div></div></div></div>
+      <div class="row" data-unit="u024" data-cursor="Open"><button aria-expanded="false"><span class="n">05</span><span class="t">Custom software and internal platforms</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Build software that fits your business instead of forcing the business to fit a generic tool.</p><ul><li>Internal tools for service delivery, approvals, tracking, and reporting</li><li>Web platforms, portals, dashboards, and admin systems</li><li>Enhancements to existing digital products and operational systems</li></ul></div></div></div></div>
+      <div class="row" data-unit="u025" data-cursor="Open"><button aria-expanded="false"><span class="n">06</span><span class="t">Delivery support and ongoing improvement</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Stay involved after launch so the solution keeps improving instead of becoming shelfware.</p><ul><li>Pilot rollouts and staged implementation</li><li>Refinement based on user feedback and business results</li><li>Ongoing advisory support as your needs evolve</li></ul></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec blue">
+  <div class="wrap">
+    <p class="eyebrow rv" style="opacity:.8">A clear delivery path</p>
+    <h2 class="rv" style="margin-top:18px;max-width:900px">From a business problem to a working solution.</h2>
+    <div class="steps rv">
+      <div class="step"><span class="no">1</span><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="5"/></svg><h3>Discover</h3><p>Understand the process, users and bottlenecks.</p></div>
+      <div class="step"><span class="no">2</span><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M30 78 L90 42"/><circle cx="30" cy="78" r="5"/><circle cx="90" cy="42" r="5"/></svg><h3>Scope</h3><p>Agree on the workflow, success measures and boundaries.</p></div>
+      <div class="step"><span class="no">3</span><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M60 24 L24 88 L96 88 Z"/><circle cx="60" cy="24" r="5"/><circle cx="24" cy="88" r="5"/><circle cx="96" cy="88" r="5"/></svg><h3>Pilot</h3><p>Build, test with real users and refine.</p></div>
+      <div class="step"><span class="no">4</span><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M60 20 L100 60 L60 100 L20 60 Z M60 20 L60 100 M20 60 L100 60"/><circle cx="60" cy="20" r="5"/><circle cx="100" cy="60" r="5"/><circle cx="60" cy="100" r="5"/><circle cx="20" cy="60" r="5"/></svg><h3>Support</h3><p>Help your team adopt and improve the solution.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <div class="fgrid">
+    <div class="rv"><p class="eyebrow">Let’s find a useful first step</p><h2 class="up" style="margin-top:16px">What would you<br>like to make<br>easier?</h2></div>
+    <div class="cta-card rv"><h3>Tell us about one workflow, one bottleneck or one idea.</h3><p>You review and send an email. We agree a time for a 30–45 minute conversation.</p>
+      <a class="pill blue lg" href="mailto:info@nextgenius.com.au">Request a discovery call<i>→</i></a>
+      <p style="margin:22px 0 0;font-size:14px">info@nextgenius.com.au<br>15 Broadway, Ultimo NSW 2007, Australia</p></div>
+  </div>
+  <div class="word" aria-hidden="true">NextGenius</div>
+  <div class="fmeta"><span>© 2026 Next Genius Pty Ltd</span><span>LinkedIn · Meetup · X</span></div>
+</div></footer>
+<button class="hint" id="hint">M · show source map</button>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+// videos: set source lazily, play only when visible
+$$('video[data-v]').forEach(v=>{v.src=v.dataset.v;v.muted=true});
+const vio=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting)v.play().catch(()=>{});else v.pause()}),{threshold:.1});
+$$('video').forEach(v=>vio.observe(v));
+// intro
+addEventListener('load',()=>setTimeout(()=>document.body.classList.add('ready'),reduce?0:650));
+setTimeout(()=>document.body.classList.add('ready'),2500);
+// accordion
+$$('.row button').forEach(b=>b.addEventListener('click',()=>{const r=b.parentElement,o=r.classList.toggle('open');b.setAttribute('aria-expanded',o)}));
+// reveal + tiles in view
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');if(e.target.classList.contains('tile'))e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.18});
+$$('.rv').forEach(el=>io.observe(el));
+// statement words light up with scroll
+(function(){const st=$('#stmt');const walk=n=>[...n.childNodes].forEach(c=>{if(c.nodeType===3){const f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(t=>{if(!t.trim()){f.append(t);return}const s=document.createElement('span');s.className='w';s.textContent=t;f.append(s)});c.replaceWith(f)}else if(!c.classList.contains('chip'))walk(c)});walk(st);
+  const ws=$$('.w',st),chips=$$('.chip',st);const upd=()=>{const r=st.getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight*.85-r.top)/(r.height+innerHeight*.35)));ws.forEach((w,i)=>w.classList.toggle('lit',i/ws.length<p*1.15))};
+  addEventListener('scroll',upd,{passive:true});upd();if(reduce)ws.forEach(w=>w.classList.add('lit'))})();
+// hero tile cycling
+(function(){const sl=$$('#cycle .s');let i=0;const play=()=>{const v=$('video',sl[i]);if(v)v.play().catch(()=>{})};
+  if(reduce)return;setInterval(()=>{sl[i].classList.remove('on');i=(i+1)%sl.length;sl[i].classList.add('on');play()},2600)})();
+// custom cursor
+(function(){const c=$('#cur');if(matchMedia('(pointer:coarse)').matches)return;let x=innerWidth/2,y=innerHeight/2,tx=x,ty=y;
+  addEventListener('pointermove',e=>{tx=e.clientX;ty=e.clientY;const t=e.target.closest('[data-cursor]');if(t&&t.dataset.cursor){c.classList.add('big');c.textContent=t.dataset.cursor}else{c.classList.remove('big');c.textContent=''}});
+  document.addEventListener('pointerleave',()=>c.classList.add('hide'));document.addEventListener('pointerenter',()=>c.classList.remove('hide'));
+  (function tick(){x+=(tx-x)*.2;y+=(ty-y)*.2;c.style.transform=`translate(${x}px,${y}px)`;requestAnimationFrame(tick)})()})();
+// source map
+const tog=()=>{const on=document.body.classList.toggle('map');$$('.badge').forEach(b=>b.remove());if(on)$$('[data-unit]').forEach(e=>{if(getComputedStyle(e).position==='static')e.style.position='relative';const b=document.createElement('span');b.className='badge';b.textContent=e.dataset.unit+' ← knowledge base';e.appendChild(b)})};
+addEventListener('keydown',e=>{if(e.key==='m'||e.key==='M')tog()});$('#hint').onclick=tog;
+
+// hero background: our real knowledge graph, glowing, reacts to the mouse
+(async()=>{
+  const cv=$('#bg'),ctx=cv.getContext('2d');let G;try{G=await (await fetch('assets/graph-lite.json')).json()}catch{return}
+  $('#gcount').textContent=G.nodes.length+' of 349 things';
+  const idx=Object.fromEntries(G.nodes.map((n,i)=>[n.id,i]));
+  const N=G.nodes.map((n,i)=>({...n,x:Math.cos(i*2.4)*(.2+(i%7)*.1),y:Math.sin(i*2.4)*(.2+(i%5)*.12),vx:0,vy:0,ph:Math.random()*6.28}));
+  const L=G.links.map(([a,b])=>[idx[a],idx[b]]);
+  for(let it=0;it<320;it++){for(let i=0;i<N.length;i++)for(let j=i+1;j<N.length;j++){let dx=N[i].x-N[j].x,dy=N[i].y-N[j].y,d2=dx*dx+dy*dy+.002,f=.007/d2;N[i].vx+=dx*f;N[i].vy+=dy*f;N[j].vx-=dx*f;N[j].vy-=dy*f}
+    for(const[a,b]of L){let dx=N[b].x-N[a].x,dy=N[b].y-N[a].y,d=Math.hypot(dx,dy)||.01,f=(d-.26)*.008;N[a].vx+=dx/d*f;N[a].vy+=dy/d*f;N[b].vx-=dx/d*f;N[b].vy-=dy/d*f}
+    for(const n of N){n.vx-=n.x*.004;n.vy-=n.y*.004;n.x+=n.vx;n.y+=n.vy;n.vx*=.82;n.vy*=.82}}
+  let W,H,dpr,mx=.5,my=.5,px=-1e3,py=-1e3;const ext=Math.max(...N.flatMap(n=>[Math.abs(n.x),Math.abs(n.y)]));
+  const size=()=>{dpr=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)};size();addEventListener('resize',size);
+  const hero=cv.parentElement;hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();px=e.clientX-r.left;py=e.clientY-r.top;mx=px/r.width;my=py/r.height});
+  hero.addEventListener('pointerleave',()=>{px=py=-1e3});
+  const top=new Set([...N].sort((a,b)=>b.d-a.d).slice(0,7).map(n=>n.id));
+  const P=(n,t)=>{const s=Math.min(W*.5,H)*.52/ext;return[W*.7+n.x*s+(mx-.5)*-28+Math.sin(t/2000+n.ph)*7,H*.5+n.y*s+(my-.5)*-28+Math.cos(t/2300+n.ph)*7]};
+  function draw(t){ctx.clearRect(0,0,W,H);const pts=N.map(n=>P(n,t));
+    for(const[a,b]of L){const dA=Math.hypot(pts[a][0]-px,pts[a][1]-py),dB=Math.hypot(pts[b][0]-px,pts[b][1]-py),near=Math.max(0,1-Math.min(dA,dB)/220);
+      ctx.strokeStyle=`rgba(${120+near*135|0},${160+near*95|0},255,${.16+near*.7})`;ctx.lineWidth=.8+near*1.2;ctx.beginPath();ctx.moveTo(...pts[a]);ctx.lineTo(...pts[b]);ctx.stroke()}
+    ctx.font='500 11px "Schibsted Grotesk",sans-serif';ctx.textAlign='center';
+    N.forEach((n,i)=>{const[x,y]=pts[i],d=Math.hypot(x-px,y-py),near=Math.max(0,1-d/160),r=2+Math.sqrt(n.d)*.8+near*3;
+      ctx.shadowColor='rgba(90,140,255,.95)';ctx.shadowBlur=10+near*22;ctx.fillStyle=near>.2?'#fff':'rgba(190,210,255,.9)';ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fill();ctx.shadowBlur=0;
+      if(near>.45||top.has(n.id)){ctx.fillStyle=`rgba(255,255,255,${near>.45?1:.6})`;ctx.fillText(n.name.length>24?n.name.slice(0,23)+'…':n.name,x,y-r-7)}});
+    if(!reduce)requestAnimationFrame(draw)}
+  requestAnimationFrame(draw);if(reduce)draw(0);
+})();
+</script>
+</body>
+</html>

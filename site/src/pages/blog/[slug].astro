@@ -1,0 +1,33 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Btn from '../../components/Btn.astro';
+import Rows from '../../components/Rows.astro';
+import { ARTICLES } from '../../data/articles.js';
+import ResponsiveImage from '../../components/ResponsiveImage.astro';
+export function getStaticPaths() { return ARTICLES.map((a) => ({ params: { slug: a.slug }, props: { a } })); }
+const { a } = Astro.props;
+const others = ARTICLES.filter((x) => x.slug !== a.slug);
+const jsonld = { '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: a.lead, datePublished: a.date, author: { '@type': 'Organization', name: 'NextGenius' }, publisher: { '@type': 'Organization', name: 'NextGenius' }, ...(a.cover ? { image: new URL(a.cover, Astro.site).href } : {}) };
+---
+<Base title={`${a.title} | NextGenius`} description={a.lead} jsonld={jsonld} crumb={a.title}>
+<PageHero eyebrow={`${a.category} · ${new Date((a.eventDate ?? a.milestoneDate ?? a.date) + 'T12:00:00').toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}`} title={a.title} lead={a.lead} unit={a.unit} />
+{a.cover && <section class="wrap event-gallery" aria-label="Article image"><figure><ResponsiveImage src={a.cover} sizes="100vw" alt={a.coverAlt ?? "Group photograph from the AI Learners Club gathering at Novotel Darling Harbour"} fetchpriority="high" /><figcaption>{a.caption ?? (a.eventDate ? "AI networking · Novotel Darling Harbour · 29 August 2026" : a.title)}</figcaption></figure></section>}
+<article class="wrap prose">
+  {a.sections.map((s) => (<section class="su"><h2>{s.h}</h2>{s.html.map((p) => <p set:html={p}></p>)}</section>))}
+</article>
+{a.faq.length > 0 && <section class="sec white" style="margin-top:var(--section-y)">
+  <div class="wrap"><p class="eyebrow su">Quick answers</p><Rows items={a.faq} first={false} /></div>
+</section>}
+{a.eventDate && <section class="wrap event-gallery event-gallery-pair" aria-label="More photos from the gathering">{[2, 3].map(n => <figure><ResponsiveImage src={`/img/blog/ai-networking-august-2026/group-${n}.webp`} alt={`Another group photograph from the AI networking gathering, view ${n}`} loading="lazy" /></figure>)}</section>}
+<section class="sec wrap">
+  <div class="split">
+    <div><p class="eyebrow su">Next step</p><h2 class="up ta">{a.ctaTitle ?? "Learn with the community."}</h2><div class="btns su"><Btn href={a.ctaHref ?? "/events/"} label={a.ctaLabel ?? "View events"} /><a class="tlink" href="/workshops/">Explore workshops</a></div></div>
+    <div class="alist su">{others.map((o) => <a href={`/blog/${o.slug}/`} style="grid-template-columns:1fr" data-cursor="Read"><div><h2 style="font-size:clamp(22px,2.2vw,34px)">{o.title}</h2></div></a>)}</div>
+  </div>
+</section>
+</Base>
+
+<style>
+.event-gallery img{display:block;width:100%;height:auto;border-radius:4px}.event-gallery figcaption{margin-top:var(--space-3);color:var(--txt);font-size:14px}.event-gallery-pair{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-5);margin-top:var(--space-7)}.event-gallery figure{margin:0}@media(max-width:700px){.event-gallery-pair{grid-template-columns:1fr}}
+</style>

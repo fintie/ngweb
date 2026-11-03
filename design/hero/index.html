@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NextGenius – design template: hero + sections</title>
+<meta name="description" content="Design template. Copy is taken from the NextGenius knowledge base; layout mixes the Redstone and Sincro approaches.">
+<link rel="preload" href="fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Schibsted Grotesk";src:url(fonts/schibsted-grotesk-latin-wght-normal.woff2) format("woff2");font-weight:400 900;font-display:swap}
+:root{
+  --ink:#081423;--ink2:#0f1d30;--blue:#3366ff;--paper:#fff;--mist:#eef0f4;--gold:#f2b705;
+  --txt:rgba(255,255,255,.78);--hair-d:rgba(255,255,255,.16);--hair-l:rgba(8,20,35,.14);
+  --gut:clamp(16px,3vw,44px);--maxw:1560px;--ease:cubic-bezier(.2,.7,.2,1)
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.5 "Schibsted Grotesk",system-ui,sans-serif;background:var(--ink);color:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
+.up{text-transform:uppercase;letter-spacing:.02em}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
+
+/* pill button with circle arrow (Redstone) */
+.pill{display:inline-flex;align-items:center;gap:0;background:var(--paper);color:var(--ink);border-radius:999px;padding:5px 5px 5px 22px;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;transition:transform .3s var(--ease)}
+.pill i{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--paper);margin-left:16px;font-style:normal;transition:transform .35s var(--ease),background .2s}
+.pill:hover i{transform:translateX(4px) rotate(-45deg);background:var(--blue)}
+.pill.blue{background:var(--blue);color:#fff}.pill.blue i{background:#fff;color:var(--blue)}
+.link{font-size:13px;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:3px;opacity:.85}
+.link:hover{opacity:1}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:20;transition:background .3s,backdrop-filter .3s}
+header.solid{background:rgba(8,20,35,.82);backdrop-filter:blur(14px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.04em}
+.brand img{height:34px;width:auto}
+nav{display:flex;gap:clamp(14px,2.2vw,34px);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+nav a{opacity:.8;position:relative}nav a:hover{opacity:1}
+nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+nav a:hover::after{transform:scaleX(1)}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;padding-top:76px;isolation:isolate;background:var(--ink)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url(assets/city.jpg) center/cover;opacity:.28;filter:grayscale(1) contrast(1.1)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,20,35,.55),var(--ink) 92%),linear-gradient(90deg,var(--ink) 8%,transparent 70%)}
+.cols{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.cols .wrap{height:100%;display:grid;grid-template-columns:repeat(4,1fr)}
+.cols span{border-left:1px solid var(--hair-d)}.cols span:last-child{border-right:1px solid var(--hair-d)}
+.hero-main{flex:1;display:flex;flex-direction:column;justify-content:center;gap:clamp(22px,4vh,46px);padding-top:3vh;padding-bottom:3vh}
+.hero-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:var(--gut);align-items:end}
+h1{font-weight:500;text-transform:uppercase;letter-spacing:-.035em;line-height:.9;font-size:clamp(46px,8.6vw,160px)}
+h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+h1 .ln span{display:block;transform:translateY(105%);animation:rise 1s var(--ease) forwards}
+h1 .ln:nth-child(2) span{animation-delay:.12s}
+h1 em{font-style:normal;color:var(--blue)}
+@keyframes rise{to{transform:none}}
+.hero-copy p{max-width:540px;color:var(--txt);font-size:clamp(16px,1.3vw,20px)}
+.cta-row{display:flex;gap:26px;align-items:center;flex-wrap:wrap;margin-top:26px}
+.panel{position:relative;background:var(--blue);aspect-ratio:16/8.5;max-height:36vh;width:100%;overflow:hidden;border-radius:4px}
+.panel canvas{position:absolute;inset:0;width:100%;height:100%}
+.panel figcaption{position:absolute;left:16px;right:16px;bottom:14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.85;display:flex;justify-content:space-between;gap:12px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--hair-d)}
+.facts div{padding:20px 18px 22px 0;font-size:14px;color:var(--txt);border-left:1px solid var(--hair-d);padding-left:18px}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts b{display:block;color:#fff;font-weight:600;font-size:15px;margin-bottom:2px}
+
+/* generic sections */
+section{position:relative}
+.sec{padding:clamp(72px,11vw,170px) 0}
+.light{background:var(--paper);color:var(--ink)}
+.light .eyebrow{opacity:.55}
+h2{font-weight:400;letter-spacing:-.025em;line-height:1.02;font-size:clamp(34px,4.6vw,76px)}
+h2.up{text-transform:uppercase;font-weight:500;letter-spacing:-.035em;font-size:clamp(40px,7vw,128px);line-height:.92}
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--gut)}
+.lead{font-size:clamp(17px,1.4vw,21px);max-width:520px;opacity:.75;margin-top:22px}
+
+/* services list (Redstone rows on Sincro white) */
+.rows{border-top:1px solid var(--hair-l)}
+.row{border-bottom:1px solid var(--hair-l)}
+.row button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:12px;width:100%;padding:26px 0;cursor:pointer}
+.row button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.row .n{font-size:13px;letter-spacing:.1em;opacity:.5}
+.row .t{font-size:clamp(22px,2.7vw,40px);letter-spacing:-.02em;transition:transform .35s var(--ease),color .2s}
+.row .x{width:34px;height:34px;border:1px solid var(--hair-l);border-radius:50%;display:grid;place-items:center;transition:transform .35s var(--ease),background .2s,color .2s}
+.row:hover .t{transform:translateX(10px);color:var(--blue)}
+.row.open .x{transform:rotate(45deg);background:var(--blue);color:#fff;border-color:var(--blue)}
+.body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
+.row.open .body{grid-template-rows:1fr}
+.body>div{overflow:hidden}
+.body-in{padding:0 0 30px 60px;display:grid;grid-template-columns:1fr 1fr;gap:var(--gut)}
+.body p{font-size:18px;opacity:.8}
+.body ul{list-style:none;padding:0;display:grid;gap:10px}
+.body li{padding-left:18px;position:relative;font-size:15px;opacity:.75}
+.body li::before{content:"";position:absolute;left:0;top:.65em;width:8px;height:1px;background:var(--blue)}
+
+/* projects (Redstone tiles, dark) */
+.dark2{background:var(--ink2)}
+.tiles{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:var(--gut);margin-top:clamp(36px,5vw,72px);align-items:start}
+.tile{display:block}
+.tile .shot{position:relative;overflow:hidden;background:#000;aspect-ratio:4/3;border-radius:4px}
+.tile:first-child .shot{aspect-ratio:4/4.4}
+.tile img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .8s var(--ease),filter .4s;filter:saturate(.9)}
+.tile:hover img{transform:scale(1.045);filter:saturate(1.15)}
+.tile .meta{display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-top:14px}
+.tile .meta b{font-size:clamp(20px,2vw,30px);font-weight:500;letter-spacing:-.01em}
+.tile .meta small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.6}
+.tile p{margin-top:8px;color:var(--txt);font-size:15px;max-width:420px}
+.tile .go{margin-top:14px;display:inline-flex;gap:10px;align-items:center;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.tile .go i{font-style:normal;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;border:1px solid var(--hair-d);transition:.3s var(--ease)}
+.tile:hover .go i{background:#fff;color:var(--ink);transform:rotate(-45deg)}
+.note{margin-top:34px;font-size:13px;opacity:.55;max-width:720px}
+
+/* delivery path (Sincro blue panel) */
+.blue{background:var(--blue);color:#fff}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.35);margin-top:clamp(40px,6vw,90px)}
+.step{padding:22px 22px 30px 22px;border-left:1px solid rgba(255,255,255,.35);min-height:380px;display:flex;flex-direction:column}
+.step:first-child{border-left:0;padding-left:0}
+.step .no{font-size:clamp(34px,4vw,60px);font-weight:300}
+.step svg{margin:auto;width:min(150px,60%);height:auto;stroke:#fff;fill:none;stroke-width:1.4}
+.step svg circle{fill:var(--blue);transition:r .6s var(--ease)}
+.step:hover svg circle{r:7}
+.step h3{font-weight:500;font-size:22px;margin-bottom:6px}
+.step p{opacity:.85;font-size:16px;max-width:260px}
+
+/* footer */
+footer{background:var(--ink);padding:clamp(60px,8vw,120px) 0 28px}
+.fgrid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:var(--gut);align-items:end}
+.cta-card{background:var(--ink2);border:1px solid var(--hair-d);padding:28px;border-radius:4px}
+.cta-card h3{font-weight:400;font-size:clamp(22px,2.2vw,32px);line-height:1.15;letter-spacing:-.01em}
+.cta-card p{margin:12px 0 22px;color:var(--txt);font-size:15px}
+.word{font-weight:600;letter-spacing:-.055em;line-height:.8;text-transform:uppercase;font-size:clamp(54px,15.6vw,300px);margin:clamp(50px,7vw,110px) 0 0;white-space:nowrap;user-select:none;background:linear-gradient(180deg,#fff 40%,rgba(255,255,255,.12) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fmeta{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:26px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.6;border-top:1px solid var(--hair-d);padding-top:18px}
+
+/* scroll reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* source mapping overlay: press M */
+body.map [data-unit]{outline:1px dashed var(--gold);outline-offset:-1px}
+.badge{position:absolute;top:84px;left:6px;z-index:30;background:var(--gold);color:#000;font:600 11px/1 ui-monospace,monospace;padding:4px 6px;border-radius:3px;pointer-events:none}
+.row .badge{top:6px}
+.hint{position:fixed;right:14px;bottom:14px;z-index:40;font-size:11px;background:rgba(8,20,35,.8);color:#fff;border:1px solid var(--hair-d);padding:6px 10px;border-radius:999px;letter-spacing:.08em;cursor:pointer}
+
+@media (max-width:980px){
+  nav{display:none}
+  .hero-row{grid-template-columns:1fr}
+  .panel{aspect-ratio:16/11;max-height:none}
+  .facts{grid-template-columns:1fr 1fr}.facts div:nth-child(3){border-left:0;padding-left:0}
+  .split,.fgrid{grid-template-columns:1fr}
+  .tiles{grid-template-columns:1fr}.tile:first-child .shot{aspect-ratio:4/3}
+  .steps{grid-template-columns:1fr 1fr}.step:nth-child(3){border-left:0;padding-left:0}.step{min-height:300px}
+  .body-in{grid-template-columns:1fr;padding-left:0}
+  .cols .wrap{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){.facts,.steps{grid-template-columns:1fr}.facts div,.step{border-left:0;padding-left:0}.row button{grid-template-columns:34px 1fr auto}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}h1 .ln span{transform:none}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header id="hd"><div class="wrap">
+  <a class="brand" href="#top"><img src="assets/logo.png" alt="NextGenius"></a>
+  <nav aria-label="Main">
+    <a href="#services">Solutions</a><a href="#projects">Projects</a><a href="#">Start an OPC</a><a href="#">Community</a><a href="#">About</a>
+  </nav>
+  <a class="pill" href="#contact">Request a call<i>→</i></a>
+</div></header>
+
+<main id="top">
+<!-- 1 HERO -->
+<section class="hero" data-unit="u001">
+  <div class="cols" aria-hidden="true"><div class="wrap"><span></span><span></span><span></span><span></span></div></div>
+  <div class="wrap hero-main">
+    <div>
+      <p class="eyebrow" style="margin-bottom:22px">AI consulting · Automation · Software</p>
+      <h1 aria-label="Smarter systems. Less busywork."><span class="ln"><span>Smarter systems.</span></span><span class="ln"><span>Less <em>busywork.</em></span></span></h1>
+    </div>
+    <div class="hero-row">
+      <div class="hero-copy">
+        <p>We help Australian businesses automate admin, connect their systems, and turn company knowledge into useful AI assistants.</p>
+        <div class="cta-row"><a class="pill" href="#contact">Discuss your business<i>→</i></a><a class="link" href="#projects">Explore our projects</a></div>
+      </div>
+      <figure class="panel" aria-label="Animated map of NextGenius knowledge">
+        <canvas id="g"></canvas>
+        <figcaption><span>Our own knowledge, connected</span><span id="gcount"></span></figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="wrap"><div class="facts">
+    <div><b>Sydney-based</b>AI consulting and software</div>
+    <div><b>Start small</b>One useful workflow first</div>
+    <div><b>30–45 minutes</b>Discovery call, no commitment</div>
+    <div><b>Free service plan</b>5 questions, no signup</div>
+  </div></div>
+</section>
+
+<!-- 2 SERVICES -->
+<section id="services" class="sec light">
+  <div class="wrap split">
+    <div class="rv">
+      <p class="eyebrow">Built around your business</p>
+      <h2 style="margin-top:18px">Services built around business outcomes, not technical jargon.</h2>
+      <p class="lead">NextGenius helps SMEs turn AI, automation, integrations, and software improvements into practical changes the team can use.</p>
+      <p style="margin-top:34px"><a class="pill blue" href="#contact">Speak with NextGenius<i>→</i></a></p>
+    </div>
+    <div class="rows rv" id="rows">
+      <div class="row open" data-unit="u020"><button aria-expanded="true"><span class="n">01</span><span class="t">AI consulting and planning</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Work out where AI fits in your business, what should be prioritised first, and what results are realistic.</p><ul><li>AI opportunity reviews for operations, sales, service, and admin teams</li><li>Practical roadmap planning with business priorities, costs, and next steps</li><li>Advice on where to use existing platforms versus custom solutions</li></ul></div></div></div></div>
+      <div class="row" data-unit="u021"><button aria-expanded="false"><span class="n">02</span><span class="t">Knowledge systems and AI search</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Make your internal know-how easier to access so staff spend less time chasing answers and repeating work.</p><ul><li>RAG knowledge assistants trained on your policies, SOPs, templates, and documents</li><li>Internal help desks for staff questions, onboarding support, and faster decision-making</li><li>Customer-facing knowledge experiences where appropriate</li></ul></div></div></div></div>
+      <div class="row" data-unit="u022"><button aria-expanded="false"><span class="n">03</span><span class="t">Connected tools and workflow automation</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Connect business systems and remove manual handovers that slow down teams and create avoidable errors.</p><ul><li>MCP-style connected tool setups for assistants and workflows across multiple systems</li><li>Automation of repetitive tasks, follow-ups, notifications, and status updates</li><li>Smarter movement of information between CRM, operations, finance, and support tools</li></ul></div></div></div></div>
+      <div class="row" data-unit="u023"><button aria-expanded="false"><span class="n">04</span><span class="t">OpenClaw assistant setup</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Set up a personal or business assistant that helps with information access, routine tasks, and operational follow-through.</p><ul><li>Tailored assistant configuration for founders, managers, or teams</li><li>Business assistant workflows linked to documents, systems, and daily processes</li><li>Support for secure rollout, testing, and team adoption</li></ul></div></div></div></div>
+      <div class="row" data-unit="u024"><button aria-expanded="false"><span class="n">05</span><span class="t">Custom software and internal platforms</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Build software that fits your business instead of forcing the business to fit a generic tool.</p><ul><li>Internal tools for service delivery, approvals, tracking, and reporting</li><li>Web platforms, portals, dashboards, and admin systems</li><li>Enhancements to existing digital products and operational systems</li></ul></div></div></div></div>
+      <div class="row" data-unit="u025"><button aria-expanded="false"><span class="n">06</span><span class="t">Delivery support and ongoing improvement</span><span class="x">+</span></button><div class="body"><div><div class="body-in"><p>Stay involved after launch so the solution keeps improving instead of becoming shelfware.</p><ul><li>Pilot rollouts and staged implementation</li><li>Refinement based on user feedback and business results</li><li>Ongoing advisory support as your needs evolve</li></ul></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 PROJECTS -->
+<section id="projects" class="sec dark2">
+  <div class="wrap">
+    <p class="eyebrow rv">Explore what we build</p>
+    <h2 class="up rv" style="margin-top:18px" data-src="/ (home) · /use-cases">See the work.<br>Try the experience.</h2>
+    <div class="tiles">
+      <a class="tile rv" href="https://lunchup.com.au/" target="_blank" rel="noopener" data-src="/use-cases">
+        <div class="shot"><img src="assets/lunchup.jpg" alt="LunchUp landing page" loading="lazy"></div>
+        <div class="meta"><b>LunchUp</b><small>Social platform</small></div>
+        <p>A social web application with a product interface you can explore.</p>
+        <span class="go">View project <i>→</i></span>
+      </a>
+      <a class="tile rv" href="https://stem.nextgenius.com.au/" target="_blank" rel="noopener" data-src="/use-cases">
+        <div class="shot"><img src="assets/stem.jpg" alt="STEM Learning App landing page" loading="lazy"></div>
+        <div class="meta"><b>STEM Learning App</b><small>Education platform</small></div>
+        <p>A learning application and an example of the system flow behind connected digital experiences.</p>
+        <span class="go">View project <i>→</i></span>
+      </a>
+      <a class="tile rv" href="https://studio.nextgenius.com.au/" target="_blank" rel="noopener" data-src="/use-cases">
+        <div class="shot"><img src="assets/studio.jpg" alt="AI Creative Studio landing page" loading="lazy"></div>
+        <div class="meta"><b>AI Creative Studio</b><small>Interactive learning demo</small></div>
+        <p>A game-like 3D studio with design challenges and a challenge, tutor and critic loop.</p>
+        <span class="go">View project <i>→</i></span>
+      </a>
+    </div>
+    <p class="note">These examples show product experiences and implementation approaches. They are not presented as independently measured client outcomes.</p>
+  </div>
+</section>
+
+<!-- 4 DELIVERY PATH -->
+<section class="sec blue">
+  <div class="wrap">
+    <p class="eyebrow rv" style="opacity:.8">A clear delivery path</p>
+    <h2 class="rv" style="margin-top:18px;max-width:900px" data-src="/ (home)">From a business problem to a working solution.</h2>
+    <div class="steps rv">
+      <div class="step"><span class="no">1</span><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="5"/></svg><h3>Discover</h3><p>Understand the process, users and bottlenecks.</p></div>
+      <div class="step"><span class="no">2</span><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M30 78 L90 42"/><circle cx="30" cy="78" r="5"/><circle cx="90" cy="42" r="5"/></svg><h3>Scope</h3><p>Agree on the workflow, success measures and boundaries.</p></div>
+      <div class="step"><span class="no">3</span><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M60 24 L24 88 L96 88 Z"/><circle cx="60" cy="24" r="5"/><circle cx="24" cy="88" r="5"/><circle cx="96" cy="88" r="5"/></svg><h3>Pilot</h3><p>Build, test with real users and refine.</p></div>
+      <div class="step"><span class="no">4</span><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M60 20 L100 60 L60 100 L20 60 Z M60 20 L60 100 M20 60 L100 60"/><circle cx="60" cy="20" r="5"/><circle cx="100" cy="60" r="5"/><circle cx="60" cy="100" r="5"/><circle cx="20" cy="60" r="5"/></svg><h3>Support</h3><p>Help your team adopt and improve the solution.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- 5 FOOTER -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="rv">
+        <p class="eyebrow">Let’s find a useful first step</p>
+        <h2 class="up" style="margin-top:16px">What would you<br>like to make<br>easier?</h2>
+      </div>
+      <div class="cta-card rv">
+        <h3>Tell us about one workflow, one bottleneck or one idea.</h3>
+        <p>You review and send an email. We agree a time for a 30–45 minute conversation.</p>
+        <a class="pill blue" href="mailto:info@nextgenius.com.au">Request a discovery call<i>→</i></a>
+        <p style="margin:22px 0 0;font-size:14px">info@nextgenius.com.au<br>15 Broadway, Ultimo NSW 2007, Australia</p>
+      </div>
+    </div>
+    <div class="word" aria-hidden="true">NextGenius</div>
+    <div class="fmeta"><span>© 2026 Next Genius Pty Ltd</span><span>LinkedIn · Meetup · X</span></div>
+  </div>
+</footer>
+
+<button class="hint" id="hint" title="Show which knowledge-base unit each block comes from">M · show source map</button>
+
+<script>
+// header solid on scroll
+const hd=document.getElementById('hd');addEventListener('scroll',()=>hd.classList.toggle('solid',scrollY>40),{passive:true});
+// accordion
+document.querySelectorAll('.row button').forEach(b=>b.addEventListener('click',()=>{const r=b.parentElement,o=r.classList.toggle('open');b.setAttribute('aria-expanded',o);}));
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// source map toggle
+document.querySelectorAll('.row[data-unit]').forEach(r=>r.style.position='relative');
+const tog=()=>{const on=document.body.classList.toggle('map');document.querySelectorAll('.badge').forEach(b=>b.remove());
+  if(on)document.querySelectorAll('[data-unit]').forEach(e=>{const b=document.createElement('span');b.className='badge';b.textContent=e.dataset.unit+' ← knowledge base';e.appendChild(b)})};
+addEventListener('keydown',e=>{if(e.key==='m'||e.key==='M')tog()});document.getElementById('hint').onclick=tog;
+
+// hero graph: real nodes/links from the NextGenius knowledge graph (top 60 by connections)
+(async()=>{
+  const cv=document.getElementById('g'),ctx=cv.getContext('2d');
+  let G;try{G=await (await fetch('assets/graph-lite.json')).json()}catch{return}
+  document.getElementById('gcount').textContent=G.nodes.length+' of 349 things';
+  const idx=Object.fromEntries(G.nodes.map((n,i)=>[n.id,i]));
+  const N=G.nodes.map((n,i)=>({...n,x:Math.cos(i*2.4)*(.2+(i%7)*.1),y:Math.sin(i*2.4)*(.2+(i%5)*.12),vx:0,vy:0,ph:Math.random()*6.28}));
+  const L=G.links.map(([a,b])=>[idx[a],idx[b]]);
+  for(let it=0;it<300;it++){ // static layout
+    for(let i=0;i<N.length;i++)for(let j=i+1;j<N.length;j++){let dx=N[i].x-N[j].x,dy=N[i].y-N[j].y,d2=dx*dx+dy*dy+.002,f=.007/d2;N[i].vx+=dx*f;N[i].vy+=dy*f;N[j].vx-=dx*f;N[j].vy-=dy*f}
+    for(const [a,b] of L){let dx=N[b].x-N[a].x,dy=N[b].y-N[a].y,d=Math.hypot(dx,dy)||.01,f=(d-.26)*.008;N[a].vx+=dx/d*f;N[a].vy+=dy/d*f;N[b].vx-=dx/d*f;N[b].vy-=dy/d*f}
+    for(const n of N){n.vx-=n.x*.004;n.vy-=n.y*.004;n.x+=n.vx;n.y+=n.vy;n.vx*=.82;n.vy*=.82}
+  }
+  let W,H,dpr,mx=0,my=0,hov=-1;
+  const size=()=>{dpr=devicePixelRatio||1;W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)};
+  size();addEventListener('resize',size);
+  const ext=Math.max(...N.flatMap(n=>[Math.abs(n.x),Math.abs(n.y)]));
+  const P=(n,t)=>{const s=Math.min(W,H)*.43/ext,d=reduce?0:1;return [W/2+(n.x*s)+Math.sin(t/1800+n.ph)*5*d+mx*10*d,H/2+(n.y*s)+Math.cos(t/2100+n.ph)*5*d+my*10*d]};
+  const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  cv.parentElement.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5;
+    let best=-1,bd=22;N.forEach((n,i)=>{const [x,y]=P(n,performance.now());const d=Math.hypot(x-(e.clientX-r.left),y-(e.clientY-r.top));if(d<bd){bd=d;best=i}});hov=best});
+  cv.parentElement.addEventListener('pointerleave',()=>{hov=-1;mx=my=0});
+  const top=[...N].sort((a,b)=>b.d-a.d).slice(0,9).map(n=>n.id);
+  function draw(t){
+    ctx.clearRect(0,0,W,H);const pts=N.map(n=>P(n,t));
+    const hn=new Set();if(hov>=0){hn.add(hov);L.forEach(([a,b])=>{if(a===hov)hn.add(b);if(b===hov)hn.add(a)})}
+    ctx.lineWidth=1;
+    for(const [a,b] of L){const on=hov>=0&&(a===hov||b===hov);ctx.strokeStyle=on?'rgba(255,255,255,.95)':'rgba(255,255,255,'+(hov>=0?.12:.34)+')';ctx.beginPath();ctx.moveTo(pts[a][0],pts[a][1]);ctx.lineTo(pts[b][0],pts[b][1]);ctx.stroke()}
+    ctx.font='500 11px "Schibsted Grotesk",sans-serif';ctx.textAlign='center';
+    const used=[];
+    N.forEach((n,i)=>{const [x,y]=pts[i],r=2.5+Math.sqrt(n.d)*.9,dim=hov>=0&&!hn.has(i);
+      ctx.globalAlpha=dim?.3:1;ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fill();
+      if(i===hov||top.includes(n.id)&&hov<0||hn.has(i)&&hov>=0&&hn.size<9){
+        const txt=n.name.length>24?n.name.slice(0,23)+'…':n.name,w=ctx.measureText(txt).width,bx=[x-w/2,y-r-20,x+w/2,y-r-4];
+        if(i===hov||!used.some(u=>bx[0]<u[2]&&bx[2]>u[0]&&bx[1]<u[3]&&bx[3]>u[1])){used.push(bx);ctx.fillStyle='#fff';ctx.fillText(txt,x,y-r-6)}}});
+    ctx.globalAlpha=1;
+    if(!reduce)requestAnimationFrame(draw)
+  }
+  requestAnimationFrame(draw);if(reduce)draw(0);
+})();
+</script>
+</body>
+</html>

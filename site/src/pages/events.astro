@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Btn from '../components/Btn.astro';
+import Cols from '../components/Cols.astro';
+const formats = [
+  { unit: 'u080', title: 'Community AI meetups', meta: 'Community sessions · Sydney and online', text: 'Discuss agents, connected tools and automation with people exploring the same questions. Check the listing for the topic and audience.', cta: 'See us on Meetup', href: 'https://www.meetup.com/ailearnersclub/' },
+  { unit: 'u081', title: 'Applied AI workshop for teams', meta: 'Private workshop · Business teams and technical leads', text: 'A session built around your team’s experience and goals, combining explanations, demonstrations and hands-on tasks.', cta: 'Explore workshops', href: '/workshops/' },
+];
+const why = [
+  { unit: 'u084', title: 'Explore a topic', text: 'See how a tool or approach applies to a task, then ask questions about how it works.' },
+  { unit: 'u085', title: 'Find your peers', text: 'Meet founders, engineers, business owners and learners with different experience to share.' },
+  { unit: 'u086', title: 'Continue learning', text: 'Take an idea into a project, a team workshop or a conversation with someone you met.' },
+];
+---
+<Base title="AI Events Sydney | NextGenius" description="Discover practical AI events in Sydney, including community meetups, learning sessions and workshops on AI agents, automation and AI for business.">
+<PageHero eyebrow="Sydney AI community" title="Meet, learn and talk AI in Sydney." lead="Community meetups, team workshops and conversations about building with AI. Find dates and registration details in our event calendars." unit="u078 u088">
+  <div class="btns"><Btn href="https://www.meetup.com/ailearnersclub/" label="See us on Meetup" /><span class="small">Check each listing for dates, location, attendance fees and registration.</span></div>
+</PageHero>
+
+<section class="sec white" data-unit="u079">
+  <div class="wrap">
+    <p class="eyebrow su">What we run</p>
+    <h2 class="up ta" style="margin-top:var(--space-3);max-width:16em">Events and learning formats.</h2>
+    <p class="lead su" style="margin-top:var(--space-4);--i:1">Choose a community gathering or a private session for your team.</p>
+    <Cols items={formats} />
+  </div>
+</section>
+
+<section class="sec wrap" data-unit="u083">
+  <p class="eyebrow su">Why people join</p>
+  <h2 class="up ta" style="margin-top:var(--space-3);max-width:16em">Bring your questions. Share your experience.</h2>
+  <p class="lead su" style="margin-top:var(--space-4);color:var(--txt);--i:1">Join to explore a topic, find collaborators or discuss what you are building.</p>
+  <Cols items={why} />
+  <div class="split" style="margin-top:var(--section-y)" data-unit="u135 u136">
+    <div class="su"><h3 style="font-size:clamp(24px,2.6vw,42px);font-weight:500;letter-spacing:-.03em">Before you come</h3><p>Read the event listing for the topic, experience level and anything to bring. Each session has its own format and registration instructions.</p></div>
+    <div class="su" style="--i:1"><h3 style="font-size:clamp(24px,2.6vw,42px);font-weight:500;letter-spacing:-.03em">After a session</h3><p>Explore a workshop to go deeper with your team, or bring your next question to a community gathering.</p></div>
+  </div>
+</section>
+
+<section class="sec bluep" data-unit="u087">
+  <div class="wrap split">
+    <h2 class="up ta">Find a session that fits.</h2>
+    <div><p class="su">Check the common questions before attending, or browse workshop topics for a private team session.</p><div class="btns su" style="--i:1"><Btn href="/faq/" label="Read the questions" /><a class="tlink" href="/workshops/">View workshops</a></div></div>
+  </div>
+</section>
+</Base>

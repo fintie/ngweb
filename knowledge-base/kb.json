@@ -1,0 +1,3931 @@
+{
+ "built": "2026-10-31",
+ "source": "https://nextgenius.com.au/",
+ "chunks": [
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "Smarter systems.Less busywork.",
+   "eyebrow": "AI CONSULTING · AUTOMATION · SOFTWARE",
+   "text": "We help Australian businesses automate admin, connect their systems, and turn company knowledge into useful AI assistants.\nDiscuss your business ↗\nExplore our projects\nSydney-based · Start with one useful workflow\nWHAT BETTER OPERATIONS CAN LOOK LIKE\n01\nCapture the request and relevant context.\n02\nFind information, prepare a draft and track the next step.\n03\nReview important decisions and exceptions.",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Discuss your business ↗",
+     "to": "#/contact"
+    },
+    {
+     "label": "Explore our projects",
+     "to": "#/use-cases"
+    }
+   ],
+   "id": "c1",
+   "tags": [
+    "automation",
+    "Sydney",
+    "knowledge assistant",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "Start with the work that slows you down.",
+   "eyebrow": "BUILT AROUND YOUR BUSINESS",
+   "text": "Choose a focused problem. Test the improvement with your team. Expand when the value is clear.\n01",
+   "images": [],
+   "ctas": [],
+   "id": "c2",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "Start with the work that slows you down. › Automate everyday admin",
+   "eyebrow": "BUILT AROUND YOUR BUSINESS",
+   "text": "Connect enquiries, follow-ups and routine updates so your team spends less time copying information between tools.\nExplore solutions ↗\n02",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Explore solutions ↗",
+     "to": "#/service"
+    }
+   ],
+   "id": "c3",
+   "tags": [
+    "automation",
+    "integration",
+    "contact"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "Start with the work that slows you down. › Put your business knowledge to work",
+   "eyebrow": "BUILT AROUND YOUR BUSINESS",
+   "text": "Build an assistant that helps staff search your documents, policies and procedures, with source references and clear review points.\nExplore solutions ↗\n03",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Explore solutions ↗",
+     "to": "#/service"
+    }
+   ],
+   "id": "c4",
+   "tags": [
+    "knowledge assistant"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "Start with the work that slows you down. › Connect the systems you already use",
+   "eyebrow": "BUILT AROUND YOUR BUSINESS",
+   "text": "Bring sales, operations and service together through integrations, customer portals and internal tools built around your workflow.\nExplore solutions ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Explore solutions ↗",
+     "to": "#/service"
+    }
+   ],
+   "id": "c5",
+   "tags": [
+    "integration",
+    "custom software"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "See the work. Try the experience.",
+   "eyebrow": "EXPLORE WHAT WE BUILD",
+   "text": "Explore our social and learning applications to see how we approach digital products.\nSocial platform",
+   "images": [
+    "case-screenshot-Bply7y8B.jpg"
+   ],
+   "ctas": [],
+   "id": "c6",
+   "tags": [
+    "custom software"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "See the work. Try the experience. › LunchUp",
+   "eyebrow": "EXPLORE WHAT WE BUILD",
+   "text": "A social web application with a product interface you can explore.\nView project ↗\nEducation platform",
+   "images": [
+    "process-flow-DzNNevGh.jpg"
+   ],
+   "ctas": [
+    {
+     "label": "View project ↗",
+     "to": "#/use-cases"
+    }
+   ],
+   "id": "c7",
+   "tags": [
+    "custom software"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "See the work. Try the experience. › STEM Learning App",
+   "eyebrow": "EXPLORE WHAT WE BUILD",
+   "text": "A learning application and an example of the system flow behind connected digital experiences.\nView project ↗\nInteractive learning demo",
+   "images": [
+    "video-collage-BwkaOa9O.jpg"
+   ],
+   "ctas": [
+    {
+     "label": "View project ↗",
+     "to": "#/use-cases"
+    }
+   ],
+   "id": "c8",
+   "tags": [
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "See the work. Try the experience. › AI Creative Studio",
+   "eyebrow": "EXPLORE WHAT WE BUILD",
+   "text": "A game-like 3D studio with design challenges and a challenge, tutor and critic loop.\nView project ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "View project ↗",
+     "to": "#/use-cases"
+    }
+   ],
+   "id": "c9",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "From a business problem to a working solution.",
+   "eyebrow": "A CLEAR DELIVERY PATH",
+   "text": "01",
+   "images": [],
+   "ctas": [],
+   "id": "c10",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "From a business problem to a working solution. › Discover",
+   "eyebrow": "A CLEAR DELIVERY PATH",
+   "text": "Understand the process, users and bottlenecks.\n02",
+   "images": [],
+   "ctas": [],
+   "id": "c11",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "From a business problem to a working solution. › Scope",
+   "eyebrow": "A CLEAR DELIVERY PATH",
+   "text": "Agree on the workflow, success measures and boundaries.\n03",
+   "images": [],
+   "ctas": [],
+   "id": "c12",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "From a business problem to a working solution. › Pilot",
+   "eyebrow": "A CLEAR DELIVERY PATH",
+   "text": "Build, test with real users and refine.\n04",
+   "images": [],
+   "ctas": [],
+   "id": "c13",
+   "tags": [
+    "pilot"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "From a business problem to a working solution. › Support",
+   "eyebrow": "A CLEAR DELIVERY PATH",
+   "text": "Help your team adopt and improve the solution.",
+   "images": [],
+   "ctas": [],
+   "id": "c14",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "Your expertise could be your next service.",
+   "eyebrow": "BUILD YOUR ONE-PERSON BUSINESS",
+   "text": "Answer five questions. Leave with a free, editable service plan.\nCreate my free service plan ↗",
+   "images": [
+    "workshop-01-C-qvFGP-.jpg"
+   ],
+   "ctas": [
+    {
+     "label": "Create my free service plan ↗",
+     "to": "#/opc"
+    }
+   ],
+   "id": "c15",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "Business delivery, backed by a builder community.",
+   "eyebrow": "LEARN · BUILD · CONNECT",
+   "text": "Join practical AI workshops, meet other builders, or help shape an Australian one-person company network.\nExplore the community ↗\nTeam workshops",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Explore the community ↗",
+     "to": "#/community"
+    },
+    {
+     "label": "Team workshops",
+     "to": "#/workshop"
+    }
+   ],
+   "id": "c16",
+   "tags": [
+    "workshop",
+    "OPC",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "What would you like to make easier?",
+   "eyebrow": "LET’S FIND A USEFUL FIRST STEP",
+   "text": "Tell us about one workflow, one bottleneck or one idea.\nRequest a discovery call ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Request a discovery call ↗",
+     "to": "#/contact"
+    }
+   ],
+   "id": "c17",
+   "tags": [
+    "contact"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "Practical AI for Australian Businesses | NextGenius",
+   "route": "/",
+   "url": "https://nextgenius.com.au/#/",
+   "category": "Home",
+   "heading": "Search/SEO metadata",
+   "text": "Title: Practical AI for Australian Businesses | NextGenius\nDescription: NextGenius helps Australian businesses automate admin, connect systems and build useful AI assistants. Explore our projects, workshops and builder community.\nKeywords: (none)\nOG title: Practical AI for Australian Businesses | NextGenius",
+   "id": "c18",
+   "tags": [
+    "automation",
+    "workshop",
+    "knowledge assistant",
+    "integration",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Solutions & System Integration | NextGenius",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/#/service",
+   "category": "Solutions",
+   "heading": "Services built around business outcomes, not technical jargon.",
+   "eyebrow": "",
+   "text": "NextGenius helps SMEs turn AI, automation, integrations, and software improvements into practical changes the team can use.",
+   "images": [],
+   "ctas": [],
+   "id": "c19",
+   "tags": [
+    "automation",
+    "integration",
+    "custom software"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Solutions & System Integration | NextGenius",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/#/service",
+   "category": "Solutions",
+   "heading": "Services built around business outcomes, not technical jargon. › AI consulting and planning",
+   "eyebrow": "",
+   "text": "Work out where AI fits in your business, what should be prioritised first, and what results are realistic.\n• AI opportunity reviews for operations, sales, service, and admin teams\n• Practical roadmap planning with business priorities, costs, and next steps\n• Advice on where to use existing platforms versus custom solutions",
+   "images": [],
+   "ctas": [],
+   "id": "c20",
+   "tags": [
+    "custom software"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Solutions & System Integration | NextGenius",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/#/service",
+   "category": "Solutions",
+   "heading": "Services built around business outcomes, not technical jargon. › Knowledge systems and AI search",
+   "eyebrow": "",
+   "text": "Make your internal know-how easier to access so staff spend less time chasing answers and repeating work.\n• RAG knowledge assistants trained on your policies, SOPs, templates, and documents\n• Internal help desks for staff questions, onboarding support, and faster decision-making\n• Customer-facing knowledge experiences where appropriate",
+   "images": [
+    "service-1-BSK-x73r.jpg"
+   ],
+   "ctas": [],
+   "id": "c21",
+   "tags": [
+    "RAG",
+    "knowledge assistant"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Solutions & System Integration | NextGenius",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/#/service",
+   "category": "Solutions",
+   "heading": "Services built around business outcomes, not technical jargon. › Connected tools and workflow automation",
+   "eyebrow": "",
+   "text": "Connect business systems and remove manual handovers that slow down teams and create avoidable errors.\n• MCP-style connected tool setups for assistants and workflows across multiple systems\n• Automation of repetitive tasks, follow-ups, notifications, and status updates\n• Smarter movement of information between CRM, operations, finance, and support tools",
+   "images": [],
+   "ctas": [],
+   "id": "c22",
+   "tags": [
+    "MCP",
+    "automation",
+    "knowledge assistant",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Solutions & System Integration | NextGenius",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/#/service",
+   "category": "Solutions",
+   "heading": "Services built around business outcomes, not technical jargon. › OpenClaw assistant setup",
+   "eyebrow": "",
+   "text": "Set up a personal or business assistant that helps with information access, routine tasks, and operational follow-through.\n• Tailored assistant configuration for founders, managers, or teams\n• Business assistant workflows linked to documents, systems, and daily processes\n• Support for secure rollout, testing, and team adoption",
+   "images": [
+    "service-2-Dx25BkLT.jpg"
+   ],
+   "ctas": [],
+   "id": "c23",
+   "tags": [
+    "knowledge assistant"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Solutions & System Integration | NextGenius",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/#/service",
+   "category": "Solutions",
+   "heading": "Services built around business outcomes, not technical jargon. › Custom software and internal platforms",
+   "eyebrow": "",
+   "text": "Build software that fits your business instead of forcing the business to fit a generic tool.\n• Internal tools for service delivery, approvals, tracking, and reporting\n• Web platforms, portals, dashboards, and admin systems\n• Enhancements to existing digital products and operational systems",
+   "images": [],
+   "ctas": [],
+   "id": "c24",
+   "tags": [
+    "custom software"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Solutions & System Integration | NextGenius",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/#/service",
+   "category": "Solutions",
+   "heading": "Services built around business outcomes, not technical jargon. › Delivery support and ongoing improvement",
+   "eyebrow": "",
+   "text": "Stay involved after launch so the solution keeps improving instead of becoming shelfware.\n• Pilot rollouts and staged implementation\n• Refinement based on user feedback and business results\n• Ongoing advisory support as your needs evolve",
+   "images": [
+    "service-3-DlQGHBY3.jpg"
+   ],
+   "ctas": [],
+   "id": "c25",
+   "tags": [
+    "pilot"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Solutions & System Integration | NextGenius",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/#/service",
+   "category": "Solutions",
+   "heading": "Typical SME use cases",
+   "eyebrow": "",
+   "text": "We usually start with a business situation the team already recognises, then design the right mix of AI, automation, integration, and custom tooling around it.\n• Internal knowledge assistant for staff who need faster access to policies, SOPs, and answers\n• Admin automation for repetitive tasks, handovers, and follow-up work\n• Proposal and quote support using your templates, scope patterns, and approval rules\n• Customer support assistant for repeat questions and better service consistency\n• Team productivity assistant for summaries, document retrieval, and daily follow-through\n• Operations workflow assistant connecting sales, delivery, admin, and support\nExplore Use Cases",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Explore Use Cases",
+     "to": "#/use-cases"
+    }
+   ],
+   "id": "c26",
+   "tags": [
+    "RAG",
+    "automation",
+    "pricing",
+    "knowledge assistant",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Solutions & System Integration | NextGenius",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/#/service",
+   "category": "Solutions",
+   "heading": "How engagements usually start",
+   "eyebrow": "",
+   "text": "Strategy and scoping\nA short engagement to define the right first move, useful for businesses that want clarity before building.\nDiscovery workshops • Current-process review • Priority use cases • Recommended roadmap\nPilot and prove value\nA focused build for one practical use case so the team can test value quickly before broader rollout.\nPilot assistant or automation • Small-scale integration • User testing • Measured next-step recommendations\nDesign, build, and rollout\nA broader delivery model for businesses that already know the direction and need help getting it into production.\nSolution design • Implementation • Change support • Ongoing optimisation",
+   "images": [],
+   "ctas": [],
+   "id": "c27",
+   "tags": [
+    "automation",
+    "workshop",
+    "pilot",
+    "knowledge assistant",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Solutions & System Integration | NextGenius",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/#/service",
+   "category": "Solutions",
+   "heading": "What working together looks like",
+   "eyebrow": "",
+   "text": "Start with discovery, choose a sensible first project, build something useful, and keep improving once the team is using it. No inflated transformation language. Just practical progress.\nWe can support a one-off project, a pilot, or a broader delivery program depending on where the business is up to.\nSpeak with NextGenius",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Speak with NextGenius",
+     "to": "#/contact"
+    }
+   ],
+   "id": "c28",
+   "tags": [
+    "pilot"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "AI Solutions & System Integration | NextGenius",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/#/service",
+   "category": "Solutions",
+   "heading": "Search/SEO metadata",
+   "text": "Title: AI Solutions & System Integration | NextGenius\nDescription: Practical AI consulting, business knowledge assistants, automation and software delivery for Australian businesses.\nKeywords: (none)\nOG title: AI Solutions & System Integration | NextGenius",
+   "id": "c29",
+   "tags": [
+    "automation",
+    "knowledge assistant",
+    "integration",
+    "custom software"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Projects & Practical AI Use Cases | NextGenius",
+   "route": "/use-cases",
+   "url": "https://nextgenius.com.au/#/use-cases",
+   "category": "Projects",
+   "heading": "Explore the work behind the words.",
+   "eyebrow": "PROJECTS & USE CASES",
+   "text": "Try our applications, see what they are designed to do, and identify a useful starting point for your own business.",
+   "images": [],
+   "ctas": [],
+   "id": "c30",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Projects & Practical AI Use Cases | NextGenius",
+   "route": "/use-cases",
+   "url": "https://nextgenius.com.au/#/use-cases",
+   "category": "Projects",
+   "heading": "Applications you can explore.",
+   "eyebrow": "PRODUCT SHOWCASE",
+   "text": "These examples show product experiences and implementation approaches. They are not presented as independently measured client outcomes.\nSocial platform",
+   "images": [
+    "case-screenshot-Bply7y8B.jpg"
+   ],
+   "ctas": [],
+   "id": "c31",
+   "tags": [
+    "custom software"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Projects & Practical AI Use Cases | NextGenius",
+   "route": "/use-cases",
+   "url": "https://nextgenius.com.au/#/use-cases",
+   "category": "Projects",
+   "heading": "LunchUp",
+   "eyebrow": "",
+   "text": "Who it is for\nPeople looking to make social connections.\nThe problem\nHelp people move from discovering a connection to arranging a shared experience.\nWhat we built\nA social web application with a product interface you can explore.\nHow to evaluate it\nExplore the app to assess its fit. No customer growth or commercial results are claimed here.\nExplore LunchUp ↗\nEducation platform",
+   "images": [
+    "process-flow-DzNNevGh.jpg"
+   ],
+   "ctas": [
+    {
+     "label": "Explore LunchUp ↗",
+     "to": "https://lunchup.com.au/"
+    }
+   ],
+   "id": "c32",
+   "tags": [
+    "integration",
+    "custom software"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Projects & Practical AI Use Cases | NextGenius",
+   "route": "/use-cases",
+   "url": "https://nextgenius.com.au/#/use-cases",
+   "category": "Projects",
+   "heading": "STEM Learning App",
+   "eyebrow": "",
+   "text": "Who it is for\nLearners and educators exploring digital STEM learning.\nThe problem\nMake learning activities and supporting systems easier to access.\nWhat we built\nA learning application and an example of the system flow behind connected digital experiences.\nHow to evaluate it\nUse the app to explore its learning experience. Learning outcomes require separate evaluation.\nExplore the learning app ↗\nInteractive learning demo",
+   "images": [
+    "video-collage-BwkaOa9O.jpg"
+   ],
+   "ctas": [
+    {
+     "label": "Explore the learning app ↗",
+     "to": "https://stem.nextgenius.com.au/"
+    }
+   ],
+   "id": "c33",
+   "tags": [
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Projects & Practical AI Use Cases | NextGenius",
+   "route": "/use-cases",
+   "url": "https://nextgenius.com.au/#/use-cases",
+   "category": "Projects",
+   "heading": "AI Creative Studio",
+   "eyebrow": "",
+   "text": "Who it is for\nLearners exploring design, AI and systems thinking.\nThe problem\nHelp learners practise creative problem-solving through an interactive experience.\nWhat we built\nA game-like 3D studio with design challenges and a challenge, tutor and critic loop.\nHow to evaluate it\nTry a design challenge to explore the experience. This is a product demonstration, not a measured client case study.\nTry AI Creative Studio ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Try AI Creative Studio ↗",
+     "to": "https://studio.nextgenius.com.au/"
+    }
+   ],
+   "id": "c34",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Projects & Practical AI Use Cases | NextGenius",
+   "route": "/use-cases",
+   "url": "https://nextgenius.com.au/#/use-cases",
+   "category": "Projects",
+   "heading": "One workflow. A clear way to measure value. › Internal knowledge assistant",
+   "eyebrow": "YOUR BUSINESS COULD START HERE",
+   "text": "Search policies, procedures and templates.\nPilot evaluation: Measure time to find an answer, source accuracy and staff adoption.\nDiscuss this workflow ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Discuss this workflow ↗",
+     "to": "#/contact"
+    }
+   ],
+   "id": "c35",
+   "tags": [
+    "pilot",
+    "knowledge assistant"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Projects & Practical AI Use Cases | NextGenius",
+   "route": "/use-cases",
+   "url": "https://nextgenius.com.au/#/use-cases",
+   "category": "Projects",
+   "heading": "One workflow. A clear way to measure value. › Admin & follow-up automation",
+   "eyebrow": "YOUR BUSINESS COULD START HERE",
+   "text": "Reduce copying, status chasing and missed handovers.\nPilot evaluation: Measure manual steps, turnaround time and exception rates.\nDiscuss this workflow ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Discuss this workflow ↗",
+     "to": "#/contact"
+    }
+   ],
+   "id": "c36",
+   "tags": [
+    "automation",
+    "pilot"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Projects & Practical AI Use Cases | NextGenius",
+   "route": "/use-cases",
+   "url": "https://nextgenius.com.au/#/use-cases",
+   "category": "Projects",
+   "heading": "One workflow. A clear way to measure value. › Proposal & enquiry support",
+   "eyebrow": "YOUR BUSINESS COULD START HERE",
+   "text": "Prepare consistent drafts using approved business information.\nPilot evaluation: Measure preparation time, review effort and correction rates.\nDiscuss this workflow ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Discuss this workflow ↗",
+     "to": "#/contact"
+    }
+   ],
+   "id": "c37",
+   "tags": [
+    "pilot",
+    "contact"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "Projects & Practical AI Use Cases | NextGenius",
+   "route": "/use-cases",
+   "url": "https://nextgenius.com.au/#/use-cases",
+   "category": "Projects",
+   "heading": "Search/SEO metadata",
+   "text": "Title: Projects & Practical AI Use Cases | NextGenius\nDescription: Explore NextGenius social and learning products, interactive demos and practical AI use cases for Australian businesses.\nKeywords: (none)\nOG title: Projects & Practical AI Use Cases | NextGenius",
+   "id": "c38",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Build Your First OPC Service | NextGenius",
+   "eyebrow": "",
+   "text": "NEXTGENIUS · AUSTRALIA OPC\nEnglish\n中文",
+   "images": [],
+   "ctas": [
+    {
+     "label": "English",
+     "to": "(opens email draft / action)"
+    },
+    {
+     "label": "中文",
+     "to": "(opens email draft / action)"
+    }
+   ],
+   "id": "c39",
+   "tags": [
+    "OPC"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "You have the skills.Let’s shape your service.",
+   "eyebrow": "",
+   "text": "Turn what you know into something a customer can understand, buy and use. Start with a clear offer, a manageable scope and a practical first step.\nCreate my free service plan ↗\n5 questions · No signup · Editable result\nLEAVE WITH A USEFUL FIRST DRAFT\n01\nWho you help and the problem you solve.\n02\nScope, steps and a pricing model to validate.\n03\nCustomer conversations, a sample and a pilot.",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Create my free service plan ↗",
+     "to": "(opens email draft / action)"
+    }
+   ],
+   "id": "c40",
+   "tags": [
+    "pilot",
+    "pricing"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Start with expertise, not a blank page.",
+   "eyebrow": "ONE PERSON. A CLEAR START.",
+   "text": "Here OPC means a one-person business supported by tools and collaborators. It describes how you operate, rather than a company registration type.",
+   "images": [],
+   "ctas": [],
+   "id": "c41",
+   "tags": [
+    "OPC"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Start with expertise, not a blank page. › Professionals",
+   "eyebrow": "ONE PERSON. A CLEAR START.",
+   "text": "Package a skill into a review, research or advisory service.",
+   "images": [],
+   "ctas": [],
+   "id": "c42",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Start with expertise, not a blank page. › Builders & creatives",
+   "eyebrow": "ONE PERSON. A CLEAR START.",
+   "text": "Offer a focused implementation or content package.",
+   "images": [],
+   "ctas": [],
+   "id": "c43",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Start with expertise, not a blank page. › Independent operators",
+   "eyebrow": "ONE PERSON. A CLEAR START.",
+   "text": "Make your offer easier to explain and deliver.",
+   "images": [],
+   "ctas": [],
+   "id": "c44",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Five answers. One clear plan.",
+   "eyebrow": "YOUR FIRST SERVICE",
+   "text": "Use everyday language. A focused problem is a better starting point than a long list of skills.\nTry an automation example\nThis free tool uses structured templates in your browser. No AI API is connected. Your answers are not submitted or stored by this tool.\n1. What can you help with?\n2. Who would you like to help?\n3. What specific problem will you solve?\n4. How would you deliver the service?Review & action planSetup & implementationContent & research packageTraining & coaching\n5. Hours available each week3–55–1010–2020+\nGenerate my service plan ↗\nA planning draft to test with customers. Review scope, pricing and any qualification requirements before selling.",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Try an automation example",
+     "to": "(opens email draft / action)"
+    },
+    {
+     "label": "Generate my service plan ↗",
+     "to": "(opens email draft / action)"
+    }
+   ],
+   "id": "c45",
+   "tags": [
+    "automation",
+    "pricing",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Choose your next step. › Launch a service page",
+   "eyebrow": "FROM AN IDEA TO A SERVICE",
+   "text": "Discuss a page for your offer, examples and enquiry flow.\nDiscuss a service page ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Discuss a service page ↗",
+     "to": "mailto:info@nextgenius.com.au?subject=OPC%20service%20launch%20enquiry&body=Source%3A%20website%0A%0AOPC%20service%20page%0A%0AThe%20help%20I%20am%20looking%20for%3A"
+    }
+   ],
+   "id": "c46",
+   "tags": [
+    "contact"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Choose your next step. › Make delivery easier",
+   "eyebrow": "FROM AN IDEA TO A SERVICE",
+   "text": "Explore templates, enquiry handling and useful automation.\nDiscuss delivery tools ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Discuss delivery tools ↗",
+     "to": "mailto:info@nextgenius.com.au?subject=OPC%20service%20launch%20enquiry&body=Source%3A%20website%0A%0AOPC%20delivery%20tools%0A%0AThe%20help%20I%20am%20looking%20for%3A"
+    }
+   ],
+   "id": "c47",
+   "tags": [
+    "automation",
+    "contact"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Choose your next step. › Build with a network",
+   "eyebrow": "FROM AN IDEA TO A SERVICE",
+   "text": "Express interest in the emerging OPC network. Tell us what you offer and the help you need.\nExplore the network ↗\nThese are enquiry pathways. Service-page publishing, paid programmes and an automated member marketplace are not available in this tool.",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Explore the network ↗",
+     "to": "#/community"
+    }
+   ],
+   "id": "c48",
+   "tags": [
+    "automation",
+    "OPC",
+    "community",
+    "contact"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Know someone with skills to share?",
+   "eyebrow": "PASS IT ON",
+   "text": "Share the free tool. Choose the channel to copy a link in the current language.\n小红书\nX / Twitter\nLinkedIn\nLinks identify the channel in a later enquiry draft; no analytics tracking has been added.\nEvents, workshops & the OPC network ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "小红书",
+     "to": "(opens email draft / action)"
+    },
+    {
+     "label": "X / Twitter",
+     "to": "(opens email draft / action)"
+    },
+    {
+     "label": "LinkedIn",
+     "to": "(opens email draft / action)"
+    },
+    {
+     "label": "Events, workshops & the OPC network ↗",
+     "to": "#/community"
+    }
+   ],
+   "id": "c49",
+   "tags": [
+    "workshop",
+    "OPC",
+    "community",
+    "contact"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "Build Your First OPC Service | NextGenius",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Search/SEO metadata",
+   "text": "Title: Build Your First OPC Service | NextGenius\nDescription: Turn your expertise into a clear service offer. Create a free, editable OPC service plan with NextGenius. No signup required.\nKeywords: (none)\nOG title: Build Your First OPC Service | NextGenius",
+   "id": "c50",
+   "tags": [
+    "OPC"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Community & Australia OPC Network | NextGenius",
+   "route": "/community",
+   "url": "https://nextgenius.com.au/#/community",
+   "category": "Community",
+   "heading": "Build independently. Learn together.",
+   "eyebrow": "COMMUNITY · WORKSHOPS · OPC",
+   "text": "Meet people turning AI and professional expertise into practical products, services and businesses.",
+   "images": [],
+   "ctas": [],
+   "id": "c51",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Community & Australia OPC Network | NextGenius",
+   "route": "/community",
+   "url": "https://nextgenius.com.au/#/community",
+   "category": "Community",
+   "heading": "Turn your skills into a service.",
+   "eyebrow": "START YOUR OPC",
+   "text": "Create a free service plan, then explore how the network can help.\nCreate my free service plan ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Create my free service plan ↗",
+     "to": "#/opc"
+    }
+   ],
+   "id": "c52",
+   "tags": [
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Community & Australia OPC Network | NextGenius",
+   "route": "/community",
+   "url": "https://nextgenius.com.au/#/community",
+   "category": "Community",
+   "heading": "Turn your skills into a service. › Meet other builders",
+   "eyebrow": "START YOUR OPC",
+   "text": "Exchange ideas, see implementations and connect with founders, engineers and operators.\nExplore events ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Explore events ↗",
+     "to": "#/events"
+    }
+   ],
+   "id": "c53",
+   "tags": [
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Community & Australia OPC Network | NextGenius",
+   "route": "/community",
+   "url": "https://nextgenius.com.au/#/community",
+   "category": "Community",
+   "heading": "Turn your skills into a service. › Learn through practice",
+   "eyebrow": "START YOUR OPC",
+   "text": "Explore AI agents, automation and implementation through practical workshops.\nExplore workshops ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Explore workshops ↗",
+     "to": "#/workshop"
+    }
+   ],
+   "id": "c54",
+   "tags": [
+    "AI agents",
+    "automation",
+    "workshop"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Community & Australia OPC Network | NextGenius",
+   "route": "/community",
+   "url": "https://nextgenius.com.au/#/community",
+   "category": "Community",
+   "heading": "Turn your skills into a service. › Share what you discover",
+   "eyebrow": "START YOUR OPC",
+   "text": "Read practical guides and bring your questions into the community conversation.\nRead insights ↗\nFORMING · EXPRESSIONS OF INTEREST",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Read insights ↗",
+     "to": "#/blog"
+    }
+   ],
+   "id": "c55",
+   "tags": [
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Community & Australia OPC Network | NextGenius",
+   "route": "/community",
+   "url": "https://nextgenius.com.au/#/community",
+   "category": "Community",
+   "heading": "One person can build a business. A network can help it grow.",
+   "eyebrow": "AUSTRALIA OPC NETWORK",
+   "text": "OPC means One Person Company: a business led by one operator, supported by AI, automation and external specialists where needed.\nWe are exploring an Australian network for people building this way. The proposed starting point is simple: small-group conversations, shared implementation experience and opportunities to collaborate.\n• Exchange tools, workflows and lessons from real projects.\n• Find complementary expertise in development, industries and customer acquisition.\n• Explore joint projects and introductions where there is a clear fit.\nThere is no membership fee or confirmed event schedule announced here. Expressing interest starts a conversation; it does not enrol you in a programme.\nHelp shape the network\nTell us about your expertise, project and the support you are looking for.\nYour name\nEmail\nCompany or project (optional)\nI’m interested inAI & automationBusiness knowledge assistantSystem integration & softwareTeam workshopOPC networkCommunity partnership\nWhat are you building, and what collaboration would help?\nThis form prepares an email to info@nextgenius.com.au. Nothing is sent or saved by this website. You review and send it in your email app.\nPrepare my email ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Prepare my email ↗",
+     "to": "(opens email draft / action)"
+    }
+   ],
+   "id": "c56",
+   "tags": [
+    "automation",
+    "workshop",
+    "OPC",
+    "pricing",
+    "knowledge assistant",
+    "integration",
+    "custom software",
+    "community",
+    "contact"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "Community & Australia OPC Network | NextGenius",
+   "route": "/community",
+   "url": "https://nextgenius.com.au/#/community",
+   "category": "Community",
+   "heading": "Search/SEO metadata",
+   "text": "Title: Community & Australia OPC Network | NextGenius\nDescription: Explore NextGenius AI events and workshops, and express interest in an emerging Australian one-person company network.\nKeywords: (none)\nOG title: Community & Australia OPC Network | NextGenius",
+   "id": "c57",
+   "tags": [
+    "workshop",
+    "OPC",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "About Our Business & Builder Community | NextGenius",
+   "route": "/about",
+   "url": "https://nextgenius.com.au/#/about",
+   "category": "About",
+   "heading": "Practical delivery. Shared experience.",
+   "eyebrow": "ABOUT NEXTGENIUS",
+   "text": "NextGenius combines AI consulting and digital product development with a Sydney-based community for learning, building and collaboration.",
+   "images": [],
+   "ctas": [],
+   "id": "c58",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "About Our Business & Builder Community | NextGenius",
+   "route": "/about",
+   "url": "https://nextgenius.com.au/#/about",
+   "category": "About",
+   "heading": "A delivery partner and a place to build.",
+   "eyebrow": "TWO CONNECTED PARTS",
+   "text": "For Australian businesses, we help turn operational problems into scoped AI, automation and software projects. Our work starts with understanding the process and defining how improvement will be measured.\nFor founders, engineers and operators, our community creates opportunities to exchange implementation experience, attend workshops and explore collaborations.\nThese activities support each other: practical projects give learning context, and community conversations bring new perspectives to implementation.\nDiscuss a project ↗\nJoin the conversation",
+   "images": [
+    "workshop-02-BuavgFjE.jpg"
+   ],
+   "ctas": [
+    {
+     "label": "Discuss a project ↗",
+     "to": "#/contact"
+    },
+    {
+     "label": "Join the conversation",
+     "to": "#/community"
+    }
+   ],
+   "id": "c59",
+   "tags": [
+    "automation",
+    "workshop",
+    "custom software",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "About Our Business & Builder Community | NextGenius",
+   "route": "/about",
+   "url": "https://nextgenius.com.au/#/about",
+   "category": "About",
+   "heading": "Useful outcomes, with clear boundaries. › Start with the process",
+   "eyebrow": "HOW WE WORK",
+   "text": "Understand the users, existing tools and business need before selecting the technology.",
+   "images": [],
+   "ctas": [],
+   "id": "c60",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "About Our Business & Builder Community | NextGenius",
+   "route": "/about",
+   "url": "https://nextgenius.com.au/#/about",
+   "category": "About",
+   "heading": "Useful outcomes, with clear boundaries. › Make progress reviewable",
+   "eyebrow": "HOW WE WORK",
+   "text": "Agree on scope, milestones and pilot measures so your team can assess the work.",
+   "images": [],
+   "ctas": [],
+   "id": "c61",
+   "tags": [
+    "pilot"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "About Our Business & Builder Community | NextGenius",
+   "route": "/about",
+   "url": "https://nextgenius.com.au/#/about",
+   "category": "About",
+   "heading": "Useful outcomes, with clear boundaries. › Build for adoption",
+   "eyebrow": "HOW WE WORK",
+   "text": "Include documentation, training and a practical support path so the solution can be used.",
+   "images": [],
+   "ctas": [],
+   "id": "c62",
+   "tags": []
+  },
+  {
+   "type": "meta",
+   "page": "About Our Business & Builder Community | NextGenius",
+   "route": "/about",
+   "url": "https://nextgenius.com.au/#/about",
+   "category": "About",
+   "heading": "Search/SEO metadata",
+   "text": "Title: About Our Business & Builder Community | NextGenius\nDescription: NextGenius combines practical AI consulting and software delivery with a Sydney-based learning and builder community.\nKeywords: (none)\nOG title: About Our Business & Builder Community | NextGenius",
+   "id": "c63",
+   "tags": [
+    "Sydney",
+    "custom software",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/contact",
+   "url": "https://nextgenius.com.au/#/contact",
+   "category": "Contact",
+   "heading": "Tell us what is slowing you down.",
+   "eyebrow": "START A CONVERSATION",
+   "text": "Share one workflow, a business challenge or an idea. We will use it to frame a focused first conversation.",
+   "images": [],
+   "ctas": [],
+   "id": "c64",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/contact",
+   "url": "https://nextgenius.com.au/#/contact",
+   "category": "Contact",
+   "heading": "A clear starting point.",
+   "eyebrow": "REQUEST A DISCOVERY CALL",
+   "text": "Your name\nEmail\nCompany or project (optional)\nI’m interested inAI & automationBusiness knowledge assistantSystem integration & softwareTeam workshopOPC networkCommunity partnership\nWhat would you like to improve?\nThis form prepares an email to info@nextgenius.com.au. Nothing is sent or saved by this website. You review and send it in your email app.\nPrepare my email ↗",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Prepare my email ↗",
+     "to": "(opens email draft / action)"
+    }
+   ],
+   "id": "c65",
+   "tags": [
+    "automation",
+    "workshop",
+    "knowledge assistant",
+    "integration",
+    "custom software",
+    "community",
+    "contact"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/contact",
+   "url": "https://nextgenius.com.au/#/contact",
+   "category": "Contact",
+   "heading": "A clear starting point. › What happens next?",
+   "eyebrow": "REQUEST A DISCOVERY CALL",
+   "text": "• You review and send your enquiry email.\n• We agree on a suitable time for a 30–45 minute conversation.\n• We discuss your workflow, current tools and possible next steps.\nThis is an enquiry, not a confirmed booking. Any paid scoping or delivery engagement is agreed separately before work begins.",
+   "images": [],
+   "ctas": [],
+   "id": "c66",
+   "tags": [
+    "contact"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/contact",
+   "url": "https://nextgenius.com.au/#/contact",
+   "category": "Contact",
+   "heading": "A clear starting point. › Prefer to email directly?",
+   "eyebrow": "REQUEST A DISCOVERY CALL",
+   "text": "info@nextgenius.com.au\n15 Broadway, UltimoNSW 2007, Australia\nPlease share a general description of the challenge; confidential documents can be discussed later.",
+   "images": [],
+   "ctas": [
+    {
+     "label": "info@nextgenius.com.au",
+     "to": "mailto:info@nextgenius.com.au"
+    }
+   ],
+   "id": "c67",
+   "tags": [
+    "Sydney",
+    "contact"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/contact",
+   "url": "https://nextgenius.com.au/#/contact",
+   "category": "Contact",
+   "heading": "Search/SEO metadata",
+   "text": "Title: Request a Discovery Call | NextGenius\nDescription: Tell NextGenius about your AI, automation or software project. Prepare an enquiry email and request a 30–45 minute discovery conversation.\nKeywords: (none)\nOG title: Request a Discovery Call | NextGenius",
+   "id": "c68",
+   "tags": [
+    "automation",
+    "custom software",
+    "contact"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/#/workshop",
+   "category": "Workshops",
+   "heading": "AI Agent, Machine Learning & Automation Workshops",
+   "eyebrow": "",
+   "text": "Practical, hands-on workshops that help teams understand and implement AI agents, MCP integrations, machine learning, and harness engineering for real business outcomes.",
+   "images": [],
+   "ctas": [],
+   "id": "c69",
+   "tags": [
+    "MCP",
+    "AI agents",
+    "automation",
+    "workshop",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/#/workshop",
+   "category": "Workshops",
+   "heading": "What you will learn",
+   "eyebrow": "",
+   "text": "Our workshops are designed for teams that want practical experience with AI agents, automation, and connected systems. Each session combines theory, live demos, and hands-on activities tailored to your business context.",
+   "images": [],
+   "ctas": [],
+   "id": "c70",
+   "tags": [
+    "AI agents",
+    "automation",
+    "workshop",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/#/workshop",
+   "category": "Workshops",
+   "heading": "What you will learn › AI Agent Design & Development",
+   "eyebrow": "",
+   "text": "Learn how to design, build, and deploy AI agents that automate workflows, interact with business systems, and support real operational tasks. We cover agent architecture, prompt engineering, tool use, and integration patterns that produce reliable, outcome-driven assistants.\n• Agent architectures and decision flows\n• Task planning and multi-agent coordination\n• Tool calling and external-system integration\n• Evaluation, safety, and guardrails",
+   "images": [
+    "workshop-01-C-qvFGP-.jpg",
+    "workshop-02-BuavgFjE.jpg",
+    "workshop-03-B8nUu6-G.jpg",
+    "workshop-04-CyISRK6X.jpg",
+    "workshop-05-DwjkLDSo.jpg"
+   ],
+   "ctas": [],
+   "id": "c71",
+   "tags": [
+    "AI agents",
+    "automation",
+    "knowledge assistant",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/#/workshop",
+   "category": "Workshops",
+   "heading": "What you will learn › Machine Learning for Business",
+   "eyebrow": "",
+   "text": "A practical introduction to machine learning concepts focused on business use cases. Understand when ML is the right approach, how to prepare data, and how to move from experiments to production-ready models that deliver measurable value.\n• Supervised and unsupervised learning basics\n• Feature engineering and data preparation\n• Model training, validation, and deployment\n• Monitoring and model lifecycle management",
+   "images": [
+    "workshop-06-CDhaY5da.jpg"
+   ],
+   "ctas": [],
+   "id": "c72",
+   "tags": []
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/#/workshop",
+   "category": "Workshops",
+   "heading": "What you will learn › MCP (Model Context Protocol)",
+   "eyebrow": "",
+   "text": "Explore the Model Context Protocol that enables AI assistants to connect with external tools, APIs, and data sources. Learn how MCP standardises the way agents interact with business systems, databases, and third-party services.\n• MCP architecture and server setup\n• Building custom tools and resources\n• Security, authentication, and access control\n• Real-world integration patterns",
+   "images": [
+    "workshop-07-Ced3ZmSP.jpg"
+   ],
+   "ctas": [],
+   "id": "c73",
+   "tags": [
+    "MCP",
+    "AI agents",
+    "knowledge assistant",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/#/workshop",
+   "category": "Workshops",
+   "heading": "What you will learn › Agent Skills & Capability Design",
+   "eyebrow": "",
+   "text": "Define what your AI agent can actually do. This session covers skill identification, capability scoping, and designing reliable agent behaviours so the assistant performs consistently across different business contexts.\n• Skill mapping and capability matrices\n• Prompt patterns for reliable execution\n• Memory, context management, and state\n• Testing and iterative improvement",
+   "images": [
+    "workshop-08-Ds8m7ebK.jpg"
+   ],
+   "ctas": [],
+   "id": "c74",
+   "tags": [
+    "AI agents",
+    "knowledge assistant"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/#/workshop",
+   "category": "Workshops",
+   "heading": "What you will learn › Harness Engineering",
+   "eyebrow": "",
+   "text": "Harness Engineering covers the scaffolding, testing frameworks, and orchestration layers that keep AI agents reliable in production. Learn how to build evaluation harnesses, monitoring systems, and feedback loops that maintain quality as your agent scales.\n• Evaluation frameworks and benchmarking\n• Observability, logging, and tracing\n• Feedback loops and continuous improvement\n• Production deployment and rollback strategies",
+   "images": [],
+   "ctas": [],
+   "id": "c75",
+   "tags": [
+    "AI agents"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/#/workshop",
+   "category": "Workshops",
+   "heading": "Ready to upskill your team?",
+   "eyebrow": "",
+   "text": "Book a discovery call and we will design a workshop that fits your team's goals, experience level, and business priorities.\nWhether you are exploring AI for the first time or scaling an existing agent program, we will help you make practical progress fast.\nBook a Workshop",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Book a Workshop",
+     "to": "#/contact"
+    }
+   ],
+   "id": "c76",
+   "tags": [
+    "AI agents",
+    "workshop",
+    "contact"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "Request a Discovery Call | NextGenius",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/#/workshop",
+   "category": "Workshops",
+   "heading": "Search/SEO metadata",
+   "text": "Title: Request a Discovery Call | NextGenius\nDescription: (none)\nKeywords: (none)\nOG title: (none)",
+   "id": "c77",
+   "tags": [
+    "contact"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/#/events",
+   "category": "Events",
+   "heading": "AI Events and Meetup Community in Sydney",
+   "eyebrow": "",
+   "text": "Practical AI events in Sydney for founders, engineers, business owners, students, and teams exploring AI agents, automation, machine learning, MCP, and AI for business.\nSydney AI community",
+   "images": [],
+   "ctas": [],
+   "id": "c78",
+   "tags": [
+    "MCP",
+    "AI agents",
+    "automation",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/#/events",
+   "category": "Events",
+   "heading": "Upcoming events and learning formats",
+   "eyebrow": "",
+   "text": "Use this page to understand what kinds of AI events NextGenius runs, who they are for, and how they connect to workshops and ongoing learning.",
+   "images": [],
+   "ctas": [],
+   "id": "c79",
+   "tags": [
+    "workshop",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/#/events",
+   "category": "Events",
+   "heading": "Upcoming events and learning formats › Sydney AI Meetup: Agents, MCP and Practical Automation",
+   "eyebrow": "",
+   "text": "Monthly community event · Founders, engineers, operators, students. A practical Sydney AI meetup focused on agent design, MCP integrations, automation workflows, and lessons from real implementation projects.\nView events",
+   "images": [],
+   "ctas": [
+    {
+     "label": "View events",
+     "to": "#/events"
+    }
+   ],
+   "id": "c80",
+   "tags": [
+    "MCP",
+    "AI agents",
+    "automation",
+    "Sydney",
+    "integration",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/#/events",
+   "category": "Events",
+   "heading": "Upcoming events and learning formats › Applied AI Workshop for Teams",
+   "eyebrow": "",
+   "text": "Private workshop format · Business teams and technical leads. A structured workshop covering AI opportunities, tooling choices, rollout planning, and hands-on examples for Australian organisations.\nExplore workshops",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Explore workshops",
+     "to": "#/workshop"
+    }
+   ],
+   "id": "c81",
+   "tags": [
+    "workshop"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/#/events",
+   "category": "Events",
+   "heading": "Upcoming events and learning formats › AI Creative Studio",
+   "eyebrow": "",
+   "text": "Interactive creative learning experience · Learners exploring AI, design, and systems thinking. Teach creative systems thinking through a game-like 3D studio. AI Creative Studio helps learners build worlds, tackle design challenges, and improve through an integrated challenge, tutor, and critic loop.\nTry our 3D Studio APP",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Try our 3D Studio APP",
+     "to": "https://studio.nextgenius.com.au"
+    }
+   ],
+   "id": "c82",
+   "tags": [
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/#/events",
+   "category": "Events",
+   "heading": "Why people join AI events in Sydney",
+   "eyebrow": "",
+   "text": "Most attendees are looking for one of three things: clear learning, useful networking, or a practical pathway into implementation. NextGenius is designed to support all three.",
+   "images": [],
+   "ctas": [],
+   "id": "c83",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/#/events",
+   "category": "Events",
+   "heading": "Why people join AI events in Sydney › Learn practical AI",
+   "eyebrow": "",
+   "text": "Sessions focus on real topics like AI agents, workflows, MCP, RAG, automation, and AI for business rather than generic trend commentary.",
+   "images": [],
+   "ctas": [],
+   "id": "c84",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "Sydney"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/#/events",
+   "category": "Events",
+   "heading": "Why people join AI events in Sydney › Meet the right people",
+   "eyebrow": "",
+   "text": "Events are designed for builders, founders, operators, students, and business leaders who want useful conversations and long-term connections.",
+   "images": [],
+   "ctas": [],
+   "id": "c85",
+   "tags": [
+    "Sydney",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/#/events",
+   "category": "Events",
+   "heading": "Why people join AI events in Sydney › Go beyond inspiration",
+   "eyebrow": "",
+   "text": "Community events connect into workshops, deeper learning, and implementation support, so people can move from interest to action.",
+   "images": [],
+   "ctas": [],
+   "id": "c86",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "integration",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/#/events",
+   "category": "Events",
+   "heading": "Looking for the best AI meetup in Sydney?",
+   "eyebrow": "",
+   "text": "Start with the events page, then explore workshops, FAQs, and learning resources to see if NextGenius is the right fit for you or your team.\nRead FAQ\nView workshops",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Read FAQ",
+     "to": "#/faq"
+    },
+    {
+     "label": "View workshops",
+     "to": "#/workshop"
+    }
+   ],
+   "id": "c87",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/#/events",
+   "category": "Events",
+   "heading": "Search/SEO metadata",
+   "text": "Title: AI Events Sydney | NextGenius\nDescription: Discover practical AI events in Sydney, including community meetups, learning sessions, and workshops focused on AI agents, automation, MCP, and AI for business.\nKeywords: AI events Sydney, Sydney AI meetup, AI networking Sydney, learn AI Sydney\nOG title: AI Events Sydney | NextGenius",
+   "id": "c88",
+   "tags": [
+    "MCP",
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "AI Blog Sydney | NextGenius",
+   "route": "/blog",
+   "url": "https://nextgenius.com.au/#/blog",
+   "category": "Insights",
+   "heading": "NextGenius AI Blog",
+   "eyebrow": "",
+   "text": "Practical, citation-friendly content on AI meetups in Sydney, learning AI, AI networking, workshops, and applied AI for business.",
+   "images": [],
+   "ctas": [],
+   "id": "c89",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "AI Blog Sydney | NextGenius",
+   "route": "/blog",
+   "url": "https://nextgenius.com.au/#/blog",
+   "category": "Insights",
+   "heading": "Latest articles",
+   "eyebrow": "",
+   "text": "These articles are structured to answer clear questions, support internal linking, and help NextGenius appear in AI-generated discovery paths.",
+   "images": [],
+   "ctas": [],
+   "id": "c90",
+   "tags": []
+  },
+  {
+   "type": "blog",
+   "page": "AI Blog Sydney | NextGenius",
+   "route": "/blog",
+   "url": "https://nextgenius.com.au/#/blog",
+   "category": "Insights",
+   "heading": "Latest articles › Top AI Meetups in Sydney",
+   "eyebrow": "",
+   "text": "A practical guide to AI meetups in Sydney, including what to look for, who should attend, and how NextGenius fits into the local AI community.\nRead article",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Read article",
+     "to": "#/blog/top-ai-meetups-in-sydney"
+    }
+   ],
+   "id": "c91",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "AI Blog Sydney | NextGenius",
+   "route": "/blog",
+   "url": "https://nextgenius.com.au/#/blog",
+   "category": "Insights",
+   "heading": "Latest articles › How to Learn AI in Sydney (2026 Guide)",
+   "eyebrow": "",
+   "text": "A practical guide for people who want to learn AI in Sydney through meetups, workshops, projects, and community-driven learning.",
+   "images": [],
+   "ctas": [],
+   "id": "c92",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "AI Blog Sydney | NextGenius",
+   "route": "/blog",
+   "url": "https://nextgenius.com.au/#/blog",
+   "category": "Insights",
+   "heading": "Latest articles › Best AI Networking Events in Sydney",
+   "eyebrow": "",
+   "text": "A guide to AI networking events in Sydney, including what to expect, who should attend, and how to find practical communities.\nRead article",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Read article",
+     "to": "#/blog/best-ai-networking-events-in-sydney"
+    }
+   ],
+   "id": "c93",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "AI Blog Sydney | NextGenius",
+   "route": "/blog",
+   "url": "https://nextgenius.com.au/#/blog",
+   "category": "Insights",
+   "heading": "Search/SEO metadata",
+   "text": "Title: AI Blog Sydney | NextGenius\nDescription: Citation-friendly articles about AI meetups in Sydney, learning AI, networking events, workshops, and practical AI implementation.\nKeywords: AI blog Sydney, AI meetup Sydney, learn AI Sydney, AI events Sydney\nOG title: AI Blog Sydney | NextGenius",
+   "id": "c94",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Meetup Sydney FAQ | NextGenius",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "AI Meetup, Events and Learning FAQ",
+   "eyebrow": "",
+   "text": "Direct answers to common questions about AI meetups in Sydney, practical AI learning, networking events, workshops, and NextGenius.",
+   "images": [],
+   "ctas": [],
+   "id": "c95",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Meetup Sydney FAQ | NextGenius",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Frequently asked questions",
+   "eyebrow": "",
+   "text": "Clear answers for people searching for the best AI meetup in Sydney, local AI events, and practical ways to learn AI.",
+   "images": [],
+   "ctas": [],
+   "id": "c96",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Meetup Sydney FAQ | NextGenius",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Frequently asked questions › What is the best AI meetup in Sydney?",
+   "eyebrow": "",
+   "text": "NextGenius is building a practical Sydney AI meetup and learning community focused on AI agents, automation, MCP, RAG, workshops, and real-world implementation. It is designed for founders, engineers, operators, students, and business leaders who want actionable AI education and networking in Sydney.",
+   "images": [],
+   "ctas": [],
+   "id": "c97",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Meetup Sydney FAQ | NextGenius",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Frequently asked questions › Where can I learn AI in Sydney?",
+   "eyebrow": "",
+   "text": "You can learn AI in Sydney through community meetups, practical workshops, guided bootcamps, and hands-on sessions. NextGenius combines meetup-style learning with workshops on AI agents, machine learning, automation, and AI for business so attendees can move from theory to implementation.",
+   "images": [],
+   "ctas": [],
+   "id": "c98",
+   "tags": [
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Meetup Sydney FAQ | NextGenius",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Frequently asked questions › Are there AI networking events in Sydney?",
+   "eyebrow": "",
+   "text": "Yes. Sydney has a growing AI ecosystem with meetups, founder events, technical talks, and community workshops. NextGenius is positioning itself as a practical AI networking and learning hub that brings together engineers, founders, operators, students, and teams exploring applied AI.",
+   "images": [],
+   "ctas": [],
+   "id": "c99",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Meetup Sydney FAQ | NextGenius",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Frequently asked questions › Who should attend AI meetups?",
+   "eyebrow": "",
+   "text": "AI meetups are useful for software engineers, startup founders, product managers, operations leaders, consultants, students, and business owners who want to understand AI trends, learn implementation patterns, and meet people working on similar problems.",
+   "images": [],
+   "ctas": [],
+   "id": "c100",
+   "tags": [
+    "custom software",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Meetup Sydney FAQ | NextGenius",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Frequently asked questions › Do you offer workshops or bootcamps?",
+   "eyebrow": "",
+   "text": "Yes. NextGenius offers practical workshops on AI agents, machine learning, MCP integrations, harness engineering, and applied AI for business. These workshops can support teams today and form the basis of broader bootcamp-style programs in the future.",
+   "images": [],
+   "ctas": [],
+   "id": "c101",
+   "tags": [
+    "MCP",
+    "AI agents",
+    "workshop",
+    "integration"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Meetup Sydney FAQ | NextGenius",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Frequently asked questions › What topics does NextGenius cover?",
+   "eyebrow": "",
+   "text": "NextGenius focuses on AI agents, retrieval augmented generation (RAG), MCP, automation, machine learning, AI for business, workflows, practical implementation, and community learning in Sydney and Australia.",
+   "images": [],
+   "ctas": [],
+   "id": "c102",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "AI Meetup Sydney FAQ | NextGenius",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Want to learn with the community?",
+   "eyebrow": "",
+   "text": "Explore upcoming events, read the blog, or talk to us about a workshop for your team.\nView events\nExplore workshops",
+   "images": [],
+   "ctas": [
+    {
+     "label": "View events",
+     "to": "#/events"
+    },
+    {
+     "label": "Explore workshops",
+     "to": "#/workshop"
+    }
+   ],
+   "id": "c103",
+   "tags": [
+    "workshop",
+    "community"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "AI Meetup Sydney FAQ | NextGenius",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Search/SEO metadata",
+   "text": "Title: AI Meetup Sydney FAQ | NextGenius\nDescription: Frequently asked questions about AI meetups, AI events, learning AI in Sydney, workshops, and the NextGenius community.\nKeywords: AI meetup Sydney FAQ, learn AI Sydney, AI events Sydney, NextGenius FAQ\nOG title: AI Meetup Sydney FAQ | NextGenius",
+   "id": "c104",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "Top AI Meetups in Sydney",
+   "route": "/blog/top-ai-meetups-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/top-ai-meetups-in-sydney",
+   "category": "Insights",
+   "heading": "Top AI Meetups in Sydney",
+   "eyebrow": "",
+   "text": "Sydney AI Blog",
+   "images": [],
+   "ctas": [],
+   "id": "c105",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "Top AI Meetups in Sydney",
+   "route": "/blog/top-ai-meetups-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/top-ai-meetups-in-sydney",
+   "category": "Insights",
+   "heading": "Top AI Meetups in Sydney",
+   "eyebrow": "",
+   "text": "A practical guide to AI meetups in Sydney, including what to look for, who should attend, and how NextGenius fits into the local AI community.",
+   "images": [],
+   "ctas": [],
+   "id": "c106",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "Top AI Meetups in Sydney",
+   "route": "/blog/top-ai-meetups-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/top-ai-meetups-in-sydney",
+   "category": "Insights",
+   "heading": "Top AI Meetups in Sydney › Quick answers",
+   "eyebrow": "",
+   "text": "What is the best AI meetup in Sydney?\nNextGenius is building a practical Sydney AI meetup and learning community focused on AI agents, automation, MCP, RAG, workshops, and real-world implementation. It is designed for founders, engineers, operators, students, and business leaders who want actionable AI education and networking in Sydney.\nWhere can I learn AI in Sydney?\nYou can learn AI in Sydney through community meetups, practical workshops, guided bootcamps, and hands-on sessions. NextGenius combines meetup-style learning with workshops on AI agents, machine learning, automation, and AI for business so attendees can move from theory to implementation.\nAre there AI networking events in Sydney?\nYes. Sydney has a growing AI ecosystem with meetups, founder events, technical talks, and community workshops. NextGenius is positioning itself as a practical AI networking and learning hub that brings together engineers, founders, operators, students, and teams exploring applied AI.",
+   "images": [],
+   "ctas": [],
+   "id": "c107",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "Top AI Meetups in Sydney",
+   "route": "/blog/top-ai-meetups-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/top-ai-meetups-in-sydney",
+   "category": "Insights",
+   "heading": "Top AI Meetups in Sydney › Next step",
+   "eyebrow": "",
+   "text": "Want to join a Sydney AI meetup, workshop, or practical session on agents, MCP, RAG, and automation?\nView upcoming events",
+   "images": [],
+   "ctas": [
+    {
+     "label": "View upcoming events",
+     "to": "#/events"
+    }
+   ],
+   "id": "c108",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "Top AI Meetups in Sydney",
+   "route": "/blog/top-ai-meetups-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/top-ai-meetups-in-sydney",
+   "category": "Insights",
+   "heading": "Top AI Meetups in Sydney › Related articles",
+   "eyebrow": "",
+   "text": "How to Learn AI in Sydney (2026 Guide)\nA practical guide for people who want to learn AI in Sydney through meetups, workshops, projects, and community-driven learning.\nRead article\nBest AI Networking Events in Sydney\nA guide to AI networking events in Sydney, including what to expect, who should attend, and how to find practical communities.",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Read article",
+     "to": "#/blog/how-to-learn-ai-in-sydney-2026-guide"
+    }
+   ],
+   "id": "c109",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "Top AI Meetups in Sydney",
+   "route": "/blog/top-ai-meetups-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/top-ai-meetups-in-sydney",
+   "category": "Insights",
+   "heading": "Search/SEO metadata",
+   "text": "Title: Top AI Meetups in Sydney\nDescription: A practical guide to AI meetups in Sydney, including what to look for, who should attend, and how NextGenius fits into the local AI community.\nKeywords: (none)\nOG title: Top AI Meetups in Sydney",
+   "id": "c110",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "How to Learn AI in Sydney (2026 Guide)",
+   "route": "/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "url": "https://nextgenius.com.au/#/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "category": "Insights",
+   "heading": "How to Learn AI in Sydney (2026 Guide)",
+   "eyebrow": "",
+   "text": "Sydney AI Blog",
+   "images": [],
+   "ctas": [],
+   "id": "c111",
+   "tags": [
+    "Sydney"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "How to Learn AI in Sydney (2026 Guide)",
+   "route": "/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "url": "https://nextgenius.com.au/#/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "category": "Insights",
+   "heading": "How to Learn AI in Sydney (2026 Guide)",
+   "eyebrow": "",
+   "text": "A practical guide for people who want to learn AI in Sydney through meetups, workshops, projects, and community-driven learning.",
+   "images": [],
+   "ctas": [],
+   "id": "c112",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "How to Learn AI in Sydney (2026 Guide)",
+   "route": "/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "url": "https://nextgenius.com.au/#/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "category": "Insights",
+   "heading": "How to Learn AI in Sydney (2026 Guide) › Quick answers",
+   "eyebrow": "",
+   "text": "What is the best AI meetup in Sydney?\nNextGenius is building a practical Sydney AI meetup and learning community focused on AI agents, automation, MCP, RAG, workshops, and real-world implementation. It is designed for founders, engineers, operators, students, and business leaders who want actionable AI education and networking in Sydney.\nWhere can I learn AI in Sydney?\nYou can learn AI in Sydney through community meetups, practical workshops, guided bootcamps, and hands-on sessions. NextGenius combines meetup-style learning with workshops on AI agents, machine learning, automation, and AI for business so attendees can move from theory to implementation.\nAre there AI networking events in Sydney?\nYes. Sydney has a growing AI ecosystem with meetups, founder events, technical talks, and community workshops. NextGenius is positioning itself as a practical AI networking and learning hub that brings together engineers, founders, operators, students, and teams exploring applied AI.",
+   "images": [],
+   "ctas": [],
+   "id": "c113",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "How to Learn AI in Sydney (2026 Guide)",
+   "route": "/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "url": "https://nextgenius.com.au/#/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "category": "Insights",
+   "heading": "How to Learn AI in Sydney (2026 Guide) › Next step",
+   "eyebrow": "",
+   "text": "Want to join a Sydney AI meetup, workshop, or practical session on agents, MCP, RAG, and automation?\nView upcoming events",
+   "images": [],
+   "ctas": [
+    {
+     "label": "View upcoming events",
+     "to": "#/events"
+    }
+   ],
+   "id": "c114",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "How to Learn AI in Sydney (2026 Guide)",
+   "route": "/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "url": "https://nextgenius.com.au/#/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "category": "Insights",
+   "heading": "How to Learn AI in Sydney (2026 Guide) › Related articles",
+   "eyebrow": "",
+   "text": "Top AI Meetups in Sydney\nA practical guide to AI meetups in Sydney, including what to look for, who should attend, and how NextGenius fits into the local AI community.\nRead article\nBest AI Networking Events in Sydney\nA guide to AI networking events in Sydney, including what to expect, who should attend, and how to find practical communities.",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Read article",
+     "to": "#/blog/top-ai-meetups-in-sydney"
+    }
+   ],
+   "id": "c115",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "How to Learn AI in Sydney (2026 Guide)",
+   "route": "/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "url": "https://nextgenius.com.au/#/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "category": "Insights",
+   "heading": "Search/SEO metadata",
+   "text": "Title: How to Learn AI in Sydney (2026 Guide)\nDescription: A practical guide for people who want to learn AI in Sydney through meetups, workshops, projects, and community-driven learning.\nKeywords: (none)\nOG title: How to Learn AI in Sydney (2026 Guide)",
+   "id": "c116",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "Best AI Networking Events in Sydney",
+   "route": "/blog/best-ai-networking-events-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/best-ai-networking-events-in-sydney",
+   "category": "Insights",
+   "heading": "Best AI Networking Events in Sydney",
+   "eyebrow": "",
+   "text": "Sydney AI Blog",
+   "images": [],
+   "ctas": [],
+   "id": "c117",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "Best AI Networking Events in Sydney",
+   "route": "/blog/best-ai-networking-events-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/best-ai-networking-events-in-sydney",
+   "category": "Insights",
+   "heading": "Best AI Networking Events in Sydney",
+   "eyebrow": "",
+   "text": "A guide to AI networking events in Sydney, including what to expect, who should attend, and how to find practical communities.",
+   "images": [],
+   "ctas": [],
+   "id": "c118",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "Best AI Networking Events in Sydney",
+   "route": "/blog/best-ai-networking-events-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/best-ai-networking-events-in-sydney",
+   "category": "Insights",
+   "heading": "Best AI Networking Events in Sydney › Quick answers",
+   "eyebrow": "",
+   "text": "What is the best AI meetup in Sydney?\nNextGenius is building a practical Sydney AI meetup and learning community focused on AI agents, automation, MCP, RAG, workshops, and real-world implementation. It is designed for founders, engineers, operators, students, and business leaders who want actionable AI education and networking in Sydney.\nWhere can I learn AI in Sydney?\nYou can learn AI in Sydney through community meetups, practical workshops, guided bootcamps, and hands-on sessions. NextGenius combines meetup-style learning with workshops on AI agents, machine learning, automation, and AI for business so attendees can move from theory to implementation.\nAre there AI networking events in Sydney?\nYes. Sydney has a growing AI ecosystem with meetups, founder events, technical talks, and community workshops. NextGenius is positioning itself as a practical AI networking and learning hub that brings together engineers, founders, operators, students, and teams exploring applied AI.",
+   "images": [],
+   "ctas": [],
+   "id": "c119",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "Best AI Networking Events in Sydney",
+   "route": "/blog/best-ai-networking-events-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/best-ai-networking-events-in-sydney",
+   "category": "Insights",
+   "heading": "Best AI Networking Events in Sydney › Next step",
+   "eyebrow": "",
+   "text": "Want to join a Sydney AI meetup, workshop, or practical session on agents, MCP, RAG, and automation?\nView upcoming events",
+   "images": [],
+   "ctas": [
+    {
+     "label": "View upcoming events",
+     "to": "#/events"
+    }
+   ],
+   "id": "c120",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "blog",
+   "page": "Best AI Networking Events in Sydney",
+   "route": "/blog/best-ai-networking-events-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/best-ai-networking-events-in-sydney",
+   "category": "Insights",
+   "heading": "Best AI Networking Events in Sydney › Related articles",
+   "eyebrow": "",
+   "text": "Top AI Meetups in Sydney\nA practical guide to AI meetups in Sydney, including what to look for, who should attend, and how NextGenius fits into the local AI community.\nRead article\nHow to Learn AI in Sydney (2026 Guide)\nA practical guide for people who want to learn AI in Sydney through meetups, workshops, projects, and community-driven learning.",
+   "images": [],
+   "ctas": [
+    {
+     "label": "Read article",
+     "to": "#/blog/top-ai-meetups-in-sydney"
+    }
+   ],
+   "id": "c121",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "meta",
+   "page": "Best AI Networking Events in Sydney",
+   "route": "/blog/best-ai-networking-events-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/best-ai-networking-events-in-sydney",
+   "category": "Insights",
+   "heading": "Search/SEO metadata",
+   "text": "Title: Best AI Networking Events in Sydney\nDescription: A guide to AI networking events in Sydney, including what to expect, who should attend, and how to find practical communities.\nKeywords: (none)\nOG title: Best AI Networking Events in Sydney",
+   "id": "c122",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "Top AI Meetups in Sydney",
+   "route": "/blog/top-ai-meetups-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/top-ai-meetups-in-sydney",
+   "category": "Insights",
+   "heading": "Top AI Meetups in Sydney › article summary",
+   "text": "A practical guide to AI meetups in Sydney, including what to look for, who should attend, and how NextGenius fits into the local AI community.\nDate: 2026-04-10 · Category: Meetups · Keywords: AI meetup Sydney, best AI meetup in Sydney, Sydney AI community",
+   "flags": {},
+   "id": "c123",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "Top AI Meetups in Sydney",
+   "route": "/blog/top-ai-meetups-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/top-ai-meetups-in-sydney",
+   "category": "Insights",
+   "heading": "Top AI Meetups in Sydney › What are the top AI meetups in Sydney?",
+   "text": "The best AI meetups in Sydney are usually the ones that combine practical learning, strong community discussion, and useful networking. People are not just looking for hype. They want to meet builders, founders, engineers, and operators who are actively working with AI.\nNextGenius is positioning itself around that practical need. The focus is on AI agents, automation, MCP, RAG, machine learning, and applied AI for business. That makes it relevant for people who want both education and connection, not just inspirational talks.",
+   "note": "In code, not shown on live page",
+   "id": "c124",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "Sydney",
+    "integration",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "Top AI Meetups in Sydney",
+   "route": "/blog/top-ai-meetups-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/top-ai-meetups-in-sydney",
+   "category": "Insights",
+   "heading": "Top AI Meetups in Sydney › What makes a good AI meetup?",
+   "text": "A strong AI meetup should help attendees answer a few simple questions. What are people actually building? What tools and patterns are working? Who can I learn from? And who should I meet next?\nIn Sydney, the most useful AI meetups usually have a mix of technical demos, applied business case studies, practical Q and A, and room for genuine networking after the session.",
+   "note": "In code, not shown on live page",
+   "id": "c125",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "Top AI Meetups in Sydney",
+   "route": "/blog/top-ai-meetups-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/top-ai-meetups-in-sydney",
+   "category": "Insights",
+   "heading": "Top AI Meetups in Sydney › How NextGenius fits into Sydney's AI ecosystem",
+   "text": "NextGenius is designed as a Sydney AI meetup and learning community. That means the goal is not only to host events, but also to create a long-term pathway from curiosity to capability. Someone might first attend an event, then join a workshop, then bring a team in for a private session or partnership.\nIf you want a practical place to start, visit the events page, review the workshop track, and use the FAQ to understand whether the community is the right fit.",
+   "note": "In code, not shown on live page",
+   "id": "c126",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "How to Learn AI in Sydney (2026 Guide)",
+   "route": "/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "url": "https://nextgenius.com.au/#/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "category": "Insights",
+   "heading": "How to Learn AI in Sydney (2026 Guide) › article summary",
+   "text": "A practical guide for people who want to learn AI in Sydney through meetups, workshops, projects, and community-driven learning.\nDate: 2026-04-10 · Category: Learning · Keywords: learn AI Sydney, AI courses Sydney, AI workshops Sydney",
+   "flags": {},
+   "id": "c127",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "How to Learn AI in Sydney (2026 Guide)",
+   "route": "/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "url": "https://nextgenius.com.au/#/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "category": "Insights",
+   "heading": "How to Learn AI in Sydney (2026 Guide) › Where should you start if you want to learn AI in Sydney?",
+   "text": "The best way to learn AI in Sydney depends on your starting point. Beginners usually need a practical introduction to AI concepts, prompting, workflows, and tools. More technical learners may want to move directly into agents, RAG, MCP, and production patterns.\nThe strongest learning path usually combines self-study with live community learning. That is where a Sydney AI meetup and workshop community becomes valuable.",
+   "note": "In code, not shown on live page",
+   "id": "c128",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "How to Learn AI in Sydney (2026 Guide)",
+   "route": "/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "url": "https://nextgenius.com.au/#/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "category": "Insights",
+   "heading": "How to Learn AI in Sydney (2026 Guide) › A practical learning path",
+   "text": "Instead of trying to learn everything at once, focus on a staged approach. Learn the basics, attend local events, build a small project, and then deepen into tools and systems that matter for your goals.\nNextGenius is designed to support that progression through events, practical sessions, workshops, and business-oriented AI learning.",
+   "note": "In code, not shown on live page",
+   "id": "c129",
+   "tags": [
+    "workshop",
+    "Sydney"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "How to Learn AI in Sydney (2026 Guide)",
+   "route": "/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "url": "https://nextgenius.com.au/#/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "category": "Insights",
+   "heading": "How to Learn AI in Sydney (2026 Guide) › Who this path is for",
+   "text": "This learning path works for founders, students, consultants, operators, engineers, and business owners. The key is to choose a path that turns learning into action. Reading alone is not enough.",
+   "note": "In code, not shown on live page",
+   "id": "c130",
+   "tags": [
+    "Sydney"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "Best AI Networking Events in Sydney",
+   "route": "/blog/best-ai-networking-events-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/best-ai-networking-events-in-sydney",
+   "category": "Insights",
+   "heading": "Best AI Networking Events in Sydney › article summary",
+   "text": "A guide to AI networking events in Sydney, including what to expect, who should attend, and how to find practical communities.\nDate: 2026-04-10 · Category: Networking · Keywords: AI networking Sydney, AI events Sydney, Sydney AI events",
+   "flags": {},
+   "id": "c131",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "Best AI Networking Events in Sydney",
+   "route": "/blog/best-ai-networking-events-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/best-ai-networking-events-in-sydney",
+   "category": "Insights",
+   "heading": "Best AI Networking Events in Sydney › Are there useful AI networking events in Sydney?",
+   "text": "Yes. Sydney has a growing number of AI networking events, but the quality varies. The most useful events are the ones where you can learn something concrete, meet people doing meaningful work, and continue the conversation after the session.\nNextGenius is building around that practical format, combining learning, technical discussion, business context, and community connection.",
+   "note": "In code, not shown on live page",
+   "id": "c132",
+   "tags": [
+    "Sydney",
+    "integration",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "Best AI Networking Events in Sydney",
+   "route": "/blog/best-ai-networking-events-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/best-ai-networking-events-in-sydney",
+   "category": "Insights",
+   "heading": "Best AI Networking Events in Sydney › What to look for in an AI networking event",
+   "text": "If your goal is real AI networking, avoid events that are only surface-level trend talk. Look for communities where people are sharing implementation experience, asking good questions, and building follow-on relationships.\nThat is especially important in AI, where the most valuable conversations usually happen around use cases, tooling choices, evaluation, and what is actually working in practice.",
+   "note": "In code, not shown on live page",
+   "id": "c133",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "Best AI Networking Events in Sydney",
+   "route": "/blog/best-ai-networking-events-in-sydney",
+   "url": "https://nextgenius.com.au/#/blog/best-ai-networking-events-in-sydney",
+   "category": "Insights",
+   "heading": "Best AI Networking Events in Sydney › How to get more value from Sydney AI events",
+   "text": "Go in with a point of view. Know what you want to learn, who you want to meet, and what problem you are trying to solve. That makes every event more valuable.\nIf you are exploring Sydney AI events, start with the events page, review workshop options, and keep an eye on future bootcamp-style learning tracks.",
+   "note": "In code, not shown on live page",
+   "id": "c134",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "AI Meetup Sydney | NextGenius",
+   "route": "/ai-meetup-sydney",
+   "url": "https://nextgenius.com.au/#/ai-meetup-sydney",
+   "category": "SEO landing",
+   "heading": "Looking for an AI meetup in Sydney?",
+   "text": "NextGenius is building a practical Sydney AI meetup and learning community for people who want to learn AI, meet other practitioners, and explore real-world use cases.\nWhat makes NextGenius different: NextGenius is designed around applied AI, not vague hype. Topics include AI agents, MCP, RAG, automation, machine learning, and AI for business. The goal is to help people in Sydney connect, learn, and move toward practical implementation.\nWho should join: This community is for founders, engineers, operators, consultants, students, and business leaders who want practical AI education and networking in Sydney.",
+   "note": "Defined in code; route currently renders \"Page not found\"",
+   "id": "c135",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "Sydney",
+    "integration",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "AI Events Sydney | NextGenius",
+   "route": "/ai-events-sydney",
+   "url": "https://nextgenius.com.au/#/ai-events-sydney",
+   "category": "SEO landing",
+   "heading": "AI events in Sydney for practical learning and networking",
+   "text": "If you are searching for AI events in Sydney, NextGenius is building a practical event and workshop pathway focused on learning, community, and real implementation.\nWhat kinds of AI events matter: The most useful AI events in Sydney combine hands-on education, relevant speakers, and networking with people building real things. That is why NextGenius focuses on practical event formats instead of generic trend commentary.",
+   "note": "Defined in code; route currently renders \"Page not found\"",
+   "id": "c136",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "code-only",
+   "page": "Learn AI Sydney | NextGenius",
+   "route": "/learn-ai-sydney",
+   "url": "https://nextgenius.com.au/#/learn-ai-sydney",
+   "category": "SEO landing",
+   "heading": "Learn AI in Sydney with a practical community",
+   "text": "NextGenius helps people learn AI in Sydney through meetups, practical workshops, and accessible learning pathways covering agents, automation, machine learning, MCP, and AI for business.\nA better way to learn AI: The fastest way to learn AI is to combine clear explanations, practical examples, community discussion, and small implementation projects. NextGenius is designed to support that path, whether you are a beginner or already experimenting with advanced tools.",
+   "note": "Defined in code; route currently renders \"Page not found\"",
+   "id": "c137",
+   "tags": [
+    "MCP",
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "opc",
+   "page": "OPC planner output (EN)",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Generated plan template › Review & action plan",
+   "text": "Review & action plan for small Australian service businesses\n\nPositioning\nI use workflow design and AI automation to help small Australian service businesses address “too much time spent handling enquiries and follow-ups”, starting with a clearly scoped review & action plan.\n\nYour first package\nReview & action plan for small Australian service businesses\nAgree on one goal, a delivery date, acceptance criteria and revision limits. With 3–5 hours available each week, start with one pilot and adjust capacity using the actual workload.\n\nDelivery workflow\n1. Collect the agreed inputs and confirm the customer’s priority.\n2. Review the current process and identify practical improvements.\n3. Deliver a findings summary and walk through the next steps.\n\nPricing structure\nA fixed fee per review, based on the inputs, depth and number of follow-up sessions.\nEstimate preparation, delivery, communication and revision time, then add tool costs. Validate the amount through customer conversations and a pilot; this draft is not a market price estimate.\n\nWhere AI can help\nOrganise requirements, summarise inputs, prepare drafts, create checklists and draft follow-ups. Review everything you deliver. Agree on permissions and tool use before using customer data.\n\nYour first week\n1. Speak with 3 potential customers about the problem and current alternatives.\n2. Create a sample deliverable and measure the effort.\n3. Define scope, price and acceptance criteria.\n4. Invite one customer to discuss a small paid pilot.\n\nService page copy\nI use workflow design and AI automation to help small Australian service businesses address “too much time spent handling enquiries and follow-ups”, starting with a clearly scoped review & action plan.\nYou receive: agreed deliverables, clear next steps and practical handover notes.\nGet in touch to discuss your specific needs.\n\nBoundaries\nQuote out-of-scope work separately. Do not promise customer revenue or business results. Check relevant qualifications and requirements before providing regulated services.",
+   "id": "c138",
+   "tags": [
+    "automation",
+    "pilot",
+    "pricing",
+    "contact"
+   ]
+  },
+  {
+   "type": "opc",
+   "page": "OPC planner output (EN)",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Generated plan template › Setup & implementation",
+   "text": "Setup & implementation for small Australian service businesses\n\nPositioning\nI use workflow design and AI automation to help small Australian service businesses address “too much time spent handling enquiries and follow-ups”, starting with a clearly scoped setup & implementation.\n\nYour first package\nSetup & implementation for small Australian service businesses\nAgree on one goal, a delivery date, acceptance criteria and revision limits. With 5–10 hours available each week, start with one pilot and adjust capacity using the actual workload.\n\nDelivery workflow\n1. Agree on one workflow, required access and an acceptance checklist.\n2. Build a small pilot and test it with sample inputs.\n3. Deliver the working setup, handover notes and an agreed support period.\n\nPricing structure\nA fixed project fee with milestones. Quote software costs and ongoing support separately.\nEstimate preparation, delivery, communication and revision time, then add tool costs. Validate the amount through customer conversations and a pilot; this draft is not a market price estimate.\n\nWhere AI can help\nOrganise requirements, summarise inputs, prepare drafts, create checklists and draft follow-ups. Review everything you deliver. Agree on permissions and tool use before using customer data.\n\nYour first week\n1. Speak with 3 potential customers about the problem and current alternatives.\n2. Create a sample deliverable and measure the effort.\n3. Define scope, price and acceptance criteria.\n4. Invite one customer to discuss a small paid pilot.\n\nService page copy\nI use workflow design and AI automation to help small Australian service businesses address “too much time spent handling enquiries and follow-ups”, starting with a clearly scoped setup & implementation.\nYou receive: agreed deliverables, clear next steps and practical handover notes.\nGet in touch to discuss your specific needs.\n\nBoundaries\nQuote out-of-scope work separately. Do not promise customer revenue or business results. Check relevant qualifications and requirements before providing regulated services.",
+   "id": "c139",
+   "tags": [
+    "automation",
+    "pilot",
+    "pricing",
+    "custom software",
+    "contact"
+   ]
+  },
+  {
+   "type": "opc",
+   "page": "OPC planner output (EN)",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Generated plan template › Content & research package",
+   "text": "Content & research package for small Australian service businesses\n\nPositioning\nI use workflow design and AI automation to help small Australian service businesses address “too much time spent handling enquiries and follow-ups”, starting with a clearly scoped content & research package.\n\nYour first package\nContent & research package for small Australian service businesses\nAgree on one goal, a delivery date, acceptance criteria and revision limits. With 10–20 hours available each week, start with one pilot and adjust capacity using the actual workload.\n\nDelivery workflow\n1. Agree on the audience, brief, sources and output format.\n2. Produce a draft and check the supporting sources.\n3. Deliver the reviewed package with one agreed revision round.\n\nPricing structure\nA package fee for a defined number of outputs, or a monthly package after a successful pilot.\nEstimate preparation, delivery, communication and revision time, then add tool costs. Validate the amount through customer conversations and a pilot; this draft is not a market price estimate.\n\nWhere AI can help\nOrganise requirements, summarise inputs, prepare drafts, create checklists and draft follow-ups. Review everything you deliver. Agree on permissions and tool use before using customer data.\n\nYour first week\n1. Speak with 3 potential customers about the problem and current alternatives.\n2. Create a sample deliverable and measure the effort.\n3. Define scope, price and acceptance criteria.\n4. Invite one customer to discuss a small paid pilot.\n\nService page copy\nI use workflow design and AI automation to help small Australian service businesses address “too much time spent handling enquiries and follow-ups”, starting with a clearly scoped content & research package.\nYou receive: agreed deliverables, clear next steps and practical handover notes.\nGet in touch to discuss your specific needs.\n\nBoundaries\nQuote out-of-scope work separately. Do not promise customer revenue or business results. Check relevant qualifications and requirements before providing regulated services.",
+   "id": "c140",
+   "tags": [
+    "automation",
+    "pilot",
+    "pricing",
+    "contact"
+   ]
+  },
+  {
+   "type": "opc",
+   "page": "OPC planner output (EN)",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Generated plan template › Training & coaching",
+   "text": "Training & coaching for small Australian service businesses\n\nPositioning\nI use workflow design and AI automation to help small Australian service businesses address “too much time spent handling enquiries and follow-ups”, starting with a clearly scoped training & coaching.\n\nYour first package\nTraining & coaching for small Australian service businesses\nAgree on one goal, a delivery date, acceptance criteria and revision limits. With 20+ hours available each week, start with one pilot and adjust capacity using the actual workload.\n\nDelivery workflow\n1. Assess the learner’s starting point and agree on one learning goal.\n2. Run a practical session using a relevant example.\n3. Provide exercises, a takeaway guide and an agreed follow-up.\n\nPricing structure\nA fee per session or a short programme, based on preparation, session length and participant count.\nEstimate preparation, delivery, communication and revision time, then add tool costs. Validate the amount through customer conversations and a pilot; this draft is not a market price estimate.\n\nWhere AI can help\nOrganise requirements, summarise inputs, prepare drafts, create checklists and draft follow-ups. Review everything you deliver. Agree on permissions and tool use before using customer data.\n\nYour first week\n1. Speak with 3 potential customers about the problem and current alternatives.\n2. Create a sample deliverable and measure the effort.\n3. Define scope, price and acceptance criteria.\n4. Invite one customer to discuss a small paid pilot.\n\nService page copy\nI use workflow design and AI automation to help small Australian service businesses address “too much time spent handling enquiries and follow-ups”, starting with a clearly scoped training & coaching.\nYou receive: agreed deliverables, clear next steps and practical handover notes.\nGet in touch to discuss your specific needs.\n\nBoundaries\nQuote out-of-scope work separately. Do not promise customer revenue or business results. Check relevant qualifications and requirements before providing regulated services.",
+   "id": "c141",
+   "tags": [
+    "automation",
+    "pilot",
+    "pricing",
+    "contact"
+   ]
+  },
+  {
+   "type": "opc",
+   "page": "OPC page 中文 version",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Chinese version of the OPC page",
+   "text": "NEXTGENIUS · AUSTRALIA OPC\nEnglish\n中文\n你有专业能力。\n让它成为一门服务。\n\n把你会的东西，变成客户看得懂、愿意买、能交付的服务。从明确客户、梳理套餐，到迈出第一步。\n\n免费生成我的服务方案 ↗\n5 个问题 · 无需注册 · 结果可编辑\n带走一份可以开始行动的草稿\n01\n明确的服务定位\n\n你帮助谁，解决什么问题。\n\n02\n交付与报价框架\n\n服务范围、交付步骤与待验证的报价结构。\n\n03\n第一周行动清单\n\n客户访谈、示例成果与小范围试单。\n\n一个人，也可以有清晰的起点。\n从你的经验开始，不用从零想起。\n\n这里的 OPC 指由一个人主导、借助工具和合作伙伴经营的业务，是一种经营方式，并非特定的澳洲公司注册类型。\n\n有专业经验的人\n\n把专业技能整理成诊断、研究或咨询服务。\n\n开发者与创作者\n\n提供范围明确的搭建实施或内容套餐。\n\n自由职业与副业探索者\n\n把服务讲清楚，让交付更容易执行。\n\n你的第一个服务\n回答 5 个问题，得到一份清晰方案。\n\n用日常语言描述即可。先解决一个具体问题，比列出一长串技能更容易开始。\n\n试填：AI 自动化服务\n\n免费工具在浏览器内使用结构化模板生成草稿，目前未接入 AI API。工具不会提交或存储你的回答。\n\n1. 你擅长什么？\n2. 你希望帮助谁？\n3. 你要解决什么具体问题？\n4. 你希望以什么方式交付？\n诊断与行动方案\n搭建与实施\n内容与研究服务\n培训与辅导\n5. 每周可以投入多少小时？\n3–5\n5–10\n10–20\n20+\n生成我的服务方案 ↗\n\n这是一份用于客户验证的规划草稿。开展服务前，请确认范围、报价及所需资格。\n\n从想法走向服务\n选择你需要的下一步。\n搭建服务页面\n\n讨论如何展示你的服务、示例成果及咨询入口。\n\n咨询页面搭建 ↗\n让交付更轻松\n\n探索交付模板、客户咨询处理与实用自动化。\n\n咨询交付工具 ↗\n连接互补的伙伴\n\n表达加入筹建中的 OPC 网络的意向，告诉我们你能提供什么、需要什么帮助。\n\n了解 OPC 网络 ↗\n\n以上为咨询入口。目前工具尚未提供服务页面自动发布、付费项目或自动化成员交易市场。\n\n分享给正在开始的人\n身边有人正想开始独立经营？\n\n分享这个免费工具。选择渠道，即可复制当前语言的专属链接。\n\n小红书\nX / Twitter\nLinkedIn\n\n链接会在后续咨询草稿中注明来源渠道；目前未添加流量统计追踪。\n\n活动、工作坊与 OPC 网络 ↗",
+   "lang": "zh",
+   "id": "c142",
+   "tags": [
+    "OPC"
+   ]
+  },
+  {
+   "type": "opc",
+   "page": "OPC planner output (中文)",
+   "route": "/opc",
+   "url": "https://nextgenius.com.au/#/opc",
+   "category": "OPC",
+   "heading": "Generated plan template › 中文 sample",
+   "text": "small Australian service businesses｜诊断与行动方案\n\n服务定位\n我运用workflow design and AI automation，帮助small Australian service businesses解决「too much time spent handling enquiries and follow-ups」，从一项范围明确的诊断与行动方案开始。\n\n首个服务套餐\nsmall Australian service businesses｜诊断与行动方案\n先约定一个目标、交付期限、验收方式及修改次数。每周可投入 3–5 小时，先接一个试单，再根据实际工作量调整容量。\n\n交付流程\n1. 收集约定资料，确认客户最希望解决的问题。\n2. 梳理现有流程，识别可实施的改进。\n3. 交付诊断摘要与行动清单，并向客户说明下一步。\n\n报价结构\n按单次诊断收取固定费用；根据资料量、分析深度与跟进次数确定金额。\n先估算准备、交付、沟通与修改工时，再加上工具费用。金额需结合客户访谈与试单确定，本方案不提供市场价格估值。\n\nAI 可以协助的环节\n需求整理、资料摘要、初稿、检查清单与跟进草稿。对客户交付的内容由你审核；使用客户资料前，约定权限与工具使用范围。\n\n第一周行动\n1. 找 3 位目标客户了解问题与现有解决方式。\n2. 制作一份示例成果，验证交付时间。\n3. 写清服务范围、价格与验收标准。\n4. 邀请一位客户讨论小范围付费试单。\n\n服务页面介绍\n我运用workflow design and AI automation，帮助small Australian service businesses解决「too much time spent handling enquiries and follow-ups」，从一项范围明确的诊断与行动方案开始。\n你将获得：约定范围内的交付成果、清晰的行动建议和必要的交接说明。\n欢迎联系我，先聊聊你的具体需求。\n\n服务边界\n范围外的工作另行报价；不承诺客户收入或业务结果。若涉及受监管服务，请在提供服务前核实所需资格与要求。",
+   "lang": "zh",
+   "id": "c143",
+   "tags": [
+    "automation",
+    "contact"
+   ]
+  },
+  {
+   "type": "product",
+   "page": "LunchUp",
+   "route": "https://lunchup.com.au/",
+   "url": "https://lunchup.com.au/",
+   "category": "Product site",
+   "heading": "LunchUp › part 1",
+   "text": "🍽️\nLunchUp\nHome\nFind Matches\n🔴 Live\nNews\nOpportunities\nEvents\nSign In\nJoin Now\n🤝\nProfessional networking made easier\nBuild better professional connections\nthrough LunchUp\n\nLunchUp helps people build stronger professional relationships through curated introductions, meetup coordination, news, and opportunities.\n\nGet Started Free\n→\nSign In\n10K+\nPROFESSIONALS\n50K+\nMEETINGS\n500+\nVENUES\nSydney Startup & AI Ecosystem Map\n\nExplore Sydney’s AI startups, investors, universities, coworking spaces, accelerators and events on an interactive map.\n\nSearch the ecosystem\nProductive AI Startups\nFintech Startups\nHealthcare Startups\nCulture Startups\nInvestors\nUniversities\nCoworking\nAccelerators\nCommunities\nEvents\n+\n−\n Leaflet | © OpenStreetMap contributors\n🤖 Productive AI Startup\n💳 Fintech Startup\n🩺 Healthcare Startup\n🎭 Culture Startup\n💼 Investor\n🎓 University\n🏢 Coworking\n🚀 Accelerator\n🌐 Community\n📍 Event\n\nShowing 4 of 39 ecosystem profiles\n\nFilter Sydney innovation resources by category, search for AI startups, investors, universities, coworking and events, and discover opportunities close to you.\n\n🤖\nAtlassian\n\nProductive AI Startup\n\nGlobal software leader with Sydney innovation teams building collaboration and AI products.\n\n341 George St, Sydney NSW 2000\nAI · collaboration · Sydney CBD\n16 nearby LunchUp users\nWebsite\nContact\n🤖\nCanva\n\nProductive AI Startup",
+   "id": "c144",
+   "tags": [
+    "Sydney",
+    "integration",
+    "custom software",
+    "community",
+    "contact"
+   ]
+  },
+  {
+   "type": "product",
+   "page": "LunchUp",
+   "route": "https://lunchup.com.au/",
+   "url": "https://lunchup.com.au/",
+   "category": "Product site",
+   "heading": "LunchUp › part 2",
+   "text": "Design platform with strong AI, startup growth, and Sydney headquarters presence.\n\n1 Denison St, North Sydney NSW 2060\nAI · design · growth\n24 nearby LunchUp users\nWebsite\nContact\n🤖\nLeonardo AI (example)\n\nProductive AI Startup\n\nAI research and product startup with a focus on generative intelligence and innovation.\n\n201 Sussex St, Sydney NSW 2000\nAI · research · machine learning\n7 nearby LunchUp users\nWebsite\nContact\n🤖\nRelevance AI\n\nProductive AI Startup\n\nData and AI startup helping companies build better machine learning workflows.\n\n501 George St, Sydney NSW 2000\nAI · data · analytics\n10 nearby LunchUp users\nWebsite\nContact\nWhy LunchUp?\n\nA simpler way to grow a stronger professional network\n\n🎯\nRelevant professional matching\n\nLunchUp helps founders, operators, investors, and professionals discover people who are relevant to their goals, industry, and stage.\n\n📅\nEasy meetup planning\n\nCoordinate lunches, coffees, and casual professional catch-ups at restaurants, cafes, coworking spaces, and other convenient venues.\n\n💼\nReal-world networking\n\nMove beyond passive online networking and build higher-quality relationships through better context and genuine in-person conversations.\n\nHow It Works\n\nFour simple steps to expand your network\n\n1\nCreate Profile\n\nSign up and fill out your professional background, skills, and preferences.\n\n2\nFind Matches",
+   "id": "c145",
+   "tags": [
+    "Sydney",
+    "custom software",
+    "community",
+    "contact"
+   ]
+  },
+  {
+   "type": "product",
+   "page": "LunchUp",
+   "route": "https://lunchup.com.au/",
+   "url": "https://lunchup.com.au/",
+   "category": "Product site",
+   "heading": "LunchUp › part 3",
+   "text": "Get matched with professionals who share your interests and goals.\n\n3\nBook Meeting\n\nSchedule a lunch meeting at a convenient location for both parties.\n\n4\nConnect\n\nMeet in person and build meaningful professional relationships.\n\nWhat people can use LunchUp for\n\nBuilt for networking, discovery, and professional momentum.\n\n🚀\nFounder and operator networking\n\nUse LunchUp to meet founders, early team members, operators, and investors in one place.\n\n📰\nStartup news with context\n\nFollow curated startup and tech news so every conversation starts with better context, better questions, and better timing.\n\n💼\nCurated opportunities\n\nBrowse a cleaner feed of relevant opportunities and roles.\n\nLunchUp FAQ\n\nClear answers about what LunchUp does\n\nQ1\nWhat is LunchUp?\n\nLunchUp is an Australian networking app that helps professionals build real relationships through curated matches, meetups, startup news, and opportunity discovery.\n\nQ2\nWho should use LunchUp?\n\nIt is especially useful for founders, operators, marketers, product people, engineers, investors, and professionals who want more relevant networking.\n\nQ3\nWhere can people use LunchUp?\n\nLunchUp supports in-person and remote-friendly professional discovery.\n\nQ4\nWhat makes LunchUp different?\n\nInstead of being just another profile directory, LunchUp combines introductions, meetings, ecosystem context, and curated opportunities in one place.",
+   "id": "c146",
+   "tags": [
+    "integration",
+    "community"
+   ]
+  },
+  {
+   "type": "product",
+   "page": "LunchUp",
+   "route": "https://lunchup.com.au/",
+   "url": "https://lunchup.com.au/",
+   "category": "Product site",
+   "heading": "LunchUp › part 4",
+   "text": "Ready to expand your network?\n\nJoin thousands of professionals who are building meaningful connections through LunchUp.\n\nGet Started Now\n→",
+   "id": "c147",
+   "tags": [
+    "integration",
+    "community"
+   ]
+  },
+  {
+   "type": "product",
+   "page": "STEM Learning App (MathTutor Pro)",
+   "route": "https://stem.nextgenius.com.au/home",
+   "url": "https://stem.nextgenius.com.au/home",
+   "category": "Product site",
+   "heading": "STEM Learning App (MathTutor Pro) › part 1",
+   "text": "MT\nMathTutor Pro\nHome\nLearning Checkup\nTutor Registration\nNews\nDashboard\nPractice\nExam Builder\nQuestion Builder\nStudy Groups\nFlashcards\nMeetings\nGU\n\nGuest\n\nBrowse & Explore\n\nGuest\n\nGuest mode\n\nGuest Workspace - Guest\nLogin\nProfessional K-12 Math Learning Platform\n\nProviding personalized math learning experiences for every student, making math simpler, clearer, and more engaging.\n\nFree Learning Checkup\nSee How It Works\nTutor Registration\nNew for parents: Free Selective / OC / HSC checkup\nGet a fast AI learning checkup before committing to tutoring\n\nFamilies can complete a short assessment form and receive an AI-generated learning summary by email, including likely strength areas, weak spots, and recommended next steps.\n\nStart free checkup\nJoin updates\n\nOC\n\nQuick readiness check for opportunity class candidates.\n\nSelective\n\nIdentify gaps in thinking skills, maths, English, and exam strategy.\n\nHSC\n\nSupport senior students with subject-specific and study-habit diagnosis.\n\nCore Features\n🎯\nPersonalized Learning\n\nSmart assessment-based customized learning paths that help each student build confidence at the right pace.\n\n📊\nProgress Tracking\n\nVisual learning progress and knowledge mastery analysis so families can see improvement clearly.\n\n👨🏫\nExpert Tutors\n\nCarefully selected tutors who combine subject strength with calm, supportive teaching.\n\n💻\nSmart Platform",
+   "id": "c148",
+   "tags": [
+    "knowledge assistant",
+    "custom software",
+    "contact"
+   ]
+  },
+  {
+   "type": "product",
+   "page": "STEM Learning App (MathTutor Pro)",
+   "route": "https://stem.nextgenius.com.au/home",
+   "url": "https://stem.nextgenius.com.au/home",
+   "category": "Product site",
+   "heading": "STEM Learning App (MathTutor Pro) › part 2",
+   "text": "Interactive tools and seamless cross-device learning for home study, revision, and regular support.\n\nOur Tutors\n\nStudent-focused support, delivered by experienced tutors and subject specialists.\n\nTutor Registration\n👨🏫\nMr. Wang - Math Lead\n\nEducation: Master in Mathematics, University of Sydney\n\nExperience: 12 years K-12 math teaching\n\nTeaching Style: Inspires thinking, simplifies complexity\n\n👩🏫\nMs. Li - English Lead\n\nEducation: English Major, National University of Singapore\n\nExperience: 8 years English teaching\n\nTeaching Style: Scenario-based teaching, practical focus\n\n👨🏫\nMr. Zhang - Science Tutor\n\nEducation: Dual Degree in Science, University of Melbourne\n\nExperience: 10 years science teaching\n\nTeaching Style: Combines experiments with theory\n\nTarget Audience\nE\nElementary\n\nGrades 1-6, building interest and foundation\n\nM\nMiddle School\n\nGrades 7-9, knowledge system building\n\nH\nHigh School\n\nGrades 10-12, advanced knowledge learning\n\nS\nSpecial Needs\n\nCompetition prep, art students, international programs\n\nOur Advantages\n✓\nQuality Assurance\n\nAll teachers pass 5-round strict selection, with a strong focus on quality and teaching fit.\n\n✓\nScientific System\n\nData-driven learning path planning helps students follow an efficient and structured progression.\n\n✓\nFlexible Learning\n\nMulti-device support makes it easier to learn anytime and fit tutoring around family schedules.\n\n✓",
+   "id": "c149",
+   "tags": [
+    "Sydney",
+    "knowledge assistant"
+   ]
+  },
+  {
+   "type": "product",
+   "page": "STEM Learning App (MathTutor Pro)",
+   "route": "https://stem.nextgenius.com.au/home",
+   "url": "https://stem.nextgenius.com.au/home",
+   "category": "Product site",
+   "heading": "STEM Learning App (MathTutor Pro) › part 3",
+   "text": "Transparent Progress\n\nReal-time progress tracking keeps results visible and easier to discuss with parents.\n\n✓\nDedicated Support\n\nResponsive support helps students and families stay on track when questions come up.\n\nEarly access and tutor onboarding\nJoin the next phase of K-12 math support\n\nSubscribe and we will help set up your AI Agent Tutor account, share pilot updates, and keep you informed as new tutor capacity opens.\n\nEmail addressSubscribe\n\n© 2026 MathTutor Pro. All rights reserved.\n\nGot any question? Ask us!",
+   "id": "c150",
+   "tags": [
+    "AI agents",
+    "pilot",
+    "contact"
+   ]
+  },
+  {
+   "type": "product",
+   "page": "AI Creative Studio",
+   "route": "https://studio.nextgenius.com.au/",
+   "url": "https://studio.nextgenius.com.au/",
+   "category": "Product site",
+   "heading": "AI Creative Studio › part 1",
+   "text": "AI Creative Studio\nHow it works\nFeatures\nAI loop\nLaunch studio\nAI-POWERED 3D CREATIVE LEARNING PLATFORM\nTeach creative systems thinking through a game-like 3D studio.\n\nAI Creative Studio helps learners build worlds, tackle design challenges, and improve through an integrated challenge, tutor, and critic loop.\n\nLaunch the studio\nSee how it works\n3D creative sandbox\nAI tutor + critic\nChallenge-based learning\nPLATFORM SNAPSHOT\nFrom play to critique in one flow\nBuild\n3D block worlds\n\nCompose cities, systems, and ecosystems with an intuitive worldbuilding interface.\n\nCoach\nLive tutor prompts\n\nGet context-aware guidance while shaping the concept, not only after the fact.\n\nReview\nCritic scoring\n\nMeasure idea clarity, system thinking, spatial design, and challenge fit.\n\nOutcome\nCreative learning that feels like a game\n\nStudents iterate through challenge loops, feedback, and visible progress instead of static lessons.\n\nHOW IT WORKS\nA simple loop that turns making into learning.\n\nThe product combines worldbuilding, structured prompts, and feedback systems so learners stay creative while still being guided.\n\n01\nChoose a challenge\n\nStart with a creative prompt such as a future city, climate-resilient world, or accessible community.\n\n02\nBuild a 3D concept\n\nCompose with a visual palette of living, ecological, systemic, and experiential blocks inside the real studio canvas.\n\n03",
+   "id": "c151",
+   "tags": [
+    "integration",
+    "custom software",
+    "community"
+   ]
+  },
+  {
+   "type": "product",
+   "page": "AI Creative Studio",
+   "route": "https://studio.nextgenius.com.au/",
+   "url": "https://studio.nextgenius.com.au/",
+   "category": "Product site",
+   "heading": "AI Creative Studio › part 2",
+   "text": "Learn through feedback loops\n\nThe tutor suggests next moves, the critic scores the work, and the checklist reveals what your concept still needs.\n\nPRODUCT FEATURES\nBuilt like a startup product, not a static demo.\n\nThe existing studio remains the core experience. The landing page now explains the value proposition and routes directly into it.\n\n3D worldbuilding that teaches systems thinking\n\nLearners sketch ideas as spatial compositions, balancing housing, ecology, culture, and infrastructure in one shared scene.\n\nChallenge-led progression instead of an empty sandbox\n\nEvery mission frames a design problem and turns broad creativity into concrete goals, tradeoffs, and outcomes.\n\nAI roles that coach, critique, and motivate iteration\n\nThe platform combines a tutor, a critic, and a live challenge engine so feedback feels like a studio review, not a toy.\n\nCHALLENGE / TUTOR / CRITIC\nThree systems work together to create the learning loop.\n\nInstead of generic AI chat, the product uses role-based guidance tied directly to what the learner has built.\n\nCHALLENGE\nFrames the mission\n\nThe challenge system turns open-ended building into a learnable exercise with visible goals, progress, and completion scoring.\n\nTUTOR\nGuides the next move\n\nThe tutor watches composition, variety, density, and challenge fit to suggest smart next steps while the learner is building.\n\nCRITIC\nEvaluates the result",
+   "id": "c152",
+   "tags": [
+    "custom software"
+   ]
+  },
+  {
+   "type": "product",
+   "page": "AI Creative Studio",
+   "route": "https://studio.nextgenius.com.au/",
+   "url": "https://studio.nextgenius.com.au/",
+   "category": "Product site",
+   "heading": "AI Creative Studio › part 3",
+   "text": "The critic converts the current world into strengths, improvements, rubric scores, and a project summary so iteration stays actionable.\n\nLAUNCH\nOpen the live studio and build the experience behind this landing page.\n\nThe studio view is the real existing app, now connected to this front door without removing any current functionality.\n\nLaunch AI Creative Studio",
+   "id": "c153",
+   "tags": [
+    "integration"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: case-screenshot-Bply7y8B.jpg",
+   "route": "/",
+   "url": "https://nextgenius.com.au/assets/case-screenshot-Bply7y8B.jpg",
+   "category": "Images",
+   "heading": "case-screenshot-Bply7y8B.jpg",
+   "text": "Phone mockup of the LunchUp app (\"New post\" screen with publishing options). Used as LunchUp project image.\nAlt: LunchUp interface or system illustration; LunchUp product illustration\nUsed on: /, /use-cases",
+   "image": "images/case-screenshot-Bply7y8B.jpg",
+   "id": "c154",
+   "tags": []
+  },
+  {
+   "type": "image",
+   "page": "Image: city-vca93quQ.jpg",
+   "route": "/events",
+   "url": "https://nextgenius.com.au/assets/city-vca93quQ.jpg",
+   "category": "Images",
+   "heading": "city-vca93quQ.jpg",
+   "text": "Blue night city skyline with network-node lines (hero background on SEO/blog pages).\nAlt: \nUsed on: /events, /blog, /faq, /blog/top-ai-meetups-in-sydney, /blog/how-to-learn-ai-in-sydney-2026-guide, /blog/best-ai-networking-events-in-sydney",
+   "image": "images/city-vca93quQ.jpg",
+   "id": "c155",
+   "tags": [
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: favicon.ico",
+   "route": "",
+   "url": "https://nextgenius.com.au/favicon.ico",
+   "category": "Images",
+   "heading": "favicon.ico",
+   "text": "Browser tab icon.\nAlt: \nUsed on:",
+   "image": "images/favicon.ico",
+   "id": "c156",
+   "tags": []
+  },
+  {
+   "type": "image",
+   "page": "Image: logo-ipBSdNlH.png",
+   "route": "/",
+   "url": "https://nextgenius.com.au/assets/logo-ipBSdNlH.png",
+   "category": "Images",
+   "heading": "logo-ipBSdNlH.png",
+   "text": "Logo: yellow head-profile with light bulb + \"NEXT GENIUS\" wordmark. 500×176 px PNG.\nAlt: NextGenius\nUsed on: /, /service, /use-cases, /opc, /community, /about, /contact, /workshop, /events, /blog, /faq, /blog/top-ai-meetups-in-sydney, /blog/how-to-learn-ai-in-sydney-2026-guide, /blog/best-ai-networking-events-in-sydney",
+   "image": "images/logo-ipBSdNlH.png",
+   "id": "c157",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "OPC",
+    "community",
+    "contact"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: process-flow-DzNNevGh.jpg",
+   "route": "/",
+   "url": "https://nextgenius.com.au/assets/process-flow-DzNNevGh.jpg",
+   "category": "Images",
+   "heading": "process-flow-DzNNevGh.jpg",
+   "text": "Dark-blue architecture diagram: Slack user → Lambda/AWS → OpenAI API (FAQ answering bot flow). Used as \"STEM Learning App\" project image (mismatch).\nAlt: STEM Learning App interface or system illustration; STEM Learning App product illustration\nUsed on: /, /use-cases",
+   "image": "images/process-flow-DzNNevGh.jpg",
+   "id": "c158",
+   "tags": []
+  },
+  {
+   "type": "image",
+   "page": "Image: product-C_IXj1Bs.jpg",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/assets/product-C_IXj1Bs.jpg",
+   "category": "Images",
+   "heading": "product-C_IXj1Bs.jpg",
+   "text": "Wide, thin strip: hands on laptop at a desk with coffee (used as CSS background banner).\nAlt: \nUsed on: /service, /workshop",
+   "image": "images/product-C_IXj1Bs.jpg",
+   "id": "c159",
+   "tags": [
+    "workshop",
+    "pricing"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: service-1-BSK-x73r.jpg",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/assets/service-1-BSK-x73r.jpg",
+   "category": "Images",
+   "heading": "service-1-BSK-x73r.jpg",
+   "text": "AI-generated art: small robot painting a forest scene on an easel in a gallery.\nAlt: Creative AI art experience\nUsed on: /service",
+   "image": "images/service-1-BSK-x73r.jpg",
+   "id": "c160",
+   "tags": []
+  },
+  {
+   "type": "image",
+   "page": "Image: service-2-Dx25BkLT.jpg",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/assets/service-2-Dx25BkLT.jpg",
+   "category": "Images",
+   "heading": "service-2-Dx25BkLT.jpg",
+   "text": "AI-generated art: astronaut-like figure on a platform in a colourful cosmic/lava scene.\nAlt: Immersive digital environment\nUsed on: /service",
+   "image": "images/service-2-Dx25BkLT.jpg",
+   "id": "c161",
+   "tags": [
+    "custom software"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: service-3-DlQGHBY3.jpg",
+   "route": "/service",
+   "url": "https://nextgenius.com.au/assets/service-3-DlQGHBY3.jpg",
+   "category": "Images",
+   "heading": "service-3-DlQGHBY3.jpg",
+   "text": "AI-generated art: cyber figure painting at an easel in a neon-lit lab.\nAlt: AI-powered creative workspace\nUsed on: /service",
+   "image": "images/service-3-DlQGHBY3.jpg",
+   "id": "c162",
+   "tags": []
+  },
+  {
+   "type": "image",
+   "page": "Image: video-collage-BwkaOa9O.jpg",
+   "route": "/",
+   "url": "https://nextgenius.com.au/assets/video-collage-BwkaOa9O.jpg",
+   "category": "Images",
+   "heading": "video-collage-BwkaOa9O.jpg",
+   "text": "Collage of Metaverse Sydney video thumbnails (virtual worlds, 3D skull, VR). Used as \"AI Creative Studio\" project image.\nAlt: AI Creative Studio interface or system illustration; AI Creative Studio product illustration\nUsed on: /, /use-cases",
+   "image": "images/video-collage-BwkaOa9O.jpg",
+   "id": "c163",
+   "tags": [
+    "Sydney"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: workshop-01-C-qvFGP-.jpg",
+   "route": "/",
+   "url": "https://nextgenius.com.au/assets/workshop-01-C-qvFGP-.jpg",
+   "category": "Images",
+   "heading": "workshop-01-C-qvFGP-.jpg",
+   "text": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.\nAlt: NextGenius workshop gathering; Workshop session 1\nUsed on: /, /workshop",
+   "image": "images/workshop-01-C-qvFGP-.jpg",
+   "id": "c164",
+   "tags": [
+    "workshop",
+    "community"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: workshop-02-BuavgFjE.jpg",
+   "route": "/about",
+   "url": "https://nextgenius.com.au/assets/workshop-02-BuavgFjE.jpg",
+   "category": "Images",
+   "heading": "workshop-02-BuavgFjE.jpg",
+   "text": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.\nAlt: Participants at a NextGenius workshop; Workshop session 2\nUsed on: /about, /workshop",
+   "image": "images/workshop-02-BuavgFjE.jpg",
+   "id": "c165",
+   "tags": [
+    "workshop",
+    "community"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: workshop-03-B8nUu6-G.jpg",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/assets/workshop-03-B8nUu6-G.jpg",
+   "category": "Images",
+   "heading": "workshop-03-B8nUu6-G.jpg",
+   "text": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.\nAlt: Workshop session 3\nUsed on: /workshop",
+   "image": "images/workshop-03-B8nUu6-G.jpg",
+   "id": "c166",
+   "tags": [
+    "workshop",
+    "community"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: workshop-04-CyISRK6X.jpg",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/assets/workshop-04-CyISRK6X.jpg",
+   "category": "Images",
+   "heading": "workshop-04-CyISRK6X.jpg",
+   "text": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.\nAlt: Workshop session 4\nUsed on: /workshop",
+   "image": "images/workshop-04-CyISRK6X.jpg",
+   "id": "c167",
+   "tags": [
+    "workshop",
+    "community"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: workshop-05-DwjkLDSo.jpg",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/assets/workshop-05-DwjkLDSo.jpg",
+   "category": "Images",
+   "heading": "workshop-05-DwjkLDSo.jpg",
+   "text": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.\nAlt: Workshop session 5\nUsed on: /workshop",
+   "image": "images/workshop-05-DwjkLDSo.jpg",
+   "id": "c168",
+   "tags": [
+    "workshop",
+    "community"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: workshop-06-CDhaY5da.jpg",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/assets/workshop-06-CDhaY5da.jpg",
+   "category": "Images",
+   "heading": "workshop-06-CDhaY5da.jpg",
+   "text": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.\nAlt: Workshop session 6\nUsed on: /workshop",
+   "image": "images/workshop-06-CDhaY5da.jpg",
+   "id": "c169",
+   "tags": [
+    "workshop",
+    "community"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: workshop-07-Ced3ZmSP.jpg",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/assets/workshop-07-Ced3ZmSP.jpg",
+   "category": "Images",
+   "heading": "workshop-07-Ced3ZmSP.jpg",
+   "text": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.\nAlt: Workshop session 7\nUsed on: /workshop",
+   "image": "images/workshop-07-Ced3ZmSP.jpg",
+   "id": "c170",
+   "tags": [
+    "workshop",
+    "community"
+   ]
+  },
+  {
+   "type": "image",
+   "page": "Image: workshop-08-Ds8m7ebK.jpg",
+   "route": "/workshop",
+   "url": "https://nextgenius.com.au/assets/workshop-08-Ds8m7ebK.jpg",
+   "category": "Images",
+   "heading": "workshop-08-Ds8m7ebK.jpg",
+   "text": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.\nAlt: Workshop session 8\nUsed on: /workshop",
+   "image": "images/workshop-08-Ds8m7ebK.jpg",
+   "id": "c171",
+   "tags": [
+    "workshop",
+    "community"
+   ]
+  },
+  {
+   "type": "page",
+   "page": "Global header & footer",
+   "route": "(all)",
+   "url": "https://nextgenius.com.au/",
+   "category": "Global",
+   "heading": "Navigation, contact, address, social",
+   "text": "Global elements (on every page)\n\n Header navigation\n- Skip to content → main-content\n- Solutions → /service\n- Projects → /use-cases\n- Start an OPC → /opc\n- Community → /community\n- About → /about\n- Request a call ↗ → /contact\n\n Footer\n\nNextGenius\n\nPractical AI delivery for Australian businesses.\nA community for people building what comes next.\n\ninfo@nextgenius.com.au\nExplore\nSolutions\nProjects\nFree OPC service plan\nCommunity & OPC\nEvents\nWorkshops\nInsights\nFAQ\nAbout\nContact\nConnect\nLinkedIn ↗\nMeetup ↗\nX ↗\n\n15 Broadway, Ultimo\nNSW 2007, Australia\n\n© 2026 Next Genius Pty Ltd\n\n\n External profiles\n- LinkedIn: https://www.linkedin.com/company/nextgen14\n- Meetup: https://meetup.com/nextgenius\n- X: https://x.com/nextgeniusau\n- Email: info@nextgenius.com.au\n- Address: 15 Broadway, Ultimo NSW 2007, Australia\n- Legal entity: Next Genius Pty Ltd (© 2026)",
+   "id": "c172",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "OPC",
+    "integration",
+    "community",
+    "contact"
+   ]
+  },
+  {
+   "type": "faq",
+   "page": "FAQ",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "What is the best AI meetup in Sydney?",
+   "text": "NextGenius is building a practical Sydney AI meetup and learning community focused on AI agents, automation, MCP, RAG, workshops, and real-world implementation. It is designed for founders, engineers, operators, students, and business leaders who want actionable AI education and networking in Sydney.",
+   "id": "c173",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "faq",
+   "page": "FAQ",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Where can I learn AI in Sydney?",
+   "text": "You can learn AI in Sydney through community meetups, practical workshops, guided bootcamps, and hands-on sessions. NextGenius combines meetup-style learning with workshops on AI agents, machine learning, automation, and AI for business so attendees can move from theory to implementation.",
+   "id": "c174",
+   "tags": [
+    "AI agents",
+    "automation",
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "faq",
+   "page": "FAQ",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Are there AI networking events in Sydney?",
+   "text": "Yes. Sydney has a growing AI ecosystem with meetups, founder events, technical talks, and community workshops. NextGenius is positioning itself as a practical AI networking and learning hub that brings together engineers, founders, operators, students, and teams exploring applied AI.",
+   "id": "c175",
+   "tags": [
+    "workshop",
+    "Sydney",
+    "community"
+   ]
+  },
+  {
+   "type": "faq",
+   "page": "FAQ",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Who should attend AI meetups?",
+   "text": "AI meetups are useful for software engineers, startup founders, product managers, operations leaders, consultants, students, and business owners who want to understand AI trends, learn implementation patterns, and meet people working on similar problems.",
+   "id": "c176",
+   "tags": [
+    "custom software",
+    "community"
+   ]
+  },
+  {
+   "type": "faq",
+   "page": "FAQ",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "Do you offer workshops or bootcamps?",
+   "text": "Yes. NextGenius offers practical workshops on AI agents, machine learning, MCP integrations, harness engineering, and applied AI for business. These workshops can support teams today and form the basis of broader bootcamp-style programs in the future.",
+   "id": "c177",
+   "tags": [
+    "MCP",
+    "AI agents",
+    "workshop",
+    "integration"
+   ]
+  },
+  {
+   "type": "faq",
+   "page": "FAQ",
+   "route": "/faq",
+   "url": "https://nextgenius.com.au/#/faq",
+   "category": "FAQ",
+   "heading": "What topics does NextGenius cover?",
+   "text": "NextGenius focuses on AI agents, retrieval augmented generation (RAG), MCP, automation, machine learning, AI for business, workflows, practical implementation, and community learning in Sydney and Australia.",
+   "id": "c178",
+   "tags": [
+    "RAG",
+    "MCP",
+    "AI agents",
+    "automation",
+    "Sydney",
+    "community"
+   ]
+  }
+ ],
+ "images": [
+  {
+   "file": "case-screenshot-Bply7y8B.jpg",
+   "desc": "Phone mockup of the LunchUp app (\"New post\" screen with publishing options). Used as LunchUp project image.",
+   "alts": [
+    "LunchUp interface or system illustration",
+    "LunchUp product illustration"
+   ],
+   "pages": [
+    "/",
+    "/use-cases"
+   ],
+   "place": [
+    "main"
+   ],
+   "bytes": 73732,
+   "url": "https://nextgenius.com.au/assets/case-screenshot-Bply7y8B.jpg"
+  },
+  {
+   "file": "city-vca93quQ.jpg",
+   "desc": "Blue night city skyline with network-node lines (hero background on SEO/blog pages).",
+   "alts": [],
+   "pages": [
+    "/events",
+    "/blog",
+    "/faq",
+    "/blog/top-ai-meetups-in-sydney",
+    "/blog/how-to-learn-ai-in-sydney-2026-guide",
+    "/blog/best-ai-networking-events-in-sydney"
+   ],
+   "place": [
+    "css background"
+   ],
+   "bytes": 168380,
+   "url": "https://nextgenius.com.au/assets/city-vca93quQ.jpg"
+  },
+  {
+   "file": "favicon.ico",
+   "desc": "Browser tab icon.",
+   "alts": [],
+   "pages": [],
+   "place": [],
+   "bytes": 1150,
+   "url": "https://nextgenius.com.au/favicon.ico"
+  },
+  {
+   "file": "logo-ipBSdNlH.png",
+   "desc": "Logo: yellow head-profile with light bulb + \"NEXT GENIUS\" wordmark. 500×176 px PNG.",
+   "alts": [
+    "NextGenius"
+   ],
+   "pages": [
+    "/",
+    "/service",
+    "/use-cases",
+    "/opc",
+    "/community",
+    "/about",
+    "/contact",
+    "/workshop",
+    "/events",
+    "/blog",
+    "/faq",
+    "/blog/top-ai-meetups-in-sydney",
+    "/blog/how-to-learn-ai-in-sydney-2026-guide",
+    "/blog/best-ai-networking-events-in-sydney"
+   ],
+   "place": [
+    "header"
+   ],
+   "bytes": 14996,
+   "url": "https://nextgenius.com.au/assets/logo-ipBSdNlH.png"
+  },
+  {
+   "file": "process-flow-DzNNevGh.jpg",
+   "desc": "Dark-blue architecture diagram: Slack user → Lambda/AWS → OpenAI API (FAQ answering bot flow). Used as \"STEM Learning App\" project image (mismatch).",
+   "alts": [
+    "STEM Learning App interface or system illustration",
+    "STEM Learning App product illustration"
+   ],
+   "pages": [
+    "/",
+    "/use-cases"
+   ],
+   "place": [
+    "main"
+   ],
+   "bytes": 49937,
+   "url": "https://nextgenius.com.au/assets/process-flow-DzNNevGh.jpg"
+  },
+  {
+   "file": "product-C_IXj1Bs.jpg",
+   "desc": "Wide, thin strip: hands on laptop at a desk with coffee (used as CSS background banner).",
+   "alts": [],
+   "pages": [
+    "/service",
+    "/workshop"
+   ],
+   "place": [
+    "css background"
+   ],
+   "bytes": 65148,
+   "url": "https://nextgenius.com.au/assets/product-C_IXj1Bs.jpg"
+  },
+  {
+   "file": "service-1-BSK-x73r.jpg",
+   "desc": "AI-generated art: small robot painting a forest scene on an easel in a gallery.",
+   "alts": [
+    "Creative AI art experience"
+   ],
+   "pages": [
+    "/service"
+   ],
+   "place": [
+    "other"
+   ],
+   "bytes": 104062,
+   "url": "https://nextgenius.com.au/assets/service-1-BSK-x73r.jpg"
+  },
+  {
+   "file": "service-2-Dx25BkLT.jpg",
+   "desc": "AI-generated art: astronaut-like figure on a platform in a colourful cosmic/lava scene.",
+   "alts": [
+    "Immersive digital environment"
+   ],
+   "pages": [
+    "/service"
+   ],
+   "place": [
+    "other"
+   ],
+   "bytes": 101901,
+   "url": "https://nextgenius.com.au/assets/service-2-Dx25BkLT.jpg"
+  },
+  {
+   "file": "service-3-DlQGHBY3.jpg",
+   "desc": "AI-generated art: cyber figure painting at an easel in a neon-lit lab.",
+   "alts": [
+    "AI-powered creative workspace"
+   ],
+   "pages": [
+    "/service"
+   ],
+   "place": [
+    "other"
+   ],
+   "bytes": 80269,
+   "url": "https://nextgenius.com.au/assets/service-3-DlQGHBY3.jpg"
+  },
+  {
+   "file": "video-collage-BwkaOa9O.jpg",
+   "desc": "Collage of Metaverse Sydney video thumbnails (virtual worlds, 3D skull, VR). Used as \"AI Creative Studio\" project image.",
+   "alts": [
+    "AI Creative Studio interface or system illustration",
+    "AI Creative Studio product illustration"
+   ],
+   "pages": [
+    "/",
+    "/use-cases"
+   ],
+   "place": [
+    "main"
+   ],
+   "bytes": 99193,
+   "url": "https://nextgenius.com.au/assets/video-collage-BwkaOa9O.jpg"
+  },
+  {
+   "file": "workshop-01-C-qvFGP-.jpg",
+   "desc": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.",
+   "alts": [
+    "NextGenius workshop gathering",
+    "Workshop session 1"
+   ],
+   "pages": [
+    "/",
+    "/workshop"
+   ],
+   "place": [
+    "main",
+    "other"
+   ],
+   "bytes": 294304,
+   "url": "https://nextgenius.com.au/assets/workshop-01-C-qvFGP-.jpg"
+  },
+  {
+   "file": "workshop-02-BuavgFjE.jpg",
+   "desc": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.",
+   "alts": [
+    "Participants at a NextGenius workshop",
+    "Workshop session 2"
+   ],
+   "pages": [
+    "/about",
+    "/workshop"
+   ],
+   "place": [
+    "main",
+    "other"
+   ],
+   "bytes": 264972,
+   "url": "https://nextgenius.com.au/assets/workshop-02-BuavgFjE.jpg"
+  },
+  {
+   "file": "workshop-03-B8nUu6-G.jpg",
+   "desc": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.",
+   "alts": [
+    "Workshop session 3"
+   ],
+   "pages": [
+    "/workshop"
+   ],
+   "place": [
+    "other"
+   ],
+   "bytes": 251816,
+   "url": "https://nextgenius.com.au/assets/workshop-03-B8nUu6-G.jpg"
+  },
+  {
+   "file": "workshop-04-CyISRK6X.jpg",
+   "desc": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.",
+   "alts": [
+    "Workshop session 4"
+   ],
+   "pages": [
+    "/workshop"
+   ],
+   "place": [
+    "other"
+   ],
+   "bytes": 293461,
+   "url": "https://nextgenius.com.au/assets/workshop-04-CyISRK6X.jpg"
+  },
+  {
+   "file": "workshop-05-DwjkLDSo.jpg",
+   "desc": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.",
+   "alts": [
+    "Workshop session 5"
+   ],
+   "pages": [
+    "/workshop"
+   ],
+   "place": [
+    "other"
+   ],
+   "bytes": 274351,
+   "url": "https://nextgenius.com.au/assets/workshop-05-DwjkLDSo.jpg"
+  },
+  {
+   "file": "workshop-06-CDhaY5da.jpg",
+   "desc": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.",
+   "alts": [
+    "Workshop session 6"
+   ],
+   "pages": [
+    "/workshop"
+   ],
+   "place": [
+    "other"
+   ],
+   "bytes": 244287,
+   "url": "https://nextgenius.com.au/assets/workshop-06-CDhaY5da.jpg"
+  },
+  {
+   "file": "workshop-07-Ced3ZmSP.jpg",
+   "desc": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.",
+   "alts": [
+    "Workshop session 7"
+   ],
+   "pages": [
+    "/workshop"
+   ],
+   "place": [
+    "other"
+   ],
+   "bytes": 252764,
+   "url": "https://nextgenius.com.au/assets/workshop-07-Ced3ZmSP.jpg"
+  },
+  {
+   "file": "workshop-08-Ds8m7ebK.jpg",
+   "desc": "Photo of a NextGenius workshop/meetup in a brick-walled loft room with projector and seated attendees.",
+   "alts": [
+    "Workshop session 8"
+   ],
+   "pages": [
+    "/workshop"
+   ],
+   "place": [
+    "other"
+   ],
+   "bytes": 297725,
+   "url": "https://nextgenius.com.au/assets/workshop-08-Ds8m7ebK.jpg"
+  }
+ ],
+ "pages": [
+  {
+   "route": "/",
+   "slug": "home",
+   "title": "Practical AI for Australian Businesses | NextGenius",
+   "nav": "Home",
+   "category": "Home",
+   "url": "https://nextgenius.com.au/#/",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "description": "NextGenius helps Australian businesses automate admin, connect systems and build useful AI assistants. Explore our projects, workshops and builder community.",
+    "keywords": "",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:title": "Practical AI for Australian Businesses | NextGenius",
+    "og:description": "NextGenius helps Australian businesses automate admin, connect systems and build useful AI assistants. Explore our projects, workshops and builder community.",
+    "og:url": "https://nextgenius.com.au/#/",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Practical AI for Australian Businesses | NextGenius",
+    "twitter:description": "NextGenius helps Australian businesses automate admin, connect systems and build useful AI assistants. Explore our projects, workshops and builder community.",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg"
+   },
+   "ld": [
+    "Organization"
+   ],
+   "sections": 8,
+   "images": 4
+  },
+  {
+   "route": "/service",
+   "slug": "service",
+   "title": "AI Solutions & System Integration | NextGenius",
+   "nav": "Solutions",
+   "category": "Solutions",
+   "url": "https://nextgenius.com.au/#/service",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "keywords": "",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "description": "Practical AI consulting, business knowledge assistants, automation and software delivery for Australian businesses.",
+    "og:title": "AI Solutions & System Integration | NextGenius",
+    "og:description": "Practical AI consulting, business knowledge assistants, automation and software delivery for Australian businesses.",
+    "og:url": "https://nextgenius.com.au/#/service",
+    "twitter:title": "AI Solutions & System Integration | NextGenius",
+    "twitter:description": "Practical AI consulting, business knowledge assistants, automation and software delivery for Australian businesses."
+   },
+   "ld": [],
+   "sections": 4,
+   "images": 3
+  },
+  {
+   "route": "/use-cases",
+   "slug": "use-cases",
+   "title": "Projects & Practical AI Use Cases | NextGenius",
+   "nav": "Projects",
+   "category": "Projects",
+   "url": "https://nextgenius.com.au/#/use-cases",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "keywords": "",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "description": "Explore NextGenius social and learning products, interactive demos and practical AI use cases for Australian businesses.",
+    "og:title": "Projects & Practical AI Use Cases | NextGenius",
+    "og:description": "Explore NextGenius social and learning products, interactive demos and practical AI use cases for Australian businesses.",
+    "og:url": "https://nextgenius.com.au/#/use-cases",
+    "twitter:title": "Projects & Practical AI Use Cases | NextGenius",
+    "twitter:description": "Explore NextGenius social and learning products, interactive demos and practical AI use cases for Australian businesses."
+   },
+   "ld": [
+    "Organization"
+   ],
+   "sections": 7,
+   "images": 3
+  },
+  {
+   "route": "/opc",
+   "slug": "opc",
+   "title": "Build Your First OPC Service | NextGenius",
+   "nav": "Free OPC service plan",
+   "category": "OPC",
+   "url": "https://nextgenius.com.au/#/opc",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "keywords": "",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "description": "Turn your expertise into a clear service offer. Create a free, editable OPC service plan with NextGenius. No signup required.",
+    "og:title": "Build Your First OPC Service | NextGenius",
+    "og:description": "Turn your expertise into a clear service offer. Create a free, editable OPC service plan with NextGenius. No signup required.",
+    "og:url": "https://nextgenius.com.au/opc/",
+    "twitter:title": "Build Your First OPC Service | NextGenius",
+    "twitter:description": "Turn your expertise into a clear service offer. Create a free, editable OPC service plan with NextGenius. No signup required."
+   },
+   "ld": [
+    "Organization"
+   ],
+   "sections": 6,
+   "images": 0
+  },
+  {
+   "route": "/community",
+   "slug": "community",
+   "title": "Community & Australia OPC Network | NextGenius",
+   "nav": "Community & OPC network",
+   "category": "Community",
+   "url": "https://nextgenius.com.au/#/community",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "keywords": "",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "description": "Explore NextGenius AI events and workshops, and express interest in an emerging Australian one-person company network.",
+    "og:title": "Community & Australia OPC Network | NextGenius",
+    "og:description": "Explore NextGenius AI events and workshops, and express interest in an emerging Australian one-person company network.",
+    "og:url": "https://nextgenius.com.au/#/community",
+    "twitter:title": "Community & Australia OPC Network | NextGenius",
+    "twitter:description": "Explore NextGenius AI events and workshops, and express interest in an emerging Australian one-person company network."
+   },
+   "ld": [
+    "Organization"
+   ],
+   "sections": 4,
+   "images": 0
+  },
+  {
+   "route": "/about",
+   "slug": "about",
+   "title": "About Our Business & Builder Community | NextGenius",
+   "nav": "About",
+   "category": "About",
+   "url": "https://nextgenius.com.au/#/about",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "keywords": "",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "description": "NextGenius combines practical AI consulting and software delivery with a Sydney-based learning and builder community.",
+    "og:title": "About Our Business & Builder Community | NextGenius",
+    "og:description": "NextGenius combines practical AI consulting and software delivery with a Sydney-based learning and builder community.",
+    "og:url": "https://nextgenius.com.au/#/about",
+    "twitter:title": "About Our Business & Builder Community | NextGenius",
+    "twitter:description": "NextGenius combines practical AI consulting and software delivery with a Sydney-based learning and builder community."
+   },
+   "ld": [
+    "Organization"
+   ],
+   "sections": 4,
+   "images": 1
+  },
+  {
+   "route": "/contact",
+   "slug": "contact",
+   "title": "Request a Discovery Call | NextGenius",
+   "nav": "Contact",
+   "category": "Contact",
+   "url": "https://nextgenius.com.au/#/contact",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "keywords": "",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "description": "Tell NextGenius about your AI, automation or software project. Prepare an enquiry email and request a 30–45 minute discovery conversation.",
+    "og:title": "Request a Discovery Call | NextGenius",
+    "og:description": "Tell NextGenius about your AI, automation or software project. Prepare an enquiry email and request a 30–45 minute discovery conversation.",
+    "og:url": "https://nextgenius.com.au/#/contact",
+    "twitter:title": "Request a Discovery Call | NextGenius",
+    "twitter:description": "Tell NextGenius about your AI, automation or software project. Prepare an enquiry email and request a 30–45 minute discovery conversation."
+   },
+   "ld": [
+    "Organization"
+   ],
+   "sections": 3,
+   "images": 0
+  },
+  {
+   "route": "/workshop",
+   "slug": "workshop",
+   "title": "Request a Discovery Call | NextGenius",
+   "nav": "Workshops",
+   "category": "Workshops",
+   "url": "https://nextgenius.com.au/#/workshop",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b"
+   },
+   "ld": [],
+   "sections": 3,
+   "images": 8
+  },
+  {
+   "route": "/events",
+   "slug": "events",
+   "title": "AI Events Sydney | NextGenius",
+   "nav": "Events",
+   "category": "Events",
+   "url": "https://nextgenius.com.au/#/events",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "description": "Discover practical AI events in Sydney, including community meetups, learning sessions, and workshops focused on AI agents, automation, MCP, and AI for business.",
+    "keywords": "AI events Sydney, Sydney AI meetup, AI networking Sydney, learn AI Sydney",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:title": "AI Events Sydney | NextGenius",
+    "og:description": "Discover practical AI events in Sydney, including community meetups, learning sessions, and workshops focused on AI agents, automation, MCP, and AI for business.",
+    "og:url": "https://nextgenius.com.au/#/events",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "AI Events Sydney | NextGenius",
+    "twitter:description": "Discover practical AI events in Sydney, including community meetups, learning sessions, and workshops focused on AI agents, automation, MCP, and AI for business.",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg"
+   },
+   "ld": [
+    "FAQPage",
+    "Event",
+    "Event",
+    "Event"
+   ],
+   "sections": 4,
+   "images": 0
+  },
+  {
+   "route": "/blog",
+   "slug": "blog",
+   "title": "AI Blog Sydney | NextGenius",
+   "nav": "Insights (blog index)",
+   "category": "Insights",
+   "url": "https://nextgenius.com.au/#/blog",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "description": "Citation-friendly articles about AI meetups in Sydney, learning AI, networking events, workshops, and practical AI implementation.",
+    "keywords": "AI blog Sydney, AI meetup Sydney, learn AI Sydney, AI events Sydney",
+    "og:title": "AI Blog Sydney | NextGenius",
+    "og:description": "Citation-friendly articles about AI meetups in Sydney, learning AI, networking events, workshops, and practical AI implementation.",
+    "og:url": "https://nextgenius.com.au/#/blog",
+    "twitter:title": "AI Blog Sydney | NextGenius",
+    "twitter:description": "Citation-friendly articles about AI meetups in Sydney, learning AI, networking events, workshops, and practical AI implementation."
+   },
+   "ld": [],
+   "sections": 2,
+   "images": 0
+  },
+  {
+   "route": "/faq",
+   "slug": "faq",
+   "title": "AI Meetup Sydney FAQ | NextGenius",
+   "nav": "FAQ",
+   "category": "FAQ",
+   "url": "https://nextgenius.com.au/#/faq",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "description": "Frequently asked questions about AI meetups, AI events, learning AI in Sydney, workshops, and the NextGenius community.",
+    "keywords": "AI meetup Sydney FAQ, learn AI Sydney, AI events Sydney, NextGenius FAQ",
+    "og:title": "AI Meetup Sydney FAQ | NextGenius",
+    "og:description": "Frequently asked questions about AI meetups, AI events, learning AI in Sydney, workshops, and the NextGenius community.",
+    "og:url": "https://nextgenius.com.au/#/faq",
+    "twitter:title": "AI Meetup Sydney FAQ | NextGenius",
+    "twitter:description": "Frequently asked questions about AI meetups, AI events, learning AI in Sydney, workshops, and the NextGenius community."
+   },
+   "ld": [
+    "FAQPage"
+   ],
+   "sections": 3,
+   "images": 0
+  },
+  {
+   "route": "/blog/top-ai-meetups-in-sydney",
+   "slug": "blog__top-ai-meetups-in-sydney",
+   "title": "Top AI Meetups in Sydney",
+   "nav": "Blog: Top AI Meetups in Sydney",
+   "category": "Insights",
+   "url": "https://nextgenius.com.au/#/blog/top-ai-meetups-in-sydney",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "description": "A practical guide to AI meetups in Sydney, including what to look for, who should attend, and how NextGenius fits into the local AI community.",
+    "keywords": "",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:title": "Top AI Meetups in Sydney",
+    "og:description": "A practical guide to AI meetups in Sydney, including what to look for, who should attend, and how NextGenius fits into the local AI community.",
+    "og:url": "https://nextgenius.com.au/#/",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Top AI Meetups in Sydney",
+    "twitter:description": "A practical guide to AI meetups in Sydney, including what to look for, who should attend, and how NextGenius fits into the local AI community.",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg"
+   },
+   "ld": [
+    "Article"
+   ],
+   "sections": 2,
+   "images": 0
+  },
+  {
+   "route": "/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "slug": "blog__how-to-learn-ai-in-sydney-2026-guide",
+   "title": "How to Learn AI in Sydney (2026 Guide)",
+   "nav": "Blog: How to Learn AI in Sydney (2026 Guide)",
+   "category": "Insights",
+   "url": "https://nextgenius.com.au/#/blog/how-to-learn-ai-in-sydney-2026-guide",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "keywords": "",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:url": "https://nextgenius.com.au/#/",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "description": "A practical guide for people who want to learn AI in Sydney through meetups, workshops, projects, and community-driven learning.",
+    "og:title": "How to Learn AI in Sydney (2026 Guide)",
+    "og:description": "A practical guide for people who want to learn AI in Sydney through meetups, workshops, projects, and community-driven learning.",
+    "twitter:title": "How to Learn AI in Sydney (2026 Guide)",
+    "twitter:description": "A practical guide for people who want to learn AI in Sydney through meetups, workshops, projects, and community-driven learning."
+   },
+   "ld": [
+    "Article"
+   ],
+   "sections": 2,
+   "images": 0
+  },
+  {
+   "route": "/blog/best-ai-networking-events-in-sydney",
+   "slug": "blog__best-ai-networking-events-in-sydney",
+   "title": "Best AI Networking Events in Sydney",
+   "nav": "Blog: Best AI Networking Events in Sydney",
+   "category": "Insights",
+   "url": "https://nextgenius.com.au/#/blog/best-ai-networking-events-in-sydney",
+   "metas": {
+    "viewport": "width=device-width,initial-scale=1",
+    "theme-color": "#10253b",
+    "description": "A guide to AI networking events in Sydney, including what to expect, who should attend, and how to find practical communities.",
+    "keywords": "",
+    "og:type": "website",
+    "og:site_name": "NextGenius",
+    "og:title": "Best AI Networking Events in Sydney",
+    "og:description": "A guide to AI networking events in Sydney, including what to expect, who should attend, and how to find practical communities.",
+    "og:url": "https://nextgenius.com.au/#/",
+    "og:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Best AI Networking Events in Sydney",
+    "twitter:description": "A guide to AI networking events in Sydney, including what to expect, who should attend, and how to find practical communities.",
+    "twitter:image": "https://nextgenius.com.au/static/media/workshop-01.f1385d0f.jpg"
+   },
+   "ld": [
+    "Article"
+   ],
+   "sections": 2,
+   "images": 0
+  }
+ ]
+}

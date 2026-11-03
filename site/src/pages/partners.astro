@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import ResponsiveImage from '../components/ResponsiveImage.astro';
+import PageHero from '../components/PageHero.astro';
+import Btn from '../components/Btn.astro';
+import Form from '../components/Form.astro';
+import { DELIVERY_PARTNERS, LOCAL_PARTNERS } from '../data/partners.js';
+---
+<Base title="Partners | AI Delivery & Local Connections | NextGenius" description="Meet NextGenius delivery partners OpenAI, Schnellstart and Altamir, plus our local partners Founder Institute and the Lassie & Ed business community." noTalk={true}>
+  <PageHero eyebrow="Partners & connections" title="OpenAI technology. Specialist delivery. Local connections." lead="NextGenius is an OpenAI Select Partner. Our partnerships bring together AI technology, implementation, team training and governance, alongside founder and business communities." unit="u161">
+    <div class="btns"><Btn href="/solutions/" label="Explore our services" variant="o" /><a class="tlink" href="/contact/">Work with us</a></div>
+  </PageHero>
+
+  <section class="editorial-section wrap partner-section" id="delivery" data-unit="u162">
+    <div class="section-heading"><div><p class="eyebrow">Technology, implementation and oversight</p><h2>Technology and delivery partners</h2></div><p>We build with OpenAI technology, work with Schnellstart on implementation and training, and draw on Altamir for AI strategy and governance.</p></div>
+    <div class="partner-grid delivery-grid">
+      {DELIVERY_PARTNERS.map((p) => <article class="partner-card" id={p.id}>
+        <a class="partner-banner" href={p.href} target="_blank" rel="noopener" aria-label={`Visit ${p.name} (opens in a new tab)`}><ResponsiveImage src={`/img/partners/${p.id}.webp`} alt="" width="1200" height="600" loading="lazy" /></a>
+        <div class="partner-copy"><p class="eyebrow">{p.role}</p><h3>{p.name}</h3><p>{p.text}</p><ul class="partner-skills">{p.items.map((item) => <li>{item}</li>)}</ul><a class="tlink" href={p.href} target="_blank" rel="noopener">{p.cta} <span class="sr-only"> (opens in a new tab)</span></a></div>
+      </article>)}
+    </div>
+    <p class="partner-scope">We identify who is involved and what each team delivers in your project proposal.</p>
+  </section>
+
+  <section class="editorial-section white" data-unit="u163">
+    <div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">Connected to our community</p><h2>Our local partners</h2></div><p>Founder support, business connections and opportunities to meet people in our local network.</p></div>
+      <div class="partner-grid local-grid">
+        {LOCAL_PARTNERS.map((p) => <article class="partner-card" id={p.id}>
+          <a class="partner-banner" href={p.href} target="_blank" rel="noopener" aria-label={`${p.cta} (opens in a new tab)`}><ResponsiveImage src={`/img/partners/${p.id}.webp`} alt="" width="1200" height="600" loading="lazy" /></a>
+          <div class="partner-copy"><p class="eyebrow">{p.role}</p><h3>{p.name}</h3><p>{p.text}</p><a class="tlink" href={p.href} target="_blank" rel="noopener">{p.cta} <span class="sr-only"> (opens in a new tab)</span></a></div>
+        </article>)}
+      </div>
+      <p class="partner-scope">Visit each organisation to explore its current programmes, resources and upcoming opportunities.</p>
+    </div>
+  </section>
+
+  <section class="editorial-section partner-enquiry" id="work-together" data-unit="u165">
+    <div class="wrap split">
+      <div><p class="eyebrow">Contribute to the network</p><h2>Become a partner.</h2><p>Have expertise, a venue or an idea for a joint session? Tell us where you see a connection.</p><ul class="partner-opportunities"><li><strong>Share specialist expertise.</strong> Contribute a skill to a client project or workshop.</li><li><strong>Host a session.</strong> Offer a space, a topic or access to a new audience.</li><li><strong>Bring a business challenge.</strong> Suggest a problem to explore through a project or learning session.</li></ul><p class="small">Describe your contribution and who would benefit.</p></div>
+      <Form subject="Partnership enquiry" picked="Partnership" question="What would you like to contribute, who is it for, and what could we achieve together?" />
+    </div>
+  </section>
+</Base>

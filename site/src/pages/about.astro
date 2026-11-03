@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Btn from '../components/Btn.astro';
+import Cols from '../components/Cols.astro';
+import ResponsiveImage from '../components/ResponsiveImage.astro';
+const team = [
+  { id: 'nicholas-qi', name: 'Nicholas Qi', role: 'Chief Executive Officer', width: 800, height: 800, bio: 'Nicholas leads the NextGenius technology venture and founded AI Learners Club in 2013. His background spans technology leadership, digital products and developing new ventures.' },
+  { id: 'dev-roy', image: 'dev-roy-upscaled', name: 'Dev Roy', role: 'Chief Operating Officer', width: 2048, height: 2048, bio: 'Dev works across applied AI, technology consulting and digital product development, alongside his roles with schnellstart.ai and AI Learners Club. His focus connects technical delivery with the way a business operates.' },
+  { id: 'dennis-singh', name: 'Dennis Singh', role: 'Chief Governance Officer', width: 800, height: 1200, bio: 'Dennis brings AI governance and advisory experience as founder and CEO of Altamir. His background in digital transformation, service design and operating-model change informs how organisations assign responsibility and oversee adoption.' },
+  { id: 'lukas-huber', name: 'Lukas Huber', role: 'Chief AI Consultant', width: 800, height: 800, bio: 'Lukas is co-founder and CEO of schnellstart.ai, working on AI strategy, workshops and implementation. He draws on 16 years in fiduciary services and finance and helps members connect through the community.' },
+];
+const how = [
+  { unit: 'u060', title: 'Understand the operation', text: 'Understand who does the work, what information they need and where existing tools fall short.' },
+  { unit: 'u061', title: 'Make delivery visible', text: 'Review milestones and representative tasks so your team can assess progress as the system develops.' },
+  { unit: 'u062', title: 'Prepare the handover', text: 'Give the people using the system the documentation, training and support arrangements they need.' },
+];
+---
+<Base title="About Our Business & Builder Community | NextGenius" description="NextGenius helps startups and small businesses build with practical AI, software, skills and resources, supported by a Sydney-based learning and builder community.">
+<PageHero eyebrow="About NextGenius" title="The team behind your AI, automation and software." lead="NextGenius is a Sydney-based technology venture working across AI, automation and software development. As an OpenAI Select Partner, we combine product delivery, business experience and governance with our Community Ecosystem." unit="u058 u063" />
+
+<section class="sec wrap leadership" id="team" aria-labelledby="team-heading">
+  <div class="section-heading"><div><p class="eyebrow">The people behind NextGenius</p><h2 id="team-heading">Meet our team.</h2></div><p>Experience across technology ventures, applied AI, governance and team learning.</p></div>
+  <div class="team-list">{team.map((person, i) => <article id={person.id} class:list={['team-member', { 'team-reverse': i % 2 === 1 }]} aria-labelledby={person.id + '-name'}>
+    <div class="team-portrait"><ResponsiveImage src={'/img/team/' + (person.image ?? person.id) + '.webp'} sizes="350px" alt={person.name} loading="lazy" decoding="async" /></div>
+    <div class="team-copy"><p class="eyebrow">{person.role}</p><h3 id={person.id + '-name'}>{person.name}</h3><p>{person.bio}</p></div>
+  </article>)}</div>
+</section>
+
+<section class="sec wrap" data-unit="u059" style="padding-top:0">
+  <div class="split">
+    <div><p class="eyebrow su">Two connected parts</p><h2 class="up ta">A delivery partner and a place to build.</h2><div class="ph-img sa" style="margin-top:var(--space-block)"><ResponsiveImage src="/img/workshop-02.jpg" alt="People at a NextGenius workshop session" loading="lazy" /></div></div>
+    <div>
+      <p class="su">Our delivery work covers the systems behind everyday operations: enquiries, internal information, customer interactions and the connections between business tools.</p>
+      <p class="su" style="--i:1">Our community creates a different kind of space. Founders, engineers, operators and learners meet to share projects, ask questions and learn from each other.</p>
+      <p class="su" style="--i:2">The connection is people: those building the technology, those using it and those learning what they can do with it.</p>
+      <div class="btns su" style="--i:3"><Btn href="/contact/" label="Discuss a project" /><a class="tlink" href="/community/">Join the conversation</a></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec white">
+  <div class="wrap">
+    <p class="eyebrow su">How we work</p>
+    <h2 class="up ta" style="margin-top:var(--space-3);max-width:16em">What your team can expect.</h2>
+    <Cols items={how} />
+  </div>
+</section>
+</Base>
+
+<style>
+.leadership{border-top:1px solid var(--line)}.team-list{display:grid;gap:var(--space-7)}.team-member{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--section-y);align-items:center}.team-portrait{width:min(350px,calc(100% - 18px));aspect-ratio:4/5;justify-self:center;margin:0 var(--space-4) var(--space-4) 0;overflow:hidden;border:3px solid #234367;border-radius:0;background:#fff;box-shadow:10px 10px 0 -3px var(--bg),10px 10px 0 0 #efb810}.team-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%}.team-copy h3{font-size:clamp(32px,3.7vw,56px);margin:var(--space-4) 0 var(--space-5)}.team-copy>p:last-child{font-size:18px;line-height:1.75;color:var(--txt);max-width:52ch}.team-reverse .team-portrait{grid-column:2;grid-row:1}.team-reverse .team-copy{grid-column:1;grid-row:1}@media(max-width:700px){.team-list{gap:var(--space-7)}.team-member{grid-template-columns:1fr;gap:var(--space-5)}.team-reverse .team-portrait,.team-reverse .team-copy{grid-column:auto;grid-row:auto}.team-portrait{width:min(300px,calc(100% - 18px));border-radius:0}.team-portrait img{height:100%;max-height:none}.team-copy>p:last-child{font-size:16px}.team-copy h3{margin:var(--space-3) 0 var(--space-4)}}
+</style>

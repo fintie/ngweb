@@ -1,0 +1,48 @@
+{
+  "$description": "NextGenius brand sheet. Draft of 2026-11-03, written from what the site chosen by the client already does most. Measured with the brand skill in Claude_harness. Open owner decisions: warm cream (#fcfcf7) or cool grey (#e7ebef) as the second background, which picture families stay, the size scale. Decided 2026-11-03: the harbour hero photo stays as it is (the client loves it); the generated people pictures on the three services are removed.",
+  "status": "draft",
+  "name": { "written": "NextGenius", "forbidden": ["Next Genius", "NEXT GENIUS", "Nextgenius", "Next genius", "NEXTGENIUS", "Next-Genius"] },
+  "logo": { "files": ["/img/logo.png", "/img/nextgenius-logo.webp", "/favicon.ico", "/favicon-32x32.png", "/apple-touch-icon.png"] },
+  "color": {
+    "$type": "color",
+    "gold": { "$value": "#efb810", "brand": true, "$description": "Brand colour: logo, the main button, the menu underline and the header edge." },
+    "gold-hover": { "$value": "#f5ca45", "brand": true, "$description": "Main button on hover only." },
+    "navy": { "$value": "#142d40", "$description": "Header and menu background, logo ground." },
+    "navy-ink": { "$value": "#112b3e", "$description": "Text on gold buttons." },
+    "on-navy": { "$value": "#f5f7fa", "$description": "Menu links and text on navy." },
+    "on-navy-soft": { "$value": "#d1dbe2", "$description": "Secondary text on navy and on the dark hero photo." },
+    "ink": { "$value": "#20211d", "$description": "Headings and running text." },
+    "ink-soft": { "$value": "#5a5d55", "$description": "Secondary text, captions, numbers." },
+    "paper": { "$value": "#ffffff", "$description": "Page background." },
+    "paper-alt": { "$value": "#e7ebef", "$description": "Every second band, to separate sections." },
+    "line": { "$value": "#cbd2d9", "$description": "Dividers and card edges." },
+    "sky": { "$value": "#5aa9e6", "$description": "Accent, no meaning: step and service symbols only." },
+    "coral": { "$value": "#f27c63", "$description": "Accent, no meaning: step and service symbols only." },
+    "mint": { "$value": "#6cc6a8", "$description": "Accent, no meaning: step and service symbols only." }
+  },
+  "brandAllowed": [".btn", "header", ".mm", ".hero-simple", ".hlogo"],
+  "font": {
+    "family": { "$type": "fontFamily", "$value": ["Schibsted Grotesk"] },
+    "sizes": { "$type": "dimension", "$value": [13, 14, 16, 20, 26, 34, 46, 68] }
+  },
+  "radius": ["14px 5px", "5px", "50%", "11px 4px", "18px 6px"],
+  "buttons": { "max": 2 },
+  "images": {
+    "families": [
+      { "name": "logo", "match": "logo|favicon|apple-touch" },
+      { "name": "Sydney harbour hero", "match": "sydney-harbour" },
+      { "name": "article covers", "match": "/img/blog/|/img/optimised/" },
+      { "name": "community and workshop photos", "match": "community|communities|workshop-" },
+      { "name": "client logos", "match": "/img/clients/" },
+      { "name": "partner logos", "match": "/img/partners/" },
+      { "name": "team", "match": "/img/team/" }
+    ]
+  },
+  "voice": {
+    "notes": [
+      "Plain words for small business owners; no hype, no promises without figures.",
+      "Australian spelling (organisation, enquiry).",
+      "Say what the business gets: hours back, fewer handovers, answers within reach."
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import { ARTICLES } from '../../data/articles.js';
+import ResponsiveImage from '../../components/ResponsiveImage.astro';
+const articleDate = a => new Date((a.eventDate ?? a.milestoneDate ?? a.date) + 'T12:00:00').toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base title="AI Blog Sydney | NextGenius" description="Community events, partnership news and practical AI stories from NextGenius in Sydney and across Australia.">
+<PageHero eyebrow="Blog" title="Practical guides on learning and using AI" lead="Choose a first workflow, plan an assistant pilot and understand project costs. Plus community events and partnership news from NextGenius." unit="u089 u094" />
+<div class="blog-stories" data-unit="u090">
+  {ARTICLES.map((article, i) => <section class="wrap blog-feature"><a href={'/blog/' + article.slug + '/'}>
+    <div class="blog-image"><ResponsiveImage src={article.cover} alt={article.coverAlt ?? 'AI Learners Club group at Novotel Darling Harbour'} loading={i === 0 ? 'eager' : 'lazy'} fetchpriority={i === 0 ? 'high' : undefined} /></div>
+    <div class="blog-copy"><p class="eyebrow">{article.category} · {articleDate(article)}</p><h2>{article.title}</h2><p>{article.lead}</p><span class="tlink">Read the story</span></div>
+  </a></section>)}
+</div>
+</Base>
+<style>
+.blog-stories{padding-bottom:var(--section-y)}
+.blog-feature{margin-bottom:var(--section-y)}
+.blog-feature:last-child{margin-bottom:0}
+.blog-feature>a{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:var(--space-block);align-items:center}
+.blog-image{min-width:0;border-radius:4px;background:transparent}
+.blog-image :global(img){display:block;width:100%;height:auto;border-radius:4px}
+.blog-copy{min-width:0}
+.blog-copy .eyebrow{line-height:1.5}
+.blog-copy h2{font-size:clamp(28px,3vw,48px);line-height:1.15;margin:var(--space-4) 0 var(--space-5)}
+.blog-copy>p:not(.eyebrow){line-height:1.7;color:var(--txt)}
+.blog-feature .tlink{display:inline-block;margin-top:var(--space-5)}
+@media(max-width:700px){.blog-feature>a{grid-template-columns:1fr;gap:var(--space-5)}.blog-copy h2{margin:var(--space-3) 0 var(--space-4)}.blog-feature .tlink{margin-top:var(--space-4)}}
+</style>

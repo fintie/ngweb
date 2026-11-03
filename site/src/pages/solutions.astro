@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Btn from '../components/Btn.astro';
+import Rows from '../components/Rows.astro';
+import Cols from '../components/Cols.astro';
+import Close from '../components/Close.astro';
+import { SERVICES } from '../data/site.js';
+const governance = [
+  { unit: 'u175', title: 'Align', meta: 'AI readiness', text: 'Map current AI use, identify governance gaps and give leaders a prioritised next-step roadmap.', href: '/contact/', cta: 'Discuss AI readiness' },
+  { unit: 'u176', title: 'Assure', meta: 'Governance foundations', text: 'Define policies, ownership, use-case review pathways and practical reporting so teams have a clear way to make AI decisions.', href: '/contact/', cta: 'Discuss governance foundations' },
+  { unit: 'u177', title: 'Adopt', meta: 'Ongoing advisory', text: 'Sustain oversight through leadership guidance, new use-case reviews, issue tracking and regular governance updates.', href: '/contact/', cta: 'Discuss ongoing advisory' },
+];
+const uses = [
+  { title: 'Website chat and product enquiries', text: 'Answer FAQs from approved content, help customers find products and check stock through connected systems.', href: '/solutions/customer-service-assistants/', cta: 'Explore customer service assistants' },
+  { title: 'Bookings and lead follow-up', text: 'Check calendar availability, arrange appointments and follow up on enquiries using agreed contact preferences.', href: '/solutions/bookings-lead-follow-up/', cta: 'Explore bookings and follow-up' },
+  { title: 'Email response support', text: 'Prepare replies to routine enquiries using your policies and business information, ready for your team to review.', href: '/solutions/ai-automation-sydney/', cta: 'Explore automation' },
+  { title: 'Order updates and customer feedback', text: 'Send delivery updates from your order system, request feedback after a purchase and flag issues for your team.', href: '/solutions/ai-automation-sydney/', cta: 'Explore connected tools' },
+  { title: 'Social media content support', text: 'Draft post ideas, captions and campaign content in your business tone, with staff approval before publishing.', href: '/solutions/openai-integration/', cta: 'Explore AI assistants' },
+  { title: 'Staff knowledge assistant', text: 'Help staff find policies, procedures and answers from approved internal documents, with sources and review points.', href: '/solutions/knowledge-assistants/', cta: 'Explore knowledge assistants' },
+];
+const starts = [
+  { title: 'Assess and plan', text: 'Clarify a business opportunity, a technical question or your governance starting point before committing to a larger project.', items: ['Discovery and priorities', 'Feasibility or readiness review', 'Key findings and constraints', 'A recommended next step'] },
+  { title: 'Test one thing', text: 'A focused build for one practical use case, so your team can test the value quickly before a wider rollout.', items: ['A small assistant or automation', 'A small connection between tools', 'Testing with users', 'Next-step advice based on what was measured'] },
+  { title: 'Design, build and roll out', text: 'For businesses that already know the direction and need help getting it running.', items: ['Solution design', 'Build', 'Help with the change', 'Ongoing improvement'] },
+];
+---
+<Base title="AI Services, Governance & Delivery | NextGenius" description="AI and automation, software and digital products, AI strategy and governance, and team training for Australian businesses." noTalk={true}>
+<PageHero eyebrow="Services" title="Automate admin. Answer enquiries. Connect your systems." lead="Tell us which task is slowing your business down. We design and build AI assistants, automations and custom software around your existing tools, then train your team to use them." unit="u019 u029">
+  <div class="btns"><Btn href="/contact/" label="Book a free consultation" /></div>
+</PageHero>
+
+<section class="sec white" id="services">
+  <div class="wrap"><p class="eyebrow">Explore our services</p><h2 class="solutions-heading">Four ways we help your business.</h2><Rows items={SERVICES} /></div>
+</section>
+
+<section class="wrap solutions-partners" data-unit="u173">
+  <div class="solutions-partner-intro"><div><p class="eyebrow">Specialist support</p><h2>OpenAI technology. Delivery and governance expertise.</h2></div><div><p>As an OpenAI Select Partner, we build assistants and integrations using OpenAI technology. Schnellstart brings implementation, training and Microsoft 365 experience. Altamir contributes AI strategy and governance expertise.</p><p><a class="tlink" href="/partners/">See how our partners contribute</a></p></div></div>
+</section>
+
+<section class="sec wrap solutions-governance" id="governance" data-unit="u174">
+  <div class="section-heading"><div><p class="eyebrow">AI governance</p><h2>A clear path for responsible AI.</h2></div><p>Establish and sustain AI governance with a clear starting point for your organisation, from readiness and foundations to ongoing advice.</p></div>
+  <Cols items={governance} numbered />
+  <div class="solutions-governance-next"><p>Choose the stage that matches your organisation’s current AI use and oversight needs.</p><Btn href="/contact/" label="Discuss AI governance" variant="o" /></div>
+</section>
+
+<section class="sec wrap" id="use-cases" data-unit="u026">
+  <p class="eyebrow su">Typical use cases</p>
+  <h2 class="up ta" style="margin-top:var(--space-3);max-width:18em">What could we automate for you?</h2>
+  <p class="lead su" style="margin-top:var(--space-4);color:var(--txt);--i:1">Examples of the tasks we can design around your existing systems.</p>
+  <Cols items={uses} />
+</section>
+
+<section class="sec bluep" id="start" data-unit="u027">
+  <div class="wrap">
+    <p class="eyebrow su" >How engagements usually start</p>
+    <h2 class="up ta" style="margin-top:var(--space-3)">Three ways in.</h2>
+    <div class="bl"><Cols items={starts} numbered /></div>
+    <p class="note"><a class="tlink" href="/getting-started/">Compare engagement options, cost factors and what to prepare</a></p>
+  </div>
+</section>
+
+<section class="sec wrap" id="support" data-unit="u028 u025">
+  <div class="split">
+    <div><p class="eyebrow su">After the build</p><h2 class="up ta">A system your team can run.</h2></div>
+    <div><p class="su">Delivery includes documentation and team handover. We work through how staff use the system, update its information and handle exceptions.</p><p class="su" style="--i:1">Monitoring, maintenance and follow-up reviews can be included in your support arrangements as the system and your business change.</p><div class="btns su" style="--i:2"><Btn href="/contact/" label="Discuss delivery and support" /></div></div>
+  </div>
+</section>
+<Close><Btn href="/contact/" label="Book a free consultation" cls="su" /></Close>
+</Base>

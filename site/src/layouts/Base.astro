@@ -1,0 +1,97 @@
+---
+import Btn from '../components/Btn.astro';
+import Cols from '../components/Cols.astro';
+import { MENU, FOOTER, CONNECT, RELATED, ARTICLE_RELATED, crumbsFor, inGroup } from '../data/site.js';
+const { title, description, jsonld, noTalk = false, lang = 'en-AU', alt, crumb } = Astro.props;
+const path = Astro.url.pathname;
+const canonical = new URL(path, Astro.site).href;
+const socialImage = new URL('/img/nextgenius-social-preview-v2.png', Astro.site).href;
+const socialImageAlt = 'NextGenius — AI automation. Made Simple. Sydney Harbour at blue hour. OpenAI Select Partner.';
+const crumbs = crumbsFor(path, crumb);
+const related = lang.startsWith('zh') ? null : (RELATED[path] ?? (path.startsWith('/blog/') && path !== '/blog/' ? ARTICLE_RELATED : null));
+const org = { '@context': 'https://schema.org', '@type': 'ProfessionalService', name: 'NextGenius', logo: new URL('/img/nextgenius-logo.webp', Astro.site).href, legalName: 'Next Genius Pty Ltd', url: 'https://nextgenius.com.au/', email: 'info@nextgenius.com.au', address: { '@type': 'PostalAddress', streetAddress: '15 Broadway', addressLocality: 'Ultimo', addressRegion: 'NSW', postalCode: '2007', addressCountry: 'AU' }, sameAs: CONNECT.map((c) => c.href) };
+const trail = crumbs.length ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: new URL(c.href, Astro.site).href })) } : null;
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title>
+<meta name="description" content={description}>
+<link rel="canonical" href={canonical}>
+{alt && <link rel="alternate" hreflang={alt.lang} href={new URL(alt.href, Astro.site).href} />}
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:url" content={canonical}>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NextGenius">
+<meta property="og:locale" content="en_AU">
+<meta property="og:image" content={socialImage}>
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content={socialImageAlt}>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content={title}>
+<meta name="twitter:description" content={description}>
+<meta name="twitter:image" content={socialImage}>
+<meta name="twitter:image:alt" content={socialImageAlt}>
+<link rel="icon" href="/favicon.ico?v=20261101" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/site.css?v=20261103-warm-gold">
+<script type="application/ld+json" set:html={JSON.stringify(org)}></script>
+{trail && <script type="application/ld+json" set:html={JSON.stringify(trail)}></script>}
+{jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)}></script>}
+</head>
+<body>
+<a class="skip-link" href="#top">Skip to content</a>
+
+<header data-unit="u154">
+  <a class="hlogo" href="/" aria-label="NextGenius home"><span class="header-lockup" aria-hidden="true"></span><span class="header-tagline" aria-hidden="true">TECH VENTURE</span></a>
+  <nav class="hnav" aria-label="Main">
+    {MENU.map((m) => <a href={m.href} aria-current={inGroup(path, m) ? 'page' : undefined}>{m.label}</a>)}
+  </nav>
+  <Btn href="/contact/" label="Free consultation" variant="o" />
+  <button class="mbtn" id="mbtn" aria-expanded="false" aria-controls="mm">Menu</button>
+</header>
+<div class="mm" id="mm"><nav aria-label="Phone menu">
+  {MENU.map((m, i) => m.links ? (
+    <details><summary>{m.label}</summary><ul><li><a href={m.href}>Explore {m.label.toLowerCase()}</a></li>{m.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul></details>
+  ) : <a class="top" href={m.href} style={`--i:${i}`}>{m.label}</a>)}
+  <a class="top" href="/contact/" style={`--i:${MENU.length}`}>Contact</a>
+  <div class="mm-cta" style={`--i:${MENU.length + 1}`}><Btn href="/contact/" label="Request a call" /></div>
+</nav></div>
+
+<main id="top">
+  <slot />
+  {related && <section class="sec wrap rel"><p class="eyebrow su">Keep exploring</p><Cols items={related} /></section>}
+</main>
+
+<footer id="contact">
+  {!noTalk && (
+    <div class="wrap talk" data-unit="u017">
+      <div class="card" id="card"><h3>Have a project in mind?</h3>
+        <div><Btn href="/contact/" label="Free consultation" cls="contact-gold" /></div></div>
+      <div><p class="eyebrow">Let’s talk</p><p style="margin-top:var(--space-3)">Tell us what you want to build, connect or improve. Our Sydney-based team works with businesses across Australia.</p>
+        <p class="small" style="margin-top:var(--space-3)"><a class="tlink" href="/getting-started/">How projects start</a></p>
+        <p class="addr">info@nextgenius.com.au<br>15 Broadway, Ultimo NSW 2007, Australia</p></div>
+    </div>
+  )}
+  <div class="fend">
+  <div class="wrap fcols">
+    <div><p>Practical AI delivery for Australian businesses.<br>A community for people building what comes next.</p><p class="addr"><a href="mailto:info@nextgenius.com.au">info@nextgenius.com.au</a></p></div>
+    {FOOTER.map((g) => <div><b>{g.label}</b><ul>{g.links.map((n) => <li><a href={n.href}>{n.label}</a></li>)}</ul></div>)}
+    <div><b>Connect</b><ul>{CONNECT.map((n) => <li><a href={n.href} target="_blank" rel="noopener">{n.label}</a></li>)}</ul><p class="addr">15 Broadway, Ultimo<br>NSW 2007, Australia</p></div>
+  </div>
+  <div class="word" aria-hidden="true"><span class="brand-logo"></span>NextGenius</div>
+  <div class="fmeta"><span>© 2026 Next Genius Pty Ltd</span><a href="/privacy/">Enquiry privacy</a><span>Sydney, Australia</span></div>
+  </div>
+</footer>
+<script is:inline src="/site.js?v=20261103-accordion-fix"></script>
+<slot name="end" />
+</body>
+</html>

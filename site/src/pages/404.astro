@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Btn from '../components/Btn.astro';
+---
+<Base title="Page Not Found | NextGenius" description="This NextGenius page could not be found. Explore AI services, workshops or contact our team." noTalk>
+  <PageHero eyebrow="404 · Page not found" title="Let’s find the right next step." lead="The page may have moved or the address may be incomplete.">
+    <div class="btns"><Btn href="/" label="Back to home" /><a class="tlink" href="/solutions/">Explore services</a><a class="tlink" href="/contact/">Contact us</a></div>
+  </PageHero>
+</Base>

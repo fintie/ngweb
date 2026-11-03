@@ -1,4 +1,18 @@
-NextGenius/node_modules/
-NextGenius/dist/
-NextGenius/build/
-.qwen/
+node_modules/
+dist/
+.astro/
+.wrangler/
+*.log
+.env*
+
+# local working folders
+.gstack/
+.remember/
+tmp/
+
+# crawl output, recordings and study copies of reference sites: third-party material, stays on this machine
+out/
+
+# unused picture drafts
+design/hero/img-a/
+design/hero/img-b/

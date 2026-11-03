@@ -1,29 +1,40 @@
-# NextGenius website
+# NextGenius website rebuild
 
-The public website is served from the root of the `gh-pages` branch at nextgenius.com.au. Editable React source lives in `NextGenius/`.
+Private working repository for the new nextgenius.com.au. Nothing here is published automatically.
 
-## Development
+- `site/`: the new website, 15 pages built with Astro. Start with `site/NOTES.md`.
+- `design/`: the design templates. `hero3` is the accepted one; `hero` and `hero2` are kept for comparison.
+- `knowledge-base/`: everything from the old site as searchable text, with a knowledge graph and the migration map (`knowledge-base/migration/`).
+- `tools/`: scripts for crawling, the migration map and all checks.
 
-```sh
-cd NextGenius
-npm ci --legacy-peer-deps
-npm run dev
+## Run the site
+
+```bash
+cd site && npm install && npx astro build
 ```
 
-## Build and release
-
-```sh
-cd NextGenius
-npm run build
-node scripts/publish-build.mjs
+```bash
+node tools/serve.mjs site/dist 8805
 ```
 
-Commit the source, lockfile, root `index.html` and root `assets/` outputs. Publish those files to `gh-pages`; GitHub Pages handles deployment. Keep `CNAME` and `.nojekyll`.
+Then open http://127.0.0.1:8805/
 
-The earlier `static/` assets remain to preserve existing image links and the social preview image. The active site does not load the previous compiled JavaScript bundle.
+## Test deployment
 
-## Enquiries and OPC expressions of interest
+Test site: https://nextgenius-test.djdev123.workers.dev (Cloudflare Workers static assets).
+This is separate from the production domain. Search indexing is discouraged with
+`X-Robots-Tag: noindex, nofollow` and a disallow-all test `robots.txt`.
 
-Both forms validate required fields and prepare an encoded email draft to info@nextgenius.com.au. They do not submit data, save leads, confirm appointments or add users to mailing lists. Users must open their email application, review and send the draft. A backend lead form or booking integration can be added when its provider and account are selected.
+To rebuild and deploy from the repository root in PowerShell with Wrangler logged in:
 
-Project descriptions distinguish product demonstrations from measured customer outcomes. Community OPC content describes an emerging network, not an established paid programme.
+```powershell
+npm --prefix site run build
+Set-Content site/dist/_headers "/*`n  X-Robots-Tag: noindex, nofollow" -Encoding utf8
+Set-Content site/dist/robots.txt "User-agent: *`nDisallow: /" -Encoding utf8
+wrangler deploy --config wrangler.test.jsonc --no-autoconfig
+```
+
+The indexing controls apply to the build output; repeat these commands after every build.
+
+## Not in this repository
+`out/` holds crawl output, screen recordings and study copies of reference sites, which stay local because they are third-party material. Scripts that study reference sites, and a few checks, write to it; `motion-compare` needs logs from `motion-log` first. Some tools expect the shared harness at `C:/Dev/Claude_harness`.

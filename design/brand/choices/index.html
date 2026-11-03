@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drei Markenfragen</title>
+<style>
+@font-face{font-family:"Schibsted Grotesk";src:url(schibsted-grotesk-latin-wght-normal.woff2) format("woff2");font-weight:400 900;font-display:swap}
+:root{--navy:#142d40;--gold:#ffc20c;--ink:#16212b;--txt:#55606c;--paper:#fff;--alt:#eef1f4;--line:#cbd2d9;--ok:#1f7a4d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 "Schibsted Grotesk",system-ui,sans-serif}
+header{background:var(--navy);color:#f5f7fa;border-bottom:4px solid var(--gold)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header .wrap{padding-top:36px;padding-bottom:32px}
+h1{font-size:46px;line-height:1.1;margin:0 0 12px}
+header p{margin:0;max-width:62ch;color:#d1dbe2;font-size:20px;line-height:1.45}
+.answer{display:inline-block;margin-top:18px;background:#0e2232;border:1px solid #2c4a61;border-radius:5px;padding:8px 14px;font-size:16px;color:#f5f7fa}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section:nth-of-type(even){background:var(--alt)}
+.q{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--txt);margin:0 0 6px}
+h2{font-size:34px;line-height:1.15;margin:0 0 12px}
+.lead{max-width:64ch;color:var(--txt);margin:0 0 28px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.opt{background:var(--paper);border:1px solid var(--line);border-radius:14px 5px;padding:22px}
+.opt.rec{border:2px solid var(--navy)}
+.opt h3{font-size:26px;line-height:1.2;margin:0 0 6px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.tag{font-size:13px;font-weight:600;background:var(--navy);color:#fff;border-radius:5px;padding:2px 8px}
+.opt p{margin:0 0 16px;color:var(--txt)}
+.opt img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:5px;margin-top:12px}
+.sw{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+.sw li{font-size:13px;color:var(--txt);display:flex;flex-direction:column;align-items:center;gap:4px;width:64px;text-align:center}
+.sw i{display:block;width:48px;height:48px;border-radius:50%;border:1px solid var(--line)}
+.fam{display:grid;grid-template-columns:260px 1fr;gap:24px;align-items:start;padding:22px 0;border-top:1px solid var(--line)}
+.fam:first-of-type{border-top:0}
+.fam h3{font-size:20px;margin:0 0 4px}
+.fam p{margin:0;color:var(--txt);font-size:14px}
+.fam .rec{display:inline-block;margin-top:10px;font-size:14px;font-weight:600;color:var(--ok)}
+.fam .open{display:inline-block;margin-top:10px;font-size:14px;font-weight:600;color:#9a5b00}
+.fam>div,.step span,.opt{min-width:0}
+.strip{overflow-x:auto}
+.strip img{display:block;height:160px;width:auto;max-width:none;border-radius:5px}
+.scale{display:grid;gap:4px;margin:0 0 28px}
+.step{display:grid;grid-template-columns:64px 1fr 220px;gap:16px;align-items:baseline;padding:8px 0;border-top:1px solid var(--line)}
+.step b{font-size:14px;color:var(--txt);font-weight:600}
+.step span{line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.step em{font-style:normal;font-size:14px;color:var(--txt)}
+table{width:100%;border-collapse:collapse;font-size:14px;background:var(--paper);border:1px solid var(--line)}
+th,td{text-align:left;padding:10px 12px;border-top:1px solid var(--line);vertical-align:top}
+th{font-weight:600;background:#f7f9fb}
+td.n{text-align:right;white-space:nowrap}
+.next{padding:48px 0 64px}
+.next ol{padding-left:20px;margin:0;max-width:64ch}
+.next li{margin-bottom:6px}
+@media (max-width:820px){
+  h1{font-size:34px}h2{font-size:26px}
+  .opts{grid-template-columns:1fr}
+  .fam{grid-template-columns:1fr;gap:12px}
+  .step{grid-template-columns:44px 1fr}
+  .step em{grid-column:2}
+  .strip img{height:120px}
+  table{font-size:13px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>NextGenius: drei Markenfragen</h1>
+  <p>Die Seite hält sich heute zu 8 von 10 an ihr Markenblatt. Das Blatt ist aber nur ein Entwurf, abgeschrieben von dem, was die Seite schon tut. Diese drei Entscheidungen machen daraus feste Regeln.</p>
+  <span class="answer">Antwort im Chat, zum Beispiel: <b>1A, 2 alle behalten, 3A</b></span>
+</div></header>
+
+<section><div class="wrap">
+  <p class="q">Frage 1</p>
+  <h2>Welcher Grauton für Text und Flächen?</h2>
+  <p class="lead">Heute mischt die Seite zwei Grau-Familien. Kopfzeile, graue Bänder und die meisten Linien sind kühl, leicht bläulich wie das Navy. Text, Formularfelder und der Partner-Streifen sind warm, leicht olivgrün. Einzeln fällt das kaum auf, zusammen wirkt es unruhig. Die Bilder unten sind echte Aufnahmen der Seite.</p>
+  <div class="opts">
+    <div class="opt rec">
+      <h3>A: Kühl <span class="tag">Empfehlung</span></h3>
+      <p>Alles Grau leicht bläulich, passend zu Kopfzeile, Navy und den grauen Bändern. Ein Ton von oben bis unten. Beide Varianten sind gleich gut lesbar.</p>
+      <ul class="sw">
+        <li><i style="background:#16212b"></i>Text</li>
+        <li><i style="background:#55606c"></i>Nebentext</li>
+        <li><i style="background:#f7f9fb"></i>Feld</li>
+        <li><i style="background:#b6c0ca"></i>Feldrand</li>
+        <li><i style="background:#eef1f4"></i>Streifen</li>
+      </ul>
+      <img src="img/zoom-cool-form.png" alt="Kontaktformular mit kühlgrauen Feldern" width="660" height="290">
+      <img src="img/zoom-cool-services.png" alt="Leistungen auf der Startseite mit kühlgrauem Text" width="1070" height="120">
+    </div>
+    <div class="opt">
+      <h3>B: Warm</h3>
+      <p>So sehen Text und Felder heute aus: leicht olive, Felder cremefarben. Dann müssten auch die grauen Bänder und Linien warm werden, sonst bleibt die Mischung.</p>
+      <ul class="sw">
+        <li><i style="background:#20211d"></i>Text</li>
+        <li><i style="background:#5a5d55"></i>Nebentext</li>
+        <li><i style="background:#fcfcf7"></i>Feld</li>
+        <li><i style="background:#a6ad9f"></i>Feldrand</li>
+        <li><i style="background:#eeeee5"></i>Streifen</li>
+      </ul>
+      <img src="img/zoom-warm-form.png" alt="Kontaktformular mit cremefarbenen Feldern" width="660" height="290">
+      <img src="img/zoom-warm-services.png" alt="Leistungen auf der Startseite mit warmgrauem Text" width="1070" height="120">
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="q">Frage 2</p>
+  <h2>Welche Bildfamilien bleiben?</h2>
+  <p class="lead">Jede Familie hat eine Aufgabe auf der Seite. Was in keine Familie passt, wirkt fremd, auch wenn das Bild schön ist. Kunden- und Partnerlogos sind nicht Teil der Frage, die bleiben.</p>
+
+  <div class="fam">
+    <div><h3>1. Hafen Sydney</h3><p>Grosses Bild oben auf der Startseite. Ein Bild.</p><span class="rec">Bleibt, steht fest</span></div>
+    <div class="strip"><img src="img/fam-harbour.webp" alt="Sydney Harbour Bridge in der Abenddämmerung" width="320" height="240"></div>
+  </div>
+  <div class="fam">
+    <div><h3>2. Artikelbilder</h3><p>Schreibtisch, Notizen, Laptop. Titelbilder der Ratgeber-Artikel im Blog.</p><span class="rec">Empfehlung: behalten</span></div>
+    <div class="strip"><img src="img/fam-guides.webp" alt="Drei Artikelbilder: Notizzettel, Laptop, Notizblock" width="976" height="240"></div>
+  </div>
+  <div class="fam">
+    <div><h3>3. Anlässe</h3><p>Fotos von Meetups und Workshops. Seiten Community und Events.</p><span class="rec">Empfehlung: behalten</span></div>
+    <div class="strip"><img src="img/fam-events.webp" alt="Vier Fotos von Meetups mit Publikum" width="1304" height="240"></div>
+  </div>
+  <div class="fam">
+    <div><h3>4. Team</h3><p>Porträts auf der Seite Über uns.</p><span class="rec">Empfehlung: behalten</span></div>
+    <div class="strip"><img src="img/fam-team.webp" alt="Vier Porträts des Teams" width="792" height="240"></div>
+  </div>
+  <div class="fam">
+    <div><h3>5. Gemachte Menschenbilder</h3><p>Mit KI erstellt, Filmlook mit Bewegungsunschärfe. Erscheinen, wenn man über die drei Leistungen auf der Startseite fährt oder sie anklickt. Drei Bilder.</p><span class="open">Entschieden am 3. November: entfernt.</span></div>
+    <div class="strip"><img src="img/fam-generated.webp" alt="Drei erzeugte Bilder von Menschen im Büro" width="976" height="240"></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="q">Frage 3</p>
+  <h2>Acht feste Schriftgrössen?</h2>
+  <p class="lead">Auf 10 Seiten stehen heute 31 verschiedene Schriftgrössen (gezählt an 1132 Textstellen, auf einem breiten Bildschirm). 802 Stellen liegen schon auf den acht Stufen unten. Die übrigen 330 würden auf die nächste Stufe rücken, meist um 1 bis 3 Pixel.</p>
+  <div class="scale">
+    <div class="step"><b>68</b><span style="font-size:68px">Automate admin</span><em>Titel Startseite und Seitenkopf</em></div>
+    <div class="step"><b>46</b><span style="font-size:46px">Less copying. Fewer handovers.</span><em>Abschnittstitel</em></div>
+    <div class="step"><b>34</b><span style="font-size:34px">Have a project in mind?</span><em>Grössere Zwischentitel</em></div>
+    <div class="step"><b>26</b><span style="font-size:26px">Website chat and product enquiries</span><em>Karten- und Zwischentitel</em></div>
+    <div class="step"><b>20</b><span style="font-size:20px">Tell us which task is slowing your team down.</span><em>Einleitungssätze</em></div>
+    <div class="step"><b>16</b><span style="font-size:16px">As an OpenAI Select Partner, NextGenius helps small businesses put AI to work.</span><em>Fliesstext, Menü</em></div>
+    <div class="step"><b>14</b><span style="font-size:14px">Move enquiry details into customer records and keep routine updates moving.</span><em>Nebentext, Links</em></div>
+    <div class="step"><b>13</b><span style="font-size:13px">Sydney, Australia · Enquiry privacy · info@nextgenius.com.au</span><em>Kleinstes: Hinweise, Fusszeile</em></div>
+  </div>
+  <table>
+    <tr><th>Heute (Pixel)</th><th>Wo</th><th>Stellen</th><th>Neu</th></tr>
+    <tr><td>7,5</td><td>Zeile «TECH VENTURE» im Logo-Schriftzug</td><td class="n">10</td><td>bleibt, gehört zum Logo</td></tr>
+    <tr><td>10 bis 12</td><td>Kleine Hinweise, Ortsangabe, Nummern 01 bis 04</td><td class="n">52</td><td>13</td></tr>
+    <tr><td>15</td><td>Listen, Absätze, Schrift im Knopf «Free consultation»</td><td class="n">90</td><td>16</td></tr>
+    <tr><td>17,5</td><td>Kleine Überschrift über Abschnitten («Where we help»)</td><td class="n">56</td><td>16</td></tr>
+    <tr><td>18 bis 19</td><td>Einleitungssätze</td><td class="n">17</td><td>20</td></tr>
+    <tr><td>24 bis 30</td><td>Karten- und Zwischentitel</td><td class="n">77</td><td>26</td></tr>
+    <tr><td>31,5 bis 40</td><td>Grössere Zwischentitel</td><td class="n">10</td><td>34</td></tr>
+    <tr><td>43 bis 57,5</td><td>Abschnittstitel</td><td class="n">16</td><td>46</td></tr>
+    <tr><td>66</td><td>Titel Startseite</td><td class="n">2</td><td>68</td></tr>
+  </table>
+  <div class="opts" style="margin-top:28px">
+    <div class="opt rec"><h3>A: Acht Stufen <span class="tag">Empfehlung</span></h3><p>Jede Schrift auf der Seite ist eine dieser acht Grössen. Neue Seiten nehmen nur diese.</p></div>
+    <div class="opt"><h3>B: So lassen</h3><p>31 Grössen bleiben. Die Seite sieht aus wie heute, die Schrift bleibt beim Markenwert 7 von 10.</p></div>
+  </div>
+</div></section>
+
+<div class="next"><div class="wrap">
+  <h2>Danach</h2>
+  <ol>
+    <li>Ich trage deine Antworten ins Markenblatt ein und setze es von «Entwurf» auf «gilt ab heute».</li>
+    <li>Ich passe die Seite daran an.</li>
+    <li>Ich messe neu und zeige dir vorher und nachher auf deinem Rechner.</li>
+  </ol>
+</div></div>
+</body>
+</html>

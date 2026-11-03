@@ -1,0 +1,6 @@
+---
+import images from '../data/responsive-images.json';
+const { src, alt = '', width, height, sizes = '(max-width: 700px) 100vw, 50vw', ...props } = Astro.props;
+const image = images[src];
+---
+<img {...props} alt={alt} src={image?.variants.at(-1)?.src ?? src} srcset={image?.variants.map(v => `${v.src} ${v.width}w`).join(', ')} sizes={image ? sizes : undefined} width={width ?? image?.width} height={height ?? image?.height} />

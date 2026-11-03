@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Btn from '../components/Btn.astro';
+import Rows from '../components/Rows.astro';
+import { FAQ } from '../data/site.js';
+const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: FAQ.map((q) => ({ '@type': 'Question', name: q.title, acceptedAnswer: { '@type': 'Answer', text: q.text } })) };
+---
+<Base title="AI Meetup Sydney Questions | NextGenius" description="Direct answers to common questions about AI meetups in Sydney, learning AI, networking events, workshops and NextGenius." jsonld={jsonld}>
+<PageHero eyebrow="Common questions" title="Before you join a session." lead="Answers about experience levels, event calendars, team workshops and taking an idea into a project." unit="u095 u104" />
+
+<section class="sec white" data-unit="u096">
+  <div class="wrap"><Rows items={FAQ} /></div>
+</section>
+
+<section class="sec wrap">
+  <div class="split" data-unit="u137">
+    <div class="su"><h2 class="up">Choose your learning format</h2></div>
+    <p class="su" style="--i:1">Join a community session to explore and meet people, or discuss a private workshop built around your team. Check individual listings for the experience level and preparation.</p>
+  </div>
+  <div class="split" style="margin-top:var(--section-y)" data-unit="u103">
+    <h2 class="up ta">Want to learn with the community?</h2>
+    <div><p class="su">See our events, read the articles, or talk to us about a workshop for your team.</p><div class="btns su" style="--i:1"><Btn href="/events/" label="View events" /><a class="tlink" href="/workshops/">Explore workshops</a></div></div>
+  </div>
+</section>
+</Base>

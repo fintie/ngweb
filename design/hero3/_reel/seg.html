@@ -1,0 +1,37 @@
+<!doctype html><meta charset="utf-8"><title>reel segments (dev only)</title>
+<style>
+@font-face{font-family:SG;src:url(../fonts/schibsted-grotesk-latin-wght-normal.woff2);font-weight:400 900}
+*{margin:0;box-sizing:border-box}html,body{width:1600px;height:900px;overflow:hidden;background:#000;font-family:SG}
+.s{position:absolute;inset:0;display:none;overflow:hidden}.s.on{display:block}
+#logo{background:#3366ff;color:#fff;display:none;place-items:center}#logo.on{display:grid}#logo b{font-size:150px;font-weight:600;letter-spacing:-.045em}
+#letters{background:#fff}#letters h1{position:absolute;left:130px;top:50%;transform:translateY(-50%);font-weight:800;text-transform:uppercase;letter-spacing:-.05em;line-height:.86;background:url(../assets/cover-1.jpg) 0 0/1800px auto;-webkit-background-clip:text;background-clip:text;color:transparent}
+#busy{background:#000;color:#fff}#busy div{position:absolute;left:130px;right:60px;font-size:225px;font-weight:600;letter-spacing:-.05em;text-transform:uppercase;line-height:1;overflow:hidden}#busy span{display:block}
+#busy em{font-style:normal;background:linear-gradient(90deg,#6f93ff,#3366ff 60%,#9a7bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+#app{background:#000}#app .bg{position:absolute;inset:-6%;background-size:cover;background-position:center}
+#app .win{position:absolute;left:50%;top:50%;width:1120px;height:700px;margin:-350px 0 0 -560px;border-radius:14px;overflow:hidden;box-shadow:0 40px 120px rgba(0,0,0,.6);background:#111}#app .win img{width:100%;height:100%;object-fit:cover;object-position:top}
+#app .tag{position:absolute;left:130px;bottom:34px;color:#fff;font-size:30px;font-weight:600;letter-spacing:-.02em}
+#graph{background:#000}#graph canvas{position:absolute;inset:0}#graph p{position:absolute;left:130px;bottom:50px;color:#fff;font-size:44px;font-weight:500;letter-spacing:-.03em}
+</style>
+<div class="s" id="logo"><b>NextGenius</b></div>
+<div class="s" id="letters"><h1><span id="lt1">One</span><br><span id="lt2">workflow</span></h1></div>
+<div class="s" id="busy"><div style="top:190px"><span id="b1">Less</span></div><div style="top:440px"><span id="b2"><em>busywork.</em></span></div></div>
+<div class="s" id="app"><div class="bg" id="abg"></div><div class="win"><img id="aimg"></div><div class="tag" id="atag"></div></div>
+<div class="s" id="graph"><canvas id="cv" width="1600" height="900"></canvas><p>Company knowledge, connected.</p></div>
+<script>
+const $=s=>document.querySelector(s);const E=t=>t<0?0:t>1?1:1-Math.pow(1-t,3);
+let G;const spr=document.createElement('canvas');spr.width=spr.height=64;{const x=spr.getContext('2d'),g=x.createRadialGradient(32,32,0,32,32,32);g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(.18,'rgba(190,210,255,.9)');g.addColorStop(.45,'rgba(70,120,255,.28)');g.addColorStop(1,'rgba(40,80,255,0)');x.fillStyle=g;x.fillRect(0,0,64,64)}
+window.prep=async()=>{await document.fonts.load('600 150px SG');await document.fonts.ready;G=await (await fetch('../assets/graph-3d.json')).json();
+  const h=$('#letters h1');h.parentElement.classList.add('on');let f=320;h.style.fontSize=f+'px';f=f*1340/Math.max($('#lt1').offsetWidth,$('#lt2').offsetWidth);h.style.fontSize=f+'px';h.parentElement.classList.remove('on')};
+const show=id=>document.querySelectorAll('.s').forEach(s=>s.classList.toggle('on',s.id===id));
+window.seek=async(seg,t,dur)=>{
+  if(seg==='logo'){show('logo');$('#logo b').style.transform=`scale(${1+t*.025})`}
+  if(seg==='letters'){show('letters');$('#letters h1').style.backgroundPosition=`${-40-t*70}px ${-260-t*42}px`}
+  if(seg==='busy'){show('busy');$('#b1').style.transform=`translateY(${(1-E(t/.7))*100}%)`;$('#b2').style.transform=`translateY(${(1-E((t-.14)/.7))*100}%)`}
+  if(seg==='graph'){show('graph');const c=$('#cv').getContext('2d');c.globalCompositeOperation='source-over';c.fillStyle='#000';c.fillRect(0,0,1600,900);const a=.5+t*.26,ca=Math.cos(a),sa=Math.sin(a),ct=Math.cos(.25),st=Math.sin(.25),S=470;
+    const P=G.n.map(n=>{const x=n[0]*ca-n[2]*sa,z0=n[0]*sa+n[2]*ca,y=n[1]*ct-z0*st,z=n[1]*st+z0*ct,p=1+z*.3;return[800+x*S*p*1.25,430+y*S*p,p]});
+    c.globalCompositeOperation='lighter';c.lineWidth=1;c.strokeStyle='rgba(110,150,255,.2)';c.beginPath();for(const[i,j]of G.l){c.moveTo(P[i][0],P[i][1]);c.lineTo(P[j][0],P[j][1])}c.stroke();
+    G.n.forEach((n,i)=>{const[x,y,p]=P[i],r=(5+Math.sqrt(n[3])*3.6)*p;c.globalAlpha=Math.min(1,Math.max(.25,.3+(p-.7)*1.1));c.drawImage(spr,x-r,y-r,2*r,2*r)});c.globalAlpha=1}
+  if(seg.startsWith('app:')){show('app');const[,n,cover,tag]=seg.split(':');$('#abg').style.backgroundImage=`url(../assets/${cover}.jpg)`;$('#abg').style.transform=`scale(${1+t*.03}) translateY(${-t*6}px)`;$('#atag').textContent=tag;
+    const img=$('#aimg');img.src=`${n}/${String(Math.min(95,Math.floor(t*30)+1)).padStart(3,'0')}.jpg`;await img.decode().catch(()=>{})}
+};
+</script>

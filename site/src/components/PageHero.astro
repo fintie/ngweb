@@ -1,0 +1,9 @@
+---
+const { eyebrow, title, lead, unit } = Astro.props;
+---
+<section class="phero wrap" data-unit={unit}>
+  {eyebrow && <p class="eyebrow su">{eyebrow}</p>}
+  <h1 class="ta">{title}</h1>
+  {lead && <p class="lead su" style="--i:1">{lead}</p>}
+  <div class="su" style="--i:2"><slot /></div>
+</section>

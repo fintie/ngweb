@@ -1,0 +1,15 @@
+---
+import Btn from './Btn.astro';
+const { showGuideLink = true } = Astro.props;
+---
+<section class="sec wrap" id="first-engagement">
+  <div class="section-heading"><div><p class="eyebrow">From conversation to proposal</p><h2>Understand the task. Then plan the build.</h2></div><p>A good brief connects a business problem to the people, information and systems involved. Here is how we develop it with you.</p></div>
+  <div class="guide-grid">
+    <div><h3>Describe the task</h3><p>Show us what starts it, who handles it and where time gets lost. A general example is enough for the first conversation.</p></div>
+    <div><h3>Choose the approach</h3><p>Review the existing tools and integration options. Decide whether the task calls for configuration, automation, AI assistance or custom software.</p></div>
+    <div><h3>Review the proposal</h3><p>Agree deliverables, fees, milestones and acceptance criteria before paid work starts. Include software subscriptions and support in the decision.</p></div>
+    <div><h3>Test with your team</h3><p>Use representative tasks and exceptions to assess the build. Review staff effort and quality before expanding its use.</p></div>
+  </div>
+  <div class="buying-note"><p><strong>What affects the estimate?</strong> The number of systems, integration access, source information, exception handling and testing requirements. We review these inputs before estimating delivery.</p></div>
+  <div class="btns"><Btn href="/contact/" label="Discuss one workflow" />{showGuideLink && <a class="tlink" href="/getting-started/">What to expect before you start</a>}</div>
+</section>

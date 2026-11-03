@@ -1,0 +1,74 @@
+---
+import Base from '../layouts/Base.astro';
+import Btn from '../components/Btn.astro';
+import { OFFERS, PATH } from '../data/site.js';
+import { clients } from '../data/clients.js';
+import { ARTICLES } from '../data/articles.js';
+import ResponsiveImage from '../components/ResponsiveImage.astro';
+const clientCompanies = clients.filter(client => !client.partner);
+// Line pictograms (IBM Carbon, Apache-2.0, see src/icons/carbon/NOTICE): one ink colour, no box, IBM-style.
+import pAutomate from '../icons/carbon/process--automation.svg?raw';
+import pKnowledge from '../icons/carbon/documentation.svg?raw';
+import pConnect from '../icons/carbon/connect--applications.svg?raw';
+import pDiscover from '../icons/carbon/idea.svg?raw';
+import pPlan from '../icons/carbon/review-checklist.svg?raw';
+import pTest from '../icons/carbon/pilot-test.svg?raw';
+import pSupport from '../icons/carbon/support.svg?raw';
+const offerPictos = [pAutomate, pKnowledge, pConnect];
+const pathPictos = [pDiscover, pPlan, pTest, pSupport];
+const reading = ARTICLES.filter(a => a.practical).slice(0, 3).map((a, i) => ({ title: a.title, text: a.lead, href: '/blog/' + a.slug + '/', tag: a.category, tone: i ? 'blue' : 'peach', cover: a.cover }));
+---
+<Base title="AI Automation & Custom Software Sydney | NextGenius" description="AI automation. Made Simple. Automate admin, answer customer enquiries and connect your systems with NextGenius, an OpenAI Select Partner.">
+  <section class="feature wrap" data-unit="u001 u018">
+    <ResponsiveImage class="feature-bg" src="/img/sydney-harbour-hero-a.webp" sizes="(max-width: 700px) 1200px, 100vw" alt="" width="1672" height="941" fetchpriority="high" decoding="async" />
+    <div class="feature-copy">
+      <h1>AI automation<br><span class="hero-simple">Made Simple</span></h1>
+      <p class="feature-lead">Handle customer enquiries, automate admin and connect your business software. We build AI assistants and custom applications for Australian small and medium businesses, with training and support for your team.</p>
+      <div class="btns"><Btn href="/contact/" label="Book a free consultation" /><a class="tlink" href="/getting-started/">How your first project starts</a></div>
+    </div>
+    <div class="hero-trust client-section" id="companies" role="region" aria-labelledby="client-heading" aria-roledescription="carousel" data-unit="u178">
+    <div class="hero-trust-head"><h2 id="client-heading">Trusted by companies across Australia</h2><p class="feature-location">OpenAI Select Partner · Sydney-based · Australia-wide</p></div>
+    <div class="client-viewport">
+    <ul class="client-logos" id="client-logos" role="list" tabindex="0" aria-label="Company logos. Focus to pause. Use the left and right arrow keys to browse, or Space to toggle animation.">
+      {clientCompanies.map((client) => <li><img class={`client-logo client-logo-${client.id}`} src={`/img/clients/${client.id}.webp`} alt={client.name} width={client.width} height={client.height} decoding="async" /></li>)}
+    </ul>
+    </div>
+    </div>
+  </section>
+
+  <section class="editorial-section services-section" data-unit="u002">
+    <div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">Where we help</p><h2>Less copying. Fewer handovers.<br>Answers within reach.</h2></div><p>Connect the work that currently moves between inboxes, spreadsheets and separate systems.</p></div>
+      <div class="service-list">{OFFERS.map((o, i) => <a class="service-item" href={o.href} data-unit={o.unit}><span class="picto" aria-hidden="true" set:html={offerPictos[i]}></span><h3>{o.title}</h3><p>{o.text}</p><span class="sr-only">{o.cta}</span></a>)}</div>
+      <div class="editorial-note"><p>Our services span automation, software development, AI strategy and team training.</p><a class="tlink" href="/solutions/">Explore services </a></div>
+    </div>
+  </section>
+
+  <section class="editorial-section wrap" data-unit="u010">
+    <div class="section-heading"><div><p class="eyebrow">From discovery to delivery</p><h2>From your first workflow<br>to a working system.</h2></div><a class="tlink" href="/about/">Meet the team</a></div>
+    <div class="process-grid">{PATH.map((p, i) => <article data-unit={p.unit}><span class="picto" aria-hidden="true" set:html={pathPictos[i]}></span><span class="sr-only">Step {i + 1}</span><h3>{p.title}</h3><p>{p.text}</p></article>)}</div>
+    <div class="operations-note"><p>Have a project in mind?</p><ol><li>Tell us where work gets stuck.</li><li>Show us the tools your team relies on.</li><li>Discuss the best approach together.</li></ol></div>
+    <div class="btns"><a class="tlink" href="/getting-started/">What to expect from your first engagement</a></div>
+  </section>
+
+  <section class="community-feature" data-unit="u016">
+    <div class="wrap community-layout">
+      <figure class="community-photo"><ResponsiveImage src="/img/community-gathering.png" alt="Community members gathered together at a Sydney event" width="1537" height="1023" loading="lazy" decoding="async" /><figcaption><span class="community-art-label">A place to learn together.</span><span>Sydney, Australia</span></figcaption></figure>
+      <div><p class="eyebrow">Beyond the project</p><h2>Build independently.<br>Learn together.</h2><p>Meet the people experimenting, building and sharing what they learn through AI Learners Club and the NextGenius community.</p><p>Join a Sydney or online gathering, explore a workshop, or contribute to our emerging network for one-person businesses.</p><div class="btns"><Btn href="/community/" label="Find your community" variant="o" /><a class="tlink" href="/workshops/">Team workshops</a><a class="tlink" href="/events/">Events</a></div></div>
+    </div>
+  </section>
+
+  <section class="partner-feature wrap" data-unit="u166"><div><p class="eyebrow">OpenAI Select Partner</p><h2>AI technology.<br>Implementation expertise.</h2><p>As an OpenAI Select Partner, NextGenius helps Australian businesses put OpenAI technology to work through practical AI assistants, connected workflows and business integrations. We scope, prototype and test each solution around your team’s needs.</p><Btn href="/solutions/openai-integration/" label="Explore our OpenAI Select partnership" variant="o" /></div><div class="partner-preview partner-preview-openai" aria-hidden="true"><ResponsiveImage sizes="(max-width: 700px) 45vw, 25vw" src="/img/partners/openai.webp" alt="" width="1200" height="600" loading="lazy" /></div></section>
+
+  <section class="editorial-section reading-section wrap" id="practical-guides">
+    <div class="section-heading"><div><p class="eyebrow">Practical buying guidance</p><h2>Make your first project a useful one.</h2></div><a class="tlink" href="/blog/">Explore the blog</a></div>
+    <div class="story-grid">{reading.map((r) => <article class="story"><a class:list={['reading-art', r.tone]} href={r.href} aria-label={r.title}><ResponsiveImage src={r.cover} sizes="(max-width: 700px) 100vw, 33vw" alt="" loading="lazy" /></a><div class="story-heading"><h3><a href={r.href}>{r.title}</a></h3></div><p>{r.text}</p><div class="story-tags"><span class="tag">Blog</span><span class="tag round">{r.tag}</span></div></article>)}</div>
+  </section>
+</Base>
+
+<style>
+  .hero-simple{position:relative;display:inline-block;white-space:nowrap}
+  .hero-simple::after{content:"";position:absolute;left:0;right:0;bottom:-.08em;height:.055em;min-height:3px;background:#efb810;border-radius:100%;transform:scaleX(1);transform-origin:left center;animation:draw-underline 1s cubic-bezier(.22,1,.36,1) .35s both}
+  @keyframes draw-underline{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @media(prefers-reduced-motion:reduce){.hero-simple::after{animation:none}}
+</style>

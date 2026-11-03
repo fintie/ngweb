@@ -1,0 +1,13 @@
+---
+// Open and close rows: services, workshop topics, questions. Same behaviour everywhere.
+const { items, first = true } = Astro.props;
+---
+<div class="rows">
+  {items.map((r, i) => (
+    <div class:list={['row sa', { open: first && i === 0 }]} id={r.id} data-unit={r.unit}>
+      {r.aliases?.map((id) => <span id={id} aria-hidden="true"></span>)}
+      <button aria-expanded={first && i === 0 ? 'true' : 'false'} data-cursor="Open"><span class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="t">{r.title}</span><span class="ticks"></span></button>
+      <div class="body"><div class="body-in"><div><p>{r.text}</p>{r.link && <a class="tlink" href={r.link.href}>{r.link.label}</a>}{r.links && <div class="service-links">{r.links.map(link => <a class="tlink" href={link.href}>{link.label}</a>)}</div>}</div>{r.items && <ul>{r.items.map((x) => <li>{x}</li>)}</ul>}</div></div>
+    </div>
+  ))}
+</div>

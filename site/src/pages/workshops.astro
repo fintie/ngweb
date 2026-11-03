@@ -1,0 +1,38 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Btn from '../components/Btn.astro';
+import Rows from '../components/Rows.astro';
+import ResponsiveImage from '../components/ResponsiveImage.astro';
+const topics = [
+  { unit: 'u071', id: 'agents', title: 'AI agent design and development', text: 'Explore how agents follow instructions, plan tasks and use tools. Work through the decisions involved in connecting an agent to business systems.', items: ['How agents are structured and make decisions', 'Task planning and several agents working together', 'Calling tools and connecting to outside systems', 'Evaluation, safety and guardrails'] },
+  { unit: 'u072', id: 'machine-learning', title: 'Machine learning for business', text: 'Learn when machine learning fits a business problem, how data is prepared and how a model is trained, checked and monitored.', items: ['Supervised and unsupervised learning basics', 'Preparing data and building model inputs (feature engineering)', 'Training, checking and deploying a model', 'Monitoring a model over its life'] },
+  { unit: 'u073', id: 'mcp', title: 'MCP: connecting AI to your tools', text: 'Use MCP (Model Context Protocol) to connect assistants with tools and data. Explore server setup, permissions and integration patterns.', items: ['How MCP works and how to set up a server', 'Building custom tools and resources', 'Security, authentication and access control', 'Real-world connection patterns'] },
+  { unit: 'u074', id: 'skills', title: 'Agent skills and capability design', text: 'Break an agent’s task into capabilities, instructions and limits. Explore how context, memory and tests shape its behaviour.', items: ['Mapping skills and capabilities', 'Instruction patterns for reliable results', 'Memory, context and keeping track of state', 'Testing and improving step by step'] },
+  { unit: 'u075', id: 'harness', title: 'Harness engineering', text: 'Build the testing and monitoring around an agent: representative tasks, traces, feedback and rollback plans.', items: ['Evaluation and benchmarking', 'Logging, tracing and being able to see what the agent did', 'Feedback loops and continuous improvement', 'Going live and rolling back safely'] },
+];
+const photos = ['01', '02', '03', '04', '05', '06', '07', '08'];
+---
+<Base title="AI Agent & Automation Workshops for Teams | NextGenius" description="Practical, hands-on workshops that help teams understand and use AI agents, connected tools and machine learning, designed around your team's goals." noTalk={true}>
+<PageHero eyebrow="Workshops" title="Give your team room to learn by doing." lead="Work through AI agents, automation and machine learning with explanations, live demonstrations and hands-on tasks matched to your team’s experience." unit="u069 u077">
+  <div class="btns"><Btn href="/contact/" label="Ask about a workshop" /></div>
+</PageHero>
+
+<div data-cursor="Drag" class="mq gal" data-unit="u071" aria-label="Photos from NextGenius workshops"><div>{photos.map((n) => <span><ResponsiveImage src={`/img/workshop-${n}.jpg`} sizes="(max-width: 480px) 75vw, 360px" alt="People at a NextGenius workshop session" loading="lazy" /></span>)}</div></div>
+
+<section class="sec white" style="margin-top:var(--section-y)" data-unit="u070">
+  <div class="wrap">
+    <p class="eyebrow su">What you will learn</p>
+    <h2 class="up ta" style="margin-top:var(--space-3);max-width:18em">Theory, live demos and hands-on work.</h2>
+    <p class="lead su" style="margin-top:var(--space-4);--i:1">Choose topics based on the work your team wants to understand. We discuss experience level and preparation when planning the session.</p>
+    <Rows items={topics} />
+  </div>
+</section>
+
+<section class="sec wrap" data-unit="u076">
+  <div class="split">
+    <h2 class="up ta">Plan a session for your team.</h2>
+    <div><p class="su">Tell us who will attend, what they already know and what they want to be able to do. Include your preferred format and any timing constraints.</p><p class="su" style="--i:1">We will discuss the topics, hands-on activities and preparation with you before booking.</p><div class="btns su" style="--i:2"><Btn href="/contact/" label="Ask about a workshop" /></div></div>
+  </div>
+</section>
+</Base>

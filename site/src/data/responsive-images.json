@@ -1,0 +1,604 @@
+{
+  "/img/sydney-harbour-hero-a.webp": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/img/optimised/sydney-harbour-hero-a-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/sydney-harbour-hero-a-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/sydney-harbour-hero-a-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/img/optimised/sydney-harbour-hero-a-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/img/community-gathering.png": {
+    "width": 1537,
+    "height": 1023,
+    "variants": [
+      {
+        "src": "/img/optimised/community-gathering-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/community-gathering-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/community-gathering-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/img/optimised/community-gathering-1537.webp",
+        "width": 1537
+      }
+    ]
+  },
+  "/img/workshop-01.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "src": "/img/optimised/workshop-01-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/workshop-01-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/workshop-01-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/img/workshop-02.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "src": "/img/optimised/workshop-02-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/workshop-02-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/workshop-02-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/img/workshop-03.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "src": "/img/optimised/workshop-03-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/workshop-03-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/workshop-03-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/img/workshop-04.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "src": "/img/optimised/workshop-04-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/workshop-04-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/workshop-04-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/img/workshop-05.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "src": "/img/optimised/workshop-05-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/workshop-05-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/workshop-05-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/img/workshop-06.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "src": "/img/optimised/workshop-06-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/workshop-06-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/workshop-06-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/img/workshop-07.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "src": "/img/optimised/workshop-07-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/workshop-07-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/workshop-07-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/img/workshop-08.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "src": "/img/optimised/workshop-08-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/workshop-08-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/workshop-08-1280.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "/img/blog/altamir-partnership.webp": {
+    "width": 1120,
+    "height": 560,
+    "variants": [
+      {
+        "src": "/img/optimised/blog-altamir-partnership-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/blog-altamir-partnership-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/blog-altamir-partnership-1120.webp",
+        "width": 1120
+      }
+    ]
+  },
+  "/img/blog/founder-institute-partnership.webp": {
+    "width": 1120,
+    "height": 560,
+    "variants": [
+      {
+        "src": "/img/optimised/blog-founder-institute-partnership-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/blog-founder-institute-partnership-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/blog-founder-institute-partnership-1120.webp",
+        "width": 1120
+      }
+    ]
+  },
+  "/img/blog/lassie-ed-partnership.webp": {
+    "width": 1120,
+    "height": 560,
+    "variants": [
+      {
+        "src": "/img/optimised/blog-lassie-ed-partnership-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/blog-lassie-ed-partnership-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/blog-lassie-ed-partnership-1120.webp",
+        "width": 1120
+      }
+    ]
+  },
+  "/img/blog/openai-select-partnership.webp": {
+    "width": 1120,
+    "height": 560,
+    "variants": [
+      {
+        "src": "/img/optimised/blog-openai-select-partnership-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/blog-openai-select-partnership-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/blog-openai-select-partnership-1120.webp",
+        "width": 1120
+      }
+    ]
+  },
+  "/img/blog/practical/assistant-testing.jpg": {
+    "width": 1600,
+    "height": 1000,
+    "variants": [
+      {
+        "src": "/img/optimised/blog-practical-assistant-testing-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/blog-practical-assistant-testing-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/blog-practical-assistant-testing-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/img/optimised/blog-practical-assistant-testing-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/img/blog/practical/project-costs.jpg": {
+    "width": 1600,
+    "height": 1000,
+    "variants": [
+      {
+        "src": "/img/optimised/blog-practical-project-costs-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/blog-practical-project-costs-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/blog-practical-project-costs-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/img/optimised/blog-practical-project-costs-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/img/blog/practical/workflow-planning.jpg": {
+    "width": 1600,
+    "height": 1000,
+    "variants": [
+      {
+        "src": "/img/optimised/blog-practical-workflow-planning-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/blog-practical-workflow-planning-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/blog-practical-workflow-planning-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/img/optimised/blog-practical-workflow-planning-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/img/blog/ai-networking-august-2026/group-1.webp": {
+    "width": 1536,
+    "height": 1022,
+    "variants": [
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-1-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-1-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-1-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-1-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/img/blog/ai-networking-august-2026/group-2.webp": {
+    "width": 1536,
+    "height": 1022,
+    "variants": [
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-2-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-2-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-2-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-2-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/img/blog/ai-networking-august-2026/group-3.webp": {
+    "width": 1536,
+    "height": 1022,
+    "variants": [
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-3-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-3-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-3-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/img/optimised/blog-ai-networking-august-2026-group-3-1536.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/img/team/dennis-singh.webp": {
+    "width": 800,
+    "height": 1200,
+    "variants": [
+      {
+        "src": "/img/optimised/team-dennis-singh-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/team-dennis-singh-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/img/team/dev-roy-portrait.webp": {
+    "width": 800,
+    "height": 800,
+    "variants": [
+      {
+        "src": "/img/optimised/team-dev-roy-portrait-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/team-dev-roy-portrait-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/img/team/dev-roy-upscaled.webp": {
+    "width": 2048,
+    "height": 2048,
+    "variants": [
+      {
+        "src": "/img/optimised/team-dev-roy-upscaled-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/team-dev-roy-upscaled-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/team-dev-roy-upscaled-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/img/optimised/team-dev-roy-upscaled-1680.webp",
+        "width": 1680
+      }
+    ]
+  },
+  "/img/team/dev-roy.webp": {
+    "width": 622,
+    "height": 728,
+    "variants": [
+      {
+        "src": "/img/optimised/team-dev-roy-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/team-dev-roy-622.webp",
+        "width": 622
+      }
+    ]
+  },
+  "/img/team/lukas-huber.webp": {
+    "width": 800,
+    "height": 800,
+    "variants": [
+      {
+        "src": "/img/optimised/team-lukas-huber-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/team-lukas-huber-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/img/team/nicholas-qi.webp": {
+    "width": 800,
+    "height": 800,
+    "variants": [
+      {
+        "src": "/img/optimised/team-nicholas-qi-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/team-nicholas-qi-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/img/partners/altamir.webp": {
+    "width": 1200,
+    "height": 600,
+    "variants": [
+      {
+        "src": "/img/optimised/partners-altamir-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/partners-altamir-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/partners-altamir-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/img/partners/founder-institute.webp": {
+    "width": 1200,
+    "height": 600,
+    "variants": [
+      {
+        "src": "/img/optimised/partners-founder-institute-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/partners-founder-institute-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/partners-founder-institute-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/img/partners/lassie-ed.webp": {
+    "width": 1200,
+    "height": 600,
+    "variants": [
+      {
+        "src": "/img/optimised/partners-lassie-ed-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/partners-lassie-ed-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/partners-lassie-ed-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/img/partners/openai.webp": {
+    "width": 1200,
+    "height": 600,
+    "variants": [
+      {
+        "src": "/img/optimised/partners-openai-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/partners-openai-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/partners-openai-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/img/partners/schnellstart.webp": {
+    "width": 1200,
+    "height": 600,
+    "variants": [
+      {
+        "src": "/img/optimised/partners-schnellstart-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/partners-schnellstart-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/img/optimised/partners-schnellstart-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/img/communities/ai-learners-club.webp": {
+    "width": 640,
+    "height": 700,
+    "variants": [
+      {
+        "src": "/img/optimised/communities-ai-learners-club-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/communities-ai-learners-club-640.webp",
+        "width": 640
+      }
+    ]
+  },
+  "/img/communities/nextgenius.webp": {
+    "width": 640,
+    "height": 640,
+    "variants": [
+      {
+        "src": "/img/optimised/communities-nextgenius-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/img/optimised/communities-nextgenius-640.webp",
+        "width": 640
+      }
+    ]
+  }
+}

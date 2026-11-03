@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import ResponsiveImage from '../components/ResponsiveImage.astro';
+import PageHero from '../components/PageHero.astro';
+import Btn from '../components/Btn.astro';
+import Cols from '../components/Cols.astro';
+import Form from '../components/Form.astro';
+const ways = [
+  { unit: 'u053', title: 'Meet other builders', text: 'Exchange ideas, see what people have built and connect with founders, engineers and operators.', cta: 'Explore events', href: '/events/' },
+  { unit: 'u054', title: 'Learn through practice', text: 'Explore AI agents, automation and how to put them to work through practical workshops.', cta: 'Explore workshops', href: '/workshops/' },
+  { unit: 'u055', title: 'Share what you discover', text: 'Read practical guides and bring your questions into the community conversation.', cta: 'Read insights', href: '/blog/' },
+];
+---
+<Base title="Community Ecosystem | AI Learners Club & NextGenius" description="Explore AI Learners Club for practical AI learning and NextGenius on Luma for community events. Find your community in Sydney and online." noTalk={true}>
+<PageHero eyebrow="Community Ecosystem" title="Learn AI. Meet builders. Share what you create." lead="Meet people learning AI, building products and starting businesses in Sydney and online. Find a group, browse its calendar and join a session that interests you." unit="u051 u057">
+  <div class="btns"><Btn href="/events/" label="Find an event" /><a class="tlink" href="https://ailearnersclub.com/" target="_blank" rel="noopener">Explore AI Learners Club</a></div>
+</PageHero>
+
+<section class="sec wrap" style="padding-top:0">
+  <div data-unit="u167"><div class="section-heading"><h2>Our Community Ecosystem</h2><p>AI Learners Club focuses on learning. NextGenius brings people together around technology and business.</p></div>
+  <div class="community-showcase">
+    <article class="community-profile" id="ai-learners-club"><div class="community-logo club"><ResponsiveImage src="/img/communities/ai-learners-club.webp" alt="AI Learners Club logo" width="640" height="685" /></div><div class="community-profile-copy"><p class="eyebrow">Learn AI together</p><h2>AI Learners Club</h2><p>A beginner-friendly place to ask questions, explore AI tools and learn through projects with others.</p><p style="margin-top:var(--space-4)">Explore our <a href="https://www.meetup.com/ailearnersclub/" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:4px">AI Learners Club event calendar on Meetup</a> for upcoming sessions and registration.</p><ul><li>Hands-on workshops and project conversations</li><li>Community-led learning and shared resources</li><li>Online sessions and in-person Sydney meetups</li></ul><p class="small">Owned and operated by Next Genius Pty Ltd.</p><a class="tlink" href="https://ailearnersclub.com/" target="_blank" rel="noopener">Explore AI Learners Club</a></div></article>
+    <article class="community-profile" id="nextgenius-community"><div class="community-logo nextgenius"><ResponsiveImage src="/img/communities/nextgenius.webp" alt="NextGenius community lightbulb logo" width="640" height="640" /></div><div class="community-profile-copy"><p class="eyebrow">Meet and connect</p><h2>NextGenius</h2><p>Meet people interested in <a href="https://www.meetup.com/ailearnersclub/events/314084234/" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:4px">AI × Web3 × Startup</a>. Share ideas with founders and professionals exploring how technology can shape their businesses.</p><p style="margin-top:var(--space-4)">Browse gatherings and RSVP through our Luma calendar.</p><ul><li>Conversations about technology and business</li><li>Connections across the founder community</li><li>Sydney gatherings and online events</li></ul><a class="tlink" href="https://luma.com/nextgenius/" target="_blank" rel="noopener">Explore NextGenius on Luma</a></div></article>
+  </div></div>
+  <Cols items={ways} />
+</section>
+
+<section class="sec white" data-unit="u056">
+  <div class="wrap split">
+    <div>
+      <span class="tag su" style="border-color:var(--lineD)">Forming · Expressions of interest</span>
+      <p class="eyebrow su" style="margin-top:var(--space-4)">Australian network for one-person businesses</p>
+      <h2 class="up ta">Building solo does not have to mean working alone.</h2>
+      <p class="su">We are exploring a network for people running a business with AI, automation and outside specialists.</p>
+      <p class="su" style="--i:1">The proposed format is small-group conversations, shared workflows and introductions between people with complementary skills.</p>
+      <ul class="ticklist su" style="--i:2"><li>Exchange tools, workflows and lessons from real projects.</li><li>Find complementary expertise in development, industries and winning customers.</li><li>Explore joint projects and introductions where there is a clear fit.</li></ul>
+      <p class="small su" style="margin-top:var(--space-4);--i:3">The network is in development. Membership arrangements and a schedule have not been announced; express interest to help shape it.</p>
+    </div>
+    <div class="sa"><h3 style="font-size:clamp(24px,2.6vw,42px);font-weight:500;letter-spacing:-.03em;margin-bottom:var(--space-1)">Help shape the network</h3><p style="margin-bottom:var(--space-5)">What are you working on, and who would you like to meet?</p><Form subject="Network interest" question="What are you building, and what collaboration would help?" picked="One-person business network" /></div>
+  </div>
+</section>
+</Base>
+
+<style>
+.community-showcase{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);margin-bottom:var(--space-8)}.community-profile{border-top:1px solid var(--lineD);padding-top:var(--space-5);min-width:0}.community-logo{height:300px;display:flex;align-items:center;justify-content:center;background:#edf0e9;border-radius:4px;overflow:hidden}.community-logo img{height:85%;width:85%;object-fit:contain}.community-logo.nextgenius{background:radial-gradient(ellipse at 65% 20%,#003858 0%,#00243e 48%,#001326 100%);border-bottom:3px solid #ffd000}.community-logo.nextgenius img{height:100%;width:100%;object-fit:contain;mix-blend-mode:lighten}.community-profile-copy{padding-top:var(--space-5)}.community-profile-copy h2{margin:var(--space-3) 0 var(--space-4)}.community-profile-copy p:not(.eyebrow){color:var(--txt);line-height:1.65}.community-profile-copy ul{padding-left:var(--space-4);margin:var(--space-4) 0;line-height:1.8;color:var(--txt)}.community-profile-copy .tlink{display:inline-block;margin-top:var(--space-5)}@media(max-width:700px){.community-showcase{grid-template-columns:1fr;gap:var(--space-7)}.community-logo{height:260px}}
+</style>

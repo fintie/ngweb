@@ -1,0 +1,22 @@
+---
+// Columns with thin lines. A column with a link is clickable as a whole.
+const { items, numbered = false } = Astro.props;
+---
+<div class="cols" style={`--n:${items.length > 3 ? 3 : items.length}`}>
+  {items.map((c, i) => {
+    const Tag = c.href ? 'a' : 'div';
+    const ext = c.href && /^https?:/.test(c.href);
+    return (
+      <Tag class="col sa" href={c.href} data-unit={c.unit} data-cursor={c.href ? 'Open' : undefined} target={ext ? '_blank' : undefined} rel={ext ? 'noopener' : undefined}>
+        {numbered && <span class="no">{String(i + 1).padStart(2, '0')}</span>}
+        {c.meta && <small>{c.meta}</small>}
+        <h3>{c.title}</h3>
+        {c.text && <p>{c.text}</p>}
+        {c.note && <small>{c.note}</small>}
+        {c.items && <small>{c.items.join(' · ')}</small>}
+        {c.cta && <span class="tlink">{c.cta}</span>}
+        {c.links && <span class="links2">{c.links.map((l) => <a class="tlink" href={l.href}>{l.label}</a>)}</span>}
+      </Tag>
+    );
+  })}
+</div>
