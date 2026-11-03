@@ -2,6 +2,7 @@ name: Publish NextGenius to GitHub Pages
 on:
   push:
     branches: ['codex/nextgenius-package-2026-11-03']
+    paths: ['.package-import/ready', 'site/**', 'tools/write-redirects.mjs']
   workflow_dispatch:
 permissions:
   contents: read
@@ -22,8 +23,8 @@ jobs:
           root = pathlib.Path('.')
           parts = sorted(root.glob('.package-import/nextgenius.zip.part*'))
           if parts:
-              if len(parts) != 4:
-                  raise SystemExit('Expected all four archive parts')
+              if len(parts) != 13:
+                  raise SystemExit('Expected all thirteen archive parts')
               data = b''.join(p.read_bytes() for p in parts)
               if hashlib.sha256(data).hexdigest() != 'f77c250971d0846d4edb29cef7b3fbc440074043d7080cb15ad6dff676933248':
                   raise SystemExit('Archive checksum mismatch')
