@@ -2,7 +2,7 @@ name: Publish NextGenius to GitHub Pages
 on:
   push:
     branches: ['codex/nextgenius-package-2026-11-03']
-    paths: ['.package-import/ready', 'site/**', 'tools/write-redirects.mjs']
+    paths: ['site/**', 'tools/write-redirects.mjs', '.github/workflows/nextgenius-pages.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -12,51 +12,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v6
-      - name: Import checksum-verified package when upload parts exist
-        shell: python
-        run: |
-          import hashlib, io, pathlib, shutil, stat, zipfile
-          root = pathlib.Path('.')
-          parts = sorted(root.glob('.package-import/nextgenius.zip.part*'))
-          if parts:
-              if len(parts) != 13:
-                  raise SystemExit('Expected all thirteen archive parts')
-              data = b''.join(p.read_bytes() for p in parts)
-              if hashlib.sha256(data).hexdigest() != 'f77c250971d0846d4edb29cef7b3fbc440074043d7080cb15ad6dff676933248':
-                  raise SystemExit('Archive checksum mismatch')
-              with zipfile.ZipFile(io.BytesIO(data)) as archive:
-                  entries = archive.infolist()
-                  for entry in entries:
-                      path = pathlib.PurePosixPath(entry.filename)
-                      if path.is_absolute() or '..' in path.parts or path.parts[0] != 'nextgenius-main' or '.git' in path.parts or stat.S_ISLNK(entry.external_attr >> 16):
-                          raise SystemExit('Unsafe archive entry')
-                  for path in root.iterdir():
-                      if path.name in {'.git', '.github', '.package-import'}:
-                          continue
-                      if path.is_dir():
-                          shutil.rmtree(path)
-                      else:
-                          path.unlink()
-                  for entry in entries:
-                      if entry.is_dir():
-                          continue
-                      target = root.joinpath(*pathlib.PurePosixPath(entry.filename).parts[1:])
-                      target.parent.mkdir(parents=True, exist_ok=True)
-                      target.write_bytes(archive.read(entry))
-              shutil.rmtree('.package-import')
-      - name: Commit imported source on the new branch
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if ! git diff --cached --quiet; then
-            git commit -m "Import checksum-verified NextGenius package"
-            git push origin HEAD:codex/nextgenius-package-2026-11-03
-          fi
       - uses: actions/setup-node@v6
         with:
           node-version: '24'
